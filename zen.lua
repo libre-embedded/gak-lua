@@ -154,6 +154,9 @@ function GakAuditZenMode()
 end
 
 function GakZenInit(frame)
+	-- chat is useless game feature
+	GakDisableChat()
+
 	GakCreateButton(frame, "Audit Zen Mode", 2, 5, GakAuditZenMode)
 
 	GakCreateButton(frame, "Set Raid Targets", 2, 6, GakSetRaidTargets)

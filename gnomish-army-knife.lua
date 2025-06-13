@@ -28,7 +28,8 @@ local function GakHandleInstance()
 	if info[2] == "pvp" or IsActiveBattlefieldArena() then
 		GakDisableChat()
 	else
-		GakEnableChat()
+		-- chat is useless game feature
+		-- GakEnableChat()
 	end
 
 	-- Arena-specific actions.
