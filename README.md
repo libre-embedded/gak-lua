@@ -2,11 +2,11 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=f800d6970341bb7235674aa4788f9683
+    hash=52b6f180952ac7ec5c2c1be41ef0f70c
     =====================================
 -->
 
-# [![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)](https://www.wowhead.com/item=40772/gnomish-army-knife) gnomish-army-knife ([1.5.6](https://github.com/vkottler/gak-lua))
+# [![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)](https://www.wowhead.com/item=40772/gnomish-army-knife) gnomish-army-knife ([1.5.7](https://github.com/vkottler/gak-lua))
 
 *World of Warcraft polyfills and standardization.*
 

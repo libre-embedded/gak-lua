@@ -28,7 +28,7 @@ function GakTargetFrameManager:setupFriendFrames(parent)
 	self.softFriendText = centeredFont(frame)
 
 	local frame =
-		CreateFrame("Frame", "GakLockedFriend", parent, "GlowBorderTemplate")
+		CreateFrame("Frame", "GakLockedFriend", parent, "GlowBoxTemplate")
 	frame:SetPoint("BOTTOMLEFT", parent, "TOPLEFT")
 
 	frame:SetSize(parent:GetWidth() / 2, parent:GetHeight())
@@ -53,7 +53,7 @@ function GakTargetFrameManager:setupEnemyFrames(parent)
 	self.softEnemyText = centeredFont(frame)
 
 	local frame =
-		CreateFrame("Frame", "GakLockedEnemy", parent, "GlowBorderTemplate")
+		CreateFrame("Frame", "GakLockedEnemy", parent, "GlowBoxTemplate")
 	frame:SetPoint("BOTTOMLEFT", parent, "TOP", parent:GetWidth() / 2)
 
 	frame:SetSize(parent:GetWidth() / 2, parent:GetHeight())
