@@ -160,6 +160,5 @@ function GakTargetFrameManager:draw()
 end
 
 function GakTargetInfoInit(_)
-	local parent = GakHelpHarmFrame
-	GakFrameManager:setupFrames(parent)
+	GakFrameManager:setupFrames(GakHelpHarmFrame)
 end

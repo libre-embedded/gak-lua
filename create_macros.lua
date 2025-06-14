@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=2753327df743433d95ee62cfc05f3014
+-- hash=2cbcb505099747c355cffa3f6149dbbb
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -33,7 +33,19 @@ function GakCreateGlobalMacros()
 /use Quicksilver Sipper]])
 	CreateMacro("pet", "inv_leatherworking_70_petleash", [[
 /petdismiss]])
-	print("Created 9 global macros.")
+	CreateMacro("z0", "inv_misc_questionmark", [[
+#showtooltip
+/cast Rake
+/changeactionbar 1]])
+	CreateMacro("z1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Mangle
+/changeactionbar 1]])
+	CreateMacro("z2", "inv_misc_questionmark", [[
+#showtooltip
+/cast Skull Bash
+/changeactionbar 1]])
+	print("Created 12 global macros.")
 end
 
 local function createFirstRacialMacro()
@@ -167,6 +179,17 @@ function GakCreateCharacterMacros()
 		CreateMacro("2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Quiet Contemplation]], 1)
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
+	end
+
+	if our_race == "Vulpera" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Bag of Tricks]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+#showtooltip
+/cast Rummage Your Bag]], 1)
 		print("Created macros for '" .. our_race .. "'.")
 		racial_macros_created = true
 	end
@@ -340,7 +363,10 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "WARRIOR" then
-		print("Created 0", select(1, UnitClass("player")), "macros.")
+		CreateMacro("stance", "inv_misc_questionmark", [[
+#showtooltip
+/cast [stance:1] Battle Stance; [stance:2] Defensive Stance]], 1)
+		print("Created 1", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARLOCK" then

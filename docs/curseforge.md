@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=6489f9708af8d8f2ea0b1ce9eee029a0
+    hash=528e0d0b87a758a59c006126a4dcc331
     =====================================
 -->
 
@@ -68,12 +68,12 @@ documentation for additional details.
 
 Type | Count
 -----|------
-Shared | `9`
+Shared | `12`
 Demonhunter | `5`
 Priest | `21`
 Rogue | `7`
 Monk | `12`
-Warrior | `0`
+Warrior | `1`
 Warlock | `12`
 Evoker | `12`
 Mage | `8`
@@ -118,7 +118,7 @@ Balance Druid | `67`
 Blood Death Knight | `0`
 Fury Warrior | `42`
 Vengeance Demon Hunter | `0`
-Arms Warrior | `0`
+Arms Warrior | `52`
 Havoc Demon Hunter | `50`
 Windwalker Monk | `30`
 Arcane Mage | `0`

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=aa3464d6132000f311774be70b0547c8
+    hash=f6d71c46d57f3df196cb29c13db6e23f
     =====================================
 -->
 
@@ -103,6 +103,36 @@ pet
 
 ```
 /petdismiss
+```
+
+---
+
+z0
+
+```
+#showtooltip
+/cast Rake
+/changeactionbar 1
+```
+
+---
+
+z1
+
+```
+#showtooltip
+/cast Mangle
+/changeactionbar 1
+```
+
+---
+
+z2
+
+```
+#showtooltip
+/cast Skull Bash
+/changeactionbar 1
 ```
 
 ---

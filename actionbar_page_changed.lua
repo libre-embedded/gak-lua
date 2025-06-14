@@ -10,11 +10,17 @@ GakHelpHarmFrame = nil
 
 function GakHelpHarmBarInit(_)
 	if not GakHelpHarmFrame then
-		local parent = MultiBarBottomLeft
+		-- Experimenting with anchor point.
+		-- local parent = MultiBarBottomLeft
+		local parent = MultiBarLeft
 
 		local frame = CreateFrame("Frame", "GakHelpHarm", parent)
 		frame:SetPoint("TOPLEFT")
-		frame:SetSize(parent:GetWidth() / 2, parent:GetHeight() / 2)
+
+		-- Could check if height > width.
+		-- frame:SetSize(parent:GetWidth() / 2, parent:GetHeight() / 2)
+		frame:SetSize(parent:GetHeight() / 2, parent:GetWidth() / 2)
+
 		frame.tex = frame:CreateTexture()
 		frame.tex:SetAllPoints()
 
