@@ -1,6 +1,6 @@
 -- =====================================
 -- generator=datazen
--- version=3.2.0
+-- version=3.2.3
 -- hash=c6bd62ad6ef371e8ad8a618b5f893be3
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot

@@ -1,6 +1,6 @@
 -- =====================================
 -- generator=datazen
--- version=3.2.0
+-- version=3.2.3
 -- hash=2cbcb505099747c355cffa3f6149dbbb
 -- =====================================
 function GakCreateGlobalMacros()

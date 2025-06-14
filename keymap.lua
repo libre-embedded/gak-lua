@@ -1,6 +1,6 @@
 -- =====================================
 -- generator=datazen
--- version=3.2.0
+-- version=3.2.3
 -- hash=10fa43c69fbc79770a297c2bf1fb77f0
 -- =====================================
 -- Mapping of gamepad inputs to keyboard inputs.

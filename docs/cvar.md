@@ -1,8 +1,8 @@
 <!--
     =====================================
     generator=datazen
-    version=3.2.0
-    hash=dd7b3c17182ecdefd84a79ad21b08612
+    version=3.2.3
+    hash=6668d19ab76e0e61828511b775efb780
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `72`
+Total: `73`
 
 Name | Value
 ---- | -----
@@ -86,3 +86,4 @@ nameplateMotion | 1
 nameplateMotionSpeed | 0.05
 nameplateOverlapH | 0.6
 nameplateOverlapV | 0.6
+cooldownViewerEnabled | 1

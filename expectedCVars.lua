@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
--- version=3.2.0
--- hash=07985a826e1097d27f95020589ebeaf7
+-- version=3.2.3
+-- hash=b6e9b4d21f239cdb64001e955b8ca5fa
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -76,3 +76,4 @@ expectedCVars["nameplateMotion"] = 1
 expectedCVars["nameplateMotionSpeed"] = 0.05
 expectedCVars["nameplateOverlapH"] = 0.6
 expectedCVars["nameplateOverlapV"] = 0.6
+expectedCVars["cooldownViewerEnabled"] = 1
