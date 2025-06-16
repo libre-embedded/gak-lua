@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=edb8076167106a021d756645ba47338e
+    hash=5c41841fb460a1bf2f0e485197220fcb
     =====================================
 -->
 
@@ -62,7 +62,7 @@ perform. See [source repository](https://github.com/vkottler/gak-lua)
 documentation for additional details.
 
 * Keybinds: `110`
-* `CVar`'s: `73`
+* `CVar`'s: `79`
 
 ### Macros
 

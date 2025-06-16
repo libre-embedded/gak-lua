@@ -1,29 +1,29 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=10fa43c69fbc79770a297c2bf1fb77f0
+-- hash=7c30bdc1784e5189af1e1d2b43ede682
 -- =====================================
 -- Mapping of gamepad inputs to keyboard inputs.
 keymap = {}
-keymap["PADRTRIGGER"] = "BUTTON4"
-keymap["PADRSHOULDER"] = "BUTTON5"
 keymap["PAD1"] = "S"
 keymap["PAD2"] = "R"
 keymap["PAD3"] = "Q"
 keymap["PAD4"] = "3"
-keymap["PADDLEFT"] = "2"
-keymap["PADDUP"] = "MOUSEWHEELUP"
-keymap["PADDDOWN"] = "MOUSEWHEELDOWN"
-keymap["PADDRIGHT"] = "4"
-keymap["PADLSTICK"] = "T"
-keymap["PADRSTICK"] = "V"
 keymap["PADBACK"] = "Z"
-keymap["PADSYSTEM"] = "X"
+keymap["PADDDOWN"] = "MOUSEWHEELDOWN"
+keymap["PADDLEFT"] = "2"
+keymap["PADDRIGHT"] = "4"
+keymap["PADDUP"] = "MOUSEWHEELUP"
 keymap["PADFORWARD"] = "C"
+keymap["PADLSTICK"] = "T"
 keymap["PADPADDLE1"] = "SPACE"
 keymap["PADPADDLE2"] = "ALT"
 keymap["PADPADDLE3"] = "F"
 keymap["PADPADDLE4"] = "1"
+keymap["PADRSHOULDER"] = "BUTTON5"
+keymap["PADRSTICK"] = "V"
+keymap["PADRTRIGGER"] = "BUTTON4"
+keymap["PADSYSTEM"] = "X"
 
 -- Mapping of gamepad inputs to command plus any modifiers.
 bindings = {}
