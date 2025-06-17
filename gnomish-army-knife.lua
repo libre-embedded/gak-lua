@@ -21,15 +21,29 @@ BINDING_NAME_TOGGLEGAK = "Toggle " .. project .. " Window"
 
 GakButtonsByAddon = {}
 
+local function GakPrintLoggingCombatState()
+	if LoggingCombat() then
+		print("Combat logging is enabled.")
+	else
+		print("Combat logging is not enabled.")
+	end
+end
+
 local function GakHandleInstance()
 	local info = { GetInstanceInfo() }
 
 	-- Disable chat in pvp.
 	if info[2] == "pvp" or IsActiveBattlefieldArena() then
 		GakDisableChat()
+
+		-- Turn on combat logging.
+		LoggingCombat(true)
 	else
 		-- chat is useless game feature
 		-- GakEnableChat()
+
+		-- Disable combat logging.
+		LoggingCombat(false)
 	end
 
 	-- Arena-specific actions.
@@ -38,13 +52,9 @@ local function GakHandleInstance()
 		-- should also do this on an event (teammate joining, need to
 		-- find a suitable one)
 		GakSetRaidTargets()
-
-		-- Turn on combat logging.
-		LoggingCombat(true)
-	else
-		-- Disable combat logging.
-		LoggingCombat(false)
 	end
+
+	GakPrintLoggingCombatState()
 end
 
 local function GakRuntimeInit()
@@ -74,6 +84,16 @@ local function GakSetAll()
 	GakRuntimeInit()
 end
 
+local function GakToggleLoggingCombatState()
+	if LoggingCombat() then
+		LoggingCombat(false)
+		print("Disabled combat logging.")
+	else
+		LoggingCombat(true)
+		print("Enabled combat logging.")
+	end
+end
+
 local function GakMain(frame)
 	-- Initialize application.
 	GakHelpHarmBarInit(frame)
@@ -93,6 +113,7 @@ local function GakMain(frame)
 	GakCreateButton(frame, "Reload", 1, 7, function()
 		ConsoleExec("reloadUI")
 	end)
+	GakCreateButton(frame, "Combat Log", 2, 7, GakToggleLoggingCombatState)
 
 	-- Addon menu buttons.
 	GakButtonsByAddon["WowLua"] = GakCreateButton(
