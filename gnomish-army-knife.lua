@@ -58,6 +58,9 @@ local function GakHandleInstance()
 end
 
 local function GakRuntimeInit()
+	-- Instance-specific actions.
+	GakHandleInstance()
+
 	-- Set CVars.
 	GakSetCVars()
 
@@ -67,9 +70,6 @@ local function GakRuntimeInit()
 
 	-- Hide some elements.
 	GakAuditZenMode()
-
-	-- Instance-specific actions.
-	GakHandleInstance()
 end
 
 local function GakSetAll()
