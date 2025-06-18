@@ -1,6 +1,10 @@
 -- https://wowprogramming.com/docs/api_categories.html
 -- |cAARRGGBB
 
+-- Turn on combat logging (all telemetry on by default, avoid race
+-- conditions).
+LoggingCombat(true)
+
 -- Create UI menu.
 local gak_ui =
 	GakCreateButtonContainer(UIParent, project .. " (" .. version .. ")", 4, 8)
@@ -58,10 +62,6 @@ local function GakHandleInstance()
 end
 
 local function GakRuntimeInit()
-	-- Turn on combat logging (all telemetry on by default, avoid race
-	-- conditions).
-	LoggingCombat(true)
-
 	-- Instance-specific actions.
 	GakHandleInstance()
 
