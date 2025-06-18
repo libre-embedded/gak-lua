@@ -37,13 +37,13 @@ local function GakHandleInstance()
 		GakDisableChat()
 
 		-- Turn on combat logging.
-		LoggingCombat(true)
+		-- LoggingCombat(true)
 	else
 		-- chat is useless game feature
 		-- GakEnableChat()
 
 		-- Disable combat logging.
-		LoggingCombat(false)
+		-- LoggingCombat(false)
 	end
 
 	-- Arena-specific actions.
@@ -58,6 +58,10 @@ local function GakHandleInstance()
 end
 
 local function GakRuntimeInit()
+	-- Turn on combat logging (all telemetry on by default, avoid race
+	-- conditions).
+	LoggingCombat(true)
+
 	-- Instance-specific actions.
 	GakHandleInstance()
 
