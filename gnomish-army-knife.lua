@@ -98,6 +98,19 @@ local function GakToggleLoggingCombatState()
 	end
 end
 
+local function GakInfo()
+	print("--------------------")
+
+	GakPrintLoggingCombatState()
+
+	print("Build version:", select(4, GetBuildInfo()))
+
+	local info = { GetInstanceInfo() }
+	print("Instance info:", "name =", info[1], "type =", info[2])
+
+	print("--------------------")
+end
+
 local function GakMain(frame)
 	-- Initialize application.
 	GakHelpHarmBarInit(frame)
@@ -110,9 +123,7 @@ local function GakMain(frame)
 	GakTargetInfoInit(frame)
 
 	-- Utility buttons.
-	GakCreateButton(frame, "Info", 0, 6, function()
-		print(select(4, GetBuildInfo()))
-	end)
+	GakCreateButton(frame, "Info", 0, 6, GakInfo)
 	GakCreateButton(frame, "Set All", 0, 7, GakSetAll)
 	GakCreateButton(frame, "Reload", 1, 7, function()
 		ConsoleExec("reloadUI")
