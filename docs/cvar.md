@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=a64ae72eb8fe69c757ffe68ba65840e2
+    hash=97914777d9d7b0472b9594275a5187b3
     =====================================
 -->
 
@@ -10,11 +10,12 @@
 
 ([back](../README.md))
 
-Total: `79`
+Total: `80`
 
 Name | Value
 ---- | -----
 advancedCombatLogging | 1
+assistedCombatHighlight | 1
 autoLootDefault | 1
 autoLootRate | 50
 AutoPushSpellToActionBar | 0

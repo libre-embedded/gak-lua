@@ -1,10 +1,11 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=713bbd4dc13fb6518baf9d86b929413a
+-- hash=b2a536cbbe56922ab566b10bea3c02a4
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
+expectedCVars["assistedCombatHighlight"] = 1
 expectedCVars["autoLootDefault"] = 1
 expectedCVars["autoLootRate"] = 50
 expectedCVars["AutoPushSpellToActionBar"] = 0

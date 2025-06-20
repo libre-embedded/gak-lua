@@ -122,10 +122,20 @@ GakEventHandlers["GROUP_ROSTER_UPDATE"] = function(frame)
 end
 GakEventHandlers["RAID_ROSTER_UPDATE"] = GakEventHandlers["GROUP_ROSTER_UPDATE"]
 
+local function GakZenBBF()
+	if AltManaBarBBF then
+		GakHideFrame(AltManaBarBBF.LeftText)
+		GakHideFrame(AltManaBarBBF.RightText)
+	end
+end
+
 function GakAuditZenMode()
 	-- Hide player-portrait name and level.
 	PlayerName:Hide()
 	GakHideFrame(PlayerLevelText)
+
+	-- Not sure how to get this to work otherwise.
+	C_Timer.After(2.0, GakZenBBF)
 
 	-- Hide player-portrait party leader icon.
 	PlayerFrame.PlayerFrameContent.PlayerFrameContentContextual:Hide()
