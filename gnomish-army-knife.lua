@@ -74,6 +74,15 @@ local function GakRuntimeInit()
 
 	-- Hide some elements.
 	GakAuditZenMode()
+
+	-- Show framerate while auditing recording setup.
+	FramerateFrame:Show()
+
+	-- Not sure how to get this to be normally on.
+	-- if BattlefieldMapFrame then
+	-- 	BattlefieldMapFrame:Show()
+	-- 	print(BattlefieldMapFrame:IsShown())
+	-- end
 end
 
 local function GakSetAll()

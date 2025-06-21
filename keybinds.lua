@@ -53,21 +53,25 @@ local function auditKeybinds()
 		checkCommand(command, false)
 	end
 
-	-- for i = 1, GetNumBindings() do
-	-- command, category, key1, key2 = GetBinding(i, true)
-	-- _G["BINDING_NAME_" .. command]
-	-- _G[category]
-	-- if string.find(command, "LUA") then
-	-- 	print(command)
-	-- end
-	-- local search = "PAD4"
-	-- if key1 and string.find(key1, search) then
-	-- 	print(command, key1, key2)
-	-- end
-	-- if key2 and string.find(key2, search) then
-	-- 	print(command, key1, key2)
-	-- end
-	-- end
+	for i = 1, GetNumBindings() do
+		command, category, key1, key2 = GetBinding(i, true)
+
+		-- Useful when tweaking binds.
+		-- print(command, key1, key2)
+
+		-- _G["BINDING_NAME_" .. command]
+		-- _G[category]
+		-- if string.find(command, "LUA") then
+		-- 	print(command)
+		-- end
+		-- local search = "PAD4"
+		-- if key1 and string.find(key1, search) then
+		-- 	print(command, key1, key2)
+		-- end
+		-- if key2 and string.find(key2, search) then
+		-- 	print(command, key1, key2)
+		-- end
+	end
 end
 
 function GakSetKeybinds()

@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=7c30bdc1784e5189af1e1d2b43ede682
+-- hash=ed12b60c4ad89c615a10d5d883f34b87
 -- =====================================
 -- Mapping of gamepad inputs to keyboard inputs.
 keymap = {}
@@ -170,13 +170,13 @@ bindings["TOGGLESHEATH"] = {
 		"CTRL",
 	},
 }
-bindings["TOGGLEFPS"] = {
+bindings["TOGGLEUI"] = {
 	"PADRSTICK",
 	{
 		"CTRL",
 	},
 }
-bindings["FLIPCAMERAYAW"] = {
+bindings["TOGGLEBATTLEFIELDMINIMAP"] = {
 	"PADLSTICK",
 	{
 		"CTRL",
@@ -190,7 +190,7 @@ bindings["CENTERCAMERA"] = {
 		"SHIFT",
 	},
 }
-bindings["TOGGLEUI"] = {
+bindings["TOGGLEFPS"] = {
 	"PADLSTICK",
 	{
 		"ALT",

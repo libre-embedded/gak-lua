@@ -166,7 +166,8 @@ function GakAuditZenMode()
 end
 
 hooksecurefunc("CompactUnitFrame_OnLoad", function(frame)
-	if frame then
+	-- Hide cast bar text.
+	if frame and frame.castBar then
 		GakHideFrame(frame.castBar.Text)
 	end
 end)
