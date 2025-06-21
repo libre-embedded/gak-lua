@@ -133,6 +133,8 @@ function GakAuditZenMode()
 	-- Hide player-portrait name and level.
 	PlayerName:Hide()
 	GakHideFrame(PlayerLevelText)
+	GakHideFrame(PlayerCastingBarFrame.Text)
+	GakHideFrame(TargetFrameSpellBar.Text)
 
 	-- Not sure how to get this to work otherwise.
 	C_Timer.After(2.0, GakZenBBF)
@@ -162,6 +164,12 @@ function GakAuditZenMode()
 
 	GakEventHandlers["GROUP_ROSTER_UPDATE"](frame)
 end
+
+hooksecurefunc("CompactUnitFrame_OnLoad", function(frame)
+	if frame then
+		GakHideFrame(frame.castBar.Text)
+	end
+end)
 
 function GakZenInit(frame)
 	-- chat is useless game feature
