@@ -163,6 +163,10 @@ function GakAuditZenMode()
 	GakZenArenaFrames()
 
 	GakEventHandlers["GROUP_ROSTER_UPDATE"](frame)
+
+	GakHideFrame(UIErrorsFrame)
+
+	-- UIWidgetTopCenterContainerFrame
 end
 
 hooksecurefunc("CompactUnitFrame_OnLoad", function(frame)
