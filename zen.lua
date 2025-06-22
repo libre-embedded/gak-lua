@@ -175,37 +175,16 @@ local function GakHideMatchResultsNames()
 end
 
 local function GakHideScoreboardNames()
-	if
-		PVPMatchScoreboard
-		-- and not PVPMatchScoreboard.GakInitialized
-		and PVPMatchScoreboard.isInitialized
-	then
-		-- wip
-		-- print(
-		-- 	PVPMatchScoreboard.Content.ScrollBox.ScrollTarget,
-		-- 	PVPMatchScoreboard.Content.ScrollBox.ScrollTarget:GetObjectType(),
-		-- 	PVPMatchScoreboard.Content.ScrollBox.ScrollTarget:GetDebugName()
-		-- )
-
+	if PVPMatchScoreboard and PVPMatchScoreboard.isInitialized then
 		for i, parent in ipairs({
 			PVPMatchScoreboard.Content.ScrollBox.ScrollTarget:GetChildren(),
 		}) do
-			print(parent, parent:GetObjectType(), parent:GetDebugName())
-			-- GakHideFrame(parent)
 			for j, child in ipairs({ parent:GetChildren() }) do
-				if child:GetObjectType() == "Frame" then
-					print("TESt")
+				if j == 3 and child:IsShown() then
 					GakHideFrame(child)
 				end
-				-- if j == 3 and child.text then
-				-- GakHideFrame(child.text)
-				-- end
 			end
 		end
-
-		-- print("THIS RAN")
-
-		-- PVPMatchScoreboard.GakInitialized = true
 	end
 end
 
@@ -294,15 +273,13 @@ function GakAuditZenMode()
 	-- wip, what are the frames for alliance and horde flags?
 	--      could use hook texture swap (needs to be tested)
 
+	-- Scoreboard and match results name removal.
 	if PVPMatchResults then
 		GakHideFrame(PVPMatchResults.overlay.decorator)
 		GakHookFrame(PVPMatchResults, "OnUpdate", GakHideMatchResultsNames)
 	end
-
 	if PVPMatchScoreboard then
-		-- wip
 		GakHookFrame(PVPMatchScoreboard, "OnUpdate", GakHideScoreboardNames)
-		GakHookFrame(PVPMatchScoreboard, "OnShow", GakHideScoreboardNames)
 	end
 
 	-- Things with tricky dependency ordering.
