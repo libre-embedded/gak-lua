@@ -76,13 +76,7 @@ local function GakRuntimeInit()
 	GakAuditZenMode()
 
 	-- Show framerate while auditing recording setup.
-	FramerateFrame:Show()
-
-	-- Not sure how to get this to be normally on.
-	-- if BattlefieldMapFrame then
-	-- 	BattlefieldMapFrame:Show()
-	-- 	print(BattlefieldMapFrame:IsShown())
-	-- end
+	-- FramerateFrame:Show()
 end
 
 local function GakSetAll()

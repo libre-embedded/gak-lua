@@ -129,15 +129,28 @@ local function GakZenBBF()
 	end
 end
 
+local function GakBattlefieldMapFrameZoomer()
+	if BattlefieldMapFrame:GetCanvasZoomPercent() <= 0 then
+		BattlefieldMapFrame:ZoomIn()
+		print("BattlefieldMapFrame:ZoomIn()")
+	end
+
+	while BattlefieldMapFrame:GetCanvasZoomPercent() > 0.2 do
+		BattlefieldMapFrame:ZoomOut()
+		print("BattlefieldMapFrame:ZoomOut()")
+	end
+end
+
+local function GakZenDelayed()
+	GakZenBBF()
+end
+
 function GakAuditZenMode()
 	-- Hide player-portrait name and level.
 	PlayerName:Hide()
 	GakHideFrame(PlayerLevelText)
 	GakHideFrame(PlayerCastingBarFrame.Text)
 	GakHideFrame(TargetFrameSpellBar.Text)
-
-	-- Not sure how to get this to work otherwise.
-	C_Timer.After(2.0, GakZenBBF)
 
 	-- Hide player-portrait party leader icon.
 	PlayerFrame.PlayerFrameContent.PlayerFrameContentContextual:Hide()
@@ -166,7 +179,37 @@ function GakAuditZenMode()
 
 	GakHideFrame(UIErrorsFrame)
 
-	-- UIWidgetTopCenterContainerFrame
+	if
+		UIWidgetTopCenterContainerFrame
+		and UIWidgetTopCenterContainerFrame.LeftBar
+	then
+		GakHideFrame(UIWidgetTopCenterContainerFrame.LeftBar.Icon)
+		GakHideFrame(UIWidgetTopCenterContainerFrame.RightBar.Icon)
+	end
+
+	if PVPMatchResults then
+		GakHideFrame(PVPMatchResults.overlay.decorator)
+	end
+
+	-- Things with tricky dependency ordering.
+	C_Timer.After(2.0, GakZenDelayed)
+
+	-- Handle the battlefield map frame.
+	if not BattlefieldMapFrame and not IsActiveBattlefieldArena() then
+		ToggleBattlefieldMap()
+	end
+	if BattlefieldMapFrame then
+		if IsActiveBattlefieldArena() then
+			ToggleBattlefieldMap()
+		else
+			GakHookFrame(
+				BattlefieldMapFrame,
+				"OnShow",
+				GakBattlefieldMapFrameZoomer
+			)
+			pcall(GakBattlefieldMapFrameZoomer)
+		end
+	end
 end
 
 hooksecurefunc("CompactUnitFrame_OnLoad", function(frame)
