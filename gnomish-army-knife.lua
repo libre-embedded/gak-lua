@@ -152,13 +152,22 @@ local function GakMain(frame)
 			SlashCmdList["BBP"]("")
 		end
 	)
-	GakButtonsByAddon["BigDebuffs"] = GakCreateButton(
+	-- GakButtonsByAddon["BigDebuffs"] = GakCreateButton(
+	-- 	frame,
+	-- 	"/bigdebuffs",
+	-- 	3,
+	-- 	3,
+	-- 	function()
+	-- 		SlashCmdList["BigDebuffs"]("")
+	-- 	end
+	-- )
+	GakButtonsByAddon["BetterBlizzFrames"] = GakCreateButton(
 		frame,
-		"/bigdebuffs",
+		"/bbf",
 		3,
 		3,
 		function()
-			SlashCmdList["BigDebuffs"]("")
+			SlashCmdList["BBF"]("")
 		end
 	)
 	GakButtonsByAddon["Myslot"] = GakCreateButton(

@@ -130,19 +130,104 @@ local function GakZenBBF()
 end
 
 local function GakBattlefieldMapFrameZoomer()
-	if BattlefieldMapFrame:GetCanvasZoomPercent() <= 0 then
-		BattlefieldMapFrame:ZoomIn()
-		print("BattlefieldMapFrame:ZoomIn()")
-	end
-
-	while BattlefieldMapFrame:GetCanvasZoomPercent() > 0.2 do
+	while BattlefieldMapFrame:GetCanvasZoomPercent() > 0 do
 		BattlefieldMapFrame:ZoomOut()
 		print("BattlefieldMapFrame:ZoomOut()")
+	end
+
+	-- on some maps (arathi basin clone one) one zoom level cuts off
+	-- the nodes on the map
+	-- warsong gulch also bad
+	BattlefieldMapFrame:ZoomIn()
+	print("BattlefieldMapFrame:ZoomIn()")
+end
+
+local function GakHideMatchResultsNames()
+	if
+		PVPMatchResults
+		and not PVPMatchResults.GakInitialized
+		and PVPMatchResults.isInitialized
+	then
+		-- Remove names from table.
+		for i, parent in ipairs({
+			PVPMatchResults.content.scrollBox.ScrollTarget:GetChildren(),
+		}) do
+			for j, child in ipairs({ parent:GetChildren() }) do
+				if j == 3 and child.text then
+					GakHideFrame(child.text)
+				end
+			end
+		end
+
+		-- Remove alliance and horde symbols (BGs).
+		if PVPMatchResults.Score then
+			for i, child in ipairs({ PVPMatchResults.Score:GetChildren() }) do
+				if child:GetObjectType() == "Frame" then
+					GakHideFrame(child.Icon)
+				end
+			end
+		end
+
+		PVPMatchResults.GakInitialized = true
+
+		-- remove OnUpdate script hook (how?)
+	end
+end
+
+local function GakHideScoreboardNames()
+	if
+		PVPMatchScoreboard
+		-- and not PVPMatchScoreboard.GakInitialized
+		and PVPMatchScoreboard.isInitialized
+	then
+		-- wip
+		-- print(
+		-- 	PVPMatchScoreboard.Content.ScrollBox.ScrollTarget,
+		-- 	PVPMatchScoreboard.Content.ScrollBox.ScrollTarget:GetObjectType(),
+		-- 	PVPMatchScoreboard.Content.ScrollBox.ScrollTarget:GetDebugName()
+		-- )
+
+		for i, parent in ipairs({
+			PVPMatchScoreboard.Content.ScrollBox.ScrollTarget:GetChildren(),
+		}) do
+			print(parent, parent:GetObjectType(), parent:GetDebugName())
+			-- GakHideFrame(parent)
+			for j, child in ipairs({ parent:GetChildren() }) do
+				if child:GetObjectType() == "Frame" then
+					print("TESt")
+					GakHideFrame(child)
+				end
+				-- if j == 3 and child.text then
+				-- GakHideFrame(child.text)
+				-- end
+			end
+		end
+
+		-- print("THIS RAN")
+
+		-- PVPMatchScoreboard.GakInitialized = true
 	end
 end
 
 local function GakZenDelayed()
 	GakZenBBF()
+
+	-- Handle the battlefield map frame.
+	if not BattlefieldMapFrame and not IsActiveBattlefieldArena() then
+		ToggleBattlefieldMap()
+	end
+	if BattlefieldMapFrame then
+		if IsActiveBattlefieldArena() then
+			ToggleBattlefieldMap()
+		else
+			GakHookFrame(
+				BattlefieldMapFrame,
+				"OnShow",
+				GakBattlefieldMapFrameZoomer
+			)
+			pcall(GakBattlefieldMapFrameZoomer)
+		end
+	end
 end
 
 function GakAuditZenMode()
@@ -179,6 +264,7 @@ function GakAuditZenMode()
 
 	GakHideFrame(UIErrorsFrame)
 
+	-- Hide alliance and horde emblems (BGs).
 	if
 		UIWidgetTopCenterContainerFrame
 		and UIWidgetTopCenterContainerFrame.LeftBar
@@ -186,30 +272,41 @@ function GakAuditZenMode()
 		GakHideFrame(UIWidgetTopCenterContainerFrame.LeftBar.Icon)
 		GakHideFrame(UIWidgetTopCenterContainerFrame.RightBar.Icon)
 	end
+	for i, child in ipairs({ UIWidgetTopCenterContainerFrame:GetChildren() }) do
+		if child:GetObjectType() == "Frame" then
+			if child.LeftBar then
+				GakHideFrame(child.LeftBar.Icon)
+				-- doesn't seem to consistently work (need to try hook)
+				-- child.LeftBar.Icon:SetTexture(
+				-- 	"Interface\\AddOns\\gnomish-army-knife\\gnomish-army-knife"
+				-- )
+			end
+			if child.RightBar then
+				GakHideFrame(child.RightBar.Icon)
+				-- doesn't seem to consistently work (need to try hook)
+				-- child.RightBar.Icon:SetTexture(
+				-- 	"Interface\\AddOns\\gnomish-army-knife\\gnomish-army-knife"
+				-- )
+			end
+		end
+	end
+
+	-- wip, what are the frames for alliance and horde flags?
+	--      could use hook texture swap (needs to be tested)
 
 	if PVPMatchResults then
 		GakHideFrame(PVPMatchResults.overlay.decorator)
+		GakHookFrame(PVPMatchResults, "OnUpdate", GakHideMatchResultsNames)
+	end
+
+	if PVPMatchScoreboard then
+		-- wip
+		GakHookFrame(PVPMatchScoreboard, "OnUpdate", GakHideScoreboardNames)
+		GakHookFrame(PVPMatchScoreboard, "OnShow", GakHideScoreboardNames)
 	end
 
 	-- Things with tricky dependency ordering.
 	C_Timer.After(2.0, GakZenDelayed)
-
-	-- Handle the battlefield map frame.
-	if not BattlefieldMapFrame and not IsActiveBattlefieldArena() then
-		ToggleBattlefieldMap()
-	end
-	if BattlefieldMapFrame then
-		if IsActiveBattlefieldArena() then
-			ToggleBattlefieldMap()
-		else
-			GakHookFrame(
-				BattlefieldMapFrame,
-				"OnShow",
-				GakBattlefieldMapFrameZoomer
-			)
-			pcall(GakBattlefieldMapFrameZoomer)
-		end
-	end
 end
 
 hooksecurefunc("CompactUnitFrame_OnLoad", function(frame)
@@ -232,6 +329,4 @@ function GakZenInit(frame)
 	GakCreateButton(frame, "Toggle Objectives", 1, 6, function()
 		GakToggleFrame(ObjectiveTrackerFrame)
 	end)
-
-	-- PVPMatchResults.content.scrollBox contains all score screen names?
 end
