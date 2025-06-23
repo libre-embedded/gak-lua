@@ -130,16 +130,27 @@ local function GakZenBBF()
 end
 
 local function GakBattlefieldMapFrameZoomer()
+	-- Reset zoom.
 	while BattlefieldMapFrame:GetCanvasZoomPercent() > 0 do
 		BattlefieldMapFrame:ZoomOut()
 		print("BattlefieldMapFrame:ZoomOut()")
 	end
 
+	BattlefieldMapFrame:ZoomIn()
+	print("BattlefieldMapFrame:ZoomIn()")
+
 	-- on some maps (arathi basin clone one) one zoom level cuts off
 	-- the nodes on the map
 	-- warsong gulch also bad
-	BattlefieldMapFrame:ZoomIn()
-	print("BattlefieldMapFrame:ZoomIn()")
+	-- could probably check if the zoom value is
+	print(
+		"battlefield map zoom percent:",
+		BattlefieldMapFrame:GetCanvasZoomPercent()
+	)
+	if BattlefieldMapFrame:GetCanvasZoomPercent() >= 0.3 then
+		BattlefieldMapFrame:ZoomOut()
+		print("BattlefieldMapFrame:ZoomOut()")
+	end
 end
 
 local function GakHideMatchResultsNames()
@@ -188,24 +199,81 @@ local function GakHideScoreboardNames()
 	end
 end
 
+local function GakZenCenterWidgetFrame(frame)
+	if frame.LeftBar then
+		GakHideFrame(frame.LeftBar.Icon)
+		GakHideFrame(frame.RightBar.Icon)
+	end
+
+	-- Hide win/loss screen (has win count on it).
+	if IsActiveBattlefieldArena() and EventToastManagerFrame then
+		GakHideFrame(EventToastManagerFrame)
+	end
+
+	for i, child in ipairs({ frame:GetChildren() }) do
+		if child:GetObjectType() == "Frame" then
+			if child.LeftBar then
+				GakHideFrame(child.LeftBar.Icon)
+				-- child.LeftBar.Icon:SetTexture(
+				-- 	"Interface\\AddOns\\gnomish-army-knife\\gnomish-army-knife"
+				-- )
+			end
+			if child.RightBar then
+				GakHideFrame(child.RightBar.Icon)
+				-- child.RightBar.Icon:SetTexture(
+				-- 	"Interface\\AddOns\\gnomish-army-knife\\gnomish-army-knife"
+				-- )
+			end
+
+			-- Hide "ready" count.
+			if child.parentWidgetContainer then
+				GakHideFrame(child)
+			end
+
+			-- Hide solo shuffle round and wins.
+			if child.Text then
+				local data = child.Text:GetText()
+				if string.find(data, "Wins") or string.find(data, "Round") then
+					GakHideFrame(child.Text)
+				end
+			end
+		end
+	end
+end
+
 local function GakZenDelayed()
 	GakZenBBF()
 
 	-- Handle the battlefield map frame.
 	if not BattlefieldMapFrame and not IsActiveBattlefieldArena() then
+		-- Turn map on.
 		ToggleBattlefieldMap()
 	end
 	if BattlefieldMapFrame then
 		if IsActiveBattlefieldArena() then
-			ToggleBattlefieldMap()
+			if BattlefieldMapFrame:IsShown() then
+				-- Turn map off.
+				ToggleBattlefieldMap()
+			end
 		else
 			GakHookFrame(
 				BattlefieldMapFrame,
 				"OnShow",
 				GakBattlefieldMapFrameZoomer
 			)
+
+			if not BattlefieldMapFrame:IsShown() then
+				-- Turn map on.
+				ToggleBattlefieldMap()
+			end
+
 			pcall(GakBattlefieldMapFrameZoomer)
 		end
+	end
+
+	-- Hide alliance and horde emblems (BGs).
+	if UIWidgetTopCenterContainerFrame then
+		GakZenCenterWidgetFrame(UIWidgetTopCenterContainerFrame)
 	end
 end
 
@@ -243,43 +311,21 @@ function GakAuditZenMode()
 
 	GakHideFrame(UIErrorsFrame)
 
-	-- Hide alliance and horde emblems (BGs).
-	if
-		UIWidgetTopCenterContainerFrame
-		and UIWidgetTopCenterContainerFrame.LeftBar
-	then
-		GakHideFrame(UIWidgetTopCenterContainerFrame.LeftBar.Icon)
-		GakHideFrame(UIWidgetTopCenterContainerFrame.RightBar.Icon)
-	end
-	for i, child in ipairs({ UIWidgetTopCenterContainerFrame:GetChildren() }) do
-		if child:GetObjectType() == "Frame" then
-			if child.LeftBar then
-				GakHideFrame(child.LeftBar.Icon)
-				-- doesn't seem to consistently work (need to try hook)
-				-- child.LeftBar.Icon:SetTexture(
-				-- 	"Interface\\AddOns\\gnomish-army-knife\\gnomish-army-knife"
-				-- )
-			end
-			if child.RightBar then
-				GakHideFrame(child.RightBar.Icon)
-				-- doesn't seem to consistently work (need to try hook)
-				-- child.RightBar.Icon:SetTexture(
-				-- 	"Interface\\AddOns\\gnomish-army-knife\\gnomish-army-knife"
-				-- )
-			end
-		end
-	end
-
-	-- wip, what are the frames for alliance and horde flags?
-	--      could use hook texture swap (needs to be tested)
-
 	-- Scoreboard and match results name removal.
 	if PVPMatchResults then
 		GakHideFrame(PVPMatchResults.overlay.decorator)
 		GakHookFrame(PVPMatchResults, "OnUpdate", GakHideMatchResultsNames)
+
+		GakHideFrame(PVPScoreFrameTab1.Text)
+		GakHideFrame(PVPScoreFrameTab2.Text)
+		GakHideFrame(PVPScoreFrameTab3.Text)
 	end
 	if PVPMatchScoreboard then
 		GakHookFrame(PVPMatchScoreboard, "OnUpdate", GakHideScoreboardNames)
+
+		GakHideFrame(PVPScoreboardTab1.Text)
+		GakHideFrame(PVPScoreboardTab2.Text)
+		GakHideFrame(PVPScoreboardTab3.Text)
 	end
 
 	-- Things with tricky dependency ordering.
