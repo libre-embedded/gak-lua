@@ -233,7 +233,11 @@ local function GakZenCenterWidgetFrame(frame)
 			-- Hide solo shuffle round and wins.
 			if child.Text then
 				local data = child.Text:GetText()
-				if string.find(data, "Wins") or string.find(data, "Round") then
+				if
+					string.find(data, "Wins")
+					or string.find(data, "Round")
+					or string.find(data, "Remaining")
+				then
 					GakHideFrame(child.Text)
 				end
 			end
@@ -283,6 +287,10 @@ function GakAuditZenMode()
 	GakHideFrame(PlayerLevelText)
 	GakHideFrame(PlayerCastingBarFrame.Text)
 	GakHideFrame(TargetFrameSpellBar.Text)
+
+	GakHideFrame(
+		TargetFrame.TargetFrameContent.TargetFrameContentMain.HealthBarsContainer.DeadText
+	)
 
 	-- Hide player-portrait party leader icon.
 	PlayerFrame.PlayerFrameContent.PlayerFrameContentContextual:Hide()

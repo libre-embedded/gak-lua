@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=97914777d9d7b0472b9594275a5187b3
+    hash=3a338249b12e67839a9aeb53918d12b3
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `80`
+Total: `84`
 
 Name | Value
 ---- | -----
@@ -25,8 +25,10 @@ combinedBags | 1
 cooldownViewerEnabled | 1
 countdownForCooldowns | 1
 enableMultiActionBars | 15
+enablePings | 0
 floatingCombatTextCombatDamage | 0
 floatingCombatTextCombatHealing | 0
+floatingCombatTextCombatState | 0
 GamePadCameraPitchSpeed | 2.0
 GamePadCameraYawSpeed | 3.0
 GamePadCursorAutoDisableSticks | 1
@@ -65,6 +67,7 @@ raidFramesHealthText | `none`
 raidOptionDisplayPets | 1
 scriptErrors | 1
 showPartyPets | 1
+showPingsInChat | 0
 showToastWindow | 0
 showTutorials | 0
 SoftTargetEnemy | 3
@@ -75,9 +78,10 @@ SoftTargetInteract | 3
 SoftTargetNameplateFriend | 0
 SoftTargetNameplateInteract | 1
 Sound_EnableAmbience | 1
-Sound_EnableDialog | 1
+Sound_EnableDialog | 0
 Sound_EnableEmoteSounds | 0
 Sound_EnableMusic | 0
+Sound_EnablePingSounds | 0
 Sound_EnableReverb | 1
 Sound_EnableSFX | 1
 Sound_EnableSoundWhenGameIsInBG | 1
