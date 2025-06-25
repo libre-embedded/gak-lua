@@ -130,26 +130,33 @@ local function GakZenBBF()
 end
 
 local function GakBattlefieldMapFrameZoomer()
+	local continue = true
+
 	-- Reset zoom.
-	while BattlefieldMapFrame:GetCanvasZoomPercent() > 0 do
-		BattlefieldMapFrame:ZoomOut()
-		print("BattlefieldMapFrame:ZoomOut()")
+	while continue and BattlefieldMapFrame:GetCanvasZoomPercent() > 0 do
+		if pcall(BattlefieldMapFrame.ZoomOut, BattlefieldMapFrame) then
+			print("BattlefieldMapFrame:ZoomOut()")
+		else
+			continue = false
+		end
 	end
 
-	BattlefieldMapFrame:ZoomIn()
-	print("BattlefieldMapFrame:ZoomIn()")
+	if continue and pcall(BattlefieldMapFrame.ZoomIn, BattlefieldMapFrame) then
+		print("BattlefieldMapFrame:ZoomIn()")
 
-	-- on some maps (arathi basin clone one) one zoom level cuts off
-	-- the nodes on the map
-	-- warsong gulch also bad
-	-- could probably check if the zoom value is
-	print(
-		"battlefield map zoom percent:",
-		BattlefieldMapFrame:GetCanvasZoomPercent()
-	)
-	if BattlefieldMapFrame:GetCanvasZoomPercent() >= 0.3 then
-		BattlefieldMapFrame:ZoomOut()
-		print("BattlefieldMapFrame:ZoomOut()")
+		-- on some maps (arathi basin clone one) one zoom level cuts off
+		-- the nodes on the map
+		-- warsong gulch also bad
+		-- could probably check if the zoom value is
+		print(
+			"battlefield map zoom percent:",
+			BattlefieldMapFrame:GetCanvasZoomPercent()
+		)
+		if BattlefieldMapFrame:GetCanvasZoomPercent() >= 0.3 then
+			if pcall(BattlefieldMapFrame.ZoomOut, BattlefieldMapFrame) then
+				print("BattlefieldMapFrame:ZoomOut()")
+			end
+		end
 	end
 end
 
