@@ -206,17 +206,7 @@ local function GakHideScoreboardNames()
 	end
 end
 
-local function GakZenCenterWidgetFrame(frame)
-	if frame.LeftBar then
-		GakHideFrame(frame.LeftBar.Icon)
-		GakHideFrame(frame.RightBar.Icon)
-	end
-
-	-- Hide win/loss screen (has win count on it).
-	if IsActiveBattlefieldArena() and EventToastManagerFrame then
-		GakHideFrame(EventToastManagerFrame)
-	end
-
+local function GakZenCenterWidgetFramePoll(frame)
 	for i, child in ipairs({ frame:GetChildren() }) do
 		if child:GetObjectType() == "Frame" then
 			if child.LeftBar then
@@ -250,6 +240,23 @@ local function GakZenCenterWidgetFrame(frame)
 			end
 		end
 	end
+end
+
+local function GakZenCenterWidgetFrame(frame)
+	if frame.LeftBar then
+		GakHideFrame(frame.LeftBar.Icon)
+		GakHideFrame(frame.RightBar.Icon)
+	end
+
+	-- Hide win/loss screen (has win count on it).
+	if IsActiveBattlefieldArena() and EventToastManagerFrame then
+		GakHideFrame(EventToastManagerFrame)
+	end
+
+	GakZenCenterWidgetFramePoll(frame)
+	GakHookFrame(frame, "OnUpdate", function()
+		GakZenCenterWidgetFramePoll(frame)
+	end)
 end
 
 local function GakZenDelayed()
