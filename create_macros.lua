@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=2e61582ecd193ca2cbf570c19b7d8872
+-- hash=02be7fc653f794897dd7ab120855d445
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -465,13 +465,16 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Zen Spheres]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Sheilun's Gift]], 1)
 		CreateMacro("harm", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyenemy] Zen Spheres]], 1)
 		CreateMacro("help", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyfriend] Zen Spheres]], 1)
-		print("Created 12", select(1, UnitClass("player")), "macros.")
+		print("Created 13", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "PALADIN" then

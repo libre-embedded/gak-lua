@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=c0e7b7c900a5f1cb7a87caa531fe73af
+    hash=da5d16e84c6042c377ce444cd2f9d4ec
     =====================================
 -->
 
@@ -72,7 +72,7 @@ Shared | `12`
 Demonhunter | `5`
 Priest | `21`
 Rogue | `7`
-Monk | `12`
+Monk | `13`
 Warrior | `1`
 Warlock | `12`
 Evoker | `12`

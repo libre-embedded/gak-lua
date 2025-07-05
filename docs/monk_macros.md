@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=b9b1920434fe590d69499f9f3d3bdd36
+    hash=55a455766cad22bbef79f43b98a5310d
     =====================================
 -->
 
@@ -96,6 +96,15 @@ self
 ```
 #showtooltip
 /cast [@player] Zen Spheres
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Sheilun's Gift
 ```
 
 ---
