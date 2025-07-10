@@ -206,6 +206,26 @@ local function GakHideScoreboardNames()
 	end
 end
 
+local function GakHideCenterWidgetTextFrames(frame)
+	if frame.Text then
+		local data = frame.Text:GetText()
+		if
+			string.find(data, "Wins")
+			or string.find(data, "Round")
+			or string.find(data, "Remaining")
+		then
+			GakHideFrame(frame.Text)
+		end
+
+		GakHookFrame(frame, "OnUpdate", function()
+			GakHideCenterWidgetTextFrames(frame)
+		end)
+		GakHookFrame(frame, "OnShow", function()
+			GakHideCenterWidgetTextFrames(frame)
+		end)
+	end
+end
+
 local function GakZenCenterWidgetFramePoll(frame)
 	for i, child in ipairs({ frame:GetChildren() }) do
 		if child:GetObjectType() == "Frame" then
@@ -228,16 +248,7 @@ local function GakZenCenterWidgetFramePoll(frame)
 			end
 
 			-- Hide solo shuffle round and wins.
-			if child.Text then
-				local data = child.Text:GetText()
-				if
-					string.find(data, "Wins")
-					or string.find(data, "Round")
-					or string.find(data, "Remaining")
-				then
-					GakHideFrame(child.Text)
-				end
-			end
+			GakHideCenterWidgetTextFrames(child)
 		end
 	end
 end
@@ -253,27 +264,35 @@ local function GakZenCenterWidgetFrame(frame)
 		GakHideFrame(EventToastManagerFrame)
 	end
 
+	-- need to run this on an event (arena match start?)
 	GakZenCenterWidgetFramePoll(frame)
 	GakHookFrame(frame, "OnUpdate", function()
 		GakZenCenterWidgetFramePoll(frame)
 	end)
+	GakHookFrame(frame, "OnShow", function()
+		GakZenCenterWidgetFramePoll(frame)
+	end)
+end
+
+GakEventHandlers["ARENA_OPPONENT_UPDATE"] = function()
+	-- Hide alliance and horde emblems (BGs).
+	if UIWidgetTopCenterContainerFrame then
+		GakZenCenterWidgetFrame(UIWidgetTopCenterContainerFrame)
+	end
 end
 
 local function GakZenDelayed()
 	GakZenBBF()
 
-	-- Handle the battlefield map frame.
-	if not BattlefieldMapFrame and not IsActiveBattlefieldArena() then
-		-- Turn map on.
+	_, instanceType = IsInInstance()
+	showMap = not IsActiveBattlefieldArena() and instanceType == "pvp"
+
+	if not BattlefieldMapFrame and showMap then
 		ToggleBattlefieldMap()
 	end
+
 	if BattlefieldMapFrame then
-		if IsActiveBattlefieldArena() then
-			if BattlefieldMapFrame:IsShown() then
-				-- Turn map off.
-				ToggleBattlefieldMap()
-			end
-		else
+		if showMap then
 			GakHookFrame(
 				BattlefieldMapFrame,
 				"OnShow",
@@ -286,13 +305,45 @@ local function GakZenDelayed()
 			end
 
 			pcall(GakBattlefieldMapFrameZoomer)
+		else
+			-- Turn map off.
+			if BattlefieldMapFrame:IsShown() then
+				ToggleBattlefieldMap()
+			end
 		end
 	end
 
-	-- Hide alliance and horde emblems (BGs).
-	if UIWidgetTopCenterContainerFrame then
-		GakZenCenterWidgetFrame(UIWidgetTopCenterContainerFrame)
+	GakEventHandlers["ARENA_OPPONENT_UPDATE"]()
+end
+
+local function GakZenPopups()
+	inInstance, instanceType = IsInInstance()
+
+	-- Only hide popup text in pvp.
+	if instanceType ~= "pvp" then
+		return
 	end
+
+	GakHideFrame(StaticPopup1.text)
+	GakHideFrame(StaticPopup1Button1Text)
+	GakHideFrame(StaticPopup1Button2Text)
+	GakHideFrame(StaticPopup1Button3Text)
+	GakHideFrame(StaticPopup1Button4Text)
+	GakHideFrame(StaticPopup2.text)
+	GakHideFrame(StaticPopup2Button1Text)
+	GakHideFrame(StaticPopup2Button2Text)
+	GakHideFrame(StaticPopup2Button3Text)
+	GakHideFrame(StaticPopup2Button4Text)
+	GakHideFrame(StaticPopup3.text)
+	GakHideFrame(StaticPopup3Button1Text)
+	GakHideFrame(StaticPopup3Button2Text)
+	GakHideFrame(StaticPopup3Button3Text)
+	GakHideFrame(StaticPopup3Button4Text)
+	GakHideFrame(StaticPopup4.text)
+	GakHideFrame(StaticPopup4Button1Text)
+	GakHideFrame(StaticPopup4Button2Text)
+	GakHideFrame(StaticPopup4Button3Text)
+	GakHideFrame(StaticPopup4Button4Text)
 end
 
 function GakAuditZenMode()
@@ -349,6 +400,8 @@ function GakAuditZenMode()
 		GakHideFrame(PVPScoreboardTab2.Text)
 		GakHideFrame(PVPScoreboardTab3.Text)
 	end
+
+	GakZenPopups()
 
 	-- Things with tricky dependency ordering.
 	C_Timer.After(2.0, GakZenDelayed)
