@@ -311,6 +311,9 @@ local function GakZenDelayed()
 				ToggleBattlefieldMap()
 			end
 		end
+
+		-- Hide close button.
+		GakHideFrame(BattlefieldMapFrame.BorderFrame.CloseButton)
 	end
 
 	GakEventHandlers["ARENA_OPPONENT_UPDATE"]()
@@ -318,6 +321,8 @@ end
 
 local function GakZenPopups()
 	inInstance, instanceType = IsInInstance()
+
+	GakHideFrame(GhostFrameContentsFrameText)
 
 	-- Only hide popup text in pvp.
 	if instanceType ~= "pvp" then
