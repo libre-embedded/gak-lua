@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=3a338249b12e67839a9aeb53918d12b3
+    hash=bceac07a3d60a672b815dd86a76490a5
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `84`
+Total: `90`
 
 Name | Value
 ---- | -----
@@ -29,6 +29,10 @@ enablePings | 0
 floatingCombatTextCombatDamage | 0
 floatingCombatTextCombatHealing | 0
 floatingCombatTextCombatState | 0
+floatingCombatTextPetMeleeDamage | 0
+floatingCombatTextPetSpellDamage | 0
+floatingCombatTextReactives | 0
+floatingCombatTextSpellMechanics | 0
 GamePadCameraPitchSpeed | 2.0
 GamePadCameraYawSpeed | 3.0
 GamePadCursorAutoDisableSticks | 1
@@ -93,8 +97,10 @@ test_cameraHeadMovementStrength | 0
 test_cameraOverShoulder | 0
 test_cameraTargetFocusEnemyEnable | 0
 test_cameraTargetFocusInteractEnable | 0
+threatWorldText | 0
 UnitNameInteractiveNPC | 1
 UnitNameNPC | 0
 UnitNameOwn | 0
 UnitNamePlayerGuild | 0
 UnitNamePlayerPVPTitle | 0
+WorldTextScale | 0

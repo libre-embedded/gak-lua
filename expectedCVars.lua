@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=861c3bec0581a1effefe3f728861056a
+-- hash=0cc7d12a22b0f2aef621e936a3282ce5
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -19,6 +19,10 @@ expectedCVars["enablePings"] = 0
 expectedCVars["floatingCombatTextCombatDamage"] = 0
 expectedCVars["floatingCombatTextCombatHealing"] = 0
 expectedCVars["floatingCombatTextCombatState"] = 0
+expectedCVars["floatingCombatTextPetMeleeDamage"] = 0
+expectedCVars["floatingCombatTextPetSpellDamage"] = 0
+expectedCVars["floatingCombatTextReactives"] = 0
+expectedCVars["floatingCombatTextSpellMechanics"] = 0
 expectedCVars["GamePadCameraPitchSpeed"] = 2.0
 expectedCVars["GamePadCameraYawSpeed"] = 3.0
 expectedCVars["GamePadCursorAutoDisableSticks"] = 1
@@ -83,8 +87,10 @@ expectedCVars["test_cameraHeadMovementStrength"] = 0
 expectedCVars["test_cameraOverShoulder"] = 0
 expectedCVars["test_cameraTargetFocusEnemyEnable"] = 0
 expectedCVars["test_cameraTargetFocusInteractEnable"] = 0
+expectedCVars["threatWorldText"] = 0
 expectedCVars["UnitNameInteractiveNPC"] = 1
 expectedCVars["UnitNameNPC"] = 0
 expectedCVars["UnitNameOwn"] = 0
 expectedCVars["UnitNamePlayerGuild"] = 0
 expectedCVars["UnitNamePlayerPVPTitle"] = 0
+expectedCVars["WorldTextScale"] = 0
