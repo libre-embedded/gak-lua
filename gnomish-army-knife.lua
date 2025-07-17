@@ -1,6 +1,12 @@
 -- https://wowprogramming.com/docs/api_categories.html
 -- |cAARRGGBB
 
+-- disable names and honorable kill popup
+UNIT_NAME_FONT = "Interface\\AddOns\\gnomish-army-knife\\AdobeBlank.ttf"
+DAMAGE_TEXT_FONT = UNIT_NAME_FONT
+-- not sure what this affects
+-- STANDARD_TEXT_FONT = UNIT_NAME_FONT
+
 -- Turn on combat logging (all telemetry on by default, avoid race
 -- conditions).
 LoggingCombat(true)

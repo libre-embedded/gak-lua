@@ -323,6 +323,7 @@ local function GakZenPopups()
 	inInstance, instanceType = IsInInstance()
 
 	GakHideFrame(GhostFrameContentsFrameText)
+	GakHideFrame(SubZoneTextString)
 
 	-- Only hide popup text in pvp.
 	if instanceType ~= "pvp" then
