@@ -305,6 +305,16 @@ local function GakZenDelayed()
 	end
 
 	if BattlefieldMapFrame then
+		-- Set position.
+		local width = GetPhysicalScreenSize()
+		BattlefieldMapFrame:SetPoint(
+			"TOPLEFT",
+			"UIParent",
+			"TOPLEFT",
+			(width / 2) + 65,
+			-15
+		)
+
 		if showMap then
 			GakHookFrame(
 				BattlefieldMapFrame,
