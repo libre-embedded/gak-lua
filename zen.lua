@@ -321,13 +321,18 @@ local function GakZenDelayed()
 	end
 
 	if BattlefieldMapFrame then
+
 		-- Set position and alpha.
 		local width = GetPhysicalScreenSize()
+		local x_offset = 65
+		if width == 3440 then
+			x_offset = x_offset + 140
+		end
 		BattlefieldMapFrame:SetPoint(
 			"TOPLEFT",
 			"UIParent",
 			"TOPLEFT",
-			(width / 2) + 65,
+			(width / 2) + x_offset,
 			-15
 		)
 		BattlefieldMapOptions.opacity = 0.25
