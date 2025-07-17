@@ -329,6 +329,8 @@ local function GakZenPopups()
 		return
 	end
 
+	GakHideFrame(RaidBossEmoteFrame)
+
 	GakHideFrame(StaticPopup1.text)
 	GakHideFrame(StaticPopup1Button1Text)
 	GakHideFrame(StaticPopup1Button2Text)
