@@ -129,6 +129,18 @@ local function GakZenBBF()
 	end
 end
 
+GakZoomLevels = {
+	["Warsong Gulch"] = 0,
+	["Twin Peaks"] = 0,
+	["Temple of Kotmogu"] = 0,
+	["Eye of the Storm"] = 0,
+	["Silvershard Mines"] = 0,
+	["Battle for Gilneas"] = 0,
+	["Arathi Basin"] = 0,
+	["Deepwind Gorge"] = 0,
+	["Deephaul Ravine"] = 0,
+}
+
 local function GakBattlefieldMapFrameZoomer()
 	local continue = true
 
@@ -141,21 +153,14 @@ local function GakBattlefieldMapFrameZoomer()
 		end
 	end
 
-	if continue and pcall(BattlefieldMapFrame.ZoomIn, BattlefieldMapFrame) then
-		print("BattlefieldMapFrame:ZoomIn()")
-
-		-- on some maps (arathi basin clone one) one zoom level cuts off
-		-- the nodes on the map
-		-- warsong gulch also bad
-		-- could probably check if the zoom value is
+	-- Perform zone-specific zoom.
+	local name = GetInstanceInfo()
+	if GakZoomLevels[name] ~= nil then
 		print(
-			"battlefield map zoom percent:",
-			BattlefieldMapFrame:GetCanvasZoomPercent()
+			"Zooming " .. GakZoomLevels[name] .. " levels for " .. name .. "."
 		)
-		if BattlefieldMapFrame:GetCanvasZoomPercent() >= 0.3 then
-			if pcall(BattlefieldMapFrame.ZoomOut, BattlefieldMapFrame) then
-				print("BattlefieldMapFrame:ZoomOut()")
-			end
+		for i = 1, GakZoomLevels[name] do
+			pcall(BattlefieldMapFrame.ZoomIn, BattlefieldMapFrame)
 		end
 	end
 end
@@ -170,9 +175,13 @@ local function GakHideMatchResultsNames()
 		for i, parent in ipairs({
 			PVPMatchResults.content.scrollBox.ScrollTarget:GetChildren(),
 		}) do
-			for j, child in ipairs({ parent:GetChildren() }) do
-				if j == 3 and child.text then
-					GakHideFrame(child.text)
+			-- Only initialize name hiding for rows once.
+			if not parent.GakInit then
+				for j, child in ipairs({ parent:GetChildren() }) do
+					if j == 3 and child.text then
+						GakHideFrame(child.text)
+						parent.GakInit = true
+					end
 				end
 			end
 		end
@@ -197,9 +206,13 @@ local function GakHideScoreboardNames()
 		for i, parent in ipairs({
 			PVPMatchScoreboard.Content.ScrollBox.ScrollTarget:GetChildren(),
 		}) do
-			for j, child in ipairs({ parent:GetChildren() }) do
-				if j == 3 and child:IsShown() then
-					GakHideFrame(child)
+			-- Only initialize name hiding for rows once.
+			if not parent.GakInit then
+				for j, child in ipairs({ parent:GetChildren() }) do
+					if j == 3 and child:IsShown() then
+						GakHideFrame(child)
+						parent.GakInit = true
+					end
 				end
 			end
 		end
@@ -328,6 +341,10 @@ local function GakZenPopups()
 	-- Only hide popup text in pvp.
 	if instanceType ~= "pvp" then
 		return
+	end
+
+	if not ObjectiveTrackerFrame.isCollapsed then
+		ObjectiveTrackerFrame:ToggleCollapsed()
 	end
 
 	GakHideFrame(RaidBossEmoteFrame)
