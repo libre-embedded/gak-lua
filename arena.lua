@@ -6,7 +6,9 @@ hooksecurefunc("CompactUnitFrame_UpdateName", function(frame)
 		-- Handle party1-4.
 		for i = 1, 4 do
 			if UnitIsUnit(frame.unit, "party" .. i) then
-				text = "p" .. i
+				-- color/texture sufficient
+				-- text = "p" .. i
+				text = i
 				pcall(function()
 					frame.name:SetTextColor(0, 1, 0)
 				end)
@@ -18,7 +20,9 @@ hooksecurefunc("CompactUnitFrame_UpdateName", function(frame)
 		if text == "" and IsActiveBattlefieldArena() then
 			for i = 1, 3 do
 				if UnitIsUnit(frame.unit, "arena" .. i) then
-					text = "a" .. i
+					-- color/texture sufficient
+					-- text = "a" .. i
+					text = i
 					pcall(function()
 						frame.name:SetTextColor(1, 0, 0)
 					end)
