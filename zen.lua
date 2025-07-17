@@ -294,6 +294,22 @@ GakEventHandlers["ARENA_OPPONENT_UPDATE"] = function()
 	end
 end
 
+local function GakAuditPopup(frame)
+	if frame:IsShown() and frame.text then
+		if
+			frame.button1
+			and frame.button1.Text
+			and frame.button1.Text:GetText() == "Accept"
+			and string.find(
+				frame.text:GetText(),
+				"experimental camera features"
+			)
+		then
+			frame.button1:Click()
+		end
+	end
+end
+
 local function GakZenDelayed()
 	GakZenBBF()
 
@@ -314,7 +330,8 @@ local function GakZenDelayed()
 			(width / 2) + 65,
 			-15
 		)
-		BattlefieldMapFrame:SetGlobalAlpha(0.7)
+		BattlefieldMapOptions.opacity = 0.25
+		BattlefieldMapFrame:RefreshAlpha()
 
 		if showMap then
 			GakHookFrame(
@@ -339,6 +356,11 @@ local function GakZenDelayed()
 		-- Hide close button.
 		GakHideFrame(BattlefieldMapFrame.BorderFrame.CloseButton)
 	end
+
+	GakAuditPopup(StaticPopup1)
+	GakAuditPopup(StaticPopup2)
+	GakAuditPopup(StaticPopup3)
+	GakAuditPopup(StaticPopup4)
 
 	GakEventHandlers["ARENA_OPPONENT_UPDATE"]()
 end
