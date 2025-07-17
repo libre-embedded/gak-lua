@@ -305,7 +305,7 @@ local function GakZenDelayed()
 	end
 
 	if BattlefieldMapFrame then
-		-- Set position.
+		-- Set position and alpha.
 		local width = GetPhysicalScreenSize()
 		BattlefieldMapFrame:SetPoint(
 			"TOPLEFT",
@@ -314,6 +314,7 @@ local function GakZenDelayed()
 			(width / 2) + 65,
 			-15
 		)
+		BattlefieldMapFrame:SetGlobalAlpha(0.7)
 
 		if showMap then
 			GakHookFrame(
