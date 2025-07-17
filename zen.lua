@@ -140,11 +140,16 @@ GakZoomLevels = {
 	["Deepwind Gorge"] = 0,
 	["Deephaul Ravine"] = 0,
 }
+GakLastZone = ""
 
 local function GakBattlefieldMapFrameZoomer()
-	local continue = true
+	local name = GetInstanceInfo()
+	if name == GakLastZone then
+		return
+	end
 
 	-- Reset zoom.
+	local continue = true
 	while continue and BattlefieldMapFrame:GetCanvasZoomPercent() > 0 do
 		if pcall(BattlefieldMapFrame.ZoomOut, BattlefieldMapFrame) then
 			print("BattlefieldMapFrame:ZoomOut()")
@@ -154,7 +159,6 @@ local function GakBattlefieldMapFrameZoomer()
 	end
 
 	-- Perform zone-specific zoom.
-	local name = GetInstanceInfo()
 	if GakZoomLevels[name] ~= nil then
 		print(
 			"Zooming " .. GakZoomLevels[name] .. " levels for " .. name .. "."
@@ -163,6 +167,8 @@ local function GakBattlefieldMapFrameZoomer()
 			pcall(BattlefieldMapFrame.ZoomIn, BattlefieldMapFrame)
 		end
 	end
+
+	GakLastZone = name
 end
 
 local function GakHideMatchResultsNames()
@@ -321,7 +327,6 @@ local function GakZenDelayed()
 	end
 
 	if BattlefieldMapFrame then
-
 		-- Set position and alpha.
 		local width = GetPhysicalScreenSize()
 		local x_offset = 65
