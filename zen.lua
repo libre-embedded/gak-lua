@@ -381,6 +381,9 @@ local function GakZenPopups()
 	GakHideFrame(GhostFrameContentsFrameText)
 	GakHideFrame(SubZoneTextString)
 
+	GakHideFrame(TimerTrackerTimer1GoTexture)
+	GakHideFrame(TimerTrackerTimer1GoTextureGlow)
+
 	-- Only hide popup text in pvp.
 	if instanceType ~= "pvp" then
 		return
