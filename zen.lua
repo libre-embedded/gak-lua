@@ -133,12 +133,12 @@ GakZoomLevels = {
 	["Warsong Gulch"] = 0,
 	["Twin Peaks"] = 0,
 	["Temple of Kotmogu"] = 0,
-	["Eye of the Storm"] = 0,
+	["Eye of the Storm"] = 3,
 	["Silvershard Mines"] = 1,
 	["Battle for Gilneas"] = 0,
-	["Arathi Basin"] = 0,
+	["Arathi Basin"] = 3,
 	["Deepwind Gorge"] = 0,
-	["Deephaul Ravine"] = 0,
+	["Deephaul Ravine"] = 1,
 }
 GakLastZone = ""
 
