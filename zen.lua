@@ -130,7 +130,7 @@ local function GakZenBBF()
 end
 
 GakZoomLevels = {
-	["Warsong Gulch"] = 0,
+	["Warsong Gulch"] = 1,
 	["Twin Peaks"] = 0,
 	["Temple of Kotmogu"] = 0,
 	["Eye of the Storm"] = 3,
