@@ -17,19 +17,45 @@ local function doesCVarMatch(key, log)
 	return result
 end
 
+GakFriendlyNameplateStatus =
+	GakBackdropFrame("GakFriendlyNameplateStatus", PlayerFrame)
+GakFriendlyNameplateStatus:SetPoint(
+	"BOTTOMLEFT",
+	PlayerFrame,
+	"BOTTOMRIGHT",
+	-20,
+	26
+)
+GakFriendlyNameplateStatus:SetSize(24, 24)
+GakFriendlyNameplateStatus:SetBackdropBorderColor(0.33, 1, 0.33, 0.75)
+GakFriendlyNameplateStatus:Show()
+
+GakEnemyNameplateStatus =
+	GakBackdropFrame("GakFriendlyNameplateStatus", PlayerFrame)
+GakEnemyNameplateStatus:SetPoint(
+	"BOTTOMLEFT",
+	GakFriendlyNameplateStatus,
+	"TOPLEFT"
+)
+GakEnemyNameplateStatus:SetSize(24, 24)
+GakEnemyNameplateStatus:SetBackdropBorderColor(1, 0.33, 0.33, 0.75)
+GakEnemyNameplateStatus:Show()
+
 local function GakFriendlyNameplateState(value)
+	local frame = GakFriendlyNameplateStatus
 	if value == "1" or value == 1 then
-		print("friends shown")
+		frame:SetBackdropColor(0.33, 1, 0.33, 0.75)
 	else
-		print("friends hidden")
+		frame:SetBackdropColor(0, 0, 0, 0)
 	end
 end
 
 local function GakEnemyNameplateState(value)
+	local frame = GakEnemyNameplateStatus
 	if value == "1" or value == 1 then
-		print("enemies shown")
+		frame:SetBackdropColor(1, 0.33, 0.33, 0.75)
 	else
-		print("enemies hidden")
+		frame:SetBackdropColor(0, 0, 0, 0)
 	end
 end
 

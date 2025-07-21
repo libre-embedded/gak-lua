@@ -9,7 +9,7 @@ end
 
 GakFrameManager = GakTargetFrameManager:new({})
 
-local function GakBackdropFrame(name, parent)
+function GakBackdropFrame(name, parent)
 	local frame = CreateFrame("Frame", name, parent, "BackdropTemplate")
 	frame:SetBackdrop({
 		bgFile = "Interface/Tooltips/UI-Tooltip-Background",
