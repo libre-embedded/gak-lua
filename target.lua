@@ -9,60 +9,57 @@ end
 
 GakFrameManager = GakTargetFrameManager:new({})
 
-local function centeredFont(frame)
-	local font = frame:CreateFontString(nil, "OVERLAY", "GameTooltipText")
-	font:SetPoint("CENTER", frame)
-	return font
+local function GakBackdropFrame(name, parent)
+	local frame = CreateFrame("Frame", name, parent, "BackdropTemplate")
+	frame:SetBackdrop({
+		bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+		edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+		edgeSize = 16,
+		insets = { left = 4, right = 4, top = 4, bottom = 4 },
+	})
+	frame:SetBackdropColor(0, 0, 0, 0)
+	frame:Hide()
+	return frame
 end
 
 function GakTargetFrameManager:setupFriendFrames(parent)
-	local frame = CreateFrame("Frame", "GakSoftFriend", parent)
+	local frame = GakBackdropFrame("GakSoftFriend", parent)
 	frame:SetPoint("BOTTOMLEFT", parent, "TOPLEFT")
-
 	frame:SetSize(parent:GetWidth() / 2, parent:GetHeight())
-	frame.tex = frame:CreateTexture()
-	frame.tex:SetAllPoints()
-	self:setFriendTexture(frame.tex)
-	frame:Hide()
+
+	-- SOFT FRIEND
+	frame:SetBackdropBorderColor(0.33, 1, 0.33, GakAlpha)
+
 	self.softFriendFrame = frame
-	self.softFriendText = centeredFont(frame)
 
-	local frame =
-		CreateFrame("Frame", "GakLockedFriend", parent, "GlowBoxTemplate")
+	local frame = GakBackdropFrame("GakLockedFriend", parent)
 	frame:SetPoint("BOTTOMLEFT", parent, "TOPLEFT")
-
 	frame:SetSize(parent:GetWidth() / 2, parent:GetHeight())
-	frame.tex = frame:CreateTexture()
-	frame.tex:SetAllPoints()
-	self:setFriendTexture(frame.tex)
-	frame:Hide()
+
+	-- LOCKED FRIEND
+	frame:SetBackdropBorderColor(0.33, 1, 0.33)
+
 	self.lockedFriendFrame = frame
-	self.lockedFriendText = centeredFont(frame)
 end
 
 function GakTargetFrameManager:setupEnemyFrames(parent)
-	local frame = CreateFrame("Frame", "GakSoftEnemy", parent)
+	local frame = GakBackdropFrame("GakSoftEnemy", parent)
 	frame:SetPoint("BOTTOMLEFT", parent, "TOP", parent:GetWidth() / 2)
-
 	frame:SetSize(parent:GetWidth() / 2, parent:GetHeight())
-	frame.tex = frame:CreateTexture()
-	frame.tex:SetAllPoints()
-	self:setEnemyTexture(frame.tex)
-	frame:Hide()
+
+	-- SOFT ENEMY
+	frame:SetBackdropBorderColor(1, 0.33, 0.33, GakAlpha)
+
 	self.softEnemyFrame = frame
-	self.softEnemyText = centeredFont(frame)
 
-	local frame =
-		CreateFrame("Frame", "GakLockedEnemy", parent, "GlowBoxTemplate")
+	local frame = GakBackdropFrame("GakLockedEnemy", parent)
 	frame:SetPoint("BOTTOMLEFT", parent, "TOP", parent:GetWidth() / 2)
-
 	frame:SetSize(parent:GetWidth() / 2, parent:GetHeight())
-	frame.tex = frame:CreateTexture()
-	frame.tex:SetAllPoints()
-	self:setEnemyTexture(frame.tex)
-	frame:Hide()
+
+	-- LOCKED ENEMY
+	frame:SetBackdropBorderColor(1, 0.33, 0.33)
+
 	self.lockedEnemyFrame = frame
-	self.lockedEnemyText = centeredFont(frame)
 end
 
 function GakTargetFrameManager:setupFrames(parent)
@@ -70,11 +67,9 @@ function GakTargetFrameManager:setupFrames(parent)
 	self:setupEnemyFrames(parent)
 
 	-- State updated by events.
-	self.targetText = nil
 	self.targetIsFriend = false
-	-- self.targetIsEnemy = false
-	self.softFriendString = nil
-	self.softEnemyString = nil
+
+	self.targetExists = false
 
 	-- Arbitrary (used for event registration).
 	local frame = self.lockedEnemyFrame
@@ -95,39 +90,65 @@ function GakTargetFrameManager:setupFrames(parent)
 	frame:RegisterEvent("PLAYER_SOFT_FRIEND_CHANGED")
 end
 
+local function GakFriendColor(unitClass)
+	local result = { 0.33, 1, 0.33, GakAlpha }
+	local color = C_ClassColor.GetClassColor(unitClass)
+	if color then
+		result = { color:GetRGB() }
+		result[4] = 1
+	end
+	return result
+end
+
+local function GakEnemyColor(unitClass)
+	local result = { 1, 0.33, 0.33, GakAlpha }
+	local color = C_ClassColor.GetClassColor(unitClass)
+	if color then
+		result = { color:GetRGB() }
+		result[4] = 1
+	end
+	return result
+end
+
 function GakTargetFrameManager:handleTargetChanged()
-	if UnitExists("target") then
+	self.targetExists = UnitExists("target")
+	if self.targetExists then
 		self.targetIsFriend = UnitIsFriend("player", "target")
-		-- self.targetIsEnemy = UnitIsEnemy("player", "target")
-		-- https://addonstudio.org/wiki/WoW:API_UnitIsPlayer ?
-		self.targetText = UnitClass("target")
-	else
-		self.targetText = nil
+		local frame = nil
+		local color = nil
+		if self.targetIsFriend then
+			frame = self.lockedFriendFrame
+			color = GakFriendColor(UnitClass("target"))
+		else
+			frame = self.lockedEnemyFrame
+			color = GakEnemyColor(UnitClass("target"))
+		end
+		frame:SetBackdropColor(color[1], color[2], color[3], color[4])
 	end
 end
 
 function GakTargetFrameManager:handleSoftEnemyChanged()
+	local frame = self.softEnemyFrame
 	if UnitExists("softenemy") then
-		self.softEnemyString = UnitClass("softenemy")
+		local color = GakEnemyColor(UnitClass("softenemy"))
+		frame:SetBackdropColor(color[1], color[2], color[3], color[4])
+		frame:SetBackdropBorderColor(1, 0.33, 0.33, GakAlpha)
 	else
-		self.softEnemyString = nil
+		frame:SetBackdropColor(0, 0, 0, 0)
+		frame:SetBackdropBorderColor(0, 0, 0, 0)
 	end
 end
 
 function GakTargetFrameManager:handleSoftFriendChanged()
+	local frame = self.softFriendFrame
 	if UnitExists("softfriend") then
-		self.softFriendString = UnitClass("softfriend")
+		local color = GakFriendColor(UnitClass("softfriend"))
+		frame:SetBackdropColor(color[1], color[2], color[3], color[4])
+		frame:SetBackdropBorderColor(0.33, 1, 0.33, GakAlpha)
 	else
-		self.softFriendString = nil
+		frame:SetBackdropColor(0, 0, 0, 0)
+		frame:SetBackdropBorderColor(0, 0, 0, 0)
 	end
-end
-
-function GakTargetFrameManager:setFriendTexture(tex)
-	tex:SetColorTexture(0.33, 1, 0.33, 0.33)
-end
-
-function GakTargetFrameManager:setEnemyTexture(tex)
-	tex:SetColorTexture(1, 0.33, 0.33, 0.33)
 end
 
 function GakTargetFrameManager:draw()
@@ -138,23 +159,19 @@ function GakTargetFrameManager:draw()
 	self.lockedEnemyFrame:Hide()
 
 	-- Check locked target.
-	if self.targetText then
+	if self.targetExists then
 		if self.targetIsFriend then
-			self.lockedFriendText:SetText(self.targetText)
 			self.lockedFriendFrame:Show()
 		else
-			self.lockedEnemyText:SetText(self.targetText)
 			self.lockedEnemyFrame:Show()
 		end
 	end
 
 	-- Show soft targets.
-	if not self.lockedFriendFrame:IsShown() and self.softFriendString then
-		self.softFriendText:SetText(self.softFriendString)
+	if not self.lockedFriendFrame:IsShown() then
 		self.softFriendFrame:Show()
 	end
-	if not self.lockedEnemyFrame:IsShown() and self.softEnemyString then
-		self.softEnemyText:SetText(self.softEnemyString)
+	if not self.lockedEnemyFrame:IsShown() then
 		self.softEnemyFrame:Show()
 	end
 end

@@ -17,6 +17,30 @@ local function doesCVarMatch(key, log)
 	return result
 end
 
+local function GakFriendlyNameplateState(value)
+	if value == "1" or value == 1 then
+		print("friends shown")
+	else
+		print("friends hidden")
+	end
+end
+
+local function GakEnemyNameplateState(value)
+	if value == "1" or value == 1 then
+		print("enemies shown")
+	else
+		print("enemies hidden")
+	end
+end
+
+GakEventHandlers["CVAR_UPDATE"] = function(_, name, value)
+	if name == "nameplateShowFriends" then
+		GakFriendlyNameplateState(value)
+	elseif name == "nameplateShowEnemies" then
+		GakEnemyNameplateState(value)
+	end
+end
+
 function GakSetCVars()
 	local count = 0
 
@@ -66,6 +90,9 @@ function GakSetCVars()
 			end
 		end
 	end
+
+	GakFriendlyNameplateState(toCheck["nameplateShowFriends"])
+	GakEnemyNameplateState(toCheck["nameplateShowEnemies"])
 
 	if count > 0 then
 		print("Attempted", count, "variable updates.")
