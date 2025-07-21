@@ -99,8 +99,8 @@ function GakSetCVars()
 		toCheck["nameplateShowEnemies"] = 1
 
 		-- For p1-4 and a1-3 text.
-		toCheck["UnitNameFriendlyPlayerName"] = 1
-		toCheck["UnitNameEnemyPlayerName"] = 1
+		-- toCheck["UnitNameFriendlyPlayerName"] = 1
+		-- toCheck["UnitNameEnemyPlayerName"] = 1
 	end
 
 	-- Need to also enable p1-4 for group content (how to condition this?)

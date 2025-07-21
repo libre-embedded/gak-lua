@@ -8,7 +8,7 @@ hooksecurefunc("CompactUnitFrame_UpdateName", function(frame)
 			if UnitIsUnit(frame.unit, "party" .. i) then
 				-- color/texture sufficient
 				-- text = "p" .. i
-				text = i
+				-- text = i
 				pcall(function()
 					frame.name:SetTextColor(0, 1, 0)
 				end)
@@ -22,7 +22,7 @@ hooksecurefunc("CompactUnitFrame_UpdateName", function(frame)
 				if UnitIsUnit(frame.unit, "arena" .. i) then
 					-- color/texture sufficient
 					-- text = "a" .. i
-					text = i
+					-- text = i
 					pcall(function()
 						frame.name:SetTextColor(1, 0, 0)
 					end)

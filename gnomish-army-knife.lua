@@ -81,8 +81,7 @@ local function GakRuntimeInit()
 	-- Hide some elements.
 	GakAuditZenMode()
 
-	-- Show framerate while auditing recording setup.
-	-- FramerateFrame:Show()
+	FramerateFrame:Show()
 end
 
 local function GakSetAll()
