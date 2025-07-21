@@ -132,7 +132,7 @@ end
 GakZoomLevels = {
 	["Warsong Gulch"] = 1,
 	["Twin Peaks"] = 0,
-	["Temple of Kotmogu"] = 0,
+	["Temple of Kotmogu"] = 3,
 	["Eye of the Storm"] = 3,
 	["Silvershard Mines"] = 1,
 	["Battle for Gilneas"] = 0,
