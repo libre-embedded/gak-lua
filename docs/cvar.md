@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=bcc3303b3e4f565ac6b399b4d6fc2236
+    hash=6a572e4ad0b0613ce115f27ab71194d9
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `92`
+Total: `93`
 
 Name | Value
 ---- | -----
@@ -72,6 +72,7 @@ raidFramesHealthText | `none`
 raidOptionDisplayPets | 1
 rotateMinimap | 1
 scriptErrors | 1
+showHonorAsExperience | 0
 showPartyPets | 1
 showPingsInChat | 0
 showToastWindow | 0
