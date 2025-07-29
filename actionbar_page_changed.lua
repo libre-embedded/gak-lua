@@ -6,10 +6,14 @@ local function handleSetColor(frame)
 	end
 end
 
+function GakIsSmallScreen()
+	return GetPhysicalScreenSize() < 1920
+end
+
 GakHelpHarmFrame = nil
 
 function GakHelpHarmBarInit(_)
-	if not GakHelpHarmFrame then
+	if not GakHelpHarmFrame and not GakIsSmallScreen() then
 		-- Experimenting with anchor point.
 		-- local parent = MultiBarBottomLeft
 		local parent = MainMenuBar

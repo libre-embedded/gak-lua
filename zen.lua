@@ -395,6 +395,8 @@ local function GakZenPopups()
 		ObjectiveTrackerFrame:ToggleCollapsed()
 	end
 
+	GakHideFrame(MainStatusTrackingBarContainer)
+
 	GakHideFrame(RaidBossEmoteFrame)
 
 	GakHideFrame(StaticPopup1.text)
@@ -503,7 +505,7 @@ function GakZenInit(frame)
 	GakCreateButton(frame, "Clear Raid Targets", 3, 6, GakClearRaidTargets)
 
 	GakCreateButton(frame, "Hide Chat", 3, 7, GakHideChat)
-	if GetPhysicalScreenSize() < 1920 then
+	if GakIsSmallScreen() then
 		GakHideChat()
 	end
 

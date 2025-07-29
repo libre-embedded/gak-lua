@@ -177,5 +177,7 @@ function GakTargetFrameManager:draw()
 end
 
 function GakTargetInfoInit(_)
-	GakFrameManager:setupFrames(GakHelpHarmFrame)
+	if GakHelpHarmFrame then
+		GakFrameManager:setupFrames(GakHelpHarmFrame)
+	end
 end
