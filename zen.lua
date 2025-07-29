@@ -332,6 +332,8 @@ local function GakZenDelayed()
 		local x_offset = 65
 		if width == 3440 then
 			x_offset = x_offset + 140
+		elseif width == 1280 then
+			x_offset = x_offset + 265
 		end
 		BattlefieldMapFrame:SetPoint(
 			"TOPLEFT",
