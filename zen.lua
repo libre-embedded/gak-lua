@@ -417,6 +417,12 @@ local function GakZenPopups()
 	GakHideFrame(StaticPopup4Button4Text)
 end
 
+local function GakHideChat()
+	GakHideFrame(ChatFrame1)
+	GakHideFrame(ChatFrame1Tab)
+	GakHideFrame(ChatFrame2Tab)
+end
+
 function GakAuditZenMode()
 	-- Hide player-portrait name and level.
 	PlayerName:Hide()
@@ -493,6 +499,11 @@ function GakZenInit(frame)
 
 	GakCreateButton(frame, "Set Raid Targets", 2, 6, GakSetRaidTargets)
 	GakCreateButton(frame, "Clear Raid Targets", 3, 6, GakClearRaidTargets)
+
+	GakCreateButton(frame, "Hide Chat", 3, 7, GakHideChat)
+	if GetPhysicalScreenSize() < 1080 then
+		GakHideChat()
+	end
 
 	-- Should eventually auto-hide this in ranked pvp.
 	GakCreateButton(frame, "Toggle Objectives", 1, 6, function()
