@@ -501,7 +501,7 @@ function GakZenInit(frame)
 	GakCreateButton(frame, "Clear Raid Targets", 3, 6, GakClearRaidTargets)
 
 	GakCreateButton(frame, "Hide Chat", 3, 7, GakHideChat)
-	if GetPhysicalScreenSize() < 1080 then
+	if GetPhysicalScreenSize() < 1920 then
 		GakHideChat()
 	end
 
