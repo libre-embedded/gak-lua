@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=6a572e4ad0b0613ce115f27ab71194d9
+    hash=68e6ceff8ac51ceaaed3321a731a83a3
     =====================================
 -->
 
@@ -59,7 +59,7 @@ nameplateSelfScale | 1.0
 nameplateSelfTopInset | 0.5
 nameplateShowDebuffsOnFriendly | 1
 nameplateShowFriendlyBuffs | 1
-nameplateShowFriendlyTotems | 1
+nameplateShowFriendlyTotems | 0
 nameplateShowPersonalCooldowns | 1
 nameplateShowSelf | 1
 occludedSilhouettePlayer | 1
