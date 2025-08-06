@@ -7,7 +7,7 @@ local function handleSetColor(frame)
 end
 
 function GakIsSmallScreen()
-	return GetPhysicalScreenSize() < 1920
+	return GetPhysicalScreenSize() <= 2560
 end
 
 GakHelpHarmFrame = nil
