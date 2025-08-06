@@ -301,17 +301,15 @@ GakEventHandlers["ARENA_OPPONENT_UPDATE"] = function()
 end
 
 local function GakAuditPopup(frame)
-	if frame:IsShown() and frame.text then
+	local button = frame:GetButton1()
+	if button and frame:IsShown() then
 		if
-			frame.button1
-			and frame.button1.Text
-			and frame.button1.Text:GetText() == "Accept"
-			and string.find(
-				frame.text:GetText(),
-				"experimental camera features"
-			)
+			button
+			and button.Text
+			and button.Text:GetText() == "Accept"
+			and string.find(frame:GetText(), "experimental camera features")
 		then
-			frame.button1:Click()
+			button:Click()
 		end
 	end
 end
@@ -399,22 +397,22 @@ local function GakZenPopups()
 
 	GakHideFrame(RaidBossEmoteFrame)
 
-	GakHideFrame(StaticPopup1.text)
+	GakHideFrame(StaticPopup1Text)
 	GakHideFrame(StaticPopup1Button1Text)
 	GakHideFrame(StaticPopup1Button2Text)
 	GakHideFrame(StaticPopup1Button3Text)
 	GakHideFrame(StaticPopup1Button4Text)
-	GakHideFrame(StaticPopup2.text)
+	GakHideFrame(StaticPopup2Text)
 	GakHideFrame(StaticPopup2Button1Text)
 	GakHideFrame(StaticPopup2Button2Text)
 	GakHideFrame(StaticPopup2Button3Text)
 	GakHideFrame(StaticPopup2Button4Text)
-	GakHideFrame(StaticPopup3.text)
+	GakHideFrame(StaticPopup3Text)
 	GakHideFrame(StaticPopup3Button1Text)
 	GakHideFrame(StaticPopup3Button2Text)
 	GakHideFrame(StaticPopup3Button3Text)
 	GakHideFrame(StaticPopup3Button4Text)
-	GakHideFrame(StaticPopup4.text)
+	GakHideFrame(StaticPopup4Text)
 	GakHideFrame(StaticPopup4Button1Text)
 	GakHideFrame(StaticPopup4Button2Text)
 	GakHideFrame(StaticPopup4Button3Text)
