@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=68e6ceff8ac51ceaaed3321a731a83a3
+    hash=ad733672b9de5ef62944cb64df720f39
     =====================================
 -->
 
@@ -70,7 +70,7 @@ raidFramesDisplayClassColor | 1
 raidFramesDisplayPowerBars | 1
 raidFramesHealthText | `none`
 raidOptionDisplayPets | 1
-rotateMinimap | 1
+rotateMinimap | 0
 scriptErrors | 1
 showHonorAsExperience | 0
 showPartyPets | 1

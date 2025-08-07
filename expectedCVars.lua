@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=14d7c550735dfed12d17d6029e8b0a69
+-- hash=8fa1ce6a28e73f46fa6e3c2280dca8c4
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -60,7 +60,7 @@ expectedCVars["raidFramesDisplayClassColor"] = 1
 expectedCVars["raidFramesDisplayPowerBars"] = 1
 expectedCVars["raidFramesHealthText"] = "none"
 expectedCVars["raidOptionDisplayPets"] = 1
-expectedCVars["rotateMinimap"] = 1
+expectedCVars["rotateMinimap"] = 0
 expectedCVars["scriptErrors"] = 1
 expectedCVars["showHonorAsExperience"] = 0
 expectedCVars["showPartyPets"] = 1
