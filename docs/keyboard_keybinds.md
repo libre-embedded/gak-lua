@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=3ea2c6a0a82111718e47bdf4ee295819
+    hash=82660643445aeb76867a358e80e60b34
     =====================================
 -->
 
@@ -37,8 +37,8 @@ TARGETSCANENEMY | 4 |
 ASSISTTARGET | 4 | CTRL, SHIFT
 FRIENDNAMEPLATES | T | 
 NAMEPLATES | V | 
-TOGGLESHEATH | T | ALT
-TOGGLESHEATH | V | ALT
+MINIMAPZOOMOUT | T | ALT
+MINIMAPZOOMIN | V | ALT
 CAMERAZOOMOUT | T | SHIFT
 CAMERAZOOMIN | V | SHIFT
 TOGGLESHEATH | T | CTRL

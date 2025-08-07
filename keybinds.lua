@@ -57,6 +57,7 @@ local function auditKeybinds()
 		command, category, key1, key2 = GetBinding(i, true)
 
 		-- Useful when tweaking binds.
+		-- print(command)
 		-- print(command, key1, key2)
 
 		-- _G["BINDING_NAME_" .. command]

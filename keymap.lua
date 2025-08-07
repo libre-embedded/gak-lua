@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=66a1976604de3716f2714e3a0ba0c91a
+-- hash=83f4c795e72e1d2fd5d4d81b723a0a6a
 -- =====================================
 -- Mapping of gamepad inputs to keyboard inputs.
 keymap = {}
@@ -140,13 +140,13 @@ bindings["ASSISTTARGET"] = {
 }
 bindings["FRIENDNAMEPLATES"] = { "PADLSTICK", nil }
 bindings["NAMEPLATES"] = { "PADRSTICK", nil }
-bindings["TOGGLESHEATH"] = {
+bindings["MINIMAPZOOMOUT"] = {
 	"PADLSTICK",
 	{
 		"ALT",
 	},
 }
-bindings["TOGGLESHEATH"] = {
+bindings["MINIMAPZOOMIN"] = {
 	"PADRSTICK",
 	{
 		"ALT",
