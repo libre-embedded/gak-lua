@@ -26,7 +26,7 @@ local function clearKeyboardBinds()
 end
 
 function GakActionBarManagementInit(ui)
-	GakCreateButton(ui, "Audit Action Bars", 0, 3, function()
+	GakCreateButton(ui, "Audit Action Bars", 2, 0, function()
 		for i = 1, GAK_MAX_ACTIONBAR do
 			if GetActionInfo(i) then
 				print(i, GetActionInfo(i))
@@ -39,13 +39,13 @@ function GakActionBarManagementInit(ui)
 		end
 	end)
 
-	GakCreateButton(ui, "Set Action Bars", 1, 3, GakSetActionBars)
+	GakCreateButton(ui, "Set Action Bars", 2, 1, GakSetActionBars)
 
-	GakCreateButton(ui, "Clear Action Bars", 0, 4, GakClearActionBars)
+	GakCreateButton(ui, "Clear Action Bars", 2, 2, GakClearActionBars)
 
-	GakCreateButton(ui, "Clear Keyboard", 1, 4, clearKeyboardBinds)
+	GakCreateButton(ui, "Clear Keyboard", 1, 2, clearKeyboardBinds)
 
-	GakCreateButton(ui, "Set Shared Bars", 2, 2, GakSetGlobalActions)
-	GakCreateButton(ui, "Set Class Bars", 2, 3, GakSetClassActions)
-	GakCreateButton(ui, "Set Spec Bars", 2, 4, GakSetSpecializationActions)
+	GakCreateButton(ui, "Set Shared Bars", 2, 3, GakSetGlobalActions)
+	GakCreateButton(ui, "Set Class Bars", 2, 4, GakSetClassActions)
+	GakCreateButton(ui, "Set Spec Bars", 2, 5, GakSetSpecializationActions)
 end

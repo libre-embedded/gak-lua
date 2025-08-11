@@ -85,6 +85,6 @@ function GakSetKeybinds()
 end
 
 function GakKeybindManagementInit(ui)
-	GakCreateButton(ui, "Audit Keybinds", 0, 1, auditKeybinds)
+	GakCreateButton(ui, "Audit Keybinds", 1, 0, auditKeybinds)
 	GakCreateButton(ui, "Set Keybinds", 1, 1, GakSetKeybinds)
 end

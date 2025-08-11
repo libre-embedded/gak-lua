@@ -1,22 +1,21 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=44ebd5abbf4c38b76f7216b61578d9e2
+-- hash=4cd86ab1d993170baca051775f315d37
 -- =====================================
 function GakCreateGlobalMacros()
-	CreateMacro("13", "inv_misc_questionmark", [[
+	CreateMacro("t13", "inv_misc_questionmark", [[
 #showtooltip
 /use 13]])
-	CreateMacro("14", "inv_misc_questionmark", [[
+	CreateMacro("t14", "inv_misc_questionmark", [[
 #showtooltip
 /use 14]])
-	CreateMacro("canc", "creatureportrait_creature_iceblock", [[
+	CreateMacro("gc", "creatureportrait_creature_iceblock", [[
 /stopcasting
 /cancelaura Slow Fall
 /cancelaura Levitate
 /cancelaura Enchanted Candle
-/cancelaura Alter Time
-/cleartarget]])
+/cancelaura Alter Time]])
 	CreateMacro("dis", "ability_marksmanship", [[
 /dismount
 /cancelform]])
@@ -33,29 +32,37 @@ function GakCreateGlobalMacros()
 /use Quicksilver Sipper]])
 	CreateMacro("pet", "inv_leatherworking_70_petleash", [[
 /petdismiss]])
-	CreateMacro("z0", "inv_misc_questionmark", [[
+	CreateMacro("ffr", "inv_misc_questionmark", [[
 #showtooltip
 /cast Rake
 /changeactionbar 1]])
-	CreateMacro("z1", "inv_misc_questionmark", [[
+	CreateMacro("ffm", "inv_misc_questionmark", [[
 #showtooltip
 /cast Mangle
 /changeactionbar 1]])
-	CreateMacro("z2", "inv_misc_questionmark", [[
+	CreateMacro("ffs", "inv_misc_questionmark", [[
 #showtooltip
-/cast Skull Bash
+/cast Shred
 /changeactionbar 1]])
-	print("Created 12 global macros.")
+	CreateMacro("fav", "achievement_guildperk_mountup", [[
+/run C_MountJournal.SummonByID(0)]])
+	CreateMacro("yak", "ability_mount_travellersyakmount", [[
+/use Grand Expedition Yak]])
+	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
+/use Trader's Gilded Brutosaur]])
+	print("Created 15 global macros.")
 end
 
 local function createFirstRacialMacro()
-		CreateMacro("1", "inv_misc_questionmark", [[
+	CreateMacro("rac1", "inv_misc_questionmark", [[
 /run print("no first racial")]], true)
 end
 
 local function createSecondRacialMacro()
-		CreateMacro("2", "inv_misc_questionmark", [[
-/run print("no second racial")]], true)
+	-- May as well assume Recuperate.
+	CreateMacro("rac2", "inv_misc_questionmark", [[
+#showtooltip
+/cast Recuperate]], true)
 end
 
 function GakCreateCharacterMacros()
@@ -64,7 +71,7 @@ function GakCreateCharacterMacros()
 	local racial_macros_created = false
 
 	if our_race == "BloodElf" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Arcane Torrent]], true)
 		createSecondRacialMacro()
@@ -73,10 +80,10 @@ function GakCreateCharacterMacros()
 	end
 
 	if our_race == "Dracthyr" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Wing Buffet]], true)
-		CreateMacro("2", "inv_misc_questionmark", [[
+		CreateMacro("rac2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Soar]], true)
 		print("Created macros for '" .. our_race .. "'.")
@@ -84,10 +91,10 @@ function GakCreateCharacterMacros()
 	end
 
 	if our_race == "EarthenDwarf" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Azerite Surge]], true)
-		CreateMacro("2", "inv_misc_questionmark", [[
+		CreateMacro("rac2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Quiet Contemplation]], true)
 		print("Created macros for '" .. our_race .. "'.")
@@ -95,7 +102,7 @@ function GakCreateCharacterMacros()
 	end
 
 	if our_race == "Gnome" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Escape Artist]], true)
 		createSecondRacialMacro()
@@ -104,10 +111,10 @@ function GakCreateCharacterMacros()
 	end
 
 	if our_race == "Goblin" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Rocket Jump]], true)
-		CreateMacro("2", "inv_misc_questionmark", [[
+		CreateMacro("rac2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Rocket Barrage]], true)
 		print("Created macros for '" .. our_race .. "'.")
@@ -115,7 +122,7 @@ function GakCreateCharacterMacros()
 	end
 
 	if our_race == "HighmountainTauren" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Bull Rush]], true)
 		createSecondRacialMacro()
@@ -124,7 +131,7 @@ function GakCreateCharacterMacros()
 	end
 
 	if our_race == "NightElf" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Shadowmeld]], true)
 		createSecondRacialMacro()
@@ -133,7 +140,7 @@ function GakCreateCharacterMacros()
 	end
 
 	if our_race == "Orc" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Blood Fury]], true)
 		createSecondRacialMacro()
@@ -142,10 +149,10 @@ function GakCreateCharacterMacros()
 	end
 
 	if our_race == "Scourge" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Will of the Forsaken]], true)
-		CreateMacro("2", "inv_misc_questionmark", [[
+		CreateMacro("rac2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Cannibalize]], true)
 		print("Created macros for '" .. our_race .. "'.")
@@ -153,7 +160,7 @@ function GakCreateCharacterMacros()
 	end
 
 	if our_race == "Troll" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Berserking]], true)
 		createSecondRacialMacro()
@@ -162,10 +169,10 @@ function GakCreateCharacterMacros()
 	end
 
 	if our_race == "Undead" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Will of the Forsaken]], true)
-		CreateMacro("2", "inv_misc_questionmark", [[
+		CreateMacro("rac2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Cannibalize]], true)
 		print("Created macros for '" .. our_race .. "'.")
@@ -173,21 +180,19 @@ function GakCreateCharacterMacros()
 	end
 
 	if our_race == "VoidElf" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Spatial Rift]], true)
-		CreateMacro("2", "inv_misc_questionmark", [[
-#showtooltip
-/cast Recuperate]], true)
+		createSecondRacialMacro()
 		print("Created macros for '" .. our_race .. "'.")
 		racial_macros_created = true
 	end
 
 	if our_race == "Vulpera" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Bag of Tricks]], true)
-		CreateMacro("2", "inv_misc_questionmark", [[
+		CreateMacro("rac2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Rummage Your Bag]], true)
 		print("Created macros for '" .. our_race .. "'.")
@@ -195,10 +200,10 @@ function GakCreateCharacterMacros()
 	end
 
 	if our_race == "Worgen" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Darkflight]], true)
-		CreateMacro("2", "inv_misc_questionmark", [[
+		CreateMacro("rac2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Two Forms]], true)
 		print("Created macros for '" .. our_race .. "'.")
@@ -253,18 +258,18 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "DRUID" then
-		CreateMacro("3", "inv_misc_questionmark", [[
+		CreateMacro("trav", "inv_misc_questionmark", [[
 #showtooltip
 /cast [indoors] !Cat Form; !Travel Form]], true)
-		CreateMacro("4", "inv_misc_questionmark", [[
+		CreateMacro("prow", "inv_misc_questionmark", [[
 #showtooltip Prowl
 /cast [nocombat] !Prowl
 /changeactionbar 1]], true)
-		CreateMacro("5", "inv_misc_questionmark", [[
+		CreateMacro("cat", "inv_misc_questionmark", [[
 #showtooltip Cat Form
 /cast [noform:2] Cat Form
 /changeactionbar 1]], true)
-		CreateMacro("6", "inv_misc_questionmark", [[
+		CreateMacro("bear", "inv_misc_questionmark", [[
 #showtooltip Bear Form
 /cast [noform:1] Bear Form
 /changeactionbar 1]], true)
@@ -272,71 +277,78 @@ function GakCreateCharacterMacros()
 #showtooltip
 /cast Solar Beam
 /cast Mass Entanglement]], true)
-		CreateMacro("canc", "ability_racial_twoforms", [[
+		CreateMacro("cf", "ability_racial_twoforms", [[
 /cancelform]], true)
 		CreateMacro("flap", "inv_misc_questionmark", [[
 #showtooltip Moonkin Form
 /cast [noform:4] Moonkin Form
 /cast [form:4] Flap]], true)
-		CreateMacro("help", "inv_misc_questionmark", [[
+		CreateMacro("wch", "inv_misc_questionmark", [[
 #showtooltip Wild Charge
 /cancelform
 /cast [@anyfriend] Wild Charge]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Mark of the Wild]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("src", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Remove Corruption]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("motw", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Mark of the Wild]], true)
+		CreateMacro("slb", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Lifebloom]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("swg", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Wild Growth]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("ssm", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Swiftmend]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sog", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Overgrowth]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("srg", "inv_misc_questionmark", [[
 #showtoolip
 /cast [@player] Regrowth]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("scw", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Cenarion Ward]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sib", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Ironbark]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sngg", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player,known:Nourish] Nourish; [@player] Grove Guardians]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("suv", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Ursol's Vortex]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("seff", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Efflorescence]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sal", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Thorns]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+/cast [@player] Ancient of Lore]], true)
+		CreateMacro("sinv", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Innervate]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("srj", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Rejuvenation]], true)
-		CreateMacro("ch", "inv_misc_questionmark", [[
+		CreateMacro("sig", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Invigorate]], true)
+		CreateMacro("root", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Mass Entanglement] Mass Entanglement; Ursol's Vortex]], true)
-		CreateMacro("ch", "inv_misc_questionmark", [[
+		CreateMacro("ngg", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Nourish] Nourish; Grove Guardians]], true)
-		CreateMacro("ch", "inv_misc_questionmark", [[
+		CreateMacro("ult", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life]], true)
-		print("Created 26", select(1, UnitClass("player")), "macros.")
+		CreateMacro("ffsb", "inv_misc_questionmark", [[
+#showtooltip
+/cast Skull Bash
+/changeactionbar 1]], true)
+		print("Created 28", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "EVOKER" then
@@ -489,61 +501,73 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "PALADIN" then
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Flash of Light]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Holy Shock]], true)
-		CreateMacro("harm", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@anyenemy] Holy Shock]], true)
-		CreateMacro("help", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@anyfriend] Holy Shock]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Holy Light]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Beacon of Light]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Cleanse]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Cleanse Toxins]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Barrier of Faith]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Word of Glory]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Lay on Hands]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Blessing of Protection]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Blessing of Freedom]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Blessing of Summer]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Blessing of Sanctuary]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sfr", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Final Reckoning]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sbop", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Holy Bulwark]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+/cast [@player] Blessing of Protection]], true)
+		CreateMacro("swog", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Word of Glory]], true)
+		CreateMacro("sloh", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Lay on Hands]], true)
+		CreateMacro("sfol", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Flash of Light]], true)
+		CreateMacro("sbos", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Blessing of Sanctuary]], true)
+		CreateMacro("sbow", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Blessing of Spellwarding]], true)
-		print("Created 18", select(1, UnitClass("player")), "macros.")
+		CreateMacro("sbof", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Blessing of Freedom]], true)
+		CreateMacro("sct", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Cleanse Toxins]], true)
+		CreateMacro("rbl", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Blinding Light] Blinding Light; Repentance]], true)
+		CreateMacro("shs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Holy Shock]], true)
+		CreateMacro("ehs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyenemy] Holy Shock]], true)
+		CreateMacro("fhs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyfriend] Holy Shock]], true)
+		CreateMacro("shp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Holy Prism]], true)
+		CreateMacro("ehp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyenemy] Holy Prism]], true)
+		CreateMacro("fhp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyfriend] Holy Prism]], true)
+		CreateMacro("shl", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Holy Light]], true)
+		CreateMacro("sbol", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Beacon of Light]], true)
+		CreateMacro("sc", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Cleanse]], true)
+		CreateMacro("sboi", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Barrier of Faith]], true)
+		CreateMacro("sbom", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Blessing of Summer]], true)
+		CreateMacro("shb", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Holy Bulwark]], true)
+		print("Created 22", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "PRIEST" then

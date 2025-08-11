@@ -497,18 +497,18 @@ function GakZenInit(frame)
 	-- chat is useless game feature
 	GakDisableChat()
 
-	GakCreateButton(frame, "Audit Zen Mode", 2, 5, GakAuditZenMode)
+	GakCreateButton(frame, "Audit Zen Mode", 0, 5, GakAuditZenMode)
 
-	GakCreateButton(frame, "Set Raid Targets", 2, 6, GakSetRaidTargets)
-	GakCreateButton(frame, "Clear Raid Targets", 3, 6, GakClearRaidTargets)
+	GakCreateButton(frame, "Set Raid Targets", 4, 7, GakSetRaidTargets)
+	GakCreateButton(frame, "Clear Raid Targets", 4, 6, GakClearRaidTargets)
 
-	GakCreateButton(frame, "Hide Chat", 3, 7, GakHideChat)
+	GakCreateButton(frame, "Hide Chat", 0, 3, GakHideChat)
 	if GakIsSmallScreen() then
 		GakHideChat()
 	end
 
 	-- Should eventually auto-hide this in ranked pvp.
-	GakCreateButton(frame, "Toggle Objectives", 1, 6, function()
+	GakCreateButton(frame, "Toggle Objectives", 0, 4, function()
 		GakToggleFrame(ObjectiveTrackerFrame)
 	end)
 end

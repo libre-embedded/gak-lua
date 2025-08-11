@@ -1,4 +1,4 @@
-local buttonWidth = 120
+local buttonWidth = 130
 local buttonHeight = 40
 local headerHeight = 65
 local footerHeight = 22.5

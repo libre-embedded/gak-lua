@@ -140,6 +140,6 @@ local function auditCVars()
 end
 
 function GakCVarManagementInit(frame)
-	GakCreateButton(frame, "Audit CVar's", 0, 2, auditCVars)
-	GakCreateButton(frame, "Set CVar's", 1, 2, GakSetCVars)
+	GakCreateButton(frame, "Audit CVar's", 4, 0, auditCVars)
+	GakCreateButton(frame, "Set CVar's", 4, 1, GakSetCVars)
 end

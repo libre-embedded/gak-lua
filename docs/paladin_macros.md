@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=d8a4173fb18eb4951872ee626eac4043
+    hash=3cb2c8306e937b7dd64d0dc1162c3df0
     =====================================
 -->
 
@@ -10,142 +10,7 @@
 
 ([back](../README.md))
 
-self
-
-```
-#showtooltip
-/cast [@player] Flash of Light
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Holy Shock
-```
-
----
-
-harm
-
-```
-#showtooltip
-/cast [@anyenemy] Holy Shock
-```
-
----
-
-help
-
-```
-#showtooltip
-/cast [@anyfriend] Holy Shock
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Holy Light
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Beacon of Light
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Cleanse
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Cleanse Toxins
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Barrier of Faith
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Word of Glory
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Lay on Hands
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Blessing of Protection
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Blessing of Freedom
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Blessing of Summer
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Blessing of Sanctuary
-```
-
----
-
-self
+sfr
 
 ```
 #showtooltip
@@ -154,20 +19,191 @@ self
 
 ---
 
-self
+sbop
 
 ```
 #showtooltip
-/cast [@player] Holy Bulwark
+/cast [@player] Blessing of Protection
 ```
 
 ---
 
-self
+swog
+
+```
+#showtooltip
+/cast [@player] Word of Glory
+```
+
+---
+
+sloh
+
+```
+#showtooltip
+/cast [@player] Lay on Hands
+```
+
+---
+
+sfol
+
+```
+#showtooltip
+/cast [@player] Flash of Light
+```
+
+---
+
+sbos
+
+```
+#showtooltip
+/cast [@player] Blessing of Sanctuary
+```
+
+---
+
+sbow
 
 ```
 #showtooltip
 /cast [@player] Blessing of Spellwarding
+```
+
+---
+
+sbof
+
+```
+#showtooltip
+/cast [@player] Blessing of Freedom
+```
+
+---
+
+sct
+
+```
+#showtooltip
+/cast [@player] Cleanse Toxins
+```
+
+---
+
+rbl
+
+```
+#showtooltip
+/cast [known:Blinding Light] Blinding Light; Repentance
+```
+
+---
+
+shs
+
+```
+#showtooltip
+/cast [@player] Holy Shock
+```
+
+---
+
+ehs
+
+```
+#showtooltip
+/cast [@anyenemy] Holy Shock
+```
+
+---
+
+fhs
+
+```
+#showtooltip
+/cast [@anyfriend] Holy Shock
+```
+
+---
+
+shp
+
+```
+#showtooltip
+/cast [@player] Holy Prism
+```
+
+---
+
+ehp
+
+```
+#showtooltip
+/cast [@anyenemy] Holy Prism
+```
+
+---
+
+fhp
+
+```
+#showtooltip
+/cast [@anyfriend] Holy Prism
+```
+
+---
+
+shl
+
+```
+#showtooltip
+/cast [@player] Holy Light
+```
+
+---
+
+sbol
+
+```
+#showtooltip
+/cast [@player] Beacon of Light
+```
+
+---
+
+sc
+
+```
+#showtooltip
+/cast [@player] Cleanse
+```
+
+---
+
+sboi
+
+```
+#showtooltip
+/cast [@player] Barrier of Faith
+```
+
+---
+
+sbom
+
+```
+#showtooltip
+/cast [@player] Blessing of Summer
+```
+
+---
+
+shb
+
+```
+#showtooltip
+/cast [@player] Holy Bulwark
 ```
 
 ---

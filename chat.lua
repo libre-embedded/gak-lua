@@ -14,7 +14,7 @@ end
 
 -- https://wowpedia.fandom.com/wiki/API_C_SocialRestrictions.SetChatDisabled
 function GakChatManagementInit(ui)
-	GakCreateButton(ui, "Toggle Chat", 3, 0, function()
+	GakCreateButton(ui, "Toggle Chat", 0, 2, function()
 		if C_SocialRestrictions.IsChatDisabled() then
 			GakEnableChat()
 		else

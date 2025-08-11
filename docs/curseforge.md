@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=6f14c8c40a670eddd7d717d100334f73
+    hash=d95b8d53432e1ec6cc2474ed2885f7d9
     =====================================
 -->
 
@@ -61,14 +61,14 @@ Some data that may help convey the scope of state mutations this addon can
 perform. See [source repository](https://github.com/vkottler/gak-lua)
 documentation for additional details.
 
-* Keybinds: `110`
+* Keybinds: `113`
 * `CVar`'s: `94`
 
 ### Macros
 
 Type | Count
 -----|------
-Shared | `12`
+Shared | `15`
 Demonhunter | `5`
 Priest | `21`
 Rogue | `7`
@@ -77,8 +77,8 @@ Warrior | `1`
 Warlock | `12`
 Evoker | `12`
 Mage | `8`
-Paladin | `18`
-Druid | `26`
+Paladin | `22`
+Druid | `28`
 Deathknight | `5`
 Shaman | `20`
 Hunter | `11`
@@ -96,25 +96,25 @@ Warrior | `0`
 Warlock | `0`
 Evoker | `22`
 Mage | `0`
-Paladin | `6`
-Druid | `20`
+Paladin | `24`
+Druid | `38`
 Deathknight | `0`
 Shaman | `13`
 Hunter | `8`
 Assassination Rogue | `0`
 Demonology Warlock | `0`
 Beast Mastery Hunter | `52`
-Retribution Paladin | `45`
-Holy Paladin | `48`
+Retribution Paladin | `22`
+Holy Paladin | `38`
 Mistweaver Monk | `34`
 Affliction Warlock | `58`
 Marksmanship Hunter | `48`
 Unholy Death Knight | `0`
-Restoration Druid | `62`
+Restoration Druid | `50`
 Outlaw Rogue | `57`
 Protection Paladin | `0`
 Brewmaster Monk | `0`
-Balance Druid | `67`
+Balance Druid | `63`
 Blood Death Knight | `0`
 Fury Warrior | `42`
 Vengeance Demon Hunter | `0`
@@ -126,11 +126,11 @@ Elemental Shaman | `41`
 Restoration Shaman | `50`
 Destruction Warlock | `0`
 Augmentation Evoker | `0`
-Guardian Druid | `0`
+Guardian Druid | `62`
 Subtlety Rogue | `0`
 Frost Death Knight | `0`
 Holy Priest | `0`
-Feral Druid | `60`
+Feral Druid | `62`
 Survival Hunter | `0`
 Preservation Evoker | `29`
 Devastation Evoker | `29`

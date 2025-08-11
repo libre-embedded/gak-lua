@@ -1,7 +1,20 @@
 <Bindings>
   <Binding name="TOGGLEGAK"
            description="Toggle gnomish-army-knife Window"
-           header="gnomish-army-knife">
+           header="GAK" category="ADDONS">
     GakToggle()
+  </Binding>
+
+  <Binding name="MACRO gc" description="General Cancel Macro"
+           category="ADDONS">
+  </Binding>
+  <Binding name="MACRO fav" description="Random Favorite Mount"
+           category="ADDONS">
+  </Binding>
+  <Binding name="MACRO yak" description="Repair + Transmog Mount"
+           category="ADDONS">
+  </Binding>
+  <Binding name="MACRO ah" description="Auction House + Mail Mount"
+           category="ADDONS">
   </Binding>
 </Bindings>

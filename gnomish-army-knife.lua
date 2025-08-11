@@ -13,7 +13,7 @@ LoggingCombat(true)
 
 -- Create UI menu.
 local gak_ui =
-	GakCreateButtonContainer(UIParent, project .. " (" .. version .. ")", 4, 8)
+	GakCreateButtonContainer(UIParent, project .. " (" .. version .. ")", 5, 8)
 gak_ui:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
 
 function GakToggle()
@@ -26,7 +26,7 @@ SLASH_GNOMISH_ARMY_KNIFE2 = "/gak"
 SlashCmdList["GNOMISH_ARMY_KNIFE"] = GakToggle
 
 -- Custom keybinds.
-BINDING_HEADER_GAK = project
+-- BINDING_HEADER_GAK = project
 BINDING_NAME_TOGGLEGAK = "Toggle " .. project .. " Window"
 
 GakButtonsByAddon = {}
@@ -81,18 +81,17 @@ local function GakRuntimeInit()
 	-- Hide some elements.
 	GakAuditZenMode()
 
+	-- Set loadout.
+	if not UnitAffectingCombat("player") then
+		GakSetGlobalMacros()
+		GakSetActionBars()
+	end
+
 	FramerateFrame:Show()
 end
 
 local function GakSetAll()
 	GakSetKeybinds()
-
-	GakSetGlobalMacros()
-
-	-- Handled when setting action bars.
-	-- GakSetCharacterMacros()
-	GakSetActionBars()
-
 	GakRuntimeInit()
 end
 
@@ -136,14 +135,14 @@ local function GakMain(frame)
 	GakCreateButton(frame, "Reload", 1, 7, function()
 		ConsoleExec("reloadUI")
 	end)
-	GakCreateButton(frame, "Combat Log", 2, 7, GakToggleLoggingCombatState)
+	GakCreateButton(frame, "Combat Log", 1, 6, GakToggleLoggingCombatState)
 
 	-- Addon menu buttons.
 	GakButtonsByAddon["WowLua"] = GakCreateButton(
 		frame,
 		"/wowlua",
-		3,
-		1,
+		4,
+		5,
 		function()
 			SlashCmdList["WOWLUA"]("")
 		end
@@ -151,8 +150,8 @@ local function GakMain(frame)
 	GakButtonsByAddon["BetterBlizzPlates"] = GakCreateButton(
 		frame,
 		"/bbp",
+		4,
 		3,
-		2,
 		function()
 			SlashCmdList["BBP"]("")
 		end
@@ -160,8 +159,8 @@ local function GakMain(frame)
 	-- GakButtonsByAddon["BigDebuffs"] = GakCreateButton(
 	-- 	frame,
 	-- 	"/bigdebuffs",
-	-- 	3,
-	-- 	3,
+	-- 	4,
+	-- 	4,
 	-- 	function()
 	-- 		SlashCmdList["BigDebuffs"]("")
 	-- 	end
@@ -169,26 +168,26 @@ local function GakMain(frame)
 	GakButtonsByAddon["BetterBlizzFrames"] = GakCreateButton(
 		frame,
 		"/bbf",
-		3,
-		3,
+		4,
+		2,
 		function()
 			SlashCmdList["BBF"]("")
 		end
 	)
-	GakButtonsByAddon["Myslot"] = GakCreateButton(
-		frame,
-		"/myslot",
-		3,
-		4,
-		function()
-			SlashCmdList["MYSLOT"]("")
-		end
-	)
+	-- GakButtonsByAddon["Myslot"] = GakCreateButton(
+	-- 	frame,
+	-- 	"/myslot",
+	-- 	4,
+	-- 	5,
+	-- 	function()
+	-- 		SlashCmdList["MYSLOT"]("")
+	-- 	end
+	-- )
 	GakButtonsByAddon["Diminish"] = GakCreateButton(
 		frame,
 		"/diminish",
-		3,
-		5,
+		4,
+		4,
 		function()
 			SlashCmdList["DIMINISH"]("")
 		end

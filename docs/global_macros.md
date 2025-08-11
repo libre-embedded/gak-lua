@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=f6d71c46d57f3df196cb29c13db6e23f
+    hash=59896ce9d003dd7d9e9be1242744c86b
     =====================================
 -->
 
@@ -12,7 +12,7 @@
 
 ---
 
-13
+t13
 
 ```
 #showtooltip
@@ -21,7 +21,7 @@
 
 ---
 
-14
+t14
 
 ```
 #showtooltip
@@ -32,7 +32,7 @@
 
 ![icon image](https://wow.zamimg.com/images/wow/icons/large/creatureportrait_creature_iceblock.jpg)
 
-canc
+gc
 
 ```
 /stopcasting
@@ -40,7 +40,6 @@ canc
 /cancelaura Levitate
 /cancelaura Enchanted Candle
 /cancelaura Alter Time
-/cleartarget
 ```
 
 ---
@@ -107,7 +106,7 @@ pet
 
 ---
 
-z0
+ffr
 
 ```
 #showtooltip
@@ -117,7 +116,7 @@ z0
 
 ---
 
-z1
+ffm
 
 ```
 #showtooltip
@@ -127,12 +126,42 @@ z1
 
 ---
 
-z2
+ffs
 
 ```
 #showtooltip
-/cast Skull Bash
+/cast Shred
 /changeactionbar 1
+```
+
+---
+
+![icon image](https://wow.zamimg.com/images/wow/icons/large/achievement_guildperk_mountup.jpg)
+
+fav
+
+```
+/run C_MountJournal.SummonByID(0)
+```
+
+---
+
+![icon image](https://wow.zamimg.com/images/wow/icons/large/ability_mount_travellersyakmount.jpg)
+
+yak
+
+```
+/use Grand Expedition Yak
+```
+
+---
+
+![icon image](https://wow.zamimg.com/images/wow/icons/large/inv_brontsaurusmountspecial.jpg)
+
+ah
+
+```
+/use Trader's Gilded Brutosaur
 ```
 
 ---

@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=83f4c795e72e1d2fd5d4d81b723a0a6a
+-- hash=9dd60d8330d014be93efa732ac066298
 -- =====================================
 -- Mapping of gamepad inputs to keyboard inputs.
 keymap = {}
@@ -112,6 +112,13 @@ bindings["TARGETLASTTARGET"] = {
 		"SHIFT",
 	},
 }
+bindings["MACRO fav"] = {
+	"PADDUP",
+	{
+		"ALT",
+		"CTRL",
+	},
+}
 bindings["TARGETSCANENEMY"] = { "PADDRIGHT", nil }
 bindings["MULTIACTIONBAR4BUTTON12"] = {
 	"PADDRIGHT",
@@ -136,6 +143,20 @@ bindings["ASSISTTARGET"] = {
 	{
 		"CTRL",
 		"SHIFT",
+	},
+}
+bindings["MACRO yak"] = {
+	"PADDRIGHT",
+	{
+		"ALT",
+		"SHIFT",
+	},
+}
+bindings["MACRO ah"] = {
+	"PADDRIGHT",
+	{
+		"ALT",
+		"CTRL",
 	},
 }
 bindings["FRIENDNAMEPLATES"] = { "PADLSTICK", nil }
@@ -176,14 +197,14 @@ bindings["TOGGLEUI"] = {
 		"CTRL",
 	},
 }
-bindings["TOGGLESHEATH"] = {
+bindings["CENTERCAMERA"] = {
 	"PADLSTICK",
 	{
 		"CTRL",
 		"SHIFT",
 	},
 }
-bindings["CENTERCAMERA"] = {
+bindings["MACRO gc"] = {
 	"PADRSTICK",
 	{
 		"CTRL",

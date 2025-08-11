@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=dfa8d42c69ed0645dfb6e8087f9ccbae
+    hash=a5cf1bed213575d16a019f90ad045251
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-3
+trav
 
 ```
 #showtooltip
@@ -19,7 +19,7 @@
 
 ---
 
-4
+prow
 
 ```
 #showtooltip Prowl
@@ -29,7 +29,7 @@
 
 ---
 
-5
+cat
 
 ```
 #showtooltip Cat Form
@@ -39,7 +39,7 @@
 
 ---
 
-6
+bear
 
 ```
 #showtooltip Bear Form
@@ -61,7 +61,7 @@ beam
 
 ![icon image](https://wow.zamimg.com/images/wow/icons/large/ability_racial_twoforms.jpg)
 
-canc
+cf
 
 ```
 /cancelform
@@ -79,7 +79,7 @@ flap
 
 ---
 
-help
+wch
 
 ```
 #showtooltip Wild Charge
@@ -89,16 +89,7 @@ help
 
 ---
 
-self
-
-```
-#showtooltip
-/cast [@player] Mark of the Wild
-```
-
----
-
-self
+src
 
 ```
 #showtooltip
@@ -107,7 +98,16 @@ self
 
 ---
 
-self
+motw
+
+```
+#showtooltip
+/cast [@player] Mark of the Wild
+```
+
+---
+
+slb
 
 ```
 #showtooltip
@@ -116,7 +116,7 @@ self
 
 ---
 
-self
+swg
 
 ```
 #showtooltip
@@ -125,7 +125,7 @@ self
 
 ---
 
-self
+ssm
 
 ```
 #showtooltip
@@ -134,7 +134,7 @@ self
 
 ---
 
-self
+sog
 
 ```
 #showtooltip
@@ -143,7 +143,7 @@ self
 
 ---
 
-self
+srg
 
 ```
 #showtoolip
@@ -152,7 +152,7 @@ self
 
 ---
 
-self
+scw
 
 ```
 #showtooltip
@@ -161,7 +161,7 @@ self
 
 ---
 
-self
+sib
 
 ```
 #showtooltip
@@ -170,7 +170,7 @@ self
 
 ---
 
-self
+sngg
 
 ```
 #showtooltip
@@ -179,7 +179,7 @@ self
 
 ---
 
-self
+suv
 
 ```
 #showtooltip
@@ -188,7 +188,7 @@ self
 
 ---
 
-self
+seff
 
 ```
 #showtooltip
@@ -197,16 +197,16 @@ self
 
 ---
 
-self
+sal
 
 ```
 #showtooltip
-/cast [@player] Thorns
+/cast [@player] Ancient of Lore
 ```
 
 ---
 
-self
+sinv
 
 ```
 #showtooltip
@@ -215,7 +215,7 @@ self
 
 ---
 
-self
+srj
 
 ```
 #showtooltip
@@ -224,7 +224,16 @@ self
 
 ---
 
-ch
+sig
+
+```
+#showtooltip
+/cast [@player] Invigorate
+```
+
+---
+
+root
 
 ```
 #showtooltip
@@ -233,7 +242,7 @@ ch
 
 ---
 
-ch
+ngg
 
 ```
 #showtooltip
@@ -242,11 +251,21 @@ ch
 
 ---
 
-ch
+ult
 
 ```
 #showtooltip
 /cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life
+```
+
+---
+
+ffsb
+
+```
+#showtooltip
+/cast Skull Bash
+/changeactionbar 1
 ```
 
 ---

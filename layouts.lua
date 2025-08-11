@@ -50,6 +50,6 @@ function GakSetLayouts()
 end
 
 function GakLayoutManagementInit(ui)
-	GakCreateButton(ui, "Audit Layouts", 0, 5, GakAuditLayouts)
-	GakCreateButton(ui, "Set Layouts", 1, 5, GakSetLayouts):Disable()
+	GakCreateButton(ui, "Audit Layouts", 0, 0, GakAuditLayouts)
+	GakCreateButton(ui, "Set Layouts", 0, 1, GakSetLayouts):Disable()
 end
