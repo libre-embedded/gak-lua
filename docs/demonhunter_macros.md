@@ -2,56 +2,10 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=685e7f4a0dc81cfbd847013c01f52d8a
+    hash=5681b247abf4e3318467b4b7f7cb538b
     =====================================
 -->
 
 # Demonhunter Macros
 
 ([back](../README.md))
-
-self
-
-```
-#showtooltip
-/cast [@player] Metamorphosis
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Sigil of Misery
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Sigil of Flame
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Sigil of Spite
-```
-
----
-
-badge
-
-```
-#showtooltip Eye Beam
-/use 14
-/cast Eye Beam
-```
-
----

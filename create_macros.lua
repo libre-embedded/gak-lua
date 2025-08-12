@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=4cd86ab1d993170baca051775f315d37
+-- hash=3c7dffffcc2a5dcb7ebf5811170f7e70
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("t13", "inv_misc_questionmark", [[
@@ -458,46 +458,55 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "MONK" then
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("rop", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Soothing Mist]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+/cast [known:Ring of Peace] Ring of Peace; Song of Chi-Ji]], true)
+		CreateMacro("srop", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Enveloping Mist]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Detox]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Vivify]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Ring of Peace]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Summon Jade Serpent Statue]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Renewing Mist]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+/cast [@player,known:Ring of Peace] Ring of Peace; Song of Chi-Ji]], true)
+		CreateMacro("stl", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Tiger's Lust]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sd", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Life Cocoon]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+/cast [@player] Detox]], true)
+		CreateMacro("sv", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Vivify]], true)
+		CreateMacro("ssm", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Soothing Mist]], true)
+		CreateMacro("szs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Zen Spheres]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Sheilun's Gift]], true)
-		CreateMacro("harm", "inv_misc_questionmark", [[
+		CreateMacro("ezs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyenemy] Zen Spheres]], true)
-		CreateMacro("help", "inv_misc_questionmark", [[
+		CreateMacro("fzs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyfriend] Zen Spheres]], true)
-		print("Created 13", select(1, UnitClass("player")), "macros.")
+		CreateMacro("sem", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Enveloping Mist]], true)
+		CreateMacro("srm", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Renewing Mist]], true)
+		CreateMacro("sjss", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Summon Jade Serpent Statue]], true)
+		CreateMacro("shs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Healing Sphere]], true)
+		CreateMacro("slc", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Life Cocoon]], true)
+		CreateMacro("ssg", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Sheilun's Gift]], true)
+		CreateMacro("rev", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Revival] Revival; Restoral]], true)
+		print("Created 16", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "PALADIN" then

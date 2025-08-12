@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=55a455766cad22bbef79f43b98a5310d
+    hash=a5576d20d4f11478966dc2bc86b05faa
     =====================================
 -->
 
@@ -10,70 +10,25 @@
 
 ([back](../README.md))
 
-self
+rop
 
 ```
 #showtooltip
-/cast [@player] Soothing Mist
+/cast [known:Ring of Peace] Ring of Peace; Song of Chi-Ji
 ```
 
 ---
 
-self
+srop
 
 ```
 #showtooltip
-/cast [@player] Enveloping Mist
+/cast [@player,known:Ring of Peace] Ring of Peace; Song of Chi-Ji
 ```
 
 ---
 
-self
-
-```
-#showtooltip
-/cast [@player] Detox
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Vivify
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Ring of Peace
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Summon Jade Serpent Statue
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Renewing Mist
-```
-
----
-
-self
+stl
 
 ```
 #showtooltip
@@ -82,16 +37,34 @@ self
 
 ---
 
-self
+sd
 
 ```
 #showtooltip
-/cast [@player] Life Cocoon
+/cast [@player] Detox
 ```
 
 ---
 
-self
+sv
+
+```
+#showtooltip
+/cast [@player] Vivify
+```
+
+---
+
+ssm
+
+```
+#showtooltip
+/cast [@player] Soothing Mist
+```
+
+---
+
+szs
 
 ```
 #showtooltip
@@ -100,16 +73,7 @@ self
 
 ---
 
-self
-
-```
-#showtooltip
-/cast [@player] Sheilun's Gift
-```
-
----
-
-harm
+ezs
 
 ```
 #showtooltip
@@ -118,11 +82,74 @@ harm
 
 ---
 
-help
+fzs
 
 ```
 #showtooltip
 /cast [@anyfriend] Zen Spheres
+```
+
+---
+
+sem
+
+```
+#showtooltip
+/cast [@player] Enveloping Mist
+```
+
+---
+
+srm
+
+```
+#showtooltip
+/cast [@player] Renewing Mist
+```
+
+---
+
+sjss
+
+```
+#showtooltip
+/cast [@player] Summon Jade Serpent Statue
+```
+
+---
+
+shs
+
+```
+#showtooltip
+/cast [@player] Healing Sphere
+```
+
+---
+
+slc
+
+```
+#showtooltip
+/cast [@player] Life Cocoon
+```
+
+---
+
+ssg
+
+```
+#showtooltip
+/cast [@player] Sheilun's Gift
+```
+
+---
+
+rev
+
+```
+#showtooltip
+/cast [known:Revival] Revival; Restoral
 ```
 
 ---

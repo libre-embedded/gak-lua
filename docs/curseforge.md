@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=d95b8d53432e1ec6cc2474ed2885f7d9
+    hash=ab28c5c3d34ff15484474c08f6382765
     =====================================
 -->
 
@@ -72,7 +72,7 @@ Shared | `15`
 Demonhunter | `5`
 Priest | `21`
 Rogue | `7`
-Monk | `13`
+Monk | `16`
 Warrior | `1`
 Warlock | `12`
 Evoker | `12`
@@ -91,7 +91,7 @@ Global | `20`
 Demonhunter | `0`
 Priest | `19`
 Rogue | `0`
-Monk | `21`
+Monk | `19`
 Warrior | `0`
 Warlock | `0`
 Evoker | `22`
@@ -106,7 +106,7 @@ Demonology Warlock | `0`
 Beast Mastery Hunter | `52`
 Retribution Paladin | `22`
 Holy Paladin | `38`
-Mistweaver Monk | `34`
+Mistweaver Monk | `32`
 Affliction Warlock | `58`
 Marksmanship Hunter | `48`
 Unholy Death Knight | `0`
@@ -120,7 +120,7 @@ Fury Warrior | `42`
 Vengeance Demon Hunter | `0`
 Arms Warrior | `52`
 Havoc Demon Hunter | `50`
-Windwalker Monk | `30`
+Windwalker Monk | `29`
 Arcane Mage | `0`
 Elemental Shaman | `41`
 Restoration Shaman | `50`

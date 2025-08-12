@@ -2,55 +2,10 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=8ec022d4832b6ade84f71a4d321c364f
+    hash=84d5cb7833cdc17a964ef6b1b771de77
     =====================================
 -->
 
 # Deathknight Macros
 
 ([back](../README.md))
-
-pet
-
-```
-#showtooltip
-/cast [@pet] Death Coil
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Death Coil
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Death and Decay
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Anti-Magic Shell
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Anti-Magic Zone
-```
-
----
