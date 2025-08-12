@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=3c7dffffcc2a5dcb7ebf5811170f7e70
+-- hash=2b089ce8954b47126d21ab45abe2ff4d
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("t13", "inv_misc_questionmark", [[
@@ -238,19 +238,19 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "DEMONHUNTER" then
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sm", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Metamorphosis]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("ssom", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Sigil of Misery]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("ssof", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Sigil of Flame]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("ssos", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Sigil of Spite]], true)
-		CreateMacro("badge", "inv_misc_questionmark", [[
+		CreateMacro("eb14", "inv_misc_questionmark", [[
 #showtooltip Eye Beam
 /use 14
 /cast Eye Beam]], true)
@@ -352,43 +352,46 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "EVOKER" then
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("slf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Living Flame]], true)
-		CreateMacro("harm", "inv_misc_questionmark", [[
+		CreateMacro("elf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyenemy] Living Flame]], true)
-		CreateMacro("help", "inv_misc_questionmark", [[
+		CreateMacro("flf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyfriend] Living Flame]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Echo]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Reversion]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Verdant Embrace]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Emerald Blossom]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Naturalize]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Expunge]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("scf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Cauterizing Flame]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Spiritbloom]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("std", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Time Dilation]], true)
-		print("Created 12", select(1, UnitClass("player")), "macros.")
+		CreateMacro("ssb", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Spiritbloom]], true)
+		CreateMacro("sn", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Naturalize]], true)
+		CreateMacro("seb", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Emerald Blossom]], true)
+		CreateMacro("sve", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Verdant Embrace]], true)
+		CreateMacro("sr", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Reversion]], true)
+		CreateMacro("se", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Echo]], true)
+		CreateMacro("sx", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Expunge]], true)
+		CreateMacro("sts", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Time Stop]], true)
+		print("Created 13", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "HUNTER" then

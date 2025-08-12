@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=ab28c5c3d34ff15484474c08f6382765
+    hash=b856adac3c869c4962b292498b047dd2
     =====================================
 -->
 
@@ -75,7 +75,7 @@ Rogue | `7`
 Monk | `16`
 Warrior | `1`
 Warlock | `12`
-Evoker | `12`
+Evoker | `13`
 Mage | `8`
 Paladin | `22`
 Druid | `28`
@@ -94,7 +94,7 @@ Rogue | `0`
 Monk | `19`
 Warrior | `0`
 Warlock | `0`
-Evoker | `22`
+Evoker | `26`
 Mage | `0`
 Paladin | `24`
 Druid | `38`
@@ -114,12 +114,12 @@ Restoration Druid | `50`
 Outlaw Rogue | `57`
 Protection Paladin | `0`
 Brewmaster Monk | `0`
-Balance Druid | `63`
+Balance Druid | `47`
 Blood Death Knight | `0`
 Fury Warrior | `42`
 Vengeance Demon Hunter | `0`
 Arms Warrior | `52`
-Havoc Demon Hunter | `50`
+Havoc Demon Hunter | `40`
 Windwalker Monk | `29`
 Arcane Mage | `0`
 Elemental Shaman | `41`
@@ -130,10 +130,10 @@ Guardian Druid | `62`
 Subtlety Rogue | `0`
 Frost Death Knight | `0`
 Holy Priest | `0`
-Feral Druid | `62`
+Feral Druid | `44`
 Survival Hunter | `0`
-Preservation Evoker | `29`
-Devastation Evoker | `29`
+Preservation Evoker | `27`
+Devastation Evoker | `22`
 Discipline Priest | `35`
 Enhancement Shaman | `44`
 Frost Mage | `49`
