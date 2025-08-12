@@ -1,26 +1,36 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=2b089ce8954b47126d21ab45abe2ff4d
+-- hash=a8ce505d4362f4657dce933b1a37b0e4
 -- =====================================
 function GakCreateGlobalMacros()
-	CreateMacro("t13", "inv_misc_questionmark", [[
+	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
+/use Trader's Gilded Brutosaur]])
+	CreateMacro("dis", "ability_marksmanship", [[
+/dismount
+/cancelform]])
+	CreateMacro("fav", "achievement_guildperk_mountup", [[
+/run C_MountJournal.SummonByID(0)]])
+	CreateMacro("ffm", "inv_misc_questionmark", [[
 #showtooltip
-/use 13]])
-	CreateMacro("t14", "inv_misc_questionmark", [[
+/cast Mangle
+/changeactionbar 1]])
+	CreateMacro("ffr", "inv_misc_questionmark", [[
 #showtooltip
-/use 14]])
+/cast Rake
+/changeactionbar 1]])
+	CreateMacro("ffs", "inv_misc_questionmark", [[
+#showtooltip
+/cast Shred
+/changeactionbar 1]])
+	CreateMacro("gak", "inv_misc_enggizmos_swissarmy", [[
+/gnomish-army-knife]])
 	CreateMacro("gc", "creatureportrait_creature_iceblock", [[
 /stopcasting
 /cancelaura Slow Fall
 /cancelaura Levitate
 /cancelaura Enchanted Candle
 /cancelaura Alter Time]])
-	CreateMacro("dis", "ability_marksmanship", [[
-/dismount
-/cancelform]])
-	CreateMacro("gak", "inv_misc_enggizmos_swissarmy", [[
-/gnomish-army-knife]])
 	CreateMacro("gg", "achievement_bg_takexflags_ab", [[
 /run LeaveBattlefield()]])
 	CreateMacro("hs", "inv_misc_questionmark", [[
@@ -32,24 +42,14 @@ function GakCreateGlobalMacros()
 /use Quicksilver Sipper]])
 	CreateMacro("pet", "inv_leatherworking_70_petleash", [[
 /petdismiss]])
-	CreateMacro("ffr", "inv_misc_questionmark", [[
+	CreateMacro("t13", "inv_misc_questionmark", [[
 #showtooltip
-/cast Rake
-/changeactionbar 1]])
-	CreateMacro("ffm", "inv_misc_questionmark", [[
+/use 13]])
+	CreateMacro("t14", "inv_misc_questionmark", [[
 #showtooltip
-/cast Mangle
-/changeactionbar 1]])
-	CreateMacro("ffs", "inv_misc_questionmark", [[
-#showtooltip
-/cast Shred
-/changeactionbar 1]])
-	CreateMacro("fav", "achievement_guildperk_mountup", [[
-/run C_MountJournal.SummonByID(0)]])
+/use 14]])
 	CreateMacro("yak", "ability_mount_travellersyakmount", [[
 /use Grand Expedition Yak]])
-	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
-/use Trader's Gilded Brutosaur]])
 	print("Created 15 global macros.")
 end
 
@@ -238,123 +238,120 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "DEMONHUNTER" then
-		CreateMacro("sm", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Metamorphosis]], true)
-		CreateMacro("ssom", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Sigil of Misery]], true)
-		CreateMacro("ssof", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Sigil of Flame]], true)
-		CreateMacro("ssos", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Sigil of Spite]], true)
 		CreateMacro("eb14", "inv_misc_questionmark", [[
 #showtooltip Eye Beam
 /use 14
 /cast Eye Beam]], true)
+		CreateMacro("sm", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Metamorphosis]], true)
+		CreateMacro("ssof", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Sigil of Flame]], true)
+		CreateMacro("ssom", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Sigil of Misery]], true)
+		CreateMacro("ssos", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Sigil of Spite]], true)
 		print("Created 5", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "DRUID" then
-		CreateMacro("trav", "inv_misc_questionmark", [[
+		CreateMacro("beam", "inv_misc_questionmark", [[
 #showtooltip
-/cast [indoors] !Cat Form; !Travel Form]], true)
-		CreateMacro("prow", "inv_misc_questionmark", [[
-#showtooltip Prowl
-/cast [nocombat] !Prowl
+/cast Solar Beam
+/cast Mass Entanglement]], true)
+		CreateMacro("bear", "inv_misc_questionmark", [[
+#showtooltip Bear Form
+/cast [noform:1] Bear Form
 /changeactionbar 1]], true)
 		CreateMacro("cat", "inv_misc_questionmark", [[
 #showtooltip Cat Form
 /cast [noform:2] Cat Form
 /changeactionbar 1]], true)
-		CreateMacro("bear", "inv_misc_questionmark", [[
-#showtooltip Bear Form
-/cast [noform:1] Bear Form
-/changeactionbar 1]], true)
-		CreateMacro("beam", "inv_misc_questionmark", [[
-#showtooltip
-/cast Solar Beam
-/cast Mass Entanglement]], true)
 		CreateMacro("cf", "ability_racial_twoforms", [[
 /cancelform]], true)
-		CreateMacro("flap", "inv_misc_questionmark", [[
-#showtooltip Moonkin Form
-/cast [noform:4] Moonkin Form
-/cast [form:4] Flap]], true)
-		CreateMacro("wch", "inv_misc_questionmark", [[
-#showtooltip Wild Charge
-/cancelform
-/cast [@anyfriend] Wild Charge]], true)
-		CreateMacro("src", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Remove Corruption]], true)
-		CreateMacro("motw", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Mark of the Wild]], true)
-		CreateMacro("slb", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Lifebloom]], true)
-		CreateMacro("swg", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Wild Growth]], true)
-		CreateMacro("ssm", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Swiftmend]], true)
-		CreateMacro("sog", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Overgrowth]], true)
-		CreateMacro("srg", "inv_misc_questionmark", [[
-#showtoolip
-/cast [@player] Regrowth]], true)
-		CreateMacro("scw", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Cenarion Ward]], true)
-		CreateMacro("sib", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Ironbark]], true)
-		CreateMacro("sngg", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player,known:Nourish] Nourish; [@player] Grove Guardians]], true)
-		CreateMacro("suv", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Ursol's Vortex]], true)
-		CreateMacro("seff", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Efflorescence]], true)
-		CreateMacro("sal", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Ancient of Lore]], true)
-		CreateMacro("sinv", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Innervate]], true)
-		CreateMacro("srj", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Rejuvenation]], true)
-		CreateMacro("sig", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Invigorate]], true)
-		CreateMacro("root", "inv_misc_questionmark", [[
-#showtooltip
-/cast [known:Mass Entanglement] Mass Entanglement; Ursol's Vortex]], true)
-		CreateMacro("ngg", "inv_misc_questionmark", [[
-#showtooltip
-/cast [known:Nourish] Nourish; Grove Guardians]], true)
-		CreateMacro("ult", "inv_misc_questionmark", [[
-#showtooltip
-/cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life]], true)
 		CreateMacro("ffsb", "inv_misc_questionmark", [[
 #showtooltip
 /cast Skull Bash
 /changeactionbar 1]], true)
+		CreateMacro("flap", "inv_misc_questionmark", [[
+#showtooltip Moonkin Form
+/cast [noform:4] Moonkin Form
+/cast [form:4] Flap]], true)
+		CreateMacro("motw", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Mark of the Wild]], true)
+		CreateMacro("ngg", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Nourish] Nourish; Grove Guardians]], true)
+		CreateMacro("prow", "inv_misc_questionmark", [[
+#showtooltip Prowl
+/cast [nocombat] !Prowl
+/changeactionbar 1]], true)
+		CreateMacro("root", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Mass Entanglement] Mass Entanglement; Ursol's Vortex]], true)
+		CreateMacro("sal", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Ancient of Lore]], true)
+		CreateMacro("scw", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Cenarion Ward]], true)
+		CreateMacro("seff", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Efflorescence]], true)
+		CreateMacro("sib", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Ironbark]], true)
+		CreateMacro("sig", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Invigorate]], true)
+		CreateMacro("sinv", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Innervate]], true)
+		CreateMacro("slb", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Lifebloom]], true)
+		CreateMacro("sngg", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player,known:Nourish] Nourish; [@player] Grove Guardians]], true)
+		CreateMacro("sog", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Overgrowth]], true)
+		CreateMacro("src", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Remove Corruption]], true)
+		CreateMacro("srg", "inv_misc_questionmark", [[
+#showtoolip
+/cast [@player] Regrowth]], true)
+		CreateMacro("srj", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Rejuvenation]], true)
+		CreateMacro("ssm", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Swiftmend]], true)
+		CreateMacro("suv", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Ursol's Vortex]], true)
+		CreateMacro("swg", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Wild Growth]], true)
+		CreateMacro("trav", "inv_misc_questionmark", [[
+#showtooltip
+/cast [indoors] !Cat Form; !Travel Form]], true)
+		CreateMacro("ult", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life]], true)
+		CreateMacro("wch", "inv_misc_questionmark", [[
+#showtooltip Wild Charge
+/cancelform
+/cast [@anyfriend] Wild Charge]], true)
 		print("Created 28", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "EVOKER" then
-		CreateMacro("slf", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Living Flame]], true)
 		CreateMacro("elf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyenemy] Living Flame]], true)
@@ -364,33 +361,36 @@ function GakCreateCharacterMacros()
 		CreateMacro("scf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Cauterizing Flame]], true)
-		CreateMacro("std", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Time Dilation]], true)
-		CreateMacro("ssb", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Spiritbloom]], true)
-		CreateMacro("sn", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Naturalize]], true)
-		CreateMacro("seb", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Emerald Blossom]], true)
-		CreateMacro("sve", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Verdant Embrace]], true)
-		CreateMacro("sr", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Reversion]], true)
 		CreateMacro("se", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Echo]], true)
-		CreateMacro("sx", "inv_misc_questionmark", [[
+		CreateMacro("seb", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Expunge]], true)
+/cast [@player] Emerald Blossom]], true)
+		CreateMacro("slf", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Living Flame]], true)
+		CreateMacro("sn", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Naturalize]], true)
+		CreateMacro("sr", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Reversion]], true)
+		CreateMacro("ssb", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Spiritbloom]], true)
+		CreateMacro("std", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Time Dilation]], true)
 		CreateMacro("sts", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Time Stop]], true)
+		CreateMacro("sve", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Verdant Embrace]], true)
+		CreateMacro("sx", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Expunge]], true)
 		print("Created 13", select(1, UnitClass("player")), "macros.")
 	end
 
@@ -461,124 +461,124 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "MONK" then
-		CreateMacro("rop", "inv_misc_questionmark", [[
-#showtooltip
-/cast [known:Ring of Peace] Ring of Peace; Song of Chi-Ji]], true)
-		CreateMacro("srop", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player,known:Ring of Peace] Ring of Peace; Song of Chi-Ji]], true)
-		CreateMacro("stl", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Tiger's Lust]], true)
-		CreateMacro("sd", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Detox]], true)
-		CreateMacro("sv", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Vivify]], true)
-		CreateMacro("ssm", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Soothing Mist]], true)
-		CreateMacro("szs", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Zen Spheres]], true)
 		CreateMacro("ezs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyenemy] Zen Spheres]], true)
 		CreateMacro("fzs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyfriend] Zen Spheres]], true)
-		CreateMacro("sem", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Enveloping Mist]], true)
-		CreateMacro("srm", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Renewing Mist]], true)
-		CreateMacro("sjss", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Summon Jade Serpent Statue]], true)
-		CreateMacro("shs", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Healing Sphere]], true)
-		CreateMacro("slc", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Life Cocoon]], true)
-		CreateMacro("ssg", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Sheilun's Gift]], true)
 		CreateMacro("rev", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Revival] Revival; Restoral]], true)
+		CreateMacro("rop", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Ring of Peace] Ring of Peace; Song of Chi-Ji]], true)
+		CreateMacro("sd", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Detox]], true)
+		CreateMacro("sem", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Enveloping Mist]], true)
+		CreateMacro("shs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Healing Sphere]], true)
+		CreateMacro("sjss", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Summon Jade Serpent Statue]], true)
+		CreateMacro("slc", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Life Cocoon]], true)
+		CreateMacro("srm", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Renewing Mist]], true)
+		CreateMacro("srop", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player,known:Ring of Peace] Ring of Peace; Song of Chi-Ji]], true)
+		CreateMacro("ssg", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Sheilun's Gift]], true)
+		CreateMacro("ssm", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Soothing Mist]], true)
+		CreateMacro("stl", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Tiger's Lust]], true)
+		CreateMacro("sv", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Vivify]], true)
+		CreateMacro("szs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Zen Spheres]], true)
 		print("Created 16", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "PALADIN" then
-		CreateMacro("sfr", "inv_misc_questionmark", [[
+		CreateMacro("ehp", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Final Reckoning]], true)
+/cast [@anyenemy] Holy Prism]], true)
+		CreateMacro("ehs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyenemy] Holy Shock]], true)
+		CreateMacro("fhp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyfriend] Holy Prism]], true)
+		CreateMacro("fhs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyfriend] Holy Shock]], true)
+		CreateMacro("rbl", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Blinding Light] Blinding Light; Repentance]], true)
+		CreateMacro("sbof", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Blessing of Freedom]], true)
+		CreateMacro("sboi", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Barrier of Faith]], true)
+		CreateMacro("sbol", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Beacon of Light]], true)
+		CreateMacro("sbom", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Blessing of Summer]], true)
 		CreateMacro("sbop", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Blessing of Protection]], true)
-		CreateMacro("swog", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Word of Glory]], true)
-		CreateMacro("sloh", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Lay on Hands]], true)
-		CreateMacro("sfol", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Flash of Light]], true)
 		CreateMacro("sbos", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Blessing of Sanctuary]], true)
 		CreateMacro("sbow", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Blessing of Spellwarding]], true)
-		CreateMacro("sbof", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Blessing of Freedom]], true)
-		CreateMacro("sct", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Cleanse Toxins]], true)
-		CreateMacro("rbl", "inv_misc_questionmark", [[
-#showtooltip
-/cast [known:Blinding Light] Blinding Light; Repentance]], true)
-		CreateMacro("shs", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Holy Shock]], true)
-		CreateMacro("ehs", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@anyenemy] Holy Shock]], true)
-		CreateMacro("fhs", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@anyfriend] Holy Shock]], true)
-		CreateMacro("shp", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Holy Prism]], true)
-		CreateMacro("ehp", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@anyenemy] Holy Prism]], true)
-		CreateMacro("fhp", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@anyfriend] Holy Prism]], true)
-		CreateMacro("shl", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Holy Light]], true)
-		CreateMacro("sbol", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Beacon of Light]], true)
 		CreateMacro("sc", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Cleanse]], true)
-		CreateMacro("sboi", "inv_misc_questionmark", [[
+		CreateMacro("sct", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Barrier of Faith]], true)
-		CreateMacro("sbom", "inv_misc_questionmark", [[
+/cast [@player] Cleanse Toxins]], true)
+		CreateMacro("sfol", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Blessing of Summer]], true)
+/cast [@player] Flash of Light]], true)
+		CreateMacro("sfr", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Final Reckoning]], true)
 		CreateMacro("shb", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Holy Bulwark]], true)
+		CreateMacro("shl", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Holy Light]], true)
+		CreateMacro("shp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Holy Prism]], true)
+		CreateMacro("shs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Holy Shock]], true)
+		CreateMacro("sloh", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Lay on Hands]], true)
+		CreateMacro("swog", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Word of Glory]], true)
 		print("Created 22", select(1, UnitClass("player")), "macros.")
 	end
 
@@ -662,6 +662,15 @@ function GakCreateCharacterMacros()
 #showtooltip Shadowstep
 /cast [@arena3] Shadowstep
 /cast [@arena3] Kick]], true)
+		CreateMacro("ess", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyenemy] Shadowstep]], true)
+		CreateMacro("fss", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyfriend] Shadowstep]], true)
+		CreateMacro("np", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Numbing Poison] Numbing Poison; Atrophic Poison]], true)
 		CreateMacro("s", "inv_misc_questionmark", [[
 #showtooltip Stealth
 /cancelaura [nocombat] Shadow Dance
@@ -673,13 +682,7 @@ function GakCreateCharacterMacros()
 /targetenemyplayer
 /cast Sap
 /stopattack]], true)
-		CreateMacro("harm", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@anyenemy] Shadowstep]], true)
-		CreateMacro("help", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@anyfriend] Shadowstep]], true)
-		print("Created 7", select(1, UnitClass("player")), "macros.")
+		print("Created 8", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "SHAMAN" then
