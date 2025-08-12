@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=a5cf1bed213575d16a019f90ad045251
+    hash=f1685628088df699b3e80916cd31ba1c
     =====================================
 -->
 
@@ -202,6 +202,7 @@ sal
 ```
 #showtooltip
 /cast [@player] Ancient of Lore
+/cast Nature's Vigil
 ```
 
 ---
@@ -211,6 +212,7 @@ sinv
 ```
 #showtooltip
 /cast [@player] Innervate
+/cast Nature's Vigil
 ```
 
 ---
@@ -256,6 +258,7 @@ ult
 ```
 #showtooltip
 /cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life
+/cast Nature's Vigil
 ```
 
 ---

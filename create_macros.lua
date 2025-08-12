@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=a8ce505d4362f4657dce933b1a37b0e4
+-- hash=a20eab1e1e24178f8f2761d98718e83d
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -295,7 +295,8 @@ function GakCreateCharacterMacros()
 /cast [known:Mass Entanglement] Mass Entanglement; Ursol's Vortex]], true)
 		CreateMacro("sal", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Ancient of Lore]], true)
+/cast [@player] Ancient of Lore
+/cast Nature's Vigil]], true)
 		CreateMacro("scw", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Cenarion Ward]], true)
@@ -310,7 +311,8 @@ function GakCreateCharacterMacros()
 /cast [@player] Invigorate]], true)
 		CreateMacro("sinv", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Innervate]], true)
+/cast [@player] Innervate
+/cast Nature's Vigil]], true)
 		CreateMacro("slb", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Lifebloom]], true)
@@ -343,7 +345,8 @@ function GakCreateCharacterMacros()
 /cast [indoors] !Cat Form; !Travel Form]], true)
 		CreateMacro("ult", "inv_misc_questionmark", [[
 #showtooltip
-/cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life]], true)
+/cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life
+/cast Nature's Vigil]], true)
 		CreateMacro("wch", "inv_misc_questionmark", [[
 #showtooltip Wild Charge
 /cancelform

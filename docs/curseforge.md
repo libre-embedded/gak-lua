@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=dada6a0f4e5d20d429b8ccfd099fb6e3
+    hash=cbc8576dd49831d1ebc4fabf2bc16bbd
     =====================================
 -->
 
@@ -110,7 +110,7 @@ Mistweaver Monk | `32`
 Affliction Warlock | `58`
 Marksmanship Hunter | `48`
 Unholy Death Knight | `0`
-Restoration Druid | `50`
+Restoration Druid | `51`
 Outlaw Rogue | `27`
 Protection Paladin | `0`
 Brewmaster Monk | `0`

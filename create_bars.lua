@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=7d698f5b4be257ce5015a1c5b88fe8bf
+-- hash=0827aabe6d1385606978d0bf838c8754
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -4023,6 +4023,19 @@ s "Tranquility"]])
 		else
 			print("(spec) Couldn't bind slot L1_P2_S:", [[
 m sinv]])
+		end
+		C_Spell.PickupSpell("Symbiotic Relationship")
+		if GetCursorInfo() then
+			-- L1_P2_T
+			PlaceAction(29)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P2_T'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_P2_T:", [[
+s "Symbiotic Relationship"]])
 		end
 		PickupMacro("slb")
 		if GetCursorInfo() then
