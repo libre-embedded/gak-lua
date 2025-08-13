@@ -2,10 +2,19 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=b534a0a87ac88d86768bf7b1beadd8c8
+    hash=404c5925440f71f61d18622470c44b5d
     =====================================
 -->
 
 # Warlock Macros
 
 ([back](../README.md))
+
+htmc
+
+```
+#showtooltip
+/cast [known:Mortal Coil] Mortal Coil; Howl of Terror
+```
+
+---

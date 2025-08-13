@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=54eb7c7f28780dc81a7640892a3694ea
+    hash=b7790d834ad10ea88a0de9edf20cf173
     =====================================
 -->
 
@@ -74,7 +74,7 @@ Priest | `21`
 Rogue | `8`
 Monk | `16`
 Warrior | `1`
-Warlock | `12`
+Warlock | `13`
 Evoker | `13`
 Mage | `8`
 Paladin | `22`
@@ -93,7 +93,7 @@ Priest | `19`
 Rogue | `38`
 Monk | `19`
 Warrior | `0`
-Warlock | `0`
+Warlock | `5`
 Evoker | `26`
 Mage | `0`
 Paladin | `24`
@@ -124,7 +124,7 @@ Windwalker Monk | `29`
 Arcane Mage | `0`
 Elemental Shaman | `41`
 Restoration Shaman | `50`
-Destruction Warlock | `0`
+Destruction Warlock | `8`
 Augmentation Evoker | `0`
 Guardian Druid | `62`
 Subtlety Rogue | `30`

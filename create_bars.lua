@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=3899ff34809477496f40daca55ffe5f9
+-- hash=029605f1f1e3ed7f266bdb1e495150d7
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -2765,6 +2765,71 @@ PickupMacro(120 + 4)]])
 	end
 
 	if class_str == "WARLOCK" then
+		C_Spell.PickupSpell("Burning Rush")
+		if GetCursorInfo() then
+			-- L1_P1
+			PlaceAction(32)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P1'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L1_P1:", [[
+s "Burning Rush"]])
+		end
+		C_Spell.PickupSpell("Fear")
+		if GetCursorInfo() then
+			-- L2_P2_R1
+			PlaceAction(49)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_P2_R1'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L2_P2_R1:", [[
+s "Fear"]])
+		end
+		PickupMacro("htmc")
+		if GetCursorInfo() then
+			-- L2_P2_R2
+			PlaceAction(50)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_P2_R2'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L2_P2_R2:", [[
+m htmc]])
+		end
+		C_Spell.PickupSpell("Create Healthstone")
+		if GetCursorInfo() then
+			-- P2_D
+			PlaceAction(46)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_D'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot P2_D:", [[
+s "Create Healthstone"]])
+		end
+		C_Spell.PickupSpell("Curse of Exhaustion")
+		if GetCursorInfo() then
+			-- P2_R2
+			PlaceAction(56)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_R2'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot P2_R2:", [[
+s "Curse of Exhaustion"]])
+		end
 	end
 
 	if class_str == "WARRIOR" then
@@ -10847,6 +10912,110 @@ C_Spell.PickupSpell("Create Healthstone")]])
 	end
 
 	if id == 267 then
+		C_Spell.PickupSpell("Conflagrate")
+		if GetCursorInfo() then
+			-- L1_R1_1
+			PlaceAction(7)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_R1_1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_R1_1:", [[
+s "Conflagrate"]])
+		end
+		C_Spell.PickupSpell("Conflagrate")
+		if GetCursorInfo() then
+			-- L1_R1_2
+			PlaceAction(19)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_R1_2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_R1_2:", [[
+s "Conflagrate"]])
+		end
+		C_Spell.PickupSpell("Incinerate")
+		if GetCursorInfo() then
+			-- L1_R2_1
+			PlaceAction(8)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_R2_1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_R2_1:", [[
+s "Incinerate"]])
+		end
+		C_Spell.PickupSpell("Incinerate")
+		if GetCursorInfo() then
+			-- L1_R2_2
+			PlaceAction(20)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_R2_2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_R2_2:", [[
+s "Incinerate"]])
+		end
+		C_Spell.PickupSpell("Immolate")
+		if GetCursorInfo() then
+			-- R1_1
+			PlaceAction(1)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'R1_1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot R1_1:", [[
+s "Immolate"]])
+		end
+		C_Spell.PickupSpell("Immolate")
+		if GetCursorInfo() then
+			-- R1_2
+			PlaceAction(13)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'R1_2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot R1_2:", [[
+s "Immolate"]])
+		end
+		C_Spell.PickupSpell("Chaos Bolt")
+		if GetCursorInfo() then
+			-- R2_1
+			PlaceAction(2)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'R2_1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot R2_1:", [[
+s "Chaos Bolt"]])
+		end
+		C_Spell.PickupSpell("Chaos Bolt")
+		if GetCursorInfo() then
+			-- R2_2
+			PlaceAction(14)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'R2_2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot R2_2:", [[
+s "Chaos Bolt"]])
+		end
 	end
 
 	if id == 268 then

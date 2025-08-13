@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=3a21d569e3848252c32341e8c212a381
+-- hash=13f87f8438b1a731fea0fbfb214df6d9
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -802,7 +802,10 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Summon Infernal]], true)
-		print("Created 12", select(1, UnitClass("player")), "macros.")
+		CreateMacro("htmc", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Mortal Coil] Mortal Coil; Howl of Terror]], true)
+		print("Created 13", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARRIOR" then
