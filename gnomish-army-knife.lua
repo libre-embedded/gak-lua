@@ -82,12 +82,12 @@ local function GakRuntimeInit()
 	GakAuditZenMode()
 
 	-- Set loadout (delay necessary for pet spells).
-	C_Timer.After(1.0, function()
-		if not UnitAffectingCombat("player") then
-			GakSetGlobalMacros()
-			GakSetActionBars()
-		end
-	end)
+	-- C_Timer.After(1.0, function()
+	-- 	if not UnitAffectingCombat("player") then
+	-- 		GakSetGlobalMacros()
+	-- 		GakSetActionBars()
+	-- 	end
+	-- end)
 
 	FramerateFrame:Show()
 end
