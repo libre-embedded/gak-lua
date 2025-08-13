@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=ba233752b4f2cd1bb964beb84af94400
+-- hash=17dc828795523fc3cfbbf3e813ec577c
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -772,10 +772,6 @@ function GakCreateCharacterMacros()
 		CreateMacro("inc", "inv_misc_questionmark", [[
 #showtooltip
 /cast Incinerate]], true)
-		CreateMacro("sbdg", "inv_misc_questionmark", [[
-#showtooltip Demonic Gateway
-/cast Soulburn
-/cast Demonic Gateway]], true)
 		CreateMacro("sca", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Cataclysm]], true)
@@ -791,7 +787,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("ssi", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Summon Infernal]], true)
-		print("Created 10", select(1, UnitClass("player")), "macros.")
+		print("Created 9", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARRIOR" then

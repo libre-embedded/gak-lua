@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=0dedda292c8ae6be19d9bcdbd71707cf
+    hash=98c4d5751ba8ff602e1611a2da1f76fb
     =====================================
 -->
 
@@ -74,7 +74,7 @@ Priest | `21`
 Rogue | `8`
 Monk | `16`
 Warrior | `1`
-Warlock | `10`
+Warlock | `9`
 Evoker | `13`
 Mage | `8`
 Paladin | `22`
@@ -114,7 +114,7 @@ Restoration Druid | `52`
 Outlaw Rogue | `27`
 Protection Paladin | `0`
 Brewmaster Monk | `0`
-Balance Druid | `49`
+Balance Druid | `52`
 Blood Death Knight | `0`
 Fury Warrior | `42`
 Vengeance Demon Hunter | `0`

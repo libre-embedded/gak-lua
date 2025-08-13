@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=5f0b881d34c4e6ee99c0d3333c674af4
+    hash=80f72bddcb5c71c77d85a7529e4a79f6
     =====================================
 -->
 
@@ -24,16 +24,6 @@ htmc
 ```
 #showtooltip
 /cast [known:Mortal Coil] Mortal Coil; Howl of Terror
-```
-
----
-
-sbdg
-
-```
-#showtooltip Demonic Gateway
-/cast Soulburn
-/cast Demonic Gateway
 ```
 
 ---

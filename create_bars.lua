@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=b2c7d71852169e239509dcbe063340d9
+-- hash=6de39f27ebab5d794737c075b56e23d5
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -3142,7 +3142,7 @@ s "Soulstone"]])
 			print("(class) Couldn't bind slot L2_R1:", [[
 PickupPetSpell(19505)]])
 		end
-		PickupMacro("sbdg")
+		C_Spell.PickupSpell("Demonic Gateway")
 		if GetCursorInfo() then
 			-- L2_R2
 			PlaceAction(62)
@@ -3153,7 +3153,7 @@ PickupPetSpell(19505)]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L2_R2:", [[
-m sbdg]])
+s "Demonic Gateway"]])
 		end
 		C_Spell.PickupSpell("Amplify Curse")
 		if GetCursorInfo() then
@@ -3898,6 +3898,32 @@ s "Wrath"]])
 			print("(spec) Couldn't bind slot R2_M:", [[
 s "Wrath"]])
 		end
+		C_Spell.PickupSpell("Stellar Flare")
+		if GetCursorInfo() then
+			-- S_1
+			PlaceAction(3)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'S_1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot S_1:", [[
+s "Stellar Flare"]])
+		end
+		C_Spell.PickupSpell("Stellar Flare")
+		if GetCursorInfo() then
+			-- S_2
+			PlaceAction(15)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'S_2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot S_2:", [[
+s "Stellar Flare"]])
+		end
 		C_Spell.PickupSpell("Ferocious Bite")
 		if GetCursorInfo() then
 			-- S_C
@@ -3910,6 +3936,19 @@ s "Wrath"]])
 		else
 			print("(spec) Couldn't bind slot S_C:", [[
 s "Ferocious Bite"]])
+		end
+		C_Spell.PickupSpell("Stellar Flare")
+		if GetCursorInfo() then
+			-- S_M
+			PlaceAction(111)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'S_M'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot S_M:", [[
+s "Stellar Flare"]])
 		end
 		PickupMacro("srg")
 		if GetCursorInfo() then
