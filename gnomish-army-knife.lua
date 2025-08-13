@@ -81,11 +81,13 @@ local function GakRuntimeInit()
 	-- Hide some elements.
 	GakAuditZenMode()
 
-	-- Set loadout.
-	if not UnitAffectingCombat("player") then
-		GakSetGlobalMacros()
-		GakSetActionBars()
-	end
+	-- Set loadout (delay necessary for pet spells).
+	C_Timer.After(1.0, function()
+		if not UnitAffectingCombat("player") then
+			GakSetGlobalMacros()
+			GakSetActionBars()
+		end
+	end)
 
 	FramerateFrame:Show()
 end
@@ -109,6 +111,10 @@ local function GakInfo()
 	print("--------------------")
 
 	GakPrintLoggingCombatState()
+
+	local spec_info = { GetSpecializationInfo(GetSpecialization()) }
+	print("Spec:", spec_info[1], spec_info[2])
+	print("Hero Talent Spec:", C_ClassTalents.GetActiveHeroTalentSpec())
 
 	print("Build version:", select(4, GetBuildInfo()))
 

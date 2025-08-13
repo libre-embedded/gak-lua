@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=b7790d834ad10ea88a0de9edf20cf173
+    hash=0dedda292c8ae6be19d9bcdbd71707cf
     =====================================
 -->
 
@@ -74,7 +74,7 @@ Priest | `21`
 Rogue | `8`
 Monk | `16`
 Warrior | `1`
-Warlock | `13`
+Warlock | `10`
 Evoker | `13`
 Mage | `8`
 Paladin | `22`
@@ -93,7 +93,7 @@ Priest | `19`
 Rogue | `38`
 Monk | `19`
 Warrior | `0`
-Warlock | `5`
+Warlock | `43`
 Evoker | `26`
 Mage | `0`
 Paladin | `24`
@@ -102,12 +102,12 @@ Deathknight | `0`
 Shaman | `13`
 Hunter | `8`
 Assassination Rogue | `28`
-Demonology Warlock | `0`
+Demonology Warlock | `24`
 Beast Mastery Hunter | `52`
 Retribution Paladin | `22`
 Holy Paladin | `38`
 Mistweaver Monk | `32`
-Affliction Warlock | `58`
+Affliction Warlock | `20`
 Marksmanship Hunter | `48`
 Unholy Death Knight | `0`
 Restoration Druid | `52`
@@ -124,7 +124,7 @@ Windwalker Monk | `29`
 Arcane Mage | `0`
 Elemental Shaman | `41`
 Restoration Shaman | `50`
-Destruction Warlock | `8`
+Destruction Warlock | `20`
 Augmentation Evoker | `0`
 Guardian Druid | `62`
 Subtlety Rogue | `30`

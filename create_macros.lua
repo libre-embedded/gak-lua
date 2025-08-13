@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=13f87f8438b1a731fea0fbfb214df6d9
+-- hash=ba233752b4f2cd1bb964beb84af94400
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -759,53 +759,39 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "WARLOCK" then
-		CreateMacro("soul", "inv_misc_questionmark", [[
-#showtooltip Demonic Circle: Teleport
-/cast Soulburn
-/cast Demonic Circle: Teleport]], true)
-		CreateMacro("soul", "inv_misc_questionmark", [[
+		CreateMacro("bbds", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Demonic Strength] Demonic Strength; Bilescourge Bombers]], true)
+		CreateMacro("dhs", "inv_misc_questionmark", [[
 #showtooltip Demonic Healthstone
-/cast Soulburn
 /use Demonic Healthstone
 /use Healthstone]], true)
-		CreateMacro("soul", "inv_misc_questionmark", [[
-#showtooltip Healthstone
-/cast Soulburn
-/use Healthstone
-/use Demonic Healthstone]], true)
-		CreateMacro("soul", "inv_misc_questionmark", [[
-#showtooltip Demonic Gateway
-/cast Soulburn
-/cast Demonic Gateway]], true)
-		CreateMacro("crit", "inv_misc_questionmark", [[
-#showtooltip Amplify Curse
-/cast Amplify Curse
-/cast Curse of Weakness]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Shadowfury]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Soulstone]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Unending Breath]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Rain of Fire]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Shadowfury]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Bane of Havoc]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Summon Infernal]], true)
 		CreateMacro("htmc", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Mortal Coil] Mortal Coil; Howl of Terror]], true)
-		print("Created 13", select(1, UnitClass("player")), "macros.")
+		CreateMacro("inc", "inv_misc_questionmark", [[
+#showtooltip
+/cast Incinerate]], true)
+		CreateMacro("sbdg", "inv_misc_questionmark", [[
+#showtooltip Demonic Gateway
+/cast Soulburn
+/cast Demonic Gateway]], true)
+		CreateMacro("sca", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Cataclysm]], true)
+		CreateMacro("scfl", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Call Fel Lord]], true)
+		CreateMacro("srof", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Rain of Fire]], true)
+		CreateMacro("ssf", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Shadowfury]], true)
+		CreateMacro("ssi", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Summon Infernal]], true)
+		print("Created 10", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARRIOR" then
