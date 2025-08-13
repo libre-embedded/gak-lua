@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=cbc8576dd49831d1ebc4fabf2bc16bbd
+    hash=54eb7c7f28780dc81a7640892a3694ea
     =====================================
 -->
 
@@ -68,7 +68,7 @@ documentation for additional details.
 
 Type | Count
 -----|------
-Shared | `15`
+Shared | `17`
 Demonhunter | `5`
 Priest | `21`
 Rogue | `8`
@@ -97,7 +97,7 @@ Warlock | `0`
 Evoker | `26`
 Mage | `0`
 Paladin | `24`
-Druid | `38`
+Druid | `41`
 Deathknight | `0`
 Shaman | `13`
 Hunter | `8`
@@ -110,11 +110,11 @@ Mistweaver Monk | `32`
 Affliction Warlock | `58`
 Marksmanship Hunter | `48`
 Unholy Death Knight | `0`
-Restoration Druid | `51`
+Restoration Druid | `52`
 Outlaw Rogue | `27`
 Protection Paladin | `0`
 Brewmaster Monk | `0`
-Balance Druid | `47`
+Balance Druid | `49`
 Blood Death Knight | `0`
 Fury Warrior | `42`
 Vengeance Demon Hunter | `0`
@@ -130,7 +130,7 @@ Guardian Druid | `62`
 Subtlety Rogue | `30`
 Frost Death Knight | `0`
 Holy Priest | `0`
-Feral Druid | `44`
+Feral Druid | `46`
 Survival Hunter | `0`
 Preservation Evoker | `27`
 Devastation Evoker | `22`

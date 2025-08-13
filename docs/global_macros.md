@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=59896ce9d003dd7d9e9be1242744c86b
+    hash=925ce90d2cdbe02329b35b6b0a61aa6d
     =====================================
 -->
 
@@ -162,6 +162,24 @@ ah
 
 ```
 /use Trader's Gilded Brutosaur
+```
+
+---
+
+dfnwe
+
+```
+#showtooltip
+/cast [known:Force of Nature] Force of Nature; Warrior of Elune
+```
+
+---
+
+dirmb
+
+```
+#showtooltip
+/cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar
 ```
 
 ---

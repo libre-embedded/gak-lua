@@ -1,11 +1,17 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=a20eab1e1e24178f8f2761d98718e83d
+-- hash=3a21d569e3848252c32341e8c212a381
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
 /use Trader's Gilded Brutosaur]])
+	CreateMacro("dfnwe", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Force of Nature] Force of Nature; Warrior of Elune]])
+	CreateMacro("dirmb", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar]])
 	CreateMacro("dis", "ability_marksmanship", [[
 /dismount
 /cancelform]])
@@ -50,7 +56,7 @@ function GakCreateGlobalMacros()
 /use 14]])
 	CreateMacro("yak", "ability_mount_travellersyakmount", [[
 /use Grand Expedition Yak]])
-	print("Created 15 global macros.")
+	print("Created 17 global macros.")
 end
 
 local function createFirstRacialMacro()
