@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=8455dde79f30ef8e55d30001a5f920e1
+    hash=0d64266abbd6f42c99a63287f04c891d
     =====================================
 -->
 
@@ -75,7 +75,7 @@ Rogue | `8`
 Monk | `16`
 Warrior | `1`
 Warlock | `9`
-Evoker | `13`
+Evoker | `14`
 Mage | `8`
 Paladin | `22`
 Druid | `28`
@@ -94,7 +94,7 @@ Rogue | `38`
 Monk | `19`
 Warrior | `0`
 Warlock | `43`
-Evoker | `26`
+Evoker | `29`
 Mage | `33`
 Paladin | `24`
 Druid | `41`
@@ -132,8 +132,8 @@ Frost Death Knight | `0`
 Holy Priest | `0`
 Feral Druid | `46`
 Survival Hunter | `20`
-Preservation Evoker | `27`
-Devastation Evoker | `22`
+Preservation Evoker | `28`
+Devastation Evoker | `21`
 Discipline Priest | `35`
 Enhancement Shaman | `44`
 Frost Mage | `20`

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=5acd7c0b969595ac23cbad3e9ed3d271
+    hash=8a149d90056243044548281508ab5afa
     =====================================
 -->
 
@@ -114,6 +114,15 @@ sx
 ```
 #showtooltip
 /cast [@player] Expunge
+```
+
+---
+
+tssp
+
+```
+#showtooltip
+/cast [known:Time Spiral] Time Spiral; Spatial Paradox
 ```
 
 ---
