@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=22a2cf3d6cef759e3aa9cf88313f826d
+    hash=8455dde79f30ef8e55d30001a5f920e1
     =====================================
 -->
 
@@ -95,7 +95,7 @@ Monk | `19`
 Warrior | `0`
 Warlock | `43`
 Evoker | `26`
-Mage | `0`
+Mage | `33`
 Paladin | `24`
 Druid | `41`
 Deathknight | `0`
@@ -121,7 +121,7 @@ Vengeance Demon Hunter | `0`
 Arms Warrior | `52`
 Havoc Demon Hunter | `40`
 Windwalker Monk | `29`
-Arcane Mage | `0`
+Arcane Mage | `19`
 Elemental Shaman | `41`
 Restoration Shaman | `50`
 Destruction Warlock | `21`
@@ -136,10 +136,10 @@ Preservation Evoker | `27`
 Devastation Evoker | `22`
 Discipline Priest | `35`
 Enhancement Shaman | `44`
-Frost Mage | `49`
+Frost Mage | `20`
 Shadow Priest | `38`
 Protection Warrior | `0`
-Fire Mage | `0`
+Fire Mage | `18`
 
 ---
 

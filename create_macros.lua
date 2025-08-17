@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=7011b5236a9bc0cfbf8b987b5c047854
+-- hash=af0253d96df837f2d4b30413cb788d31
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -453,29 +453,28 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "MAGE" then
-		CreateMacro("canc", "inv_misc_questionmark", [[
+		CreateMacro("cat", "spell_mage_altertime_active", [[
+/cancelaura Alter Time]], true)
+		CreateMacro("ibc", "inv_misc_questionmark", [[
 #showtooltip Ice Block
 /cancelaura Ice Block
 /cast Ice Block]], true)
-		CreateMacro("spam", "inv_misc_questionmark", [[
-#showtooltip Fire Blast
-/castsequence reset=0.5 Fire Blast, Languages]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Blizzard]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Ring of Fire]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sai", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Arcane Intellect]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sb", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Ring of Frost]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+/cast [@player] Blizzard]], true)
+		CreateMacro("sfs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Flamestrike]], true)
+		CreateMacro("src", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Remove Curse]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("srof", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Ring of Frost]], true)
+		CreateMacro("ssf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Slow Fall]], true)
 		print("Created 8", select(1, UnitClass("player")), "macros.")
