@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=0d64266abbd6f42c99a63287f04c891d
+    hash=3ec88dc4f475e3354d64d4a8379061bb
     =====================================
 -->
 
@@ -73,7 +73,7 @@ Demonhunter | `5`
 Priest | `21`
 Rogue | `8`
 Monk | `16`
-Warrior | `1`
+Warrior | `5`
 Warlock | `9`
 Evoker | `14`
 Mage | `8`
@@ -92,13 +92,13 @@ Demonhunter | `0`
 Priest | `19`
 Rogue | `38`
 Monk | `19`
-Warrior | `0`
+Warrior | `35`
 Warlock | `43`
 Evoker | `29`
 Mage | `33`
 Paladin | `24`
 Druid | `41`
-Deathknight | `0`
+Deathknight | `29`
 Shaman | `13`
 Hunter | `44`
 Assassination Rogue | `28`
@@ -109,16 +109,16 @@ Holy Paladin | `38`
 Mistweaver Monk | `32`
 Affliction Warlock | `21`
 Marksmanship Hunter | `13`
-Unholy Death Knight | `0`
+Unholy Death Knight | `26`
 Restoration Druid | `52`
 Outlaw Rogue | `27`
 Protection Paladin | `0`
 Brewmaster Monk | `0`
 Balance Druid | `52`
 Blood Death Knight | `0`
-Fury Warrior | `42`
+Fury Warrior | `16`
 Vengeance Demon Hunter | `0`
-Arms Warrior | `52`
+Arms Warrior | `18`
 Havoc Demon Hunter | `40`
 Windwalker Monk | `29`
 Arcane Mage | `19`
@@ -128,7 +128,7 @@ Destruction Warlock | `21`
 Augmentation Evoker | `0`
 Guardian Druid | `62`
 Subtlety Rogue | `30`
-Frost Death Knight | `0`
+Frost Death Knight | `15`
 Holy Priest | `0`
 Feral Druid | `46`
 Survival Hunter | `20`

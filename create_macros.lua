@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=40067f0b61524a91c0dc210307c90d67
+-- hash=3eddd2690678ee875d340ce73cba969b
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -225,21 +225,21 @@ function GakCreateCharacterMacros()
 	local class_str = select(2, UnitClass("player"))
 
 	if class_str == "DEATHKNIGHT" then
-		CreateMacro("pet", "inv_misc_questionmark", [[
+		CreateMacro("pdc", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@pet] Death Coil]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Death Coil]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Death and Decay]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sams", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Anti-Magic Shell]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("samz", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Anti-Magic Zone]], true)
+		CreateMacro("sdad", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Death and Decay]], true)
+		CreateMacro("sdc", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Death Coil]], true)
 		print("Created 5", select(1, UnitClass("player")), "macros.")
 	end
 
@@ -805,9 +805,21 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "WARRIOR" then
-		CreateMacro("stance", "inv_misc_questionmark", [[
+		CreateMacro("bsbr", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Berserker Roar] Berserker Roar; [known:Berserker Shout] Berserker Shout; Berserker Rage]], true)
+		CreateMacro("bsr", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Bladestorm] Bladestorm; Ravager]], true)
+		CreateMacro("dsa", "inv_misc_questionmark", [[
 #showtooltip
 /cast [stance:1] Battle Stance; [stance:2] Defensive Stance]], true)
-		print("Created 1", select(1, UnitClass("player")), "macros.")
+		CreateMacro("dsf", "inv_misc_questionmark", [[
+#showtooltip
+/cast [stance:1] Berserker Stance; [stance:2] Defensive Stance]], true)
+		CreateMacro("wtst", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Wrecking Throw] Wrecking Throw; Shattering Throw]], true)
+		print("Created 5", select(1, UnitClass("player")), "macros.")
 	end
 end
