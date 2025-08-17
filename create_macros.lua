@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=17dc828795523fc3cfbbf3e813ec577c
+-- hash=7011b5236a9bc0cfbf8b987b5c047854
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -46,7 +46,7 @@ function GakCreateGlobalMacros()
 /cleartarget
 /use Conjured Mana Bun
 /use Quicksilver Sipper]])
-	CreateMacro("pet", "inv_leatherworking_70_petleash", [[
+	CreateMacro("petd", "inv_leatherworking_70_petleash", [[
 /petdismiss]])
 	CreateMacro("t13", "inv_misc_questionmark", [[
 #showtooltip
@@ -404,40 +404,52 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "HUNTER" then
-		CreateMacro("3", "inv_misc_questionmark", [[
+		CreateMacro("bfs", "inv_misc_questionmark", [[
 #showtooltip
-/cast Kill Shot]], true)
-		CreateMacro("4", "inv_misc_questionmark", [[
+/cast [known:Butchery] Butchery; Flanking Strike]], true)
+		CreateMacro("bssc", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Bursting Shot] Bursting Shot; Scatter Shot]], true)
+		CreateMacro("cp", "inv_misc_questionmark", [[
 #showtooltip
 /cast Command Pet]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("heti", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:High Explosive Trap] High Explosive Trap; Implosive Trap]], true)
+		CreateMacro("ks", "inv_misc_questionmark", [[
+#showtooltip
+/cast Kill Shot]], true)
+		CreateMacro("sbs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Binding Shot]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Roar of Sacrifice]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Steel Trap]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Freezing Trap]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Tar Trap]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Flare]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("scp", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Command Pet]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sdbh", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Dire Beast: Hawk]], true)
+		CreateMacro("sf", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Flare]], true)
+		CreateMacro("sft", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Freezing Trap]], true)
+		CreateMacro("shet", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] High Explosive Trap]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("smb", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Mending Bandage]], true)
+		CreateMacro("sros", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Roar of Sacrifice]], true)
+		CreateMacro("stt", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Tar Trap]], true)
+		CreateMacro("sv", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Volley]], true)
-		print("Created 11", select(1, UnitClass("player")), "macros.")
+		print("Created 15", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "MAGE" then

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=925ce90d2cdbe02329b35b6b0a61aa6d
+    hash=ffb73bb5b75a5ac05bea8421f4aec5eb
     =====================================
 -->
 
@@ -98,7 +98,7 @@ mana
 
 ![icon image](https://wow.zamimg.com/images/wow/icons/large/inv_leatherworking_70_petleash.jpg)
 
-pet
+petd
 
 ```
 /petdismiss
