@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=e383ff4a05ed6a9b5db6c50c500cf11f
+-- hash=9b1a38c4b093ec777594857c51d4c5e9
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -16471,6 +16471,9 @@ s "Enraged Regeneration"]])
 	print("Placed " .. spec_bind_count .. " " .. name .. " (" .. id .. ") actions.")
 
 	id = C_ClassTalents.GetActiveHeroTalentSpec()
+	if not id then
+		return
+	end
 	spec_bind_count = 0
 
 	if id == 41 then
