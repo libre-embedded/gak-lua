@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=3eddd2690678ee875d340ce73cba969b
+-- hash=e2eee2895e94493cda7865169b0d9770
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -709,67 +709,7 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "SHAMAN" then
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Water Walking]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Skyfury]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Healing Surge]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Healing Wave]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Purify Spirit]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Primordial Wave]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Earth Shield]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Thunderstorm]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Chain Heal]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Surging Totem]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Totemic Projection]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Earthen Wall Totem]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Riptide]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Unleash Life]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Capacitor Totem]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Earthgrab Totem]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Earthquake]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Spirit Link Totem]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Liquid Magma Totem]], true)
-		CreateMacro("self1", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Wind Rush Totem]], true)
-		print("Created 20", select(1, UnitClass("player")), "macros.")
+		print("Created 0", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARLOCK" then
