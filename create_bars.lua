@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=ac6eeabe5f23cb6582694ba86b63be36
+-- hash=4ad5171af565501e9a83912a2ef95a9e
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -12549,7 +12549,7 @@ s "Fel Rush"]])
 			print("(spec) Couldn't bind slot L1_P2_R1:", [[
 s "The Hunt"]])
 		end
-		C_Spell.PickupSpell("Reverse Magic")
+		C_Spell.PickupSpell("Demon's Bite")
 		if GetCursorInfo() then
 			-- L1_P2_R2
 			PlaceAction(26)
@@ -12560,7 +12560,7 @@ s "The Hunt"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_P2_R2:", [[
-s "Reverse Magic"]])
+s "Demon's Bite"]])
 		end
 		C_Spell.PickupSpell("Torment")
 		if GetCursorInfo() then
@@ -12860,6 +12860,19 @@ s "Throw Glaive"]])
 		else
 			print("(spec) Couldn't bind slot P2_S:", [[
 s "Rain From Above"]])
+		end
+		C_Spell.PickupSpell("Reverse Magic")
+		if GetCursorInfo() then
+			-- P2_X
+			PlaceAction(58)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_X'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot P2_X:", [[
+s "Reverse Magic"]])
 		end
 		C_Spell.PickupSpell("Felblade")
 		if GetCursorInfo() then

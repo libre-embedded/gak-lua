@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=6b2613e4ec56df6b84e56a608b27d348
+    hash=002d18526e7c365c463bef460a2b4d6e
     =====================================
 -->
 
@@ -119,7 +119,7 @@ Blood Death Knight | `0`
 Fury Warrior | `16`
 Vengeance Demon Hunter | `0`
 Arms Warrior | `18`
-Havoc Demon Hunter | `40`
+Havoc Demon Hunter | `41`
 Windwalker Monk | `29`
 Arcane Mage | `19`
 Elemental Shaman | `0`
