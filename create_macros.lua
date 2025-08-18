@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=e2eee2895e94493cda7865169b0d9770
+-- hash=06ab2849a3e570e816f25183ae47fe79
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -709,7 +709,28 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "SHAMAN" then
-		print("Created 0", select(1, UnitClass("player")), "macros.")
+		CreateMacro("pgp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Purge] Purge; Greater Purge]], true)
+		CreateMacro("shs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Healing Surge]], true)
+		CreateMacro("shw", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Healing Wave]], true)
+		CreateMacro("sr", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Riptide]], true)
+		CreateMacro("ssf", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Skyfury]], true)
+		CreateMacro("sul", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Unleash Life]], true)
+		CreateMacro("swgw", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Spirit Walk] Spirit Walk; Gust of Wind]], true)
+		print("Created 7", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARLOCK" then
