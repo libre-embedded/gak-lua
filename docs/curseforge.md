@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=002d18526e7c365c463bef460a2b4d6e
+    hash=5a1258ae73f5ae5e50cf9039ae88f9c3
     =====================================
 -->
 
@@ -80,7 +80,7 @@ Mage | `8`
 Paladin | `22`
 Druid | `28`
 Deathknight | `5`
-Shaman | `7`
+Shaman | `16`
 Hunter | `15`
 
 ### Action Bars
@@ -99,7 +99,7 @@ Mage | `33`
 Paladin | `24`
 Druid | `41`
 Deathknight | `29`
-Shaman | `11`
+Shaman | `38`
 Hunter | `44`
 Assassination Rogue | `28`
 Demonology Warlock | `24`
@@ -123,7 +123,7 @@ Havoc Demon Hunter | `41`
 Windwalker Monk | `29`
 Arcane Mage | `19`
 Elemental Shaman | `0`
-Restoration Shaman | `8`
+Restoration Shaman | `25`
 Destruction Warlock | `21`
 Augmentation Evoker | `0`
 Guardian Druid | `62`

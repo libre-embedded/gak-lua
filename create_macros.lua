@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=06ab2849a3e570e816f25183ae47fe79
+-- hash=ffad07ba1b8cb2012555b768bea22dbb
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -712,25 +712,52 @@ function GakCreateCharacterMacros()
 		CreateMacro("pgp", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Purge] Purge; Greater Purge]], true)
+		CreateMacro("sch", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Chain Heal]], true)
+		CreateMacro("sct", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Capacitor Totem]], true)
+		CreateMacro("ses", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Earth Shield]], true)
+		CreateMacro("sewt", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Earthen Wall Totem]], true)
+		CreateMacro("shr", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Healing Rain]], true)
 		CreateMacro("shs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Healing Surge]], true)
 		CreateMacro("shw", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Healing Wave]], true)
+		CreateMacro("sps", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Purify Spirit]], true)
 		CreateMacro("sr", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Riptide]], true)
 		CreateMacro("ssf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Skyfury]], true)
+		CreateMacro("sslt", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Spirit Link Totem]], true)
+		CreateMacro("st", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Thunderstorm]], true)
+		CreateMacro("stp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Totemic Projection]], true)
 		CreateMacro("sul", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Unleash Life]], true)
 		CreateMacro("swgw", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Spirit Walk] Spirit Walk; Gust of Wind]], true)
-		print("Created 7", select(1, UnitClass("player")), "macros.")
+		print("Created 16", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARLOCK" then
