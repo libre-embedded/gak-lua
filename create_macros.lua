@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=ffad07ba1b8cb2012555b768bea22dbb
+-- hash=0816a9f173ab51571dd09eeb3230f3fd
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -709,12 +709,21 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "SHAMAN" then
+		CreateMacro("eseb", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Earth Shock] Earth Shock; Elemental Blast]], true)
+		CreateMacro("fese", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Fire Elemental] Fire Elemental; Storm Elemental]], true)
 		CreateMacro("pgp", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Purge] Purge; Greater Purge]], true)
 		CreateMacro("sch", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Chain Heal]], true)
+		CreateMacro("scs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Cleanse Spirit]], true)
 		CreateMacro("sct", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Capacitor Totem]], true)
@@ -733,6 +742,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("shw", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Healing Wave]], true)
+		CreateMacro("slmt", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Liquid Magma Totem]], true)
 		CreateMacro("sps", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Purify Spirit]], true)
@@ -757,7 +769,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("swgw", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Spirit Walk] Spirit Walk; Gust of Wind]], true)
-		print("Created 16", select(1, UnitClass("player")), "macros.")
+		print("Created 20", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARLOCK" then

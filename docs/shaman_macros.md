@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=4cae4395d6db5a2efed78c97a4583211
+    hash=0987d1f84e608b41a99f10a32f283e2b
     =====================================
 -->
 
@@ -24,6 +24,24 @@ pgp
 ```
 #showtooltip
 /cast [known:Purge] Purge; Greater Purge
+```
+
+---
+
+fese
+
+```
+#showtooltip
+/cast [known:Fire Elemental] Fire Elemental; Storm Elemental
+```
+
+---
+
+eseb
+
+```
+#showtooltip
+/cast [known:Earth Shock] Earth Shock; Elemental Blast
 ```
 
 ---
@@ -136,6 +154,15 @@ sps
 
 ---
 
+scs
+
+```
+#showtooltip
+/cast [@player] Cleanse Spirit
+```
+
+---
+
 st
 
 ```
@@ -150,6 +177,15 @@ ses
 ```
 #showtooltip
 /cast [@player] Earth Shield
+```
+
+---
+
+slmt
+
+```
+#showtooltip
+/cast [@player] Liquid Magma Totem
 ```
 
 ---
