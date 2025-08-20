@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=0344f5dab1746aef14ad9e183c95d3d0
+    hash=46bbbd951397ef673d27da53b6fe9734
     =====================================
 -->
 
@@ -80,7 +80,7 @@ Mage | `8`
 Paladin | `22`
 Druid | `28`
 Deathknight | `5`
-Shaman | `20`
+Shaman | `21`
 Hunter | `15`
 
 ### Action Bars
@@ -135,7 +135,7 @@ Survival Hunter | `20`
 Preservation Evoker | `28`
 Devastation Evoker | `21`
 Discipline Priest | `35`
-Enhancement Shaman | `0`
+Enhancement Shaman | `28`
 Frost Mage | `20`
 Shadow Priest | `38`
 Protection Warrior | `0`

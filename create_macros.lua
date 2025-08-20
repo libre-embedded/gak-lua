@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=0816a9f173ab51571dd09eeb3230f3fd
+-- hash=70f2ff8c7422dede52f217b5b42b3281
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -757,6 +757,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("sslt", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Spirit Link Totem]], true)
+		CreateMacro("sst", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Surging Totem]], true)
 		CreateMacro("st", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Thunderstorm]], true)
@@ -769,7 +772,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("swgw", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Spirit Walk] Spirit Walk; Gust of Wind]], true)
-		print("Created 20", select(1, UnitClass("player")), "macros.")
+		print("Created 21", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARLOCK" then

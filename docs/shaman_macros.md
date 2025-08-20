@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=0987d1f84e608b41a99f10a32f283e2b
+    hash=91de414d1731eede1b48bccef1af5710
     =====================================
 -->
 
@@ -186,6 +186,15 @@ slmt
 ```
 #showtooltip
 /cast [@player] Liquid Magma Totem
+```
+
+---
+
+sst
+
+```
+#showtooltip
+/cast [@player] Surging Totem
 ```
 
 ---
