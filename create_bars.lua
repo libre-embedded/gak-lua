@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=c4e913e7ec78bab9a3c38b616e707694
+-- hash=b4ec63fb5f49a8ac2be96b73fe1f4ed6
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -3211,7 +3211,7 @@ s "Fade"]])
 			print("(class) Couldn't bind slot L1_P2_T:", [[
 s "Void Shift"]])
 		end
-		C_Spell.PickupSpell("Halo")
+		PickupMacro("hds")
 		if GetCursorInfo() then
 			-- L1_P2_X
 			PlaceAction(28)
@@ -3222,7 +3222,7 @@ s "Void Shift"]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L1_P2_X:", [[
-s "Halo"]])
+m hds]])
 		end
 		C_Spell.PickupSpell("Leap of Faith")
 		if GetCursorInfo() then

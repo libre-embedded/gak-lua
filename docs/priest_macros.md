@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=b06d88552cf128b8b3e2a67def024b74
+    hash=f06fe92711c88e2ef5d285cb515eda93
     =====================================
 -->
 
@@ -15,6 +15,15 @@ mcdm
 ```
 #showtooltip
 /cast [known:Mind Control] Mind Control; Dominate Mind
+```
+
+---
+
+hds
+
+```
+#showtooltip
+/cast [known:Halo] Halo; Divine Star
 ```
 
 ---
