@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=46bbbd951397ef673d27da53b6fe9734
+    hash=7d71f154bf3f1e4c6185f8e655823963
     =====================================
 -->
 
@@ -132,8 +132,8 @@ Frost Death Knight | `15`
 Holy Priest | `0`
 Feral Druid | `46`
 Survival Hunter | `20`
-Preservation Evoker | `28`
-Devastation Evoker | `21`
+Preservation Evoker | `29`
+Devastation Evoker | `22`
 Discipline Priest | `35`
 Enhancement Shaman | `28`
 Frost Mage | `20`
