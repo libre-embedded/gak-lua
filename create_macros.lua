@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=9beb0f5441c92798ba64044a9659a726
+-- hash=0cca7655f313df00a0352e0d17fb80b6
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -46,8 +46,20 @@ function GakCreateGlobalMacros()
 /cleartarget
 /use Conjured Mana Bun
 /use Quicksilver Sipper]])
+	CreateMacro("pdave", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Dark Ascension] Dark Ascension; Void Eruption]])
 	CreateMacro("petd", "inv_leatherworking_70_petleash", [[
 /petdismiss]])
+	CreateMacro("ppd", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Purify Disease]])
+	CreateMacro("psf", "inv_misc_questionmark", [[
+#showtooltip
+/cast !Shadowform]])
+	CreateMacro("pssc", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Shadow Crash]])
 	CreateMacro("t13", "inv_misc_questionmark", [[
 #showtooltip
 /use 13]])
@@ -56,7 +68,7 @@ function GakCreateGlobalMacros()
 /use 14]])
 	CreateMacro("yak", "ability_mount_travellersyakmount", [[
 /use Grand Expedition Yak]])
-	print("Created 17 global macros.")
+	print("Created 21 global macros.")
 end
 
 local function createFirstRacialMacro()

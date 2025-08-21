@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=1cefec879e12626ac53f6d690a6881f7
+    hash=5331d945c04bd7e0711cf875c5bfe187
     =====================================
 -->
 
@@ -68,7 +68,7 @@ documentation for additional details.
 
 Type | Count
 -----|------
-Shared | `17`
+Shared | `21`
 Demonhunter | `5`
 Priest | `28`
 Rogue | `8`
@@ -137,7 +137,7 @@ Devastation Evoker | `22`
 Discipline Priest | `23`
 Enhancement Shaman | `28`
 Frost Mage | `20`
-Shadow Priest | `0`
+Shadow Priest | `24`
 Protection Warrior | `0`
 Fire Mage | `18`
 

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=ffb73bb5b75a5ac05bea8421f4aec5eb
+    hash=521133529cb7549d482edfcb0abcaa0d
     =====================================
 -->
 
@@ -180,6 +180,42 @@ dirmb
 ```
 #showtooltip
 /cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar
+```
+
+---
+
+psf
+
+```
+#showtooltip
+/cast !Shadowform
+```
+
+---
+
+pdave
+
+```
+#showtooltip
+/cast [known:Dark Ascension] Dark Ascension; Void Eruption
+```
+
+---
+
+pssc
+
+```
+#showtooltip
+/cast [@player] Shadow Crash
+```
+
+---
+
+ppd
+
+```
+#showtooltip
+/cast [@player] Purify Disease
 ```
 
 ---
