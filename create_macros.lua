@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=70f2ff8c7422dede52f217b5b42b3281
+-- hash=e7743591845d63c999931d12668d823f
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -606,70 +606,88 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "PRIEST" then
-		CreateMacro("harm", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@anyenemy] Ultimate Penitence]], true)
-		CreateMacro("harm", "inv_misc_questionmark", [[
+		CreateMacro("en", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyenemy] Penance]], true)
-		CreateMacro("harm", "inv_misc_questionmark", [[
+		CreateMacro("eup", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@anyenemy] Shadowfiend]], true)
-		CreateMacro("help", "inv_misc_questionmark", [[
+/cast [@anyenemy] Ultimate Penitence]], true)
+		CreateMacro("fn", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyfriend] Penance]], true)
-		CreateMacro("help", "inv_misc_questionmark", [[
+		CreateMacro("fnd", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyenemy] Shadowfiend]], true)
+		CreateMacro("fup", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyfriend] Ultimate Penitence]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("lbpb", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Purify]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+/cast [known:Luminous Barrier] Luminous Barrier; Power Word: Barrier]], true)
+		CreateMacro("mcdm", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Penance]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Shadow Crash]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Mass Dispel]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Power Word: Barrier]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Power Word: Shield]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Flash Heal]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Renew]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Pain Suppression]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Power Word: Life]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Power Word: Fortitude]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Power Word: Radiance]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+/cast [known:Mind Control] Mind Control; Dominate Mind]], true)
+		CreateMacro("saf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Angelic Feather]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("sfh", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Flash Heal]], true)
+		CreateMacro("sgs", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Guardian Spirit]], true)
+		CreateMacro("sh", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Heal]], true)
+		CreateMacro("shws", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Holy Word: Serenity]], true)
+		CreateMacro("shwy", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Holy Word: Sanctify]], true)
+		CreateMacro("sl", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Levitate]], true)
-		CreateMacro("self", "inv_misc_questionmark", [[
+		CreateMacro("smd", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Rapture]], true)
-		CreateMacro("form", "inv_misc_questionmark", [[
+/cast [@player] Mass Dispel]], true)
+		CreateMacro("sn", "inv_misc_questionmark", [[
 #showtooltip
-/cast !Shadowform]], true)
-		print("Created 21", select(1, UnitClass("player")), "macros.")
+/cast [@player] Penance]], true)
+		CreateMacro("sp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Purify]], true)
+		CreateMacro("spoh", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Prayer of Healing]], true)
+		CreateMacro("spom", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Prayer of Mending]], true)
+		CreateMacro("sps", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Pain Suppression]], true)
+		CreateMacro("spwb", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Power Word: Barrier]], true)
+		CreateMacro("spwf", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Power Word: Fortitude]], true)
+		CreateMacro("spwl", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Power Word: Life]], true)
+		CreateMacro("spwr", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Power Word: Radiance]], true)
+		CreateMacro("spws", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Power Word: Shield]], true)
+		CreateMacro("sr", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Renew]], true)
+		CreateMacro("sroh", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Ray of Hope]], true)
+		print("Created 27", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "ROGUE" then

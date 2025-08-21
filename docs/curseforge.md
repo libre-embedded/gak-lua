@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=7d71f154bf3f1e4c6185f8e655823963
+    hash=64abb68e7b454724edb66ecc886c896d
     =====================================
 -->
 
@@ -70,7 +70,7 @@ Type | Count
 -----|------
 Shared | `17`
 Demonhunter | `5`
-Priest | `21`
+Priest | `27`
 Rogue | `8`
 Monk | `16`
 Warrior | `5`
@@ -89,7 +89,7 @@ Type | Action Count
 -----|-------------
 Global | `20`
 Demonhunter | `0`
-Priest | `19`
+Priest | `32`
 Rogue | `38`
 Monk | `19`
 Warrior | `35`
@@ -129,15 +129,15 @@ Augmentation Evoker | `0`
 Guardian Druid | `62`
 Subtlety Rogue | `30`
 Frost Death Knight | `15`
-Holy Priest | `0`
+Holy Priest | `33`
 Feral Druid | `46`
 Survival Hunter | `20`
 Preservation Evoker | `29`
 Devastation Evoker | `22`
-Discipline Priest | `35`
+Discipline Priest | `23`
 Enhancement Shaman | `28`
 Frost Mage | `20`
-Shadow Priest | `38`
+Shadow Priest | `0`
 Protection Warrior | `0`
 Fire Mage | `18`
 
