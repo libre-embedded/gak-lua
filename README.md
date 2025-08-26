@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=52b6f180952ac7ec5c2c1be41ef0f70c
+    hash=9731873065026e45525fd432518ab963
     =====================================
 -->
 
@@ -24,19 +24,19 @@
     * [GamePad <-> Keyboard Mapping](docs/keymap.md)
 * Macros
     * [Global](docs/global_macros.md)
-    * [Demonhunter](docs/demonhunter_macros.md)
-    * [Priest](docs/priest_macros.md)
-    * [Rogue](docs/rogue_macros.md)
-    * [Monk](docs/monk_macros.md)
     * [Warrior](docs/warrior_macros.md)
-    * [Warlock](docs/warlock_macros.md)
-    * [Evoker](docs/evoker_macros.md)
+    * [Demonhunter](docs/demonhunter_macros.md)
     * [Mage](docs/mage_macros.md)
-    * [Paladin](docs/paladin_macros.md)
-    * [Druid](docs/druid_macros.md)
-    * [Deathknight](docs/deathknight_macros.md)
-    * [Shaman](docs/shaman_macros.md)
     * [Hunter](docs/hunter_macros.md)
+    * [Evoker](docs/evoker_macros.md)
+    * [Warlock](docs/warlock_macros.md)
+    * [Deathknight](docs/deathknight_macros.md)
+    * [Rogue](docs/rogue_macros.md)
+    * [Paladin](docs/paladin_macros.md)
+    * [Shaman](docs/shaman_macros.md)
+    * [Monk](docs/monk_macros.md)
+    * [Priest](docs/priest_macros.md)
+    * [Druid](docs/druid_macros.md)
 * [Action Bar Layout](docs/bars.md)
 * [Various Import Strings](docs/copy_strings.md)
 

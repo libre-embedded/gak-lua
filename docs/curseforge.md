@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=5331d945c04bd7e0711cf875c5bfe187
+    hash=78bab9edc1452ba1799e286d3065ffb7
     =====================================
 -->
 
@@ -69,77 +69,77 @@ documentation for additional details.
 Type | Count
 -----|------
 Shared | `21`
-Demonhunter | `5`
-Priest | `28`
-Rogue | `8`
-Monk | `16`
 Warrior | `5`
-Warlock | `9`
-Evoker | `14`
+Demonhunter | `5`
 Mage | `8`
-Paladin | `22`
-Druid | `28`
-Deathknight | `5`
-Shaman | `21`
 Hunter | `15`
+Evoker | `14`
+Warlock | `9`
+Deathknight | `5`
+Rogue | `8`
+Paladin | `22`
+Shaman | `21`
+Monk | `16`
+Priest | `28`
+Druid | `28`
 
 ### Action Bars
 
 Type | Action Count
 -----|-------------
 Global | `20`
-Demonhunter | `0`
-Priest | `32`
-Rogue | `38`
-Monk | `19`
 Warrior | `35`
-Warlock | `43`
-Evoker | `29`
+Demonhunter | `0`
 Mage | `33`
-Paladin | `24`
-Druid | `41`
-Deathknight | `29`
-Shaman | `38`
 Hunter | `44`
-Assassination Rogue | `28`
-Demonology Warlock | `24`
-Beast Mastery Hunter | `12`
-Retribution Paladin | `23`
-Holy Paladin | `38`
-Mistweaver Monk | `32`
-Affliction Warlock | `21`
-Marksmanship Hunter | `13`
-Unholy Death Knight | `26`
-Restoration Druid | `52`
-Outlaw Rogue | `27`
-Protection Paladin | `0`
-Brewmaster Monk | `0`
-Balance Druid | `52`
-Blood Death Knight | `0`
+Evoker | `29`
+Warlock | `43`
+Deathknight | `29`
+Rogue | `38`
+Paladin | `24`
+Shaman | `38`
+Monk | `19`
+Priest | `32`
+Druid | `41`
+Holy Priest | `33`
+Frost Death Knight | `15`
 Fury Warrior | `16`
 Vengeance Demon Hunter | `0`
-Arms Warrior | `18`
-Havoc Demon Hunter | `41`
-Windwalker Monk | `29`
-Arcane Mage | `19`
-Elemental Shaman | `23`
-Restoration Shaman | `25`
-Destruction Warlock | `21`
-Augmentation Evoker | `0`
-Guardian Druid | `62`
-Subtlety Rogue | `30`
-Frost Death Knight | `15`
-Holy Priest | `33`
-Feral Druid | `46`
-Survival Hunter | `20`
-Preservation Evoker | `29`
-Devastation Evoker | `22`
-Discipline Priest | `23`
-Enhancement Shaman | `28`
 Frost Mage | `20`
-Shadow Priest | `24`
-Protection Warrior | `0`
 Fire Mage | `18`
+Affliction Warlock | `21`
+Windwalker Monk | `29`
+Brewmaster Monk | `0`
+Demonology Warlock | `24`
+Subtlety Rogue | `30`
+Devastation Evoker | `22`
+Elemental Shaman | `23`
+Destruction Warlock | `21`
+Restoration Druid | `52`
+Holy Paladin | `38`
+Beast Mastery Hunter | `12`
+Protection Warrior | `0`
+Shadow Priest | `24`
+Retribution Paladin | `23`
+Preservation Evoker | `29`
+Blood Death Knight | `0`
+Protection Paladin | `0`
+Balance Druid | `52`
+Arms Warrior | `18`
+Enhancement Shaman | `28`
+Marksmanship Hunter | `13`
+Arcane Mage | `19`
+Survival Hunter | `20`
+Assassination Rogue | `28`
+Augmentation Evoker | `0`
+Feral Druid | `46`
+Outlaw Rogue | `27`
+Mistweaver Monk | `32`
+Restoration Shaman | `26`
+Unholy Death Knight | `26`
+Havoc Demon Hunter | `41`
+Guardian Druid | `62`
+Discipline Priest | `23`
 
 ---
 

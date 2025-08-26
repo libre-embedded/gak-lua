@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=4465d6c40812c38da2656b890985a466
+-- hash=e364ccd2cbd2ee4de3da619c854b52d4
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -12372,6 +12372,19 @@ s "Earthen Wall Totem"]])
 			print("(spec) Couldn't bind slot L2_P2_C:", [[
 s "Water Shield"]])
 		end
+		C_Spell.PickupSpell("Heroism")
+		if GetCursorInfo() then
+			-- L2_P2_S
+			PlaceAction(51)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_P2_S'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_P2_S:", [[
+s "Heroism"]])
+		end
 		C_Spell.PickupSpell("Earthliving Weapon")
 		if GetCursorInfo() then
 			-- L2_R
@@ -16750,6 +16763,12 @@ function GakSetRoleActions()
 	local role = spec_info[5]
 	local role_bind_count = 0
 
+	if role == "TANK" then
+	end
+
+	if role == "HEALER" then
+	end
+
 	if role == "DAMAGER" then
 		C_Spell.PickupSpell("Single-Button Assistant")
 		if GetCursorInfo() then
@@ -16764,12 +16783,6 @@ function GakSetRoleActions()
 			print("(role) Couldn't bind slot L1_P2_S:", [[
  ]])
 		end
-	end
-
-	if role == "HEALER" then
-	end
-
-	if role == "TANK" then
 	end
 
 	print("Placed " .. role_bind_count .. " " .. role .. " actions.")
