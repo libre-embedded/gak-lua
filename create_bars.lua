@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=e364ccd2cbd2ee4de3da619c854b52d4
+-- hash=96135ea17b2aed929ad8e8e6156bef07
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -16684,6 +16684,22 @@ s "Frostfire Bolt"]])
 		else
 			print("(spec) Couldn't bind slot R1_2:", [[
 s "Frostfire Bolt"]])
+		end
+	end
+
+	if id == 54 then
+		C_Spell.PickupSpell("Tidecaller's Guard")
+		if GetCursorInfo() then
+			-- L1_R
+			PlaceAction(36)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_R'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_R:", [[
+s "Tidecaller's Guard"]])
 		end
 	end
 
