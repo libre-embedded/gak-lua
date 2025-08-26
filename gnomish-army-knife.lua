@@ -81,14 +81,6 @@ local function GakRuntimeInit()
 	-- Hide some elements.
 	GakAuditZenMode()
 
-	-- Set loadout (delay necessary for pet spells).
-	-- C_Timer.After(1.0, function()
-	-- 	if not UnitAffectingCombat("player") then
-	-- 		GakSetGlobalMacros()
-	-- 		GakSetActionBars()
-	-- 	end
-	-- end)
-
 	FramerateFrame:Show()
 end
 
@@ -213,6 +205,14 @@ local function GakLogin(frame)
 	end
 
 	GakRuntimeInit()
+
+	-- Set loadout (delay necessary for pet spells).
+	C_Timer.After(1.0, function()
+		if not UnitAffectingCombat("player") then
+			GakSetGlobalMacros()
+			GakSetActionBars()
+		end
+	end)
 end
 
 GakEventHandlers["PLAYER_LOGIN"] = function(frame)
