@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=55b0f2f281dd918d2c0e7f6df25de5cd
+-- hash=bd2aa3e5132c249acb627be298cca70a
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -182,6 +182,15 @@ function GakCreateCharacterMacros()
 		CreateMacro("rac2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Cannibalize]], true)
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
+	end
+
+	if our_race == "Tauren" then
+		CreateMacro("rac1", "inv_misc_questionmark", [[
+#showtooltip
+/cast War Stomp]], true)
+		createSecondRacialMacro()
 		print("Created macros for '" .. our_race .. "'.")
 		racial_macros_created = true
 	end
