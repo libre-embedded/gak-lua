@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=8fb2418aadeb77a6714c5aa5512850b9
+-- hash=78c8a7116510b01e2aede49c645b3205
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -1505,6 +1505,19 @@ s "Swoop Up"]])
 		else
 			print("(class) Couldn't bind slot L2_R:", [[
 s 360022]])
+		end
+		C_Spell.PickupSpell(357208)
+		if GetCursorInfo() then
+			-- L2_R1
+			PlaceAction(61)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_R1'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L2_R1:", [[
+s 357208]])
 		end
 		C_Spell.PickupSpell("Tail Swipe")
 		if GetCursorInfo() then
@@ -7666,19 +7679,6 @@ s "Emerald Blossom"]])
 		else
 			print("(spec) Couldn't bind slot L2_P2_R2:", [[
 s 357210]])
-		end
-		C_Spell.PickupSpell(357208)
-		if GetCursorInfo() then
-			-- L2_R1
-			PlaceAction(61)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_R1'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot L2_R1:", [[
-s 357208]])
 		end
 		PickupMacro("slf")
 		if GetCursorInfo() then
@@ -16782,6 +16782,9 @@ function GakSetRoleActions()
 	if role == "TANK" then
 	end
 
+	if role == "HEALER" then
+	end
+
 	if role == "DAMAGER" then
 		C_Spell.PickupSpell("Single-Button Assistant")
 		if GetCursorInfo() then
@@ -16796,9 +16799,6 @@ function GakSetRoleActions()
 			print("(role) Couldn't bind slot L1_P2_S:", [[
  ]])
 		end
-	end
-
-	if role == "HEALER" then
 	end
 
 	print("Placed " .. role_bind_count .. " " .. role .. " actions.")
