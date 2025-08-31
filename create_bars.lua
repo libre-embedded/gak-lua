@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=78c8a7116510b01e2aede49c645b3205
+-- hash=50514e3b311284afb39e6cf2b446ba64
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -996,7 +996,7 @@ m ffs]])
 			print("(class) Couldn't bind slot L2_P3:", [[
 m prow]])
 		end
-		C_Spell.PickupSpell("Hibernate")
+		PickupMacro("dirmb")
 		if GetCursorInfo() then
 			-- L2_R
 			PlaceAction(42)
@@ -1007,7 +1007,7 @@ m prow]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L2_R:", [[
-s "Hibernate"]])
+m dirmb]])
 		end
 		PickupMacro("root")
 		if GetCursorInfo() then
@@ -1074,7 +1074,7 @@ m motw]])
 			print("(class) Couldn't bind slot P2_P3:", [[
 m flap]])
 		end
-		PickupMacro("dirmb")
+		C_Spell.PickupSpell("Hibernate")
 		if GetCursorInfo() then
 			-- P2_R
 			PlaceAction(48)
@@ -1085,7 +1085,7 @@ m flap]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot P2_R:", [[
-m dirmb]])
+s "Hibernate"]])
 		end
 		C_Spell.PickupSpell("Moonfire")
 		if GetCursorInfo() then
@@ -16782,9 +16782,6 @@ function GakSetRoleActions()
 	if role == "TANK" then
 	end
 
-	if role == "HEALER" then
-	end
-
 	if role == "DAMAGER" then
 		C_Spell.PickupSpell("Single-Button Assistant")
 		if GetCursorInfo() then
@@ -16799,6 +16796,9 @@ function GakSetRoleActions()
 			print("(role) Couldn't bind slot L1_P2_S:", [[
  ]])
 		end
+	end
+
+	if role == "HEALER" then
 	end
 
 	print("Placed " .. role_bind_count .. " " .. role .. " actions.")
