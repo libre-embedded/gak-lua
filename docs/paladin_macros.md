@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=3cb2c8306e937b7dd64d0dc1162c3df0
+    hash=0eedae153cdc879e0a38429ff41c7393
     =====================================
 -->
 
@@ -204,6 +204,16 @@ shb
 ```
 #showtooltip
 /cast [@player] Holy Bulwark
+```
+
+---
+
+wa14
+
+```
+#showtooltip Wake of Ashes
+/use 14
+/cast Wake of Ashes
 ```
 
 ---

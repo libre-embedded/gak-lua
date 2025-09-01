@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=50514e3b311284afb39e6cf2b446ba64
+-- hash=9e37fe22963907fb217c2ed7c01712f2
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -16041,7 +16041,7 @@ s 343721]])
 			print("(spec) Couldn't bind slot L2_S:", [[
 s 184662]])
 		end
-		C_Spell.PickupSpell(255937)
+		PickupMacro("wa14")
 		if GetCursorInfo() then
 			-- P2_R1
 			PlaceAction(55)
@@ -16052,7 +16052,7 @@ s 184662]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_R1:", [[
-s 255937]])
+m wa14]])
 		end
 		C_Spell.PickupSpell("Divine Hammer")
 		if GetCursorInfo() then
@@ -16782,6 +16782,9 @@ function GakSetRoleActions()
 	if role == "TANK" then
 	end
 
+	if role == "HEALER" then
+	end
+
 	if role == "DAMAGER" then
 		C_Spell.PickupSpell("Single-Button Assistant")
 		if GetCursorInfo() then
@@ -16796,9 +16799,6 @@ function GakSetRoleActions()
 			print("(role) Couldn't bind slot L1_P2_S:", [[
  ]])
 		end
-	end
-
-	if role == "HEALER" then
 	end
 
 	print("Placed " .. role_bind_count .. " " .. role .. " actions.")

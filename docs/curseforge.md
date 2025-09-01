@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=6db2e4c19abb8bdceec64772dec67172
+    hash=49f11edbca4ba89f00d5934036eea017
     =====================================
 -->
 
@@ -69,77 +69,77 @@ documentation for additional details.
 Type | Count
 -----|------
 Shared | `21`
-Monk | `16`
-Hunter | `15`
-Paladin | `22`
-Evoker | `14`
-Warrior | `5`
-Shaman | `21`
-Druid | `28`
-Priest | `28`
-Warlock | `9`
-Rogue | `8`
-Demonhunter | `5`
 Deathknight | `5`
+Demonhunter | `5`
+Druid | `28`
+Evoker | `14`
+Hunter | `15`
 Mage | `8`
+Monk | `16`
+Paladin | `23`
+Priest | `28`
+Rogue | `8`
+Shaman | `21`
+Warlock | `9`
+Warrior | `5`
 
 ### Action Bars
 
 Type | Action Count
 -----|-------------
 Global | `20`
-Monk | `19`
-Hunter | `44`
-Paladin | `24`
-Evoker | `30`
-Warrior | `35`
-Shaman | `38`
-Druid | `41`
-Priest | `32`
-Warlock | `43`
-Rogue | `38`
-Demonhunter | `0`
 Deathknight | `29`
+Demonhunter | `0`
+Druid | `41`
+Evoker | `30`
+Hunter | `44`
 Mage | `33`
-Demonology Warlock | `24`
-Frost Mage | `20`
-Vengeance Demon Hunter | `0`
-Enhancement Shaman | `28`
-Survival Hunter | `20`
-Elemental Shaman | `23`
-Discipline Priest | `23`
-Protection Paladin | `0`
-Shadow Priest | `24`
-Arms Warrior | `18`
-Windwalker Monk | `29`
-Brewmaster Monk | `0`
+Monk | `19`
+Paladin | `24`
+Priest | `32`
+Rogue | `38`
+Shaman | `38`
+Warlock | `43`
+Warrior | `35`
+Balance Druid | `52`
+Feral Druid | `46`
+Guardian Druid | `62`
 Restoration Druid | `52`
 Devastation Evoker | `21`
-Arcane Mage | `19`
-Unholy Death Knight | `26`
-Balance Druid | `52`
-Affliction Warlock | `21`
-Feral Druid | `46`
-Destruction Warlock | `21`
-Fury Warrior | `16`
-Fire Mage | `18`
-Retribution Paladin | `23`
 Preservation Evoker | `29`
-Outlaw Rogue | `27`
-Guardian Druid | `62`
-Holy Priest | `33`
 Augmentation Evoker | `0`
-Frost Death Knight | `15`
-Assassination Rogue | `28`
-Mistweaver Monk | `32`
-Protection Warrior | `0`
-Beast Mastery Hunter | `12`
-Havoc Demon Hunter | `41`
-Holy Paladin | `38`
-Subtlety Rogue | `30`
-Marksmanship Hunter | `13`
 Blood Death Knight | `0`
+Frost Death Knight | `15`
+Unholy Death Knight | `26`
+Beast Mastery Hunter | `12`
+Marksmanship Hunter | `13`
+Survival Hunter | `20`
+Discipline Priest | `23`
+Holy Priest | `33`
+Shadow Priest | `24`
+Assassination Rogue | `28`
+Outlaw Rogue | `27`
+Subtlety Rogue | `30`
+Elemental Shaman | `23`
+Enhancement Shaman | `28`
 Restoration Shaman | `26`
+Affliction Warlock | `21`
+Demonology Warlock | `24`
+Destruction Warlock | `21`
+Brewmaster Monk | `0`
+Windwalker Monk | `29`
+Mistweaver Monk | `32`
+Havoc Demon Hunter | `41`
+Vengeance Demon Hunter | `0`
+Arcane Mage | `19`
+Fire Mage | `18`
+Frost Mage | `20`
+Holy Paladin | `38`
+Protection Paladin | `0`
+Retribution Paladin | `23`
+Arms Warrior | `18`
+Fury Warrior | `16`
+Protection Warrior | `0`
 
 ---
 
