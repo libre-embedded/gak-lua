@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=69c198ccb4e1e2cbf3bd7f1b83b66860
+    hash=07641313db531aeb86d1a81133a56b0b
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `94`
+Total: `99`
 
 Name | Value
 ---- | -----
@@ -47,9 +47,14 @@ GamePadOverlapMouseMs | 50
 GamePadRunThreshold | 0
 hideAdventureJournalAlerts | 1
 lossOfControl | 0
+nameplateGlobalScale | 1.0
 nameplateHideHealthAndPower | 1
+nameplateLargerScale | 1.2
+nameplateLargeTopInset | 0.1
 nameplateMotion | 1
 nameplateMotionSpeed | 0.05
+nameplateOtherBottomInset | 0.1
+nameplateOtherTopInset | 0.08
 nameplateOverlapH | 0.6
 nameplateOverlapV | 0.6
 NameplatePersonalShowAlways | 1

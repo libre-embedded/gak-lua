@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=6aee6d8b3090cc4b198610196539fa11
+-- hash=f75cc64201323b77c9245b321a4ac927
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -37,9 +37,14 @@ expectedCVars["GamePadOverlapMouseMs"] = 50
 expectedCVars["GamePadRunThreshold"] = 0
 expectedCVars["hideAdventureJournalAlerts"] = 1
 expectedCVars["lossOfControl"] = 0
+expectedCVars["nameplateGlobalScale"] = 1.0
 expectedCVars["nameplateHideHealthAndPower"] = 1
+expectedCVars["nameplateLargerScale"] = 1.2
+expectedCVars["nameplateLargeTopInset"] = 0.1
 expectedCVars["nameplateMotion"] = 1
 expectedCVars["nameplateMotionSpeed"] = 0.05
+expectedCVars["nameplateOtherBottomInset"] = 0.1
+expectedCVars["nameplateOtherTopInset"] = 0.08
 expectedCVars["nameplateOverlapH"] = 0.6
 expectedCVars["nameplateOverlapV"] = 0.6
 expectedCVars["NameplatePersonalShowAlways"] = 1
