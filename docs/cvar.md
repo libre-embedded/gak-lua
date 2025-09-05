@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=07641313db531aeb86d1a81133a56b0b
+    hash=816e20fa28ffefbfe1894d3b69b8aef0
     =====================================
 -->
 
@@ -59,7 +59,7 @@ nameplateOverlapH | 0.6
 nameplateOverlapV | 0.6
 NameplatePersonalShowAlways | 1
 nameplateResourceOnTarget | 0
-nameplateSelfBottomInset | 0.29
+nameplateSelfBottomInset | 0.3
 nameplateSelfScale | 1.0
 nameplateSelfTopInset | 0.5
 nameplateShowAll | 1
