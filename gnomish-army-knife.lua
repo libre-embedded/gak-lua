@@ -81,7 +81,7 @@ local function GakRuntimeInit()
 	-- Hide some elements.
 	GakAuditZenMode()
 
-	FramerateFrame:Show()
+	-- FramerateFrame:Show()
 end
 
 local function GakSetAll()
