@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=816e20fa28ffefbfe1894d3b69b8aef0
+    hash=44413799fb179d6b299396d87da8eabe
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `99`
+Total: `101`
 
 Name | Value
 ---- | -----
@@ -101,6 +101,8 @@ Sound_EnableSoundWhenGameIsInBG | 1
 Sound_MasterVolume | 1
 Sound_SFXVolume | 1
 spellBookHidePassives | 1
+statusText | 0
+statusTextDisplay | `NONE`
 test_cameraDynamicPitch | 1
 test_cameraHeadMovementStrength | 0
 test_cameraOverShoulder | 0

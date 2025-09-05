@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=00501ac03f1666570820995d01b415c8
+-- hash=4d3379d0042ff3e5fe0f14fd5dc5f1ec
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -91,6 +91,8 @@ expectedCVars["Sound_EnableSoundWhenGameIsInBG"] = 1
 expectedCVars["Sound_MasterVolume"] = 1
 expectedCVars["Sound_SFXVolume"] = 1
 expectedCVars["spellBookHidePassives"] = 1
+expectedCVars["statusText"] = 0
+expectedCVars["statusTextDisplay"] = "NONE"
 expectedCVars["test_cameraDynamicPitch"] = 1
 expectedCVars["test_cameraHeadMovementStrength"] = 0
 expectedCVars["test_cameraOverShoulder"] = 0
