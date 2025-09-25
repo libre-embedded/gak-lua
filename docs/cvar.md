@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=7dfda4a9983b13407f39fb2c974d2459
+    hash=0a71c27f66add28f5ae57ad8ef3af717
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `101`
+Total: `102`
 
 Name | Value
 ---- | -----
@@ -59,6 +59,7 @@ nameplateOverlapH | 0.6
 nameplateOverlapV | 0.6
 NameplatePersonalShowAlways | 1
 nameplateResourceOnTarget | 0
+nameplateSelfAlpha | 0.75
 nameplateSelfBottomInset | 0.31
 nameplateSelfScale | 1.0
 nameplateSelfTopInset | 0.5

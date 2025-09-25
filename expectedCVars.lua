@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=fbf9c75b464ea4d6fc8392e9e3833be9
+-- hash=0bff0adf30e94a0e2e046d6fbc55b89b
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -49,6 +49,7 @@ expectedCVars["nameplateOverlapH"] = 0.6
 expectedCVars["nameplateOverlapV"] = 0.6
 expectedCVars["NameplatePersonalShowAlways"] = 1
 expectedCVars["nameplateResourceOnTarget"] = 0
+expectedCVars["nameplateSelfAlpha"] = 0.75
 expectedCVars["nameplateSelfBottomInset"] = 0.31
 expectedCVars["nameplateSelfScale"] = 1.0
 expectedCVars["nameplateSelfTopInset"] = 0.5
