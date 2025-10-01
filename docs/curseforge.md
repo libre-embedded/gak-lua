@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=90e7c0052729f9a3f0b910573f522a08
+    hash=51e5b46cfeef46e8240dc454ae232faf
     =====================================
 -->
 
@@ -109,7 +109,7 @@ Devastation Evoker | `21`
 Preservation Evoker | `29`
 Augmentation Evoker | `0`
 Blood Death Knight | `0`
-Frost Death Knight | `15`
+Frost Death Knight | `16`
 Unholy Death Knight | `26`
 Beast Mastery Hunter | `12`
 Marksmanship Hunter | `13`

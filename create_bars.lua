@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=9e37fe22963907fb217c2ed7c01712f2
+-- hash=95c745d442acf71a07f3a677d3826cc1
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -8318,6 +8318,19 @@ s "Empower Rune Weapon"]])
 		end
 		C_Spell.PickupSpell("Frostwyrm's Fury")
 		if GetCursorInfo() then
+			-- L2_L1_S
+			PlaceAction(69)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_L1_S'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_L1_S:", [[
+s "Frostwyrm's Fury"]])
+		end
+		C_Spell.PickupSpell("Remorseless Winter")
+		if GetCursorInfo() then
 			-- L2_S
 			PlaceAction(63)
 			if GetCursorInfo() then
@@ -8327,7 +8340,7 @@ s "Empower Rune Weapon"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_S:", [[
-s "Frostwyrm's Fury"]])
+s "Remorseless Winter"]])
 		end
 		C_Spell.PickupSpell("Glacial Advance")
 		if GetCursorInfo() then
