@@ -17,6 +17,9 @@ function GakHelpHarmBarInit(_)
 		-- Experimenting with anchor point.
 		-- local parent = MultiBarBottomLeft
 		local parent = MainMenuBar
+		if (not parent) then
+			return
+		end
 
 		local padding = 4
 		local frame = CreateFrame("Frame", "GakHelpHarm", parent)
