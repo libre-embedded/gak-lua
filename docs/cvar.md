@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=0a71c27f66add28f5ae57ad8ef3af717
+    hash=d3555bf6fe86b012a002376971110a7b
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `102`
+Total: `109`
 
 Name | Value
 ---- | -----
@@ -24,8 +24,10 @@ cameraSmoothStyle | 1
 combinedBags | 1
 cooldownViewerEnabled | 1
 countdownForCooldowns | 1
+damageMeterEnabled | 1
 enableMultiActionBars | 15
 enablePings | 0
+externalDefensivesEnabled | 1
 floatingCombatTextCombatDamage | 0
 floatingCombatTextCombatHealing | 0
 floatingCombatTextCombatState | 0
@@ -46,11 +48,14 @@ GamePadEnable | 1
 GamePadOverlapMouseMs | 50
 GamePadRunThreshold | 0
 hideAdventureJournalAlerts | 1
+lootUnderMouse | 0
 lossOfControl | 0
 nameplateGlobalScale | 1.0
 nameplateHideHealthAndPower | 1
 nameplateLargerScale | 1.2
 nameplateLargeTopInset | 0.1
+nameplateMaxScale | 0.9
+nameplateMinScale | 0.9
 nameplateMotion | 1
 nameplateMotionSpeed | 0.05
 nameplateOtherBottomInset | 0.1
@@ -66,7 +71,7 @@ nameplateSelfTopInset | 0.5
 nameplateShowAll | 1
 nameplateShowDebuffsOnFriendly | 1
 nameplateShowFriendlyBuffs | 1
-nameplateShowFriendlyTotems | 0
+nameplateShowFriendlyPlayerTotems | 0
 nameplateShowPersonalCooldowns | 1
 nameplateShowSelf | 1
 occludedSilhouettePlayer | 1
@@ -82,6 +87,7 @@ scriptErrors | 1
 showHonorAsExperience | 0
 showPartyPets | 1
 showPingsInChat | 0
+showTargetOfTarget | 1
 showToastWindow | 0
 showTutorials | 0
 SoftTargetEnemy | 3
@@ -102,6 +108,7 @@ Sound_EnableSoundWhenGameIsInBG | 1
 Sound_MasterVolume | 1
 Sound_SFXVolume | 1
 spellBookHidePassives | 1
+spellDiminishPVPOnlyTriggerableByMe | 1
 statusText | 0
 statusTextDisplay | `NONE`
 test_cameraDynamicPitch | 1

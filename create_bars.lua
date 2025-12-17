@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=95c745d442acf71a07f3a677d3826cc1
+-- hash=be259d6ce078aecb5da27af643fb691a
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -3038,6 +3038,19 @@ m sloh]])
 		else
 			print("(class) Couldn't bind slot L1_X_2:", [[
 s 633]])
+		end
+		C_Spell.PickupSpell("Hammer of Wrath")
+		if GetCursorInfo() then
+			-- L2_C
+			PlaceAction(66)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_C'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L2_C:", [[
+s "Hammer of Wrath"]])
 		end
 		C_Spell.PickupSpell("Rebuke")
 		if GetCursorInfo() then
@@ -15553,6 +15566,19 @@ s "Blessing of Summer"]])
 		else
 			print("(spec) Couldn't bind slot L1_P2_R2:", [[
 s "Avenging Wrath"]])
+		end
+		C_Spell.PickupSpell("Hand of Divinity")
+		if GetCursorInfo() then
+			-- L1_P2_S
+			PlaceAction(27)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P2_S'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_P2_S:", [[
+s "Hand of Divinity"]])
 		end
 		PickupMacro("sfol")
 		if GetCursorInfo() then

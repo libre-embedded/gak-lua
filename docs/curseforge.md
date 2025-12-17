@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=51e5b46cfeef46e8240dc454ae232faf
+    hash=a814e99bf76a3cf7f3608fc326959c6d
     =====================================
 -->
 
@@ -62,7 +62,7 @@ perform. See [source repository](https://github.com/vkottler/gak-lua)
 documentation for additional details.
 
 * Keybinds: `113`
-* `CVar`'s: `102`
+* `CVar`'s: `109`
 
 ### Macros
 
@@ -95,7 +95,7 @@ Evoker | `30`
 Hunter | `44`
 Mage | `33`
 Monk | `19`
-Paladin | `24`
+Paladin | `25`
 Priest | `32`
 Rogue | `38`
 Shaman | `38`
@@ -134,7 +134,7 @@ Vengeance Demon Hunter | `0`
 Arcane Mage | `19`
 Fire Mage | `18`
 Frost Mage | `20`
-Holy Paladin | `38`
+Holy Paladin | `37`
 Protection Paladin | `0`
 Retribution Paladin | `23`
 Arms Warrior | `18`
