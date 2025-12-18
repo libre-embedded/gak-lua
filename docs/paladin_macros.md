@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=0eedae153cdc879e0a38429ff41c7393
+    hash=f9fe7859875fcb81aa0d807ff12bd550
     =====================================
 -->
 
@@ -96,6 +96,15 @@ rbl
 ```
 #showtooltip
 /cast [known:Blinding Light] Blinding Light; Repentance
+```
+
+---
+
+esfr
+
+```
+#showtooltip
+/cast [known:Final Reckoning] Final Reckoning; Execution Sentence
 ```
 
 ---

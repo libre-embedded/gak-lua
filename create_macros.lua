@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=8bb221019e520a44b9006fcb70fa8f44
+-- hash=87475265cd30674a5e6d6532d8ce3899
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -592,6 +592,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("ehs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyenemy] Holy Shock]], true)
+		CreateMacro("esfr", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Final Reckoning] Final Reckoning; Execution Sentence]], true)
 		CreateMacro("fhp", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyfriend] Holy Prism]], true)
@@ -656,7 +659,7 @@ function GakCreateCharacterMacros()
 #showtooltip Wake of Ashes
 /use 14
 /cast Wake of Ashes]], true)
-		print("Created 23", select(1, UnitClass("player")), "macros.")
+		print("Created 24", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "PRIEST" then

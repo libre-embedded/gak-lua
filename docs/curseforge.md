@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=a814e99bf76a3cf7f3608fc326959c6d
+    hash=dd228e1001b96853e3314839c1546d1d
     =====================================
 -->
 
@@ -76,7 +76,7 @@ Evoker | `14`
 Hunter | `15`
 Mage | `8`
 Monk | `16`
-Paladin | `23`
+Paladin | `24`
 Priest | `28`
 Rogue | `8`
 Shaman | `21`
