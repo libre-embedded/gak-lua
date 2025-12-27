@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=44f71ad5844d63d3074c767f9f04a2d4
+-- hash=678eff97768aca2e12842fed62746af6
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -6345,7 +6345,7 @@ s "Thrash"]])
 			print("(spec) Couldn't bind slot L1_P2_R1:", [[
 s "Feral Frenzy"]])
 		end
-		C_Spell.PickupSpell("Convoke the Spirits")
+		PickupMacro("bvoke")
 		if GetCursorInfo() then
 			-- L1_P2_R2
 			PlaceAction(26)
@@ -6356,7 +6356,7 @@ s "Feral Frenzy"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_P2_R2:", [[
-s "Convoke the Spirits"]])
+m bvoke]])
 		end
 		C_Spell.PickupSpell("Rake")
 		if GetCursorInfo() then
@@ -16818,9 +16818,6 @@ function GakSetRoleActions()
 	local role = spec_info[5]
 	local role_bind_count = 0
 
-	if role == "TANK" then
-	end
-
 	if role == "HEALER" then
 	end
 
@@ -16838,6 +16835,9 @@ function GakSetRoleActions()
 			print("(role) Couldn't bind slot L1_P2_S:", [[
  ]])
 		end
+	end
+
+	if role == "TANK" then
 	end
 
 	print("Placed " .. role_bind_count .. " " .. role .. " actions.")

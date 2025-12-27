@@ -1,11 +1,15 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=87475265cd30674a5e6d6532d8ce3899
+-- hash=73e3b9c2143655f7a03f50324f08806d
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
 /use Trader's Gilded Brutosaur]])
+	CreateMacro("bvoke", "inv_misc_questionmark", [[
+#showtooltip Convoke the Spirits
+/cast Berserking
+/cast Convoke the Spirits]])
 	CreateMacro("dfnwe", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Force of Nature] Force of Nature; Warrior of Elune]])
@@ -68,7 +72,7 @@ function GakCreateGlobalMacros()
 /use 14]])
 	CreateMacro("yak", "ability_mount_travellersyakmount", [[
 /use Grand Expedition Yak]])
-	print("Created 21 global macros.")
+	print("Created 22 global macros.")
 end
 
 local function createFirstRacialMacro()

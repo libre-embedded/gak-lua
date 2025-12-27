@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=dd228e1001b96853e3314839c1546d1d
+    hash=7b3c6a41e2d9a41ef1911e006696cb3c
     =====================================
 -->
 
@@ -68,7 +68,7 @@ documentation for additional details.
 
 Type | Count
 -----|------
-Shared | `21`
+Shared | `22`
 Deathknight | `5`
 Demonhunter | `5`
 Druid | `28`

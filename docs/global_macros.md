@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=521133529cb7549d482edfcb0abcaa0d
+    hash=b22ab34bb8173b2e3f26b8649b2c73b4
     =====================================
 -->
 
@@ -198,6 +198,16 @@ pdave
 ```
 #showtooltip
 /cast [known:Dark Ascension] Dark Ascension; Void Eruption
+```
+
+---
+
+bvoke
+
+```
+#showtooltip Convoke the Spirits
+/cast Berserking
+/cast Convoke the Spirits
 ```
 
 ---
