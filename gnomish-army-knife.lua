@@ -206,13 +206,17 @@ local function GakLogin(frame)
 
 	GakRuntimeInit()
 
-	-- Set loadout (delay necessary for pet spells).
-	C_Timer.After(1.0, function()
-		if not UnitAffectingCombat("player") then
-			GakSetGlobalMacros()
-			GakSetActionBars()
-		end
-	end)
+	-- Update loadout unless in a pvp instance.
+	local info = { GetInstanceInfo() }
+	if info[2] ~= "pvp" then
+		-- Set loadout (delay necessary for pet spells).
+		C_Timer.After(1.0, function()
+			if not UnitAffectingCombat("player") then
+				GakSetGlobalMacros()
+				GakSetActionBars()
+			end
+		end)
+	end
 end
 
 GakEventHandlers["PLAYER_LOGIN"] = function(frame)
