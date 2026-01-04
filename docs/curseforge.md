@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=99f373026bf7705617abba07ce4f8821
+    hash=c86819a26451018347fd0d52586c27bf
     =====================================
 -->
 
@@ -77,7 +77,7 @@ Hunter | `15`
 Mage | `8`
 Monk | `12`
 Paladin | `24`
-Priest | `28`
+Priest | `26`
 Rogue | `8`
 Shaman | `21`
 Warlock | `12`
@@ -96,7 +96,7 @@ Hunter | `44`
 Mage | `33`
 Monk | `18`
 Paladin | `25`
-Priest | `32`
+Priest | `22`
 Rogue | `38`
 Shaman | `38`
 Warlock | `45`
@@ -114,9 +114,9 @@ Unholy Death Knight | `26`
 Beast Mastery Hunter | `12`
 Marksmanship Hunter | `13`
 Survival Hunter | `20`
-Discipline Priest | `23`
-Holy Priest | `33`
-Shadow Priest | `24`
+Discipline Priest | `20`
+Holy Priest | `21`
+Shadow Priest | `22`
 Assassination Rogue | `28`
 Outlaw Rogue | `27`
 Subtlety Rogue | `30`

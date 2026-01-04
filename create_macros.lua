@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=d9658fa33bfb09e9411e09a21cd0de69
+-- hash=a87c266982d9453e71143ce6dde80744
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -670,9 +670,6 @@ function GakCreateCharacterMacros()
 		CreateMacro("fup", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyfriend] Ultimate Penitence]], true)
-		CreateMacro("hds", "inv_misc_questionmark", [[
-#showtooltip
-/cast [known:Halo] Halo; Divine Star]], true)
 		CreateMacro("lbpb", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Luminous Barrier] Luminous Barrier; Power Word: Barrier]], true)
@@ -688,9 +685,6 @@ function GakCreateCharacterMacros()
 		CreateMacro("sgs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Guardian Spirit]], true)
-		CreateMacro("sh", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Heal]], true)
 		CreateMacro("shws", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Holy Word: Serenity]], true)
@@ -709,6 +703,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("sp", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Purify]], true)
+		CreateMacro("splea", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Plea]], true)
 		CreateMacro("spoh", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Prayer of Healing]], true)
@@ -736,10 +733,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("sr", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Renew]], true)
-		CreateMacro("sroh", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Ray of Hope]], true)
-		print("Created 28", select(1, UnitClass("player")), "macros.")
+		print("Created 26", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "ROGUE" then
