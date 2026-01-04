@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=73e3b9c2143655f7a03f50324f08806d
+-- hash=8071846806505ce3c2fde681ee721050
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -538,12 +538,6 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "MONK" then
-		CreateMacro("ezs", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@anyenemy] Zen Spheres]], true)
-		CreateMacro("fzs", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@anyfriend] Zen Spheres]], true)
 		CreateMacro("rev", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Revival] Revival; Restoral]], true)
@@ -556,9 +550,6 @@ function GakCreateCharacterMacros()
 		CreateMacro("sem", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Enveloping Mist]], true)
-		CreateMacro("shs", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Healing Sphere]], true)
 		CreateMacro("sjss", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Summon Jade Serpent Statue]], true)
@@ -571,9 +562,6 @@ function GakCreateCharacterMacros()
 		CreateMacro("srop", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player,known:Ring of Peace] Ring of Peace; Song of Chi-Ji]], true)
-		CreateMacro("ssg", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Sheilun's Gift]], true)
 		CreateMacro("ssm", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Soothing Mist]], true)
@@ -583,10 +571,10 @@ function GakCreateCharacterMacros()
 		CreateMacro("sv", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Vivify]], true)
-		CreateMacro("szs", "inv_misc_questionmark", [[
+		CreateMacro("swwdp", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Zen Spheres]], true)
-		print("Created 16", select(1, UnitClass("player")), "macros.")
+/cast [known:Strike of the Windlord] Strike of the Windlord; Whirling Dragon Punch]], true)
+		print("Created 12", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "PALADIN" then

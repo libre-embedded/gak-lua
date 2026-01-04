@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=a5576d20d4f11478966dc2bc86b05faa
+    hash=625e385ea83632978c5fba7f874bbb85
     =====================================
 -->
 
@@ -64,33 +64,6 @@ ssm
 
 ---
 
-szs
-
-```
-#showtooltip
-/cast [@player] Zen Spheres
-```
-
----
-
-ezs
-
-```
-#showtooltip
-/cast [@anyenemy] Zen Spheres
-```
-
----
-
-fzs
-
-```
-#showtooltip
-/cast [@anyfriend] Zen Spheres
-```
-
----
-
 sem
 
 ```
@@ -118,15 +91,6 @@ sjss
 
 ---
 
-shs
-
-```
-#showtooltip
-/cast [@player] Healing Sphere
-```
-
----
-
 slc
 
 ```
@@ -136,20 +100,20 @@ slc
 
 ---
 
-ssg
-
-```
-#showtooltip
-/cast [@player] Sheilun's Gift
-```
-
----
-
 rev
 
 ```
 #showtooltip
 /cast [known:Revival] Revival; Restoral
+```
+
+---
+
+swwdp
+
+```
+#showtooltip
+/cast [known:Strike of the Windlord] Strike of the Windlord; Whirling Dragon Punch
 ```
 
 ---
