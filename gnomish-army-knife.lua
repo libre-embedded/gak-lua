@@ -68,6 +68,10 @@ local function GakHandleInstance()
 end
 
 local function GakRuntimeInit()
+	if UnitAffectingCombat("player") then
+		return
+	end
+
 	-- Instance-specific actions.
 	GakHandleInstance()
 
@@ -80,6 +84,16 @@ local function GakRuntimeInit()
 
 	-- Hide some elements.
 	GakAuditZenMode()
+
+	-- Update loadout unless in a pvp instance.
+	local info = { GetInstanceInfo() }
+	if info[2] ~= "pvp" then
+		-- Set loadout (delay necessary for pet spells).
+		C_Timer.After(1.0, function()
+			GakSetGlobalMacros()
+			GakSetActionBars()
+		end)
+	end
 
 	-- FramerateFrame:Show()
 end
@@ -205,18 +219,6 @@ local function GakLogin(frame)
 	end
 
 	GakRuntimeInit()
-
-	-- Update loadout unless in a pvp instance.
-	local info = { GetInstanceInfo() }
-	if info[2] ~= "pvp" then
-		-- Set loadout (delay necessary for pet spells).
-		C_Timer.After(1.0, function()
-			if not UnitAffectingCombat("player") then
-				GakSetGlobalMacros()
-				GakSetActionBars()
-			end
-		end)
-	end
 end
 
 GakEventHandlers["PLAYER_LOGIN"] = function(frame)
