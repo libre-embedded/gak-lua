@@ -1,5 +1,4 @@
--- Disable names on nameplates.
-hooksecurefunc("CompactUnitFrame_UpdateName", function(frame)
+local function removeNames(frame)
 	if frame.unit:find("nameplate") then
 		local text = ""
 
@@ -35,4 +34,11 @@ hooksecurefunc("CompactUnitFrame_UpdateName", function(frame)
 			frame.name:SetText(text)
 		end)
 	end
+end
+
+-- Disable names on nameplates.
+hooksecurefunc("CompactUnitFrame_UpdateName", function(frame)
+	pcall(function()
+		removeNames(frame)
+	end)
 end)
