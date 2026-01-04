@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=80f72bddcb5c71c77d85a7529e4a79f6
+    hash=5668c44c4b6e412ab1bec5a7bde6ef31
     =====================================
 -->
 
@@ -10,20 +10,47 @@
 
 ([back](../README.md))
 
-bbds
+hts
 
 ```
 #showtooltip
-/cast [known:Demonic Strength] Demonic Strength; Bilescourge Bombers
+/cast [known:Howl of Terror] Howl of Terror; Shadowfury
 ```
 
 ---
 
-htmc
+shts
 
 ```
 #showtooltip
-/cast [known:Mortal Coil] Mortal Coil; Howl of Terror
+/cast [known:Howl of Terror] Howl of Terror; [@player] Shadowfury
+```
+
+---
+
+bowt
+
+```
+#showtooltip
+/cast [known:Blight of Weakness] Blight of Weakness; Blight of Tongues
+```
+
+---
+
+ips
+
+```
+#showtooltip
+/cast [known:Implosion] Implosion; Power Siphon
+```
+
+---
+
+fril
+
+```
+#showtooltip
+/cast [known:Grimoire: Fel Ravager] Grimoire: Fel Ravager; Grimoire: Imp Lord
 ```
 
 ---
@@ -33,6 +60,15 @@ srof
 ```
 #showtooltip
 /cast [@player] Rain of Fire
+```
+
+---
+
+sstone
+
+```
+#showtooltip
+/cast [@player] Soulstone
 ```
 
 ---
@@ -70,15 +106,6 @@ dhs
 #showtooltip Demonic Healthstone
 /use Demonic Healthstone
 /use Healthstone
-```
-
----
-
-ssf
-
-```
-#showtooltip
-/cast [@player] Shadowfury
 ```
 
 ---

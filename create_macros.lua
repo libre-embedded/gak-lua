@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=8071846806505ce3c2fde681ee721050
+-- hash=d9658fa33bfb09e9411e09a21cd0de69
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -846,35 +846,44 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "WARLOCK" then
-		CreateMacro("bbds", "inv_misc_questionmark", [[
+		CreateMacro("bowt", "inv_misc_questionmark", [[
 #showtooltip
-/cast [known:Demonic Strength] Demonic Strength; Bilescourge Bombers]], true)
+/cast [known:Blight of Weakness] Blight of Weakness; Blight of Tongues]], true)
 		CreateMacro("dhs", "inv_misc_questionmark", [[
 #showtooltip Demonic Healthstone
 /use Demonic Healthstone
 /use Healthstone]], true)
-		CreateMacro("htmc", "inv_misc_questionmark", [[
+		CreateMacro("fril", "inv_misc_questionmark", [[
 #showtooltip
-/cast [known:Mortal Coil] Mortal Coil; Howl of Terror]], true)
+/cast [known:Grimoire: Fel Ravager] Grimoire: Fel Ravager; Grimoire: Imp Lord]], true)
+		CreateMacro("hts", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Howl of Terror] Howl of Terror; Shadowfury]], true)
 		CreateMacro("inc", "inv_misc_questionmark", [[
 #showtooltip
 /cast Incinerate]], true)
+		CreateMacro("ips", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Implosion] Implosion; Power Siphon]], true)
 		CreateMacro("sca", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Cataclysm]], true)
 		CreateMacro("scfl", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Call Fel Lord]], true)
+		CreateMacro("shts", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Howl of Terror] Howl of Terror; [@player] Shadowfury]], true)
 		CreateMacro("srof", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Rain of Fire]], true)
-		CreateMacro("ssf", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Shadowfury]], true)
 		CreateMacro("ssi", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Summon Infernal]], true)
-		print("Created 9", select(1, UnitClass("player")), "macros.")
+		CreateMacro("sstone", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Soulstone]], true)
+		print("Created 12", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARRIOR" then
