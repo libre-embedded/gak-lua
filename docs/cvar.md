@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=d3555bf6fe86b012a002376971110a7b
+    hash=f781963e3ca2d2a77ef1317e6a41863a
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `109`
+Total: `94`
 
 Name | Value
 ---- | -----
@@ -47,32 +47,17 @@ GamePadEmulateShift | `PADLSHOULDER`
 GamePadEnable | 1
 GamePadOverlapMouseMs | 50
 GamePadRunThreshold | 0
-hideAdventureJournalAlerts | 1
 lootUnderMouse | 0
 lossOfControl | 0
-nameplateGlobalScale | 1.0
-nameplateHideHealthAndPower | 1
 nameplateLargerScale | 1.2
-nameplateLargeTopInset | 0.1
 nameplateMaxScale | 0.9
 nameplateMinScale | 0.9
-nameplateMotion | 1
-nameplateMotionSpeed | 0.05
-nameplateOtherBottomInset | 0.1
-nameplateOtherTopInset | 0.08
 nameplateOverlapH | 0.6
 nameplateOverlapV | 0.6
-NameplatePersonalShowAlways | 1
-nameplateResourceOnTarget | 0
 nameplateSelfAlpha | 0.75
-nameplateSelfBottomInset | 0.31
-nameplateSelfScale | 1.0
-nameplateSelfTopInset | 0.5
 nameplateShowAll | 1
 nameplateShowDebuffsOnFriendly | 1
-nameplateShowFriendlyBuffs | 1
 nameplateShowFriendlyPlayerTotems | 0
-nameplateShowPersonalCooldowns | 1
 nameplateShowSelf | 1
 occludedSilhouettePlayer | 1
 pvpFramesDisplayClassColor | 1

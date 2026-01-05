@@ -87,7 +87,7 @@ local function GakRuntimeInit()
 
 	-- Update loadout unless in a pvp instance.
 	local info = { GetInstanceInfo() }
-	if info[2] ~= "pvp" then
+	if info[2] ~= "pvp" and not IsActiveBattlefieldArena() then
 		-- Set loadout (delay necessary for pet spells).
 		C_Timer.After(1.0, function()
 			GakSetGlobalMacros()
@@ -258,7 +258,8 @@ GakEventHandlers["PLAYER_LEVEL_UP"] = GakRuntimeInit
 local function GakEventHandler(frame, event, ...)
 	local handler = GakEventHandlers[event]
 	if handler ~= nil then
-		GakEventHandlers[event](frame, ...)
+		print("|cFF0000FF", event, "|r")
+		handler(frame, ...)
 	else
 		print("Unhandled event:", event, ...)
 	end
