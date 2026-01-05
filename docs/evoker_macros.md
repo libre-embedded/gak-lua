@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=8a149d90056243044548281508ab5afa
+    hash=5d71245b488b4500ae5517e3683b5c9f
     =====================================
 -->
 
@@ -114,6 +114,15 @@ sx
 ```
 #showtooltip
 /cast [@player] Expunge
+```
+
+---
+
+dfs
+
+```
+#showtooltip
+/cast [known:Stasis] Stasis; Dream Flight
 ```
 
 ---

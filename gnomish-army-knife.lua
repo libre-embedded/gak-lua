@@ -61,7 +61,8 @@ local function GakHandleInstance()
 		-- Mark teammates (will only work if party leader).
 		-- should also do this on an event (teammate joining, need to
 		-- find a suitable one)
-		GakSetRaidTargets()
+		print("not setting raid target icons for party (broken)")
+		-- GakSetRaidTargets()
 	end
 
 	GakPrintLoggingCombatState()
