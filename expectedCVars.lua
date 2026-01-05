@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=d3893423c8455bf76e3188dd58272c9d
+-- hash=2e19a9c3c30bf15def43ef165967d1f6
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -9,6 +9,7 @@ expectedCVars["assistedCombatHighlight"] = 1
 expectedCVars["autoLootDefault"] = 1
 expectedCVars["autoLootRate"] = 50
 expectedCVars["AutoPushSpellToActionBar"] = 0
+expectedCVars["cameraDistanceMaxZoomFactor"] = 2.6
 expectedCVars["CameraKeepCharacterCentered"] = 0
 expectedCVars["cameraSmoothStyle"] = 1
 expectedCVars["combinedBags"] = 1

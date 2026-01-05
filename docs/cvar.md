@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=f781963e3ca2d2a77ef1317e6a41863a
+    hash=738e1a2235216f7280be1617dc6f4a2f
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `94`
+Total: `95`
 
 Name | Value
 ---- | -----
@@ -19,6 +19,7 @@ assistedCombatHighlight | 1
 autoLootDefault | 1
 autoLootRate | 50
 AutoPushSpellToActionBar | 0
+cameraDistanceMaxZoomFactor | 2.6
 CameraKeepCharacterCentered | 0
 cameraSmoothStyle | 1
 combinedBags | 1
