@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=a445e94ceda9f44e40b5b2d3496b1c45
+-- hash=2e661f9677f3577fb01e1be03bb4b24a
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -15843,9 +15843,6 @@ function GakSetRoleActions()
 	local role = spec_info[5]
 	local role_bind_count = 0
 
-	if role == "HEALER" then
-	end
-
 	if role == "DAMAGER" then
 		C_Spell.PickupSpell("Single-Button Assistant")
 		if GetCursorInfo() then
@@ -15860,6 +15857,9 @@ function GakSetRoleActions()
 			print("(role) Couldn't bind slot L1_P2_S:", [[
  ]])
 		end
+	end
+
+	if role == "HEALER" then
 	end
 
 	if role == "TANK" then
