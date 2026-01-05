@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=5d71245b488b4500ae5517e3683b5c9f
+    hash=91711d5aa6e2ef33377af0466ee87132
     =====================================
 -->
 
@@ -114,6 +114,15 @@ sx
 ```
 #showtooltip
 /cast [@player] Expunge
+```
+
+---
+
+sbs
+
+```
+#showtooltip
+/cast [@player] Blistering Scales
 ```
 
 ---
