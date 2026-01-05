@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=a87c266982d9453e71143ce6dde80744
+-- hash=7de944298fd7d0fb993e332dbf1b37fc
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -578,36 +578,27 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "PALADIN" then
-		CreateMacro("ehp", "inv_misc_questionmark", [[
+		CreateMacro("dthp", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@anyenemy] Holy Prism]], true)
+/cast [@anyfriend,known:Divine Toll] Divine Toll; [@anyfriend] Holy Prism]], true)
+		CreateMacro("edthp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyenemy,known:Divine Toll] Divine Toll; [@anyenemy] Holy Prism]], true)
 		CreateMacro("ehs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyenemy] Holy Shock]], true)
 		CreateMacro("esfr", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Final Reckoning] Final Reckoning; Execution Sentence]], true)
-		CreateMacro("fhp", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@anyfriend] Holy Prism]], true)
 		CreateMacro("fhs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyfriend] Holy Shock]], true)
-		CreateMacro("rbl", "inv_misc_questionmark", [[
-#showtooltip
-/cast [known:Blinding Light] Blinding Light; Repentance]], true)
 		CreateMacro("sbof", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Blessing of Freedom]], true)
-		CreateMacro("sboi", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Barrier of Faith]], true)
 		CreateMacro("sbol", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Beacon of Light]], true)
-		CreateMacro("sbom", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Blessing of Summer]], true)
 		CreateMacro("sbop", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Blessing of Protection]], true)
@@ -623,6 +614,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("sct", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Cleanse Toxins]], true)
+		CreateMacro("sdthp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player,known:Divine Toll] Divine Toll; [@player] Holy Prism]], true)
 		CreateMacro("sfol", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Flash of Light]], true)
@@ -635,9 +629,6 @@ function GakCreateCharacterMacros()
 		CreateMacro("shl", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Holy Light]], true)
-		CreateMacro("shp", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Holy Prism]], true)
 		CreateMacro("shs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Holy Shock]], true)
@@ -651,7 +642,7 @@ function GakCreateCharacterMacros()
 #showtooltip Wake of Ashes
 /use 14
 /cast Wake of Ashes]], true)
-		print("Created 24", select(1, UnitClass("player")), "macros.")
+		print("Created 21", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "PRIEST" then

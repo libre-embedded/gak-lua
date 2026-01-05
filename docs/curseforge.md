@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=c86819a26451018347fd0d52586c27bf
+    hash=46229318791f1d3fecc006aab64694f5
     =====================================
 -->
 
@@ -76,7 +76,7 @@ Evoker | `14`
 Hunter | `15`
 Mage | `8`
 Monk | `12`
-Paladin | `24`
+Paladin | `21`
 Priest | `26`
 Rogue | `8`
 Shaman | `21`
@@ -95,7 +95,7 @@ Evoker | `30`
 Hunter | `44`
 Mage | `33`
 Monk | `18`
-Paladin | `25`
+Paladin | `23`
 Priest | `22`
 Rogue | `38`
 Shaman | `38`
@@ -134,9 +134,9 @@ Vengeance Demon Hunter | `0`
 Arcane Mage | `19`
 Fire Mage | `18`
 Frost Mage | `20`
-Holy Paladin | `37`
+Holy Paladin | `29`
 Protection Paladin | `0`
-Retribution Paladin | `23`
+Retribution Paladin | `21`
 Arms Warrior | `18`
 Fury Warrior | `16`
 Protection Warrior | `0`
