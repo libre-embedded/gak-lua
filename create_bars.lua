@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=df6389c1adbab54b1d957e166a73c4dc
+-- hash=58fe8d803c7f029bb81211050f45c9db
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -7696,6 +7696,19 @@ s "Emerald Communion"]])
 			print("(spec) Couldn't bind slot L1_P2_C:", [[
 s "Mass Return"]])
 		end
+		PickupMacro("dfs")
+		if GetCursorInfo() then
+			-- L1_P2_R2
+			PlaceAction(26)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P2_R2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_P2_R2:", [[
+m dfs]])
+		end
 		PickupMacro("sve")
 		if GetCursorInfo() then
 			-- L1_R1_1
@@ -7774,7 +7787,7 @@ m seb]])
 			print("(spec) Couldn't bind slot L1_S_2:", [[
 s "Emerald Blossom"]])
 		end
-		PickupMacro("dfs")
+		C_Spell.PickupSpell("Wing Buffet")
 		if GetCursorInfo() then
 			-- L2_L1_R1
 			PlaceAction(67)
@@ -7785,7 +7798,7 @@ s "Emerald Blossom"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_L1_R1:", [[
-m dfs]])
+s "Wing Buffet"]])
 		end
 		C_Spell.PickupSpell("Fire Breath")
 		if GetCursorInfo() then

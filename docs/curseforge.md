@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=2207166c9f879b12396757acbec44cae
+    hash=b796398baa89f954952e3fccc7bc3fdb
     =====================================
 -->
 
@@ -106,7 +106,7 @@ Feral Druid | `46`
 Guardian Druid | `62`
 Restoration Druid | `52`
 Devastation Evoker | `18`
-Preservation Evoker | `27`
+Preservation Evoker | `28`
 Augmentation Evoker | `22`
 Blood Death Knight | `0`
 Frost Death Knight | `16`
