@@ -68,16 +68,15 @@ local function removeNames(frame)
 		-- 		end
 		-- 	end
 		-- end
-		-- pcall(function()
-		-- 	frame.name:SetText(text)
-		-- end)
 	end
 end
 
 -- Disable names on nameplates.
 hooksecurefunc("CompactUnitFrame_UpdateName", function(frame)
 	removeNames(frame)
-	-- pcall(function()
-	-- 	removeNames(frame)
-	-- end)
+end)
+
+-- Remove text on all nameplate auras.
+hooksecurefunc(NamePlateAuraItemMixin, "SetAura", function(aura)
+	aura.Cooldown:SetHideCountdownNumbers(true);
 end)

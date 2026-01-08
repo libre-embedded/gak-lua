@@ -69,6 +69,10 @@ local function GakHandleInstance()
 end
 
 local function GakRuntimeInit()
+	-- seems this might need to be added as a secure hook, if nameplate
+	-- settings menu is opened this will get set back to some default
+	C_NamePlate.SetNamePlateSize(80, 1)  -- height param does nothing?
+
 	if UnitAffectingCombat("player") then
 		return
 	end
@@ -85,10 +89,6 @@ local function GakRuntimeInit()
 
 	-- Hide some elements.
 	GakAuditZenMode()
-
-	-- seems this might need to be added as a secure hook, if nameplate
-	-- settings menu is opened this will get set back to some default
-	C_NamePlate.SetNamePlateSize(80, 1)  -- height param does nothing?
 
 	-- Update loadout unless in a pvp instance.
 	local info = { GetInstanceInfo() }
