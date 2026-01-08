@@ -4,6 +4,12 @@ local function removeNames(frame)
 			frame.name:SetText("")
 		end)
 
+		if UnitIsEnemy(frame.unit, "player") then
+			frame.HealthBarsContainer.healthBar.bgTexture:SetVertexColor(1, 0, 0, 1)
+		elseif UnitIsFriend(frame.unit, "player") then
+			frame.HealthBarsContainer.healthBar.bgTexture:SetVertexColor(0, 1, 0, 1)
+		end
+
 		-- local text = ""
 		-- for i = 1, 4 do
 		-- 	if UnitIsUnit(frame.unit, "party" .. i) then
@@ -37,7 +43,8 @@ end
 
 -- Disable names on nameplates.
 hooksecurefunc("CompactUnitFrame_UpdateName", function(frame)
-	pcall(function()
-		removeNames(frame)
-	end)
+	removeNames(frame)
+	-- pcall(function()
+	-- 	removeNames(frame)
+	-- end)
 end)
