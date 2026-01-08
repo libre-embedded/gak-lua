@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=c7419436ea8fbc7605edc1b54829fa9d
+-- hash=752607212dbdc8bfc965d5cf320f4052
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -40,6 +40,7 @@ expectedCVars["GamePadOverlapMouseMs"] = 50
 expectedCVars["GamePadRunThreshold"] = 0
 expectedCVars["lootUnderMouse"] = 0
 expectedCVars["lossOfControl"] = 0
+expectedCVars["nameplateAuraScale"] = 0.7
 expectedCVars["nameplateLargerScale"] = 1.2
 expectedCVars["nameplateMaxScale"] = 0.9
 expectedCVars["nameplateMinScale"] = 0.9
@@ -50,6 +51,8 @@ expectedCVars["nameplateShowAll"] = 1
 expectedCVars["nameplateShowDebuffsOnFriendly"] = 1
 expectedCVars["nameplateShowFriendlyPlayerTotems"] = 0
 expectedCVars["nameplateShowSelf"] = 1
+expectedCVars["nameplateSize"] = 5
+expectedCVars["nameplateStyle"] = 4
 expectedCVars["occludedSilhouettePlayer"] = 1
 expectedCVars["pvpFramesDisplayClassColor"] = 1
 expectedCVars["pvpFramesDisplayPowerBars"] = 1

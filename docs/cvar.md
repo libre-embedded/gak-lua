@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=dde758f3b66071bd414e4770529ca9fb
+    hash=4bf085333b5fd10f24f115c50900bb75
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `96`
+Total: `99`
 
 Name | Value
 ---- | -----
@@ -50,6 +50,7 @@ GamePadOverlapMouseMs | 50
 GamePadRunThreshold | 0
 lootUnderMouse | 0
 lossOfControl | 0
+nameplateAuraScale | 0.7
 nameplateLargerScale | 1.2
 nameplateMaxScale | 0.9
 nameplateMinScale | 0.9
@@ -60,6 +61,8 @@ nameplateShowAll | 1
 nameplateShowDebuffsOnFriendly | 1
 nameplateShowFriendlyPlayerTotems | 0
 nameplateShowSelf | 1
+nameplateSize | 5
+nameplateStyle | 4
 occludedSilhouettePlayer | 1
 pvpFramesDisplayClassColor | 1
 pvpFramesDisplayPowerBars | 1
