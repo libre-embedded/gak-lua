@@ -4,14 +4,8 @@ local function removeNames(frame)
 			frame.name:SetText("")
 		end)
 
-		local opacity = 0.33
-
+		local opacity = 0.2
 		local tex = frame.HealthBarsContainer.healthBar.bgTexture
-		-- print(tex:GetTextureFilePath())
-		-- print(tex:GetVertexOffset(1))
-
-		-- check if we need to adjust the points
-
 		local isTarget = UnitIsUnit(frame.unit, "target")
 
 		if UnitIsEnemy(frame.unit, "player") then
@@ -30,7 +24,7 @@ local function removeNames(frame)
 			-- tex:SetVertexColor(0, 1, 0, opacity)
 			tex:SetColorTexture(0, 1, 0, opacity)
 		else
-			opacity = opacity / 3
+			opacity = opacity / 2
 			if isTarget or UnitIsUnit(frame.unit, "softenemy") then
 				opacity = opacity * 2
 			end
