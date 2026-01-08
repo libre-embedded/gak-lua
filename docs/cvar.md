@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=4bf085333b5fd10f24f115c50900bb75
+    hash=cd54c89a1f203ef8069830262230c1cb
     =====================================
 -->
 
@@ -25,7 +25,7 @@ cameraSmoothStyle | 1
 combinedBags | 1
 cooldownViewerEnabled | 1
 countdownForCooldowns | 1
-damageMeterEnabled | 1
+damageMeterEnabled | 0
 enableMultiActionBars | 15
 enablePings | 0
 externalDefensivesEnabled | 1
@@ -60,7 +60,7 @@ nameplateSelfAlpha | 0.75
 nameplateShowAll | 1
 nameplateShowDebuffsOnFriendly | 1
 nameplateShowFriendlyPlayerTotems | 0
-nameplateShowSelf | 1
+nameplateShowSelf | 0
 nameplateSize | 5
 nameplateStyle | 4
 occludedSilhouettePlayer | 1

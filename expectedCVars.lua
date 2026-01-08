@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=752607212dbdc8bfc965d5cf320f4052
+-- hash=758c834f3302a54e7319ca53613917a6
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -15,7 +15,7 @@ expectedCVars["cameraSmoothStyle"] = 1
 expectedCVars["combinedBags"] = 1
 expectedCVars["cooldownViewerEnabled"] = 1
 expectedCVars["countdownForCooldowns"] = 1
-expectedCVars["damageMeterEnabled"] = 1
+expectedCVars["damageMeterEnabled"] = 0
 expectedCVars["enableMultiActionBars"] = 15
 expectedCVars["enablePings"] = 0
 expectedCVars["externalDefensivesEnabled"] = 1
@@ -50,7 +50,7 @@ expectedCVars["nameplateSelfAlpha"] = 0.75
 expectedCVars["nameplateShowAll"] = 1
 expectedCVars["nameplateShowDebuffsOnFriendly"] = 1
 expectedCVars["nameplateShowFriendlyPlayerTotems"] = 0
-expectedCVars["nameplateShowSelf"] = 1
+expectedCVars["nameplateShowSelf"] = 0
 expectedCVars["nameplateSize"] = 5
 expectedCVars["nameplateStyle"] = 4
 expectedCVars["occludedSilhouettePlayer"] = 1
