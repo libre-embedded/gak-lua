@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=207570d5fd326eca0c3402eb1f0c2307
+    hash=0f1972ae785e9417283283f20a712324
     =====================================
 -->
 
@@ -77,6 +77,37 @@ fss
 ```
 #showtooltip
 /cast [@anyfriend] Shadowstep
+```
+
+---
+
+ksbf
+
+```
+#showtooltip Killing Spree
+/cast Blood Fury
+/cast Killing Spree
+```
+
+---
+
+dmbf
+
+```
+#showtooltip Deathmark
+/cast Blood Fury
+/cast Deathmark
+```
+
+---
+
+stec
+
+```
+#showtooltip Secret Technique
+/use 14
+/cast Blood Fury
+/cast Secret Technique
 ```
 
 ---

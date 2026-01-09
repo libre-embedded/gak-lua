@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=929a78c38dfb5a6ff96f961206a2488d
+    hash=f4ed2bf06d7675d5c9f640d5cefd19ba
     =====================================
 -->
 
@@ -78,7 +78,7 @@ Mage | `8`
 Monk | `12`
 Paladin | `21`
 Priest | `26`
-Rogue | `8`
+Rogue | `11`
 Shaman | `21`
 Warlock | `12`
 Warrior | `5`
@@ -97,7 +97,7 @@ Mage | `33`
 Monk | `18`
 Paladin | `23`
 Priest | `22`
-Rogue | `38`
+Rogue | `43`
 Shaman | `38`
 Warlock | `45`
 Warrior | `35`
@@ -117,9 +117,9 @@ Survival Hunter | `20`
 Discipline Priest | `20`
 Holy Priest | `21`
 Shadow Priest | `22`
-Assassination Rogue | `28`
-Outlaw Rogue | `27`
-Subtlety Rogue | `30`
+Assassination Rogue | `23`
+Outlaw Rogue | `22`
+Subtlety Rogue | `21`
 Elemental Shaman | `23`
 Enhancement Shaman | `28`
 Restoration Shaman | `26`

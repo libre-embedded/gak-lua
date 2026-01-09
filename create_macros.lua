@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=5bc0646beb783909bb5c3ea28e2ed403
+-- hash=3b8cca98ce88e9ca3582dc6f0ea6ff51
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -746,12 +746,20 @@ function GakCreateCharacterMacros()
 #showtooltip Shadowstep
 /cast [@arena3] Shadowstep
 /cast [@arena3] Kick]], true)
+		CreateMacro("dmbf", "inv_misc_questionmark", [[
+#showtooltip Deathmark
+/cast Blood Fury
+/cast Deathmark]], true)
 		CreateMacro("ess", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyenemy] Shadowstep]], true)
 		CreateMacro("fss", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@anyfriend] Shadowstep]], true)
+		CreateMacro("ksbf", "inv_misc_questionmark", [[
+#showtooltip Killing Spree
+/cast Blood Fury
+/cast Killing Spree]], true)
 		CreateMacro("np", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Numbing Poison] Numbing Poison; Atrophic Poison]], true)
@@ -766,7 +774,12 @@ function GakCreateCharacterMacros()
 /targetenemyplayer
 /cast Sap
 /stopattack]], true)
-		print("Created 8", select(1, UnitClass("player")), "macros.")
+		CreateMacro("stec", "inv_misc_questionmark", [[
+#showtooltip Secret Technique
+/use 14
+/cast Blood Fury
+/cast Secret Technique]], true)
+		print("Created 11", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "SHAMAN" then
