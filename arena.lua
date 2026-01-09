@@ -4,7 +4,7 @@ local function removeNames(frame)
 			frame.name:SetText("")
 		end)
 
-		local opacity = 0.2
+		local opacity = 0.25
 		local tex = frame.HealthBarsContainer.healthBar.bgTexture
 		local isTarget = UnitIsUnit(frame.unit, "target")
 
