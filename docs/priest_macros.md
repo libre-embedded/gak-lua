@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=f9e72f7e811383e4da2a43679acbd1bf
+    hash=ad7ca05964a75b2f2d606c9e288a19ea
     =====================================
 -->
 
@@ -240,6 +240,15 @@ fup
 ```
 #showtooltip
 /cast [@anyfriend] Ultimate Penitence
+```
+
+---
+
+ils
+
+```
+#showtooltip
+/cast [known:Inner Light] Inner Light; Inner Shadow
 ```
 
 ---

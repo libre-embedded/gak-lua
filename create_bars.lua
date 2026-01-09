@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=84e9072b882f604ff70f806cfa49855f
+-- hash=6feac4706328aeeeb89047abe16d013c
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -9501,6 +9501,19 @@ s "Aspect of the Eagle"]])
 	end
 
 	if id == 256 then
+		C_Spell.PickupSpell("Shackle Undead")
+		if GetCursorInfo() then
+			-- L1_P2_C
+			PlaceAction(30)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P2_C'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_P2_C:", [[
+s "Shackle Undead"]])
+		end
 		PickupMacro("fup")
 		if GetCursorInfo() then
 			-- L1_P2_R1
@@ -9578,6 +9591,19 @@ m sps]])
 		else
 			print("(spec) Couldn't bind slot L1_X_2:", [[
 s "Pain Suppression"]])
+		end
+		PickupMacro("ils")
+		if GetCursorInfo() then
+			-- L2_C
+			PlaceAction(66)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_C'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_C:", [[
+m ils]])
 		end
 		C_Spell.PickupSpell("Mind Blast")
 		if GetCursorInfo() then
