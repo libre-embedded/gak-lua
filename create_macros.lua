@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=7adb1bf8ba2a84928c7cb86b2a4d9655
+-- hash=ed64c2933b51a84e181c239de0708f36
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -882,6 +882,9 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "WARRIOR" then
+		CreateMacro("bsa", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Bladestorm] Bladestorm; Avatar]], true)
 		CreateMacro("bsbr", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Berserker Roar] Berserker Roar; [known:Berserker Shout] Berserker Shout; Berserker Rage]], true)
@@ -894,9 +897,15 @@ function GakCreateCharacterMacros()
 		CreateMacro("dsf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [stance:1] Berserker Stance; [stance:2] Defensive Stance]], true)
+		CreateMacro("isph", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Intimidating Shout] Intimidating Shout; Piercing Howl]], true)
+		CreateMacro("ivip", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Intervene] Intervene; Interpose]], true)
 		CreateMacro("wtst", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Wrecking Throw] Wrecking Throw; Shattering Throw]], true)
-		print("Created 5", select(1, UnitClass("player")), "macros.")
+		print("Created 8", select(1, UnitClass("player")), "macros.")
 	end
 end

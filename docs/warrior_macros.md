@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=29feed0eedff708912f377362e4ea1af
+    hash=60465a91da1cecb561be88c1581a5a5c
     =====================================
 -->
 
@@ -33,6 +33,33 @@ wtst
 ```
 #showtooltip
 /cast [known:Wrecking Throw] Wrecking Throw; Shattering Throw
+```
+
+---
+
+isph
+
+```
+#showtooltip
+/cast [known:Intimidating Shout] Intimidating Shout; Piercing Howl
+```
+
+---
+
+ivip
+
+```
+#showtooltip
+/cast [known:Intervene] Intervene; Interpose
+```
+
+---
+
+bsa
+
+```
+#showtooltip
+/cast [known:Bladestorm] Bladestorm; Avatar
 ```
 
 ---

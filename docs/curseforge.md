@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=12d53282c3cf1dcaa8fad8226fb06a55
+    hash=2bbab553a373082109bf4e7499198ea4
     =====================================
 -->
 
@@ -81,7 +81,7 @@ Priest | `28`
 Rogue | `11`
 Shaman | `21`
 Warlock | `12`
-Warrior | `5`
+Warrior | `8`
 
 ### Action Bars
 
@@ -100,7 +100,7 @@ Priest | `22`
 Rogue | `43`
 Shaman | `35`
 Warlock | `45`
-Warrior | `35`
+Warrior | `31`
 Balance Druid | `51`
 Feral Druid | `52`
 Guardian Druid | `62`
@@ -138,7 +138,7 @@ Holy Paladin | `29`
 Protection Paladin | `0`
 Retribution Paladin | `21`
 Arms Warrior | `18`
-Fury Warrior | `16`
+Fury Warrior | `14`
 Protection Warrior | `0`
 
 ---
