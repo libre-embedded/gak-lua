@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=625e385ea83632978c5fba7f874bbb85
+    hash=0693d14bf860521b30aacd13cb347c71
     =====================================
 -->
 
@@ -114,6 +114,35 @@ swwdp
 ```
 #showtooltip
 /cast [known:Strike of the Windlord] Strike of the Windlord; Whirling Dragon Punch
+```
+
+---
+
+fofr
+
+```
+#showtooltip Fists of Fury
+/cast Blood Fury
+/cast Fists of Fury
+```
+
+---
+
+tfr
+
+```
+#showtooltip Thunder Focus Tea
+/cast Blood Fury
+/cast Thunder Focus Tea
+```
+
+---
+
+jscj
+
+```
+#showtooltip
+/cast [known:322118] Invoke Yu'lon, the Jade Serpent; Invoke Chi-Ji, the Red Crane
 ```
 
 ---

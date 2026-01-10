@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=ed64c2933b51a84e181c239de0708f36
+-- hash=fa31554d88660320ebd2c53792849ad1
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -503,32 +503,64 @@ function GakCreateCharacterMacros()
 	if class_str == "MAGE" then
 		CreateMacro("cat", "spell_mage_altertime_active", [[
 /cancelaura Alter Time]], true)
+		CreateMacro("cbr", "inv_misc_questionmark", [[
+#showtooltip Combustion
+/cast Blood Fury
+/cast Combustion]], true)
+		CreateMacro("forb", "inv_misc_questionmark", [[
+#showtooltip Frozen Orb
+/cast Blood Fury
+/cast Frozen Orb]], true)
 		CreateMacro("ibc", "inv_misc_questionmark", [[
 #showtooltip Ice Block
 /cancelaura Ice Block
 /cast Ice Block]], true)
+		CreateMacro("rfmp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Ring of Frost] Ring of Frost; Mass Polymorph]], true)
 		CreateMacro("sai", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Arcane Intellect]], true)
 		CreateMacro("sb", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Blizzard]], true)
+		CreateMacro("sforb", "inv_misc_questionmark", [[
+#showtooltip Frozen Orb
+/cast Blood Fury
+/cast [@player] Frozen Orb]], true)
 		CreateMacro("sfs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Flamestrike]], true)
+		CreateMacro("smet", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Meteor]], true)
+		CreateMacro("sndb", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Supernova] Supernova; Dragon's Breath]], true)
 		CreateMacro("src", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Remove Curse]], true)
 		CreateMacro("srof", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Ring of Frost]], true)
+/cast [@player,known:Ring of Frost] Ring of Frost; Mass Polymorph]], true)
 		CreateMacro("ssf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Slow Fall]], true)
-		print("Created 8", select(1, UnitClass("player")), "macros.")
+		CreateMacro("tmr", "inv_misc_questionmark", [[
+#showtooltip Touch of the Magi
+/cast Blood Fury
+/cast Touch of the Magi]], true)
+		print("Created 15", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "MONK" then
+		CreateMacro("fofr", "inv_misc_questionmark", [[
+#showtooltip Fists of Fury
+/cast Blood Fury
+/cast Fists of Fury]], true)
+		CreateMacro("jscj", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:322118] Invoke Yu'lon, the Jade Serpent; Invoke Chi-Ji, the Red Crane]], true)
 		CreateMacro("rev", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Revival] Revival; Restoral]], true)
@@ -565,7 +597,11 @@ function GakCreateCharacterMacros()
 		CreateMacro("swwdp", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Strike of the Windlord] Strike of the Windlord; Whirling Dragon Punch]], true)
-		print("Created 12", select(1, UnitClass("player")), "macros.")
+		CreateMacro("tfr", "inv_misc_questionmark", [[
+#showtooltip Thunder Focus Tea
+/cast Blood Fury
+/cast Thunder Focus Tea]], true)
+		print("Created 15", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "PALADIN" then

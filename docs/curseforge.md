@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=2bbab553a373082109bf4e7499198ea4
+    hash=fdbb84e9774368d7c07818923b169460
     =====================================
 -->
 
@@ -74,8 +74,8 @@ Demonhunter | `5`
 Druid | `28`
 Evoker | `16`
 Hunter | `15`
-Mage | `8`
-Monk | `12`
+Mage | `15`
+Monk | `15`
 Paladin | `21`
 Priest | `28`
 Rogue | `11`
@@ -93,7 +93,7 @@ Demonhunter | `0`
 Druid | `41`
 Evoker | `26`
 Hunter | `44`
-Mage | `33`
+Mage | `28`
 Monk | `18`
 Paladin | `23`
 Priest | `22`
@@ -131,9 +131,9 @@ Windwalker Monk | `22`
 Mistweaver Monk | `22`
 Havoc Demon Hunter | `41`
 Vengeance Demon Hunter | `0`
-Arcane Mage | `19`
-Fire Mage | `18`
-Frost Mage | `20`
+Arcane Mage | `15`
+Fire Mage | `14`
+Frost Mage | `17`
 Holy Paladin | `29`
 Protection Paladin | `0`
 Retribution Paladin | `21`
