@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=18490c0637eef7fa73f7b3aa28e65366
+-- hash=7e0ddbaf750bc47a5961e3fc1bb9e2a4
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -9816,6 +9816,19 @@ s "Plea"]])
 			print("(spec) Couldn't bind slot L1_P2_R1:", [[
 s "Apotheosis"]])
 		end
+		C_Spell.PickupSpell("Divine Hymn")
+		if GetCursorInfo() then
+			-- L1_P2_R2
+			PlaceAction(26)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P2_R2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_P2_R2:", [[
+s "Divine Hymn"]])
+		end
 		PickupMacro("shwy")
 		if GetCursorInfo() then
 			-- L1_R2_1
@@ -9920,7 +9933,7 @@ s "Smite"]])
 			print("(spec) Couldn't bind slot L2_R2:", [[
 s "Holy Word: Chastise"]])
 		end
-		C_Spell.PickupSpell("Divine Hymn")
+		C_Spell.PickupSpell(215769)
 		if GetCursorInfo() then
 			-- L2_S
 			PlaceAction(63)
@@ -9931,19 +9944,6 @@ s "Holy Word: Chastise"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_S:", [[
-s "Divine Hymn"]])
-		end
-		C_Spell.PickupSpell(215769)
-		if GetCursorInfo() then
-			-- P2_S
-			PlaceAction(57)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'P2_S'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot P2_S:", [[
 s 215769]])
 		end
 		PickupMacro("spom")
