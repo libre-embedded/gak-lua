@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=5558bf9374ed98f5523071dd634c243e
+-- hash=e369ee7fff0e5b3eca672d5eb2714148
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -5731,7 +5731,7 @@ s "Innervate"]])
 			print("(spec) Couldn't bind slot L2_S:", [[
 s 194223]])
 		end
-		C_Spell.PickupSpell("Starsurge")
+		PickupMacro("dss")
 		if GetCursorInfo() then
 			-- P2_R1
 			PlaceAction(55)
@@ -5742,7 +5742,7 @@ s 194223]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_R1:", [[
-s "Starsurge"]])
+m dss]])
 		end
 		PickupMacro("dfnwe")
 		if GetCursorInfo() then
@@ -6033,7 +6033,7 @@ s "Chomp"]])
 			print("(spec) Couldn't bind slot L1_P2_R1:", [[
 s "Feral Frenzy"]])
 		end
-		PickupMacro("bvoke")
+		C_Spell.PickupSpell("Convoke the Spirits")
 		if GetCursorInfo() then
 			-- L1_P2_R2
 			PlaceAction(26)
@@ -6044,7 +6044,7 @@ s "Feral Frenzy"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_P2_R2:", [[
-m bvoke]])
+s "Convoke the Spirits"]])
 		end
 		C_Spell.PickupSpell("Rake")
 		if GetCursorInfo() then
@@ -6384,7 +6384,7 @@ s "Innervate"]])
 			print("(spec) Couldn't bind slot L2_S:", [[
 s "Berserk"]])
 		end
-		C_Spell.PickupSpell("Tiger's Fury")
+		PickupMacro("dtfr")
 		if GetCursorInfo() then
 			-- P2_R1
 			PlaceAction(55)
@@ -6395,7 +6395,7 @@ s "Berserk"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_R1:", [[
-s "Tiger's Fury"]])
+m dtfr]])
 		end
 		C_Spell.PickupSpell("Maim")
 		if GetCursorInfo() then
@@ -7040,7 +7040,7 @@ s "Sunfire"]])
 			print("(spec) Couldn't bind slot P2_R1:", [[
 s "Starsurge"]])
 		end
-		C_Spell.PickupSpell("Nature's Swiftness")
+		PickupMacro("dnsr")
 		if GetCursorInfo() then
 			-- P2_R2
 			PlaceAction(56)
@@ -7051,7 +7051,7 @@ s "Starsurge"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_R2:", [[
-s "Nature's Swiftness"]])
+m dnsr]])
 		end
 		PickupMacro("sal")
 		if GetCursorInfo() then
@@ -12089,7 +12089,7 @@ s "Corruption"]])
 			print("(spec) Couldn't bind slot R1_2:", [[
 s "Corruption"]])
 		end
-		C_Spell.PickupSpell("Agony")
+		PickupMacro("ar")
 		if GetCursorInfo() then
 			-- R2_1
 			PlaceAction(2)
@@ -12100,9 +12100,9 @@ s "Corruption"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot R2_1:", [[
-s "Agony"]])
+m ar]])
 		end
-		C_Spell.PickupSpell("Agony")
+		PickupMacro("ar")
 		if GetCursorInfo() then
 			-- R2_2
 			PlaceAction(14)
@@ -12113,7 +12113,7 @@ s "Agony"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot R2_2:", [[
-s "Agony"]])
+m ar]])
 		end
 	end
 
@@ -12235,7 +12235,7 @@ C_SpellBook.PickupSpellBookItem(10, 1)]])
 			print("(spec) Couldn't bind slot L2_R1:", [[
 s "Call Dreadstalkers"]])
 		end
-		C_Spell.PickupSpell("Summon Demonic Tyrant")
+		PickupMacro("dtr")
 		if GetCursorInfo() then
 			-- L2_S
 			PlaceAction(63)
@@ -12246,7 +12246,7 @@ s "Call Dreadstalkers"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_S:", [[
-s "Summon Demonic Tyrant"]])
+m dtr]])
 		end
 		PickupMacro("fril")
 		if GetCursorInfo() then
@@ -12433,7 +12433,7 @@ m ssi]])
 			print("(spec) Couldn't bind slot L1_C_2:", [[
 s "Summon Infernal"]])
 		end
-		C_Spell.PickupSpell("Conflagrate")
+		PickupMacro("cfr")
 		if GetCursorInfo() then
 			-- L1_R1_1
 			PlaceAction(7)
@@ -12444,9 +12444,9 @@ s "Summon Infernal"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_R1_1:", [[
-s "Conflagrate"]])
+m cfr]])
 		end
-		C_Spell.PickupSpell("Conflagrate")
+		PickupMacro("cfr")
 		if GetCursorInfo() then
 			-- L1_R1_2
 			PlaceAction(19)
@@ -12457,7 +12457,7 @@ s "Conflagrate"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_R1_2:", [[
-s "Conflagrate"]])
+m cfr]])
 		end
 		PickupMacro("srof")
 		if GetCursorInfo() then

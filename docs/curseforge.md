@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=fdbb84e9774368d7c07818923b169460
+    hash=2e515362419dec88faec8d97c55e2703
     =====================================
 -->
 
@@ -68,7 +68,7 @@ documentation for additional details.
 
 Type | Count
 -----|------
-Shared | `18`
+Shared | `21`
 Deathknight | `5`
 Demonhunter | `5`
 Druid | `28`
@@ -80,7 +80,7 @@ Paladin | `21`
 Priest | `28`
 Rogue | `11`
 Shaman | `21`
-Warlock | `12`
+Warlock | `15`
 Warrior | `8`
 
 ### Action Bars

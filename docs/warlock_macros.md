@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=5668c44c4b6e412ab1bec5a7bde6ef31
+    hash=a6f4746d46bb87129b3e92bb1b705222
     =====================================
 -->
 
@@ -115,6 +115,36 @@ ssi
 ```
 #showtooltip
 /cast [@player] Summon Infernal
+```
+
+---
+
+cfr
+
+```
+#showtooltip Conflagrate
+/cast Blood Fury
+/cast Conflagrate
+```
+
+---
+
+ar
+
+```
+#showtooltip Agony
+/cast Blood Fury
+/cast Agony
+```
+
+---
+
+dtr
+
+```
+#showtooltip Summon Demonic Tyrant
+/cast Blood Fury
+/cast Summon Demonic Tyrant
 ```
 
 ---

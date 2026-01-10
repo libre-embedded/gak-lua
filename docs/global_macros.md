@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=359305fa9dd16634560949fa793f85c0
+    hash=8707c841ebab9e113c33676cdd06fdb3
     =====================================
 -->
 
@@ -186,6 +186,36 @@ ppd
 ```
 #showtooltip
 /cast [@player] Purify Disease
+```
+
+---
+
+dss
+
+```
+#showtooltip Starsurge
+/cast Berserking
+/cast Starsurge
+```
+
+---
+
+dtfr
+
+```
+#showtooltip Tiger's Fury
+/cast Berserking
+/cast Tiger's Fury
+```
+
+---
+
+dnsr
+
+```
+#showtooltip Nature's Swiftness
+/cast Berserking
+/cast Nature's Swiftness
 ```
 
 ---

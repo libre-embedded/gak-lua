@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=fa31554d88660320ebd2c53792849ad1
+-- hash=14bfbba58f02bbf2a4646552c0998dd6
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -15,6 +15,18 @@ function GakCreateGlobalMacros()
 	CreateMacro("dnmf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Fury of Elune] Fury of Elune; New Moon]])
+	CreateMacro("dnsr", "inv_misc_questionmark", [[
+#showtooltip Nature's Swiftness
+/cast Berserking
+/cast Nature's Swiftness]])
+	CreateMacro("dss", "inv_misc_questionmark", [[
+#showtooltip Starsurge
+/cast Berserking
+/cast Starsurge]])
+	CreateMacro("dtfr", "inv_misc_questionmark", [[
+#showtooltip Tiger's Fury
+/cast Berserking
+/cast Tiger's Fury]])
 	CreateMacro("fav", "achievement_guildperk_mountup", [[
 /run C_MountJournal.SummonByID(0)]])
 	CreateMacro("gak", "inv_misc_enggizmos_swissarmy", [[
@@ -56,7 +68,7 @@ function GakCreateGlobalMacros()
 /use 14]])
 	CreateMacro("yak", "ability_mount_travellersyakmount", [[
 /use Grand Expedition Yak]])
-	print("Created 18 global macros.")
+	print("Created 21 global macros.")
 end
 
 local function createFirstRacialMacro()
@@ -877,13 +889,25 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "WARLOCK" then
+		CreateMacro("ar", "inv_misc_questionmark", [[
+#showtooltip Agony
+/cast Blood Fury
+/cast Agony]], true)
 		CreateMacro("bowt", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Blight of Weakness] Blight of Weakness; Blight of Tongues]], true)
+		CreateMacro("cfr", "inv_misc_questionmark", [[
+#showtooltip Conflagrate
+/cast Blood Fury
+/cast Conflagrate]], true)
 		CreateMacro("dhs", "inv_misc_questionmark", [[
 #showtooltip Demonic Healthstone
 /use Demonic Healthstone
 /use Healthstone]], true)
+		CreateMacro("dtr", "inv_misc_questionmark", [[
+#showtooltip Summon Demonic Tyrant
+/cast Blood Fury
+/cast Summon Demonic Tyrant]], true)
 		CreateMacro("fril", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Grimoire: Fel Ravager] Grimoire: Fel Ravager; Grimoire: Imp Lord]], true)
@@ -914,7 +938,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("sstone", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Soulstone]], true)
-		print("Created 12", select(1, UnitClass("player")), "macros.")
+		print("Created 15", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARRIOR" then
