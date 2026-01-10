@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=78e9d778a220dfb01f42cf6849218f6e
+-- hash=18490c0637eef7fa73f7b3aa28e65366
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -9803,7 +9803,7 @@ s "Plea"]])
 	end
 
 	if id == 257 then
-		C_Spell.PickupSpell("Holy Fire")
+		C_Spell.PickupSpell("Apotheosis")
 		if GetCursorInfo() then
 			-- L1_P2_R1
 			PlaceAction(25)
@@ -9814,20 +9814,7 @@ s "Plea"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_P2_R1:", [[
-s "Holy Fire"]])
-		end
-		C_Spell.PickupSpell("Smite")
-		if GetCursorInfo() then
-			-- L1_P2_R2
-			PlaceAction(26)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L1_P2_R2'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot L1_P2_R2:", [[
-s "Smite"]])
+s "Apotheosis"]])
 		end
 		PickupMacro("shwy")
 		if GetCursorInfo() then
@@ -9855,6 +9842,32 @@ m shwy]])
 			print("(spec) Couldn't bind slot L1_R2_2:", [[
 s "Holy Word: Sanctify"]])
 		end
+		PickupMacro("sgh")
+		if GetCursorInfo() then
+			-- L1_T_1
+			PlaceAction(11)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_T_1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_T_1:", [[
+m sgh]])
+		end
+		C_Spell.PickupSpell("Greater Heal")
+		if GetCursorInfo() then
+			-- L1_T_2
+			PlaceAction(23)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_T_2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_T_2:", [[
+s "Greater Heal"]])
+		end
 		PickupMacro("sgs")
 		if GetCursorInfo() then
 			-- L1_X_1
@@ -9881,7 +9894,7 @@ m sgs]])
 			print("(spec) Couldn't bind slot L1_X_2:", [[
 s "Guardian Spirit"]])
 		end
-		C_Spell.PickupSpell("Greater Heal")
+		C_Spell.PickupSpell("Smite")
 		if GetCursorInfo() then
 			-- L2_L1_R1
 			PlaceAction(67)
@@ -9892,7 +9905,7 @@ s "Guardian Spirit"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_L1_R1:", [[
-s "Greater Heal"]])
+s "Smite"]])
 		end
 		C_Spell.PickupSpell("Holy Word: Chastise")
 		if GetCursorInfo() then
@@ -9922,19 +9935,6 @@ s "Divine Hymn"]])
 		end
 		C_Spell.PickupSpell(215769)
 		if GetCursorInfo() then
-			-- L2_T
-			PlaceAction(65)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_T'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot L2_T:", [[
-s 215769]])
-		end
-		C_Spell.PickupSpell("Apotheosis")
-		if GetCursorInfo() then
 			-- P2_S
 			PlaceAction(57)
 			if GetCursorInfo() then
@@ -9944,7 +9944,7 @@ s 215769]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_S:", [[
-s "Apotheosis"]])
+s 215769]])
 		end
 		PickupMacro("spom")
 		if GetCursorInfo() then

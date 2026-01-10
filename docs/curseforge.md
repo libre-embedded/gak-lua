@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=9a25d6b46ff14870339de7ed674dcdcc
+    hash=3a9e14354039bc57dfd931c151e50141
     =====================================
 -->
 
@@ -77,7 +77,7 @@ Hunter | `15`
 Mage | `8`
 Monk | `12`
 Paladin | `21`
-Priest | `27`
+Priest | `28`
 Rogue | `11`
 Shaman | `21`
 Warlock | `12`

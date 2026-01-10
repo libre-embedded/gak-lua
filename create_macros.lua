@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=b6e49469227cb7f2a323a440b55f7139
+-- hash=01d68adc3fa42bd815e4f9bd8744306a
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -667,6 +667,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("sfh", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Flash Heal]], true)
+		CreateMacro("sgh", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Greater Heal]], true)
 		CreateMacro("sgs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Guardian Spirit]], true)
@@ -718,7 +721,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("sr", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Renew]], true)
-		print("Created 27", select(1, UnitClass("player")), "macros.")
+		print("Created 28", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "ROGUE" then

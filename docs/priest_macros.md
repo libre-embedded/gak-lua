@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=ad7ca05964a75b2f2d606c9e288a19ea
+    hash=a39f5c038563ad9fca8834d9543a4f93
     =====================================
 -->
 
@@ -213,6 +213,15 @@ sps
 ```
 #showtooltip
 /cast [@player] Pain Suppression
+```
+
+---
+
+sgh
+
+```
+#showtooltip
+/cast [@player] Greater Heal
 ```
 
 ---
