@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=f1685628088df699b3e80916cd31ba1c
+    hash=552f6c6dd794eef370165feff67f2cd0
     =====================================
 -->
 
@@ -134,15 +134,6 @@ ssm
 
 ---
 
-sog
-
-```
-#showtooltip
-/cast [@player] Overgrowth
-```
-
----
-
 srg
 
 ```
@@ -152,29 +143,11 @@ srg
 
 ---
 
-scw
-
-```
-#showtooltip
-/cast [@player] Cenarion Ward
-```
-
----
-
 sib
 
 ```
 #showtooltip
 /cast [@player] Ironbark
-```
-
----
-
-sngg
-
-```
-#showtooltip
-/cast [@player,known:Nourish] Nourish; [@player] Grove Guardians
 ```
 
 ---
@@ -197,22 +170,11 @@ seff
 
 ---
 
-sal
-
-```
-#showtooltip
-/cast [@player] Ancient of Lore
-/cast Nature's Vigil
-```
-
----
-
 sinv
 
 ```
 #showtooltip
 /cast [@player] Innervate
-/cast Nature's Vigil
 ```
 
 ---
@@ -226,15 +188,6 @@ srj
 
 ---
 
-sig
-
-```
-#showtooltip
-/cast [@player] Invigorate
-```
-
----
-
 root
 
 ```
@@ -244,21 +197,11 @@ root
 
 ---
 
-ngg
-
-```
-#showtooltip
-/cast [known:Nourish] Nourish; Grove Guardians
-```
-
----
-
 ult
 
 ```
 #showtooltip
 /cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life
-/cast Nature's Vigil
 ```
 
 ---
@@ -269,6 +212,64 @@ ffsb
 #showtooltip
 /cast Skull Bash
 /changeactionbar 1
+```
+
+---
+
+bvoke
+
+```
+#showtooltip Convoke the Spirits
+/cast Berserking
+/cast Convoke the Spirits
+```
+
+---
+
+ffr
+
+```
+#showtooltip
+/cast Rake
+/changeactionbar 1
+```
+
+---
+
+ffm
+
+```
+#showtooltip
+/cast Mangle
+/changeactionbar 1
+```
+
+---
+
+ffs
+
+```
+#showtooltip
+/cast Shred
+/changeactionbar 1
+```
+
+---
+
+dirmb
+
+```
+#showtooltip
+/cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar
+```
+
+---
+
+dfnwe
+
+```
+#showtooltip
+/cast [known:Force of Nature] Force of Nature; Warrior of Elune
 ```
 
 ---

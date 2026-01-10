@@ -1,38 +1,22 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=8fe1454155ce4882aa334c8f8775a242
+-- hash=b6e49469227cb7f2a323a440b55f7139
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
 /use Trader's Gilded Brutosaur]])
-	CreateMacro("bvoke", "inv_misc_questionmark", [[
-#showtooltip Convoke the Spirits
-/cast Berserking
-/cast Convoke the Spirits]])
-	CreateMacro("dfnwe", "inv_misc_questionmark", [[
+	CreateMacro("dcs", "inv_misc_questionmark", [[
 #showtooltip
-/cast [known:Force of Nature] Force of Nature; Warrior of Elune]])
-	CreateMacro("dirmb", "inv_misc_questionmark", [[
-#showtooltip
-/cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar]])
+/cast [known:Cyclone] Cyclone; Soothe]])
 	CreateMacro("dis", "ability_marksmanship", [[
 /dismount
 /cancelform]])
+	CreateMacro("dnmf", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Fury of Elune] Fury of Elune; New Moon]])
 	CreateMacro("fav", "achievement_guildperk_mountup", [[
 /run C_MountJournal.SummonByID(0)]])
-	CreateMacro("ffm", "inv_misc_questionmark", [[
-#showtooltip
-/cast Mangle
-/changeactionbar 1]])
-	CreateMacro("ffr", "inv_misc_questionmark", [[
-#showtooltip
-/cast Rake
-/changeactionbar 1]])
-	CreateMacro("ffs", "inv_misc_questionmark", [[
-#showtooltip
-/cast Shred
-/changeactionbar 1]])
 	CreateMacro("gak", "inv_misc_enggizmos_swissarmy", [[
 /gnomish-army-knife]])
 	CreateMacro("gc", "creatureportrait_creature_iceblock", [[
@@ -72,7 +56,7 @@ function GakCreateGlobalMacros()
 /use 14]])
 	CreateMacro("yak", "ability_mount_travellersyakmount", [[
 /use Grand Expedition Yak]])
-	print("Created 22 global macros.")
+	print("Created 18 global macros.")
 end
 
 local function createFirstRacialMacro()
@@ -326,12 +310,34 @@ function GakCreateCharacterMacros()
 #showtooltip Bear Form
 /cast [noform:1] Bear Form
 /changeactionbar 1]], true)
+		CreateMacro("bvoke", "inv_misc_questionmark", [[
+#showtooltip Convoke the Spirits
+/cast Berserking
+/cast Convoke the Spirits]], true)
 		CreateMacro("cat", "inv_misc_questionmark", [[
 #showtooltip Cat Form
 /cast [noform:2] Cat Form
 /changeactionbar 1]], true)
 		CreateMacro("cf", "ability_racial_twoforms", [[
 /cancelform]], true)
+		CreateMacro("dfnwe", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Force of Nature] Force of Nature; Warrior of Elune]], true)
+		CreateMacro("dirmb", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar]], true)
+		CreateMacro("ffm", "inv_misc_questionmark", [[
+#showtooltip
+/cast Mangle
+/changeactionbar 1]], true)
+		CreateMacro("ffr", "inv_misc_questionmark", [[
+#showtooltip
+/cast Rake
+/changeactionbar 1]], true)
+		CreateMacro("ffs", "inv_misc_questionmark", [[
+#showtooltip
+/cast Shred
+/changeactionbar 1]], true)
 		CreateMacro("ffsb", "inv_misc_questionmark", [[
 #showtooltip
 /cast Skull Bash
@@ -343,9 +349,6 @@ function GakCreateCharacterMacros()
 		CreateMacro("motw", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Mark of the Wild]], true)
-		CreateMacro("ngg", "inv_misc_questionmark", [[
-#showtooltip
-/cast [known:Nourish] Nourish; Grove Guardians]], true)
 		CreateMacro("prow", "inv_misc_questionmark", [[
 #showtooltip Prowl
 /cast [nocombat] !Prowl
@@ -353,35 +356,18 @@ function GakCreateCharacterMacros()
 		CreateMacro("root", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Mass Entanglement] Mass Entanglement; Ursol's Vortex]], true)
-		CreateMacro("sal", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Ancient of Lore
-/cast Nature's Vigil]], true)
-		CreateMacro("scw", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Cenarion Ward]], true)
 		CreateMacro("seff", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Efflorescence]], true)
 		CreateMacro("sib", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Ironbark]], true)
-		CreateMacro("sig", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Invigorate]], true)
 		CreateMacro("sinv", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Innervate
-/cast Nature's Vigil]], true)
+/cast [@player] Innervate]], true)
 		CreateMacro("slb", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Lifebloom]], true)
-		CreateMacro("sngg", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player,known:Nourish] Nourish; [@player] Grove Guardians]], true)
-		CreateMacro("sog", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Overgrowth]], true)
 		CreateMacro("src", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Remove Corruption]], true)
@@ -405,8 +391,7 @@ function GakCreateCharacterMacros()
 /cast [indoors] !Cat Form; !Travel Form]], true)
 		CreateMacro("ult", "inv_misc_questionmark", [[
 #showtooltip
-/cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life
-/cast Nature's Vigil]], true)
+/cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life]], true)
 		CreateMacro("wch", "inv_misc_questionmark", [[
 #showtooltip Wild Charge
 /cancelform

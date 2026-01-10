@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=5e0e956bf39e6bb80e47e233aa12b066
+    hash=9a25d6b46ff14870339de7ed674dcdcc
     =====================================
 -->
 
@@ -68,7 +68,7 @@ documentation for additional details.
 
 Type | Count
 -----|------
-Shared | `22`
+Shared | `18`
 Deathknight | `5`
 Demonhunter | `5`
 Druid | `28`
@@ -101,10 +101,10 @@ Rogue | `43`
 Shaman | `38`
 Warlock | `45`
 Warrior | `35`
-Balance Druid | `52`
-Feral Druid | `46`
+Balance Druid | `51`
+Feral Druid | `52`
 Guardian Druid | `62`
-Restoration Druid | `52`
+Restoration Druid | `48`
 Devastation Evoker | `18`
 Preservation Evoker | `28`
 Augmentation Evoker | `22`
