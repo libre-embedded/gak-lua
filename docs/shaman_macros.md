@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=91de414d1731eede1b48bccef1af5710
+    hash=baae3ab8ad2fd7a5efe1c8097e0e2d20
     =====================================
 -->
 
@@ -28,11 +28,20 @@ pgp
 
 ---
 
-fese
+ttpc
 
 ```
 #showtooltip
-/cast [known:Fire Elemental] Fire Elemental; Storm Elemental
+/cast [known:Tremor Totem] Tremor Totem; Poison Cleansing Totem
+```
+
+---
+
+ahtt
+
+```
+#showtooltip
+/cast [known:Ascendance] Ascendance; Healing Tide Totem
 ```
 
 ---
@@ -118,15 +127,6 @@ stp
 
 ---
 
-sewt
-
-```
-#showtooltip
-/cast [@player] Earthen Wall Totem
-```
-
----
-
 shr
 
 ```
@@ -181,20 +181,20 @@ ses
 
 ---
 
-slmt
-
-```
-#showtooltip
-/cast [@player] Liquid Magma Totem
-```
-
----
-
 sst
 
 ```
 #showtooltip
 /cast [@player] Surging Totem
+```
+
+---
+
+sww
+
+```
+#showtooltip
+/cast [@player] Water Walking
 ```
 
 ---

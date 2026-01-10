@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=01d68adc3fa42bd815e4f9bd8744306a
+-- hash=7adb1bf8ba2a84928c7cb86b2a4d9655
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -774,12 +774,12 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "SHAMAN" then
+		CreateMacro("ahtt", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Ascendance] Ascendance; Healing Tide Totem]], true)
 		CreateMacro("eseb", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Earth Shock] Earth Shock; Elemental Blast]], true)
-		CreateMacro("fese", "inv_misc_questionmark", [[
-#showtooltip
-/cast [known:Fire Elemental] Fire Elemental; Storm Elemental]], true)
 		CreateMacro("pgp", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Purge] Purge; Greater Purge]], true)
@@ -795,9 +795,6 @@ function GakCreateCharacterMacros()
 		CreateMacro("ses", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Earth Shield]], true)
-		CreateMacro("sewt", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Earthen Wall Totem]], true)
 		CreateMacro("shr", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Healing Rain]], true)
@@ -807,9 +804,6 @@ function GakCreateCharacterMacros()
 		CreateMacro("shw", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Healing Wave]], true)
-		CreateMacro("slmt", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Liquid Magma Totem]], true)
 		CreateMacro("sps", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Purify Spirit]], true)
@@ -837,6 +831,12 @@ function GakCreateCharacterMacros()
 		CreateMacro("swgw", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Spirit Walk] Spirit Walk; Gust of Wind]], true)
+		CreateMacro("sww", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Water Walking]], true)
+		CreateMacro("ttpc", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Tremor Totem] Tremor Totem; Poison Cleansing Totem]], true)
 		print("Created 21", select(1, UnitClass("player")), "macros.")
 	end
 
