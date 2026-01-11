@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=14bfbba58f02bbf2a4646552c0998dd6
+-- hash=db2b07b1a570d382993cd3663802cb65
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -467,6 +467,10 @@ function GakCreateCharacterMacros()
 		CreateMacro("bfs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Butchery] Butchery; Flanking Strike]], true)
+		CreateMacro("brr", "inv_misc_questionmark", [[
+#showtooltip Bestial Wrath
+/cast Blood Fury
+/cast Bestial Wrath]], true)
 		CreateMacro("bssc", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Bursting Shot] Bursting Shot; Scatter Shot]], true)
@@ -477,7 +481,8 @@ function GakCreateCharacterMacros()
 #showtooltip
 /cast [known:High Explosive Trap] High Explosive Trap; Implosive Trap]], true)
 		CreateMacro("ks", "inv_misc_questionmark", [[
-#showtooltip
+#showtooltip Kill Shot
+/cast Blood Fury
 /cast Kill Shot]], true)
 		CreateMacro("sbs", "inv_misc_questionmark", [[
 #showtooltip
@@ -491,6 +496,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("sf", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Flare]], true)
+		CreateMacro("sfp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Flamefang Pitch]], true)
 		CreateMacro("sft", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Freezing Trap]], true)
@@ -505,11 +513,18 @@ function GakCreateCharacterMacros()
 /cast [@player] Roar of Sacrifice]], true)
 		CreateMacro("stt", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Tar Trap]], true)
+/cast [@player,known:Tar Trap] Tar Trap; Scare Beast]], true)
 		CreateMacro("sv", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Volley]], true)
-		print("Created 15", select(1, UnitClass("player")), "macros.")
+		CreateMacro("tdr", "inv_misc_questionmark", [[
+#showtooltip Takedown
+/cast Blood Fury
+/cast Takedown]], true)
+		CreateMacro("ttsb", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Tar Trap] Tar Trap; Scare Beast]], true)
+		print("Created 19", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "MAGE" then

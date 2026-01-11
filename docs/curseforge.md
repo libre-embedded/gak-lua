@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=2e515362419dec88faec8d97c55e2703
+    hash=13da8e26d4993e06a6994cb56a4b5cd6
     =====================================
 -->
 
@@ -73,7 +73,7 @@ Deathknight | `5`
 Demonhunter | `5`
 Druid | `28`
 Evoker | `16`
-Hunter | `15`
+Hunter | `19`
 Mage | `15`
 Monk | `15`
 Paladin | `21`
@@ -92,7 +92,7 @@ Deathknight | `29`
 Demonhunter | `0`
 Druid | `41`
 Evoker | `26`
-Hunter | `44`
+Hunter | `38`
 Mage | `28`
 Monk | `18`
 Paladin | `23`
@@ -112,8 +112,8 @@ Blood Death Knight | `0`
 Frost Death Knight | `16`
 Unholy Death Knight | `26`
 Beast Mastery Hunter | `12`
-Marksmanship Hunter | `13`
-Survival Hunter | `20`
+Marksmanship Hunter | `14`
+Survival Hunter | `19`
 Discipline Priest | `22`
 Holy Priest | `21`
 Shadow Priest | `22`
