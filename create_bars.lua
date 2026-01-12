@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=58270390d52f39d7971371d7bee042bd
+-- hash=e14faa27ead730787f9a2823695b3ccf
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -1454,7 +1454,7 @@ s 360022]])
 			print("(class) Couldn't bind slot L2_R1:", [[
 s 357208]])
 		end
-		C_Spell.PickupSpell("Zephyr")
+		PickupMacro("rac1")
 		if GetCursorInfo() then
 			-- L2_T
 			PlaceAction(65)
@@ -1465,7 +1465,33 @@ s 357208]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L2_T:", [[
+m rac1]])
+		end
+		C_Spell.PickupSpell("Zephyr")
+		if GetCursorInfo() then
+			-- L2_X
+			PlaceAction(64)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_X'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L2_X:", [[
 s "Zephyr"]])
+		end
+		C_Spell.PickupSpell("Chrono Loop")
+		if GetCursorInfo() then
+			-- P2_C
+			PlaceAction(60)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_C'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot P2_C:", [[
+s "Chrono Loop"]])
 		end
 		C_Spell.PickupSpell("Blessing of the Bronze")
 		if GetCursorInfo() then
@@ -1479,19 +1505,6 @@ s "Zephyr"]])
 		else
 			print("(class) Couldn't bind slot P2_D:", [[
 s "Blessing of the Bronze"]])
-		end
-		C_Spell.PickupSpell("Chrono Loop")
-		if GetCursorInfo() then
-			-- P2_T
-			PlaceAction(59)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'P2_T'")
-				ClearCursor()
-			end
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot P2_T:", [[
-s "Chrono Loop"]])
 		end
 		C_Spell.PickupSpell("Return")
 		if GetCursorInfo() then
@@ -2818,6 +2831,19 @@ s 633]])
 			print("(class) Couldn't bind slot L2_L1_R1:", [[
 s "Rebuke"]])
 		end
+		PickupMacro("rac1")
+		if GetCursorInfo() then
+			-- L2_L1_R2
+			PlaceAction(68)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_L1_R2'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L2_L1_R2:", [[
+m rac1]])
+		end
 		C_Spell.PickupSpell("Blinding Light")
 		if GetCursorInfo() then
 			-- L2_P2_R1
@@ -3223,6 +3249,19 @@ s "Shadow Word: Pain"]])
 		else
 			print("(class) Couldn't bind slot P2_R2:", [[
 s "Shadow Word: Death"]])
+		end
+		PickupMacro("rac1")
+		if GetCursorInfo() then
+			-- P2_T
+			PlaceAction(59)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_T'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot P2_T:", [[
+m rac1]])
 		end
 		C_Spell.PickupSpell("Resurrection")
 		if GetCursorInfo() then
@@ -3866,6 +3905,19 @@ s "Flametongue Weapon"]])
 		else
 			print("(class) Couldn't bind slot L1_P2_R2:", [[
 s "Nature's Swiftness"]])
+		end
+		PickupMacro("rac1")
+		if GetCursorInfo() then
+			-- L1_P2_X
+			PlaceAction(28)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P2_X'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L1_P2_X:", [[
+m rac1]])
 		end
 		C_Spell.PickupSpell("Earth Elemental")
 		if GetCursorInfo() then
@@ -5159,6 +5211,19 @@ s "Storm Bolt"]])
 		else
 			print("(class) Couldn't bind slot P2_R2:", [[
 s "Hamstring"]])
+		end
+		PickupMacro("rac1")
+		if GetCursorInfo() then
+			-- P2_T
+			PlaceAction(59)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_T'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot P2_T:", [[
+m rac1]])
 		end
 		C_Spell.PickupSpell("Disarm")
 		if GetCursorInfo() then
@@ -7540,19 +7605,6 @@ s "Emerald Communion"]])
 			print("(spec) Couldn't bind slot L1_P2_C:", [[
 s "Mass Return"]])
 		end
-		PickupMacro("dfs")
-		if GetCursorInfo() then
-			-- L1_P2_R2
-			PlaceAction(26)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L1_P2_R2'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot L1_P2_R2:", [[
-m dfs]])
-		end
 		PickupMacro("sve")
 		if GetCursorInfo() then
 			-- L1_R1_1
@@ -7631,7 +7683,7 @@ m seb]])
 			print("(spec) Couldn't bind slot L1_S_2:", [[
 s "Emerald Blossom"]])
 		end
-		C_Spell.PickupSpell("Wing Buffet")
+		PickupMacro("dfs")
 		if GetCursorInfo() then
 			-- L2_L1_R1
 			PlaceAction(67)
@@ -7642,7 +7694,7 @@ s "Emerald Blossom"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_L1_R1:", [[
-s "Wing Buffet"]])
+m dfs]])
 		end
 		C_Spell.PickupSpell("Fire Breath")
 		if GetCursorInfo() then
@@ -7683,19 +7735,6 @@ s "Dream Breath"]])
 			print("(spec) Couldn't bind slot L2_S:", [[
 s "Rewind"]])
 		end
-		C_Spell.PickupSpell("Temporal Anomaly")
-		if GetCursorInfo() then
-			-- L2_X
-			PlaceAction(64)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_X'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot L2_X:", [[
-s "Temporal Anomaly"]])
-		end
 		PickupMacro("elf")
 		if GetCursorInfo() then
 			-- P2_R1
@@ -7734,6 +7773,19 @@ s "Azure Strike"]])
 		else
 			print("(spec) Couldn't bind slot P2_S:", [[
 s "Disintegrate"]])
+		end
+		C_Spell.PickupSpell("Temporal Anomaly")
+		if GetCursorInfo() then
+			-- P2_T
+			PlaceAction(59)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_T'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot P2_T:", [[
+s "Temporal Anomaly"]])
 		end
 		PickupMacro("slf")
 		if GetCursorInfo() then
@@ -14952,6 +15004,19 @@ s "Ignore Pain"]])
 			print("(spec) Couldn't bind slot L1_X_2:", [[
 s "Ignore Pain"]])
 		end
+		C_Spell.PickupSpell("Duel")
+		if GetCursorInfo() then
+			-- L2_C
+			PlaceAction(66)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_C'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_C:", [[
+s "Duel"]])
+		end
 		PickupMacro("dsa")
 		if GetCursorInfo() then
 			-- L2_L1_P1
@@ -14978,7 +15043,7 @@ m dsa]])
 			print("(spec) Couldn't bind slot L2_S:", [[
 s "Avatar"]])
 		end
-		C_Spell.PickupSpell("Duel")
+		C_Spell.PickupSpell("Die By The Sword")
 		if GetCursorInfo() then
 			-- L2_T
 			PlaceAction(65)
@@ -14989,7 +15054,7 @@ s "Avatar"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_T:", [[
-s "Duel"]])
+s "Die By The Sword"]])
 		end
 		PickupMacro("bsr")
 		if GetCursorInfo() then
@@ -15003,19 +15068,6 @@ s "Duel"]])
 		else
 			print("(spec) Couldn't bind slot P2_S:", [[
 m bsr]])
-		end
-		C_Spell.PickupSpell("Die By The Sword")
-		if GetCursorInfo() then
-			-- P2_T
-			PlaceAction(59)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'P2_T'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot P2_T:", [[
-s "Die By The Sword"]])
 		end
 		C_Spell.PickupSpell("Battle Stance")
 		if GetCursorInfo() then

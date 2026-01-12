@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=13da8e26d4993e06a6994cb56a4b5cd6
+    hash=1550729b10c1c5dad7b2ce876a2e4e30
     =====================================
 -->
 
@@ -91,22 +91,22 @@ Global | `20`
 Deathknight | `29`
 Demonhunter | `0`
 Druid | `41`
-Evoker | `26`
+Evoker | `27`
 Hunter | `38`
 Mage | `28`
 Monk | `18`
-Paladin | `23`
-Priest | `22`
+Paladin | `24`
+Priest | `23`
 Rogue | `43`
-Shaman | `35`
+Shaman | `36`
 Warlock | `45`
-Warrior | `31`
+Warrior | `32`
 Balance Druid | `51`
 Feral Druid | `52`
 Guardian Druid | `62`
 Restoration Druid | `48`
 Devastation Evoker | `18`
-Preservation Evoker | `28`
+Preservation Evoker | `27`
 Augmentation Evoker | `22`
 Blood Death Knight | `0`
 Frost Death Knight | `16`
