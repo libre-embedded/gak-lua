@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=1550729b10c1c5dad7b2ce876a2e4e30
+    hash=9c23a1f785b6804735b12fcf0fa9e8cc
     =====================================
 -->
 
@@ -89,7 +89,7 @@ Type | Action Count
 -----|-------------
 Global | `20`
 Deathknight | `29`
-Demonhunter | `0`
+Demonhunter | `18`
 Druid | `41`
 Evoker | `27`
 Hunter | `38`
@@ -108,6 +108,7 @@ Restoration Druid | `48`
 Devastation Evoker | `18`
 Preservation Evoker | `27`
 Augmentation Evoker | `22`
+Devourer Demon Hunter | `13`
 Blood Death Knight | `0`
 Frost Death Knight | `16`
 Unholy Death Knight | `26`
@@ -129,7 +130,7 @@ Destruction Warlock | `18`
 Brewmaster Monk | `0`
 Windwalker Monk | `22`
 Mistweaver Monk | `22`
-Havoc Demon Hunter | `41`
+Havoc Demon Hunter | `16`
 Vengeance Demon Hunter | `0`
 Arcane Mage | `15`
 Fire Mage | `14`
