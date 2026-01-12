@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=9c23a1f785b6804735b12fcf0fa9e8cc
+    hash=c7f0b62de8ac5746b4a80bc56cc9281d
     =====================================
 -->
 
@@ -88,7 +88,7 @@ Warrior | `8`
 Type | Action Count
 -----|-------------
 Global | `20`
-Deathknight | `29`
+Deathknight | `28`
 Demonhunter | `18`
 Druid | `41`
 Evoker | `27`
@@ -110,7 +110,7 @@ Preservation Evoker | `27`
 Augmentation Evoker | `22`
 Devourer Demon Hunter | `13`
 Blood Death Knight | `0`
-Frost Death Knight | `16`
+Frost Death Knight | `15`
 Unholy Death Knight | `26`
 Beast Mastery Hunter | `12`
 Marksmanship Hunter | `14`

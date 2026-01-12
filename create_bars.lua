@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=73dab216eeb9ed16aa1acb35a4fbab62
+-- hash=8e78f98277f49bc171a3b6272dc70c8d
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -314,19 +314,6 @@ s 48265]])
 			print("(class) Couldn't bind slot L1_P2_C:", [[
 s "Dark Command"]])
 		end
-		C_Spell.PickupSpell("Soul Reaper")
-		if GetCursorInfo() then
-			-- L1_P2_X
-			PlaceAction(28)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L1_P2_X'")
-				ClearCursor()
-			end
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot L1_P2_X:", [[
-s "Soul Reaper"]])
-		end
 		C_Spell.PickupSpell("Death Gate")
 		if GetCursorInfo() then
 			-- L1_R
@@ -522,7 +509,7 @@ s "Death Strike"]])
 			print("(class) Couldn't bind slot L2_R2:", [[
 s "Death Grip"]])
 		end
-		C_Spell.PickupSpell("Sacrificial Pact")
+		C_Spell.PickupSpell("Lichborne")
 		if GetCursorInfo() then
 			-- L2_T
 			PlaceAction(65)
@@ -533,7 +520,7 @@ s "Death Grip"]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L2_T:", [[
-s "Sacrificial Pact"]])
+s "Lichborne"]])
 		end
 		C_Spell.PickupSpell("Death Pact")
 		if GetCursorInfo() then
@@ -574,7 +561,7 @@ s "Path of Frost"]])
 			print("(class) Couldn't bind slot P2_R2:", [[
 s "Chains of Ice"]])
 		end
-		C_Spell.PickupSpell("Lichborne")
+		PickupMacro("rac1")
 		if GetCursorInfo() then
 			-- P2_T
 			PlaceAction(59)
@@ -585,7 +572,7 @@ s "Chains of Ice"]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot P2_T:", [[
-s "Lichborne"]])
+m rac1]])
 		end
 		C_Spell.PickupSpell("Raise Ally")
 		if GetCursorInfo() then
@@ -8672,19 +8659,6 @@ s "Empower Rune Weapon"]])
 		end
 		C_Spell.PickupSpell("Frostwyrm's Fury")
 		if GetCursorInfo() then
-			-- L2_L1_S
-			PlaceAction(69)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_L1_S'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot L2_L1_S:", [[
-s "Frostwyrm's Fury"]])
-		end
-		C_Spell.PickupSpell("Remorseless Winter")
-		if GetCursorInfo() then
 			-- L2_S
 			PlaceAction(63)
 			if GetCursorInfo() then
@@ -8694,7 +8668,7 @@ s "Frostwyrm's Fury"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_S:", [[
-s "Remorseless Winter"]])
+s "Frostwyrm's Fury"]])
 		end
 		C_Spell.PickupSpell("Glacial Advance")
 		if GetCursorInfo() then
@@ -8920,7 +8894,7 @@ s "Festering Strike"]])
 			print("(spec) Couldn't bind slot L1_R1_2:", [[
 s "Festering Strike"]])
 		end
-		C_Spell.PickupSpell("Unholy Assault")
+		C_Spell.PickupSpell("Putrefy")
 		if GetCursorInfo() then
 			-- L1_S_1
 			PlaceAction(9)
@@ -8931,9 +8905,9 @@ s "Festering Strike"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_S_1:", [[
-s "Unholy Assault"]])
+s "Putrefy"]])
 		end
-		C_Spell.PickupSpell("Unholy Assault")
+		C_Spell.PickupSpell("Putrefy")
 		if GetCursorInfo() then
 			-- L1_S_2
 			PlaceAction(21)
@@ -8944,7 +8918,7 @@ s "Unholy Assault"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_S_2:", [[
-s "Unholy Assault"]])
+s "Putrefy"]])
 		end
 		C_SpellBook.PickupSpellBookItem(8, 1)
 		if GetCursorInfo() then
@@ -8998,7 +8972,7 @@ C_SpellBook.PickupSpellBookItem(2, 1)]])
 			print("(spec) Couldn't bind slot L2_P3:", [[
 C_SpellBook.PickupSpellBookItem(11, 1)]])
 		end
-		C_Spell.PickupSpell("Summon Gargoyle")
+		C_Spell.PickupSpell("Zombify")
 		if GetCursorInfo() then
 			-- L2_S
 			PlaceAction(63)
@@ -9009,7 +8983,7 @@ C_SpellBook.PickupSpellBookItem(11, 1)]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_S:", [[
-s "Summon Gargoyle"]])
+s "Zombify"]])
 		end
 		C_SpellBook.PickupSpellBookItem(6, 1)
 		if GetCursorInfo() then
@@ -9050,7 +9024,7 @@ C_SpellBook.PickupSpellBookItem(5, 1)]])
 			print("(spec) Couldn't bind slot P2_R1:", [[
 s "Scourge Strike"]])
 		end
-		C_Spell.PickupSpell("Reanimation")
+		C_Spell.PickupSpell("Soul Reaper")
 		if GetCursorInfo() then
 			-- P2_S
 			PlaceAction(57)
@@ -9061,7 +9035,7 @@ s "Scourge Strike"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_S:", [[
-s "Reanimation"]])
+s "Soul Reaper"]])
 		end
 		C_Spell.PickupSpell("Outbreak")
 		if GetCursorInfo() then
