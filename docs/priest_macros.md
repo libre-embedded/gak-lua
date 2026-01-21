@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=f06fe92711c88e2ef5d285cb515eda93
+    hash=a39f5c038563ad9fca8834d9543a4f93
     =====================================
 -->
 
@@ -15,15 +15,6 @@ mcdm
 ```
 #showtooltip
 /cast [known:Mind Control] Mind Control; Dominate Mind
-```
-
----
-
-hds
-
-```
-#showtooltip
-/cast [known:Halo] Halo; Divine Star
 ```
 
 ---
@@ -145,15 +136,6 @@ spws
 
 ---
 
-sroh
-
-```
-#showtooltip
-/cast [@player] Ray of Hope
-```
-
----
-
 sfh
 
 ```
@@ -163,11 +145,11 @@ sfh
 
 ---
 
-sh
+splea
 
 ```
 #showtooltip
-/cast [@player] Heal
+/cast [@player] Plea
 ```
 
 ---
@@ -235,6 +217,15 @@ sps
 
 ---
 
+sgh
+
+```
+#showtooltip
+/cast [@player] Greater Heal
+```
+
+---
+
 spwb
 
 ```
@@ -258,6 +249,15 @@ fup
 ```
 #showtooltip
 /cast [@anyfriend] Ultimate Penitence
+```
+
+---
+
+ils
+
+```
+#showtooltip
+/cast [known:Inner Light] Inner Light; Inner Shadow
 ```
 
 ---

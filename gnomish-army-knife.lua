@@ -61,13 +61,22 @@ local function GakHandleInstance()
 		-- Mark teammates (will only work if party leader).
 		-- should also do this on an event (teammate joining, need to
 		-- find a suitable one)
-		GakSetRaidTargets()
+		print("not setting raid target icons for party (broken)")
+		-- GakSetRaidTargets()
 	end
 
 	GakPrintLoggingCombatState()
 end
 
 local function GakRuntimeInit()
+	-- seems this might need to be added as a secure hook, if nameplate
+	-- settings menu is opened this will get set back to some default
+	C_NamePlate.SetNamePlateSize(80, 1)  -- height param does nothing?
+
+	if UnitAffectingCombat("player") then
+		return
+	end
+
 	-- Instance-specific actions.
 	GakHandleInstance()
 
@@ -80,6 +89,16 @@ local function GakRuntimeInit()
 
 	-- Hide some elements.
 	GakAuditZenMode()
+
+	-- Update loadout unless in a pvp instance.
+	local info = { GetInstanceInfo() }
+	if info[2] ~= "pvp" and not IsActiveBattlefieldArena() then
+		-- Set loadout (delay necessary for pet spells).
+		C_Timer.After(1.0, function()
+			GakSetGlobalMacros()
+			GakSetActionBars()
+		end)
+	end
 
 	-- FramerateFrame:Show()
 end
@@ -205,18 +224,6 @@ local function GakLogin(frame)
 	end
 
 	GakRuntimeInit()
-
-	-- Update loadout unless in a pvp instance.
-	local info = { GetInstanceInfo() }
-	if info[2] ~= "pvp" then
-		-- Set loadout (delay necessary for pet spells).
-		C_Timer.After(1.0, function()
-			if not UnitAffectingCombat("player") then
-				GakSetGlobalMacros()
-				GakSetActionBars()
-			end
-		end)
-	end
 end
 
 GakEventHandlers["PLAYER_LOGIN"] = function(frame)
@@ -256,7 +263,8 @@ GakEventHandlers["PLAYER_LEVEL_UP"] = GakRuntimeInit
 local function GakEventHandler(frame, event, ...)
 	local handler = GakEventHandlers[event]
 	if handler ~= nil then
-		GakEventHandlers[event](frame, ...)
+		print("|cFF0000FF", event, "|r")
+		handler(frame, ...)
 	else
 		print("Unhandled event:", event, ...)
 	end

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=b22ab34bb8173b2e3f26b8649b2c73b4
+    hash=8707c841ebab9e113c33676cdd06fdb3
     =====================================
 -->
 
@@ -106,36 +106,6 @@ petd
 
 ---
 
-ffr
-
-```
-#showtooltip
-/cast Rake
-/changeactionbar 1
-```
-
----
-
-ffm
-
-```
-#showtooltip
-/cast Mangle
-/changeactionbar 1
-```
-
----
-
-ffs
-
-```
-#showtooltip
-/cast Shred
-/changeactionbar 1
-```
-
----
-
 ![icon image](https://wow.zamimg.com/images/wow/icons/large/achievement_guildperk_mountup.jpg)
 
 fav
@@ -166,24 +136,6 @@ ah
 
 ---
 
-dfnwe
-
-```
-#showtooltip
-/cast [known:Force of Nature] Force of Nature; Warrior of Elune
-```
-
----
-
-dirmb
-
-```
-#showtooltip
-/cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar
-```
-
----
-
 psf
 
 ```
@@ -202,12 +154,20 @@ pdave
 
 ---
 
-bvoke
+dcs
 
 ```
-#showtooltip Convoke the Spirits
-/cast Berserking
-/cast Convoke the Spirits
+#showtooltip
+/cast [known:Cyclone] Cyclone; Soothe
+```
+
+---
+
+dnmf
+
+```
+#showtooltip
+/cast [known:Fury of Elune] Fury of Elune; New Moon
 ```
 
 ---
@@ -226,6 +186,36 @@ ppd
 ```
 #showtooltip
 /cast [@player] Purify Disease
+```
+
+---
+
+dss
+
+```
+#showtooltip Starsurge
+/cast Berserking
+/cast Starsurge
+```
+
+---
+
+dtfr
+
+```
+#showtooltip Tiger's Fury
+/cast Berserking
+/cast Tiger's Fury
+```
+
+---
+
+dnsr
+
+```
+#showtooltip Nature's Swiftness
+/cast Berserking
+/cast Nature's Swiftness
 ```
 
 ---

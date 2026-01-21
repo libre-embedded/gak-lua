@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=d3555bf6fe86b012a002376971110a7b
+    hash=844176bde0275ca7d3055cb956828c4b
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `109`
+Total: `101`
 
 Name | Value
 ---- | -----
@@ -19,12 +19,13 @@ assistedCombatHighlight | 1
 autoLootDefault | 1
 autoLootRate | 50
 AutoPushSpellToActionBar | 0
+cameraDistanceMaxZoomFactor | 2.6
 CameraKeepCharacterCentered | 0
 cameraSmoothStyle | 1
 combinedBags | 1
 cooldownViewerEnabled | 1
 countdownForCooldowns | 1
-damageMeterEnabled | 1
+damageMeterEnabled | 0
 enableMultiActionBars | 15
 enablePings | 0
 externalDefensivesEnabled | 1
@@ -47,43 +48,34 @@ GamePadEmulateShift | `PADLSHOULDER`
 GamePadEnable | 1
 GamePadOverlapMouseMs | 50
 GamePadRunThreshold | 0
-hideAdventureJournalAlerts | 1
 lootUnderMouse | 0
 lossOfControl | 0
-nameplateGlobalScale | 1.0
-nameplateHideHealthAndPower | 1
+nameplateAuraScale | 0.7
 nameplateLargerScale | 1.2
-nameplateLargeTopInset | 0.1
 nameplateMaxScale | 0.9
 nameplateMinScale | 0.9
-nameplateMotion | 1
-nameplateMotionSpeed | 0.05
-nameplateOtherBottomInset | 0.1
-nameplateOtherTopInset | 0.08
 nameplateOverlapH | 0.6
 nameplateOverlapV | 0.6
-NameplatePersonalShowAlways | 1
-nameplateResourceOnTarget | 0
 nameplateSelfAlpha | 0.75
-nameplateSelfBottomInset | 0.31
-nameplateSelfScale | 1.0
-nameplateSelfTopInset | 0.5
 nameplateShowAll | 1
 nameplateShowDebuffsOnFriendly | 1
-nameplateShowFriendlyBuffs | 1
 nameplateShowFriendlyPlayerTotems | 0
-nameplateShowPersonalCooldowns | 1
-nameplateShowSelf | 1
+nameplateShowSelf | 0
+nameplateSize | 5
+nameplateStyle | 4
 occludedSilhouettePlayer | 1
 pvpFramesDisplayClassColor | 1
+pvpFramesDisplayOnlyHealerPowerBars | 1
 pvpFramesDisplayPowerBars | 1
 pvpFramesHealthText | `none`
+pvpOptionDisplayPets | 1
 raidFramesDisplayClassColor | 1
 raidFramesDisplayPowerBars | 1
 raidFramesHealthText | `none`
 raidOptionDisplayPets | 1
 rotateMinimap | 0
 scriptErrors | 1
+secretPvPMatchRestrictionsForced | 1
 showHonorAsExperience | 0
 showPartyPets | 1
 showPingsInChat | 0

@@ -428,6 +428,7 @@ end
 function GakAuditZenMode()
 	-- Hide player-portrait name and level.
 	PlayerName:Hide()
+	PetName:Hide()
 	GakHideFrame(PlayerLevelText)
 	GakHideFrame(PlayerCastingBarFrame.Text)
 	GakHideFrame(TargetFrameSpellBar.Text)

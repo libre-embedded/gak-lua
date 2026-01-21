@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=db6885ca90938c6426f3c623f36a9802
+    hash=98eee2617204aec3565b3c38382d4f58
     =====================================
 -->
 
@@ -55,6 +55,15 @@ scp
 
 ---
 
+sfp
+
+```
+#showtooltip
+/cast [@player] Flamefang Pitch
+```
+
+---
+
 cp
 
 ```
@@ -68,7 +77,16 @@ stt
 
 ```
 #showtooltip
-/cast [@player] Tar Trap
+/cast [@player,known:Tar Trap] Tar Trap; Scare Beast
+```
+
+---
+
+ttsb
+
+```
+#showtooltip
+/cast [known:Tar Trap] Tar Trap; Scare Beast
 ```
 
 ---
@@ -139,8 +157,29 @@ sv
 ks
 
 ```
-#showtooltip
+#showtooltip Kill Shot
+/cast Blood Fury
 /cast Kill Shot
+```
+
+---
+
+tdr
+
+```
+#showtooltip Takedown
+/cast Blood Fury
+/cast Takedown
+```
+
+---
+
+brr
+
+```
+#showtooltip Bestial Wrath
+/cast Blood Fury
+/cast Bestial Wrath
 ```
 
 ---

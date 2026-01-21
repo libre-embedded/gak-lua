@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=8a149d90056243044548281508ab5afa
+    hash=91711d5aa6e2ef33377af0466ee87132
     =====================================
 -->
 
@@ -114,6 +114,24 @@ sx
 ```
 #showtooltip
 /cast [@player] Expunge
+```
+
+---
+
+sbs
+
+```
+#showtooltip
+/cast [@player] Blistering Scales
+```
+
+---
+
+dfs
+
+```
+#showtooltip
+/cast [known:Stasis] Stasis; Dream Flight
 ```
 
 ---

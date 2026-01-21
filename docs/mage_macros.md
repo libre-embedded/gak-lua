@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=5051d780a916e62533d07609a9aa5619
+    hash=059a9395c375e664aeee2e61c5da9901
     =====================================
 -->
 
@@ -15,6 +15,24 @@ sai
 ```
 #showtooltip
 /cast [@player] Arcane Intellect
+```
+
+---
+
+rfmp
+
+```
+#showtooltip
+/cast [known:Ring of Frost] Ring of Frost; Mass Polymorph
+```
+
+---
+
+sndb
+
+```
+#showtooltip
+/cast [known:Supernova] Supernova; Dragon's Breath
 ```
 
 ---
@@ -55,11 +73,60 @@ sb
 
 ---
 
+forb
+
+```
+#showtooltip Frozen Orb
+/cast Blood Fury
+/cast Frozen Orb
+```
+
+---
+
+tmr
+
+```
+#showtooltip Touch of the Magi
+/cast Blood Fury
+/cast Touch of the Magi
+```
+
+---
+
+sforb
+
+```
+#showtooltip Frozen Orb
+/cast Blood Fury
+/cast [@player] Frozen Orb
+```
+
+---
+
+cbr
+
+```
+#showtooltip Combustion
+/cast Blood Fury
+/cast Combustion
+```
+
+---
+
+smet
+
+```
+#showtooltip
+/cast [@player] Meteor
+```
+
+---
+
 srof
 
 ```
 #showtooltip
-/cast [@player] Ring of Frost
+/cast [@player,known:Ring of Frost] Ring of Frost; Mass Polymorph
 ```
 
 ---

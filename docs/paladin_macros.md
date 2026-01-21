@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=f9fe7859875fcb81aa0d807ff12bd550
+    hash=a4dd5ea346c81f1bc303cb750393b942
     =====================================
 -->
 
@@ -91,20 +91,38 @@ sct
 
 ---
 
-rbl
-
-```
-#showtooltip
-/cast [known:Blinding Light] Blinding Light; Repentance
-```
-
----
-
 esfr
 
 ```
 #showtooltip
 /cast [known:Final Reckoning] Final Reckoning; Execution Sentence
+```
+
+---
+
+dthp
+
+```
+#showtooltip
+/cast [@anyfriend,known:Divine Toll] Divine Toll; [@anyfriend] Holy Prism
+```
+
+---
+
+sdthp
+
+```
+#showtooltip
+/cast [@player,known:Divine Toll] Divine Toll; [@player] Holy Prism
+```
+
+---
+
+edthp
+
+```
+#showtooltip
+/cast [@anyenemy,known:Divine Toll] Divine Toll; [@anyenemy] Holy Prism
 ```
 
 ---
@@ -136,33 +154,6 @@ fhs
 
 ---
 
-shp
-
-```
-#showtooltip
-/cast [@player] Holy Prism
-```
-
----
-
-ehp
-
-```
-#showtooltip
-/cast [@anyenemy] Holy Prism
-```
-
----
-
-fhp
-
-```
-#showtooltip
-/cast [@anyfriend] Holy Prism
-```
-
----
-
 shl
 
 ```
@@ -186,24 +177,6 @@ sc
 ```
 #showtooltip
 /cast [@player] Cleanse
-```
-
----
-
-sboi
-
-```
-#showtooltip
-/cast [@player] Barrier of Faith
-```
-
----
-
-sbom
-
-```
-#showtooltip
-/cast [@player] Blessing of Summer
 ```
 
 ---

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=7b3c6a41e2d9a41ef1911e006696cb3c
+    hash=c7f0b62de8ac5746b4a80bc56cc9281d
     =====================================
 -->
 
@@ -62,83 +62,84 @@ perform. See [source repository](https://github.com/vkottler/gak-lua)
 documentation for additional details.
 
 * Keybinds: `113`
-* `CVar`'s: `109`
+* `CVar`'s: `101`
 
 ### Macros
 
 Type | Count
 -----|------
-Shared | `22`
+Shared | `21`
 Deathknight | `5`
 Demonhunter | `5`
 Druid | `28`
-Evoker | `14`
-Hunter | `15`
-Mage | `8`
-Monk | `16`
-Paladin | `24`
+Evoker | `16`
+Hunter | `19`
+Mage | `15`
+Monk | `15`
+Paladin | `21`
 Priest | `28`
-Rogue | `8`
+Rogue | `11`
 Shaman | `21`
-Warlock | `9`
-Warrior | `5`
+Warlock | `15`
+Warrior | `8`
 
 ### Action Bars
 
 Type | Action Count
 -----|-------------
 Global | `20`
-Deathknight | `29`
-Demonhunter | `0`
+Deathknight | `28`
+Demonhunter | `18`
 Druid | `41`
-Evoker | `30`
-Hunter | `44`
-Mage | `33`
-Monk | `19`
-Paladin | `25`
-Priest | `32`
-Rogue | `38`
-Shaman | `38`
-Warlock | `43`
-Warrior | `35`
-Balance Druid | `52`
-Feral Druid | `46`
+Evoker | `27`
+Hunter | `38`
+Mage | `28`
+Monk | `18`
+Paladin | `24`
+Priest | `23`
+Rogue | `43`
+Shaman | `36`
+Warlock | `45`
+Warrior | `32`
+Balance Druid | `51`
+Feral Druid | `52`
 Guardian Druid | `62`
-Restoration Druid | `52`
-Devastation Evoker | `21`
-Preservation Evoker | `29`
-Augmentation Evoker | `0`
+Restoration Druid | `48`
+Devastation Evoker | `18`
+Preservation Evoker | `27`
+Augmentation Evoker | `22`
+Devourer Demon Hunter | `13`
 Blood Death Knight | `0`
-Frost Death Knight | `16`
+Frost Death Knight | `15`
 Unholy Death Knight | `26`
 Beast Mastery Hunter | `12`
-Marksmanship Hunter | `13`
-Survival Hunter | `20`
-Discipline Priest | `23`
-Holy Priest | `33`
-Shadow Priest | `24`
-Assassination Rogue | `28`
-Outlaw Rogue | `27`
-Subtlety Rogue | `30`
-Elemental Shaman | `23`
-Enhancement Shaman | `28`
-Restoration Shaman | `26`
-Affliction Warlock | `21`
-Demonology Warlock | `24`
-Destruction Warlock | `21`
+Marksmanship Hunter | `14`
+Survival Hunter | `19`
+Discipline Priest | `22`
+Holy Priest | `21`
+Shadow Priest | `22`
+Assassination Rogue | `23`
+Outlaw Rogue | `22`
+Subtlety Rogue | `21`
+Elemental Shaman | `19`
+Enhancement Shaman | `22`
+Restoration Shaman | `23`
+Affliction Warlock | `15`
+Demonology Warlock | `20`
+Destruction Warlock | `18`
 Brewmaster Monk | `0`
-Windwalker Monk | `29`
-Mistweaver Monk | `32`
-Havoc Demon Hunter | `41`
+Windwalker Monk | `22`
+Mistweaver Monk | `22`
+Havoc Demon Hunter | `16`
 Vengeance Demon Hunter | `0`
-Arcane Mage | `19`
-Fire Mage | `18`
-Frost Mage | `20`
-Holy Paladin | `37`
+Arcane Mage | `15`
+Fire Mage | `14`
+Frost Mage | `17`
+Holy Paladin | `29`
 Protection Paladin | `0`
-Retribution Paladin | `23`
+Retribution Paladin | `21`
 Arms Warrior | `18`
-Fury Warrior | `16`
+Fury Warrior | `14`
 Protection Warrior | `0`
 
 ---

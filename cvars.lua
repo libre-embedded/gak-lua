@@ -60,7 +60,7 @@ local function GakEnemyNameplateState(value)
 end
 
 GakEventHandlers["CVAR_UPDATE"] = function(_, name, value)
-	if name == "nameplateShowFriends" then
+	if name == "nameplateShowFriendlyPlayers" then
 		GakFriendlyNameplateState(value)
 	elseif name == "nameplateShowEnemies" then
 		GakEnemyNameplateState(value)
@@ -80,11 +80,11 @@ function GakSetCVars()
 	local spec_info = { GetSpecializationInfo(GetSpecialization()) }
 	local role = spec_info[5]
 	if role == "DAMAGER" or role == "TANK" then
-		toCheck["nameplateShowFriends"] = 0
+		toCheck["nameplateShowFriendlyPlayers"] = 0
 		toCheck["nameplateShowEnemies"] = 1
 		toCheck["SoftTargetForce"] = 1
 	elseif role == "HEALER" then
-		toCheck["nameplateShowFriends"] = 1
+		toCheck["nameplateShowFriendlyPlayers"] = 1
 		toCheck["nameplateShowEnemies"] = 0
 		toCheck["SoftTargetForce"] = 2
 	end
@@ -110,14 +110,14 @@ function GakSetCVars()
 			count = count + 1
 
 			if C_CVar.SetCVar(key, val) then
-				print("Set", key, "to", val)
+				print("|cFF00FF00Set", key, "to", val, ".|r")
 			else
-				print("Failed to set", key, "to", val)
+				print("|cFFFF0000Failed to set", key, "to", val, ".|r")
 			end
 		end
 	end
 
-	GakFriendlyNameplateState(toCheck["nameplateShowFriends"])
+	GakFriendlyNameplateState(toCheck["nameplateShowFriendlyPlayers"])
 	GakEnemyNameplateState(toCheck["nameplateShowEnemies"])
 
 	if count > 0 then
