@@ -7,9 +7,8 @@ DAMAGE_TEXT_FONT = UNIT_NAME_FONT
 -- not sure what this affects
 -- STANDARD_TEXT_FONT = UNIT_NAME_FONT
 
--- Turn on combat logging (all telemetry on by default, avoid race
--- conditions).
-LoggingCombat(true)
+-- Not currently using combat log.
+LoggingCombat(false)
 
 -- Create UI menu.
 local gak_ui =

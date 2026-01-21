@@ -1,3 +1,15 @@
+GakEventHandlers["WARGAME_INVITE_SENT"] = function()
+	print("WARGAME_INVITE_SENT")
+end
+
+GakEventHandlers["WARGAME_REQUEST_RESPONSE"] = function(responderGUID, responderName, accepted)
+	print(responderGUID, responderName, accepted)
+end
+
+GakEventHandlers["WARGAME_REQUESTED"] = function(opposingPartyMemberName, battlegroundName, timeoutSeconds, tournamentRules)
+	print(opposingPartyMemberName, battlegroundName, timeoutSeconds, tournamentRules)
+end
+
 local function removeNames(frame)
 	if frame.unit:find("nameplate") then
 		pcall(function()
