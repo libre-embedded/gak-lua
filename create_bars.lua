@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=8e78f98277f49bc171a3b6272dc70c8d
+-- hash=e1139db88ec0860b5a247c0f7e3d50b0
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -11972,7 +11972,7 @@ s "Healing Surge"]])
 	end
 
 	if id == 264 then
-		PickupMacro("shr")
+		C_Spell.PickupSpell("Water Shield")
 		if GetCursorInfo() then
 			-- C_1
 			PlaceAction(6)
@@ -11983,9 +11983,9 @@ s "Healing Surge"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot C_1:", [[
-m shr]])
+s "Water Shield"]])
 		end
-		C_Spell.PickupSpell("Healing Rain")
+		C_Spell.PickupSpell("Water Shield")
 		if GetCursorInfo() then
 			-- C_2
 			PlaceAction(18)
@@ -11996,7 +11996,7 @@ m shr]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot C_2:", [[
-s "Healing Rain"]])
+s "Water Shield"]])
 		end
 		C_Spell.PickupSpell("Lightning Bolt")
 		if GetCursorInfo() then
@@ -12050,7 +12050,7 @@ m sul]])
 			print("(spec) Couldn't bind slot L1_R1_2:", [[
 s "Unleash Life"]])
 		end
-		PickupMacro("shw")
+		PickupMacro("shr")
 		if GetCursorInfo() then
 			-- L1_R2_1
 			PlaceAction(8)
@@ -12061,9 +12061,9 @@ s "Unleash Life"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_R2_1:", [[
-m shw]])
+m shr]])
 		end
-		C_Spell.PickupSpell("Healing Wave")
+		C_Spell.PickupSpell("Healing Rain")
 		if GetCursorInfo() then
 			-- L1_R2_2
 			PlaceAction(20)
@@ -12074,7 +12074,7 @@ m shw]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_R2_2:", [[
-s "Healing Wave"]])
+s "Healing Rain"]])
 		end
 		PickupMacro("sslt")
 		if GetCursorInfo() then
@@ -12101,19 +12101,6 @@ m sslt]])
 		else
 			print("(spec) Couldn't bind slot L1_T_2:", [[
 s "Spirit Link Totem"]])
-		end
-		C_Spell.PickupSpell("Water Shield")
-		if GetCursorInfo() then
-			-- L2_P2_C
-			PlaceAction(54)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_P2_C'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot L2_P2_C:", [[
-s "Water Shield"]])
 		end
 		C_Spell.PickupSpell("Heroism")
 		if GetCursorInfo() then

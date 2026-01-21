@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=c7f0b62de8ac5746b4a80bc56cc9281d
+    hash=539433b67ca3cc70edd7e5508dbe81e9
     =====================================
 -->
 
@@ -123,7 +123,7 @@ Outlaw Rogue | `22`
 Subtlety Rogue | `21`
 Elemental Shaman | `19`
 Enhancement Shaman | `22`
-Restoration Shaman | `23`
+Restoration Shaman | `22`
 Affliction Warlock | `15`
 Demonology Warlock | `20`
 Destruction Warlock | `18`
