@@ -15,26 +15,15 @@ GakHelpHarmFrame = nil
 function GakHelpHarmBarInit(_)
 	if not GakHelpHarmFrame and not GakIsSmallScreen() then
 		-- Experimenting with anchor point.
-		-- local parent = MultiBarBottomLeft
-		local parent = MainMenuBar
+		local parent = MinimapCluster
 		if (not parent) then
 			return
 		end
 
-		local padding = 4
 		local frame = CreateFrame("Frame", "GakHelpHarm", parent)
-		frame:SetPoint("BOTTOMLEFT", parent, "BOTTOMRIGHT", padding, padding)
-
-		-- scalar matches the edit-mode scaling setting for the action
-		-- bar (parent frame)
-		local scalar = 0.8
-
-		-- Could check if height > width.
-		-- frame:SetSize(parent:GetHeight() / 2, parent:GetWidth() / 2)
-		frame:SetSize(
-			((parent:GetWidth() / 2) * scalar) - padding,
-			(parent:GetHeight() * 2 * scalar) - padding
-		)
+		local width = parent:GetWidth()
+		frame:SetPoint("BOTTOMRIGHT", parent, "BOTTOMRIGHT", -(width / 2), 0)
+		frame:SetSize(width, parent:GetHeight())
 
 		frame.tex = frame:CreateTexture()
 		frame.tex:SetAllPoints()

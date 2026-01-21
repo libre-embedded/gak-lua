@@ -25,7 +25,9 @@ end
 function GakTargetFrameManager:setupFriendFrames(parent)
 	local frame = GakBackdropFrame("GakSoftFriend", parent)
 	frame:SetPoint("BOTTOMLEFT", parent, "TOPLEFT")
-	frame:SetSize(parent:GetWidth() / 2, parent:GetHeight())
+	local width = parent:GetWidth() / 2
+	local height = parent:GetHeight() / 8
+	frame:SetSize(width, height)
 
 	-- SOFT FRIEND
 	frame:SetBackdropBorderColor(0.33, 1, 0.33, GakAlpha)
@@ -34,7 +36,7 @@ function GakTargetFrameManager:setupFriendFrames(parent)
 
 	local frame = GakBackdropFrame("GakLockedFriend", parent)
 	frame:SetPoint("BOTTOMLEFT", parent, "TOPLEFT")
-	frame:SetSize(parent:GetWidth() / 2, parent:GetHeight())
+	frame:SetSize(width, height)
 
 	-- LOCKED FRIEND
 	frame:SetBackdropBorderColor(0.33, 1, 0.33)
@@ -45,7 +47,9 @@ end
 function GakTargetFrameManager:setupEnemyFrames(parent)
 	local frame = GakBackdropFrame("GakSoftEnemy", parent)
 	frame:SetPoint("BOTTOMLEFT", parent, "TOP", parent:GetWidth() / 2)
-	frame:SetSize(parent:GetWidth() / 2, parent:GetHeight())
+	local width = parent:GetWidth() / 2
+	local height = parent:GetHeight() / 8
+	frame:SetSize(width, height)
 
 	-- SOFT ENEMY
 	frame:SetBackdropBorderColor(1, 0.33, 0.33, GakAlpha)
@@ -54,7 +58,7 @@ function GakTargetFrameManager:setupEnemyFrames(parent)
 
 	local frame = GakBackdropFrame("GakLockedEnemy", parent)
 	frame:SetPoint("BOTTOMLEFT", parent, "TOP", parent:GetWidth() / 2)
-	frame:SetSize(parent:GetWidth() / 2, parent:GetHeight())
+	frame:SetSize(width, height)
 
 	-- LOCKED ENEMY
 	frame:SetBackdropBorderColor(1, 0.33, 0.33)
