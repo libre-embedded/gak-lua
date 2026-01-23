@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=ec8cdf04773f78bd488b1fbf0ca408cc
+-- hash=8bc7e5a66d3667056b62009e0cb0ac7a
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -94,6 +94,7 @@ expectedCVars["spellBookHidePassives"] = 1
 expectedCVars["spellDiminishPVPOnlyTriggerableByMe"] = 1
 expectedCVars["statusText"] = 0
 expectedCVars["statusTextDisplay"] = "NONE"
+expectedCVars["synchronizeConfig"] = 0
 expectedCVars["test_cameraDynamicPitch"] = 1
 expectedCVars["test_cameraHeadMovementStrength"] = 0
 expectedCVars["test_cameraOverShoulder"] = 0

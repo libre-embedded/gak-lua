@@ -106,24 +106,19 @@ function GakSetCVars()
 	local spec_info = { GetSpecializationInfo(GetSpecialization()) }
 	local role = spec_info[5]
 	if role == "DAMAGER" or role == "TANK" then
-		toCheck["nameplateShowFriendlyPlayers"] = 0
-		toCheck["nameplateShowEnemies"] = 1
 		toCheck["SoftTargetForce"] = 1
 	elseif role == "HEALER" then
-		toCheck["nameplateShowFriendlyPlayers"] = 1
-		toCheck["nameplateShowEnemies"] = 0
 		toCheck["SoftTargetForce"] = 2
 	end
 
 	-- Initial values.
 	toCheck["UnitNameFriendlyPlayerName"] = 0
 	toCheck["UnitNameEnemyPlayerName"] = 0
+	toCheck["nameplateShowFriendlyPlayers"] = 1
+	toCheck["nameplateShowEnemies"] = 1
 
 	-- Arena-specific values.
 	if IsActiveBattlefieldArena() then
-		-- So healers start with all nameplates up.
-		toCheck["nameplateShowEnemies"] = 1
-
 		-- For p1-4 and a1-3 text.
 		-- toCheck["UnitNameFriendlyPlayerName"] = 1
 		-- toCheck["UnitNameEnemyPlayerName"] = 1

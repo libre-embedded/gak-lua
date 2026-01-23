@@ -16,8 +16,10 @@ local function removeNames(frame)
 			frame.name:SetText("")
 		end)
 
-		local opacity = 0.15
-		local tex = frame.HealthBarsContainer.healthBar.bgTexture
+		local health = frame.HealthBarsContainer.healthBar
+
+		local opacity = 0.2
+		local tex = health.bgTexture
 		local isTarget = UnitIsUnit(frame.unit, "target")
 
 		if UnitIsEnemy(frame.unit, "player") then
@@ -45,9 +47,9 @@ local function removeNames(frame)
 			tex:SetColorTexture(1, 1, 0, opacity)
 		end
 
-		tex:SetVertexOffset(LOWER_LEFT_VERTEX, 0, 3)
-		tex:SetVertexOffset(UPPER_RIGHT_VERTEX, -3, 0)
-		tex:SetVertexOffset(LOWER_RIGHT_VERTEX, -3, 3)
+		tex:SetVertexOffset(UPPER_LEFT_VERTEX, -3, 3)
+		tex:SetVertexOffset(LOWER_LEFT_VERTEX, -3, 0)
+		tex:SetVertexOffset(UPPER_RIGHT_VERTEX, 0, 3)
 
 		-- local text = ""
 		-- for i = 1, 4 do

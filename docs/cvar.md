@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=6339cb4ca10971165154557c61a76b97
+    hash=73e9400465a7e15cea81d4315851f1b0
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `102`
+Total: `103`
 
 Name | Value
 ---- | -----
@@ -104,6 +104,7 @@ spellBookHidePassives | 1
 spellDiminishPVPOnlyTriggerableByMe | 1
 statusText | 0
 statusTextDisplay | `NONE`
+synchronizeConfig | 0
 test_cameraDynamicPitch | 1
 test_cameraHeadMovementStrength | 0
 test_cameraOverShoulder | 0
