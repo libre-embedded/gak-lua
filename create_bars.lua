@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=e1139db88ec0860b5a247c0f7e3d50b0
+-- hash=12e9a64e6e559ec6e51ea346dac0cdc0
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -2172,7 +2172,7 @@ s "Call Pet 1"]])
 			print("(class) Couldn't bind slot P2_P3:", [[
 C_SpellBook.PickupSpellBookItem(6, 1)]])
 		end
-		C_Spell.PickupSpell("Concussive Shot")
+		C_Spell.PickupSpell("Wing Clip")
 		if GetCursorInfo() then
 			-- P2_R2
 			PlaceAction(56)
@@ -2183,7 +2183,7 @@ C_SpellBook.PickupSpellBookItem(6, 1)]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot P2_R2:", [[
-s "Concussive Shot"]])
+s "Wing Clip"]])
 		end
 		C_Spell.PickupSpell("Camouflage")
 		if GetCursorInfo() then
