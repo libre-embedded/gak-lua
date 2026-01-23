@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=844176bde0275ca7d3055cb956828c4b
+    hash=6339cb4ca10971165154557c61a76b97
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `101`
+Total: `102`
 
 Name | Value
 ---- | -----
@@ -60,6 +60,7 @@ nameplateSelfAlpha | 0.75
 nameplateShowAll | 1
 nameplateShowDebuffsOnFriendly | 1
 nameplateShowFriendlyPlayerTotems | 0
+nameplateShowOffscreen | 1
 nameplateShowSelf | 0
 nameplateSize | 5
 nameplateStyle | 4

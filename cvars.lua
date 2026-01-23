@@ -64,10 +64,36 @@ GakEventHandlers["CVAR_UPDATE"] = function(_, name, value)
 		GakFriendlyNameplateState(value)
 	elseif name == "nameplateShowEnemies" then
 		GakEnemyNameplateState(value)
+	else
+		-- Audit CVAR changes at runtime.
+		hex = "(0x"
+		for i = 1, #value do
+			hex = hex .. string.format("%02x", string.byte(string.sub(value, i, i)))
+		end
+		print(name, " = \"" .. value .. "\"", hex .. ")")
 	end
 end
 
+local function GakSetBitfieldCVars()
+	C_CVar.SetCVarBitfield("nameplateFriendlyPlayerAuraDisplay", 1, true)
+	C_CVar.SetCVarBitfield("nameplateFriendlyPlayerAuraDisplay", 2, true)
+	C_CVar.SetCVarBitfield("nameplateFriendlyPlayerAuraDisplay", 3, true)
+
+	C_CVar.SetCVarBitfield("nameplateEnemyPlayerAuraDisplay", 1, true)
+	C_CVar.SetCVarBitfield("nameplateEnemyPlayerAuraDisplay", 2, true)
+	C_CVar.SetCVarBitfield("nameplateEnemyPlayerAuraDisplay", 3, true)
+
+	C_CVar.SetCVarBitfield("nameplateEnemyNpcAuraDisplay", 1, true)
+	C_CVar.SetCVarBitfield("nameplateEnemyNpcAuraDisplay", 2, true)
+	C_CVar.SetCVarBitfield("nameplateEnemyNpcAuraDisplay", 3, true)
+
+	C_CVar.SetCVarBitfield("nameplateStackingTypes", 1, true)
+	C_CVar.SetCVarBitfield("nameplateStackingTypes", 2, true)
+end
+
 function GakSetCVars()
+	GakSetBitfieldCVars()
+
 	local count = 0
 
 	-- Copy values.

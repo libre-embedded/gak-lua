@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=395f7b5e33b440e1419ad8c305096042
+-- hash=ec8cdf04773f78bd488b1fbf0ca408cc
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -50,6 +50,7 @@ expectedCVars["nameplateSelfAlpha"] = 0.75
 expectedCVars["nameplateShowAll"] = 1
 expectedCVars["nameplateShowDebuffsOnFriendly"] = 1
 expectedCVars["nameplateShowFriendlyPlayerTotems"] = 0
+expectedCVars["nameplateShowOffscreen"] = 1
 expectedCVars["nameplateShowSelf"] = 0
 expectedCVars["nameplateSize"] = 5
 expectedCVars["nameplateStyle"] = 4
