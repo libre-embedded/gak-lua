@@ -259,10 +259,16 @@ GakEventHandlers["PLAYER_LEVEL_UP"] = GakRuntimeInit
 
 -- other options: FIRST_FRAME_RENDERED, PLAYER_ENTERING_WORLD, VARIABLES_LOADED
 
+GakEventHandlers["CHAT_MSG_TEXT_EMOTE"] = function()
+	ToggleChatMessageGroup(false, "EMOTE")
+end
+
 local function GakEventHandler(frame, event, ...)
 	local handler = GakEventHandlers[event]
 	if handler ~= nil then
-		print("|cFF0000FF", event, "|r")
+		if event ~= "CHAT_MSG_TEXT_EMOTE" then
+			print("|cFF0000FF", event, "|r")
+		end
 		handler(frame, ...)
 	else
 		print("Unhandled event:", event, ...)
