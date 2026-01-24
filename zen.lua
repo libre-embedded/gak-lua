@@ -452,6 +452,7 @@ function GakAuditZenMode()
 	GakHideFrame(PlayerLevelText)
 	GakHideFrame(PlayerCastingBarFrame.Text)
 	GakHideFrame(TargetFrameSpellBar.Text)
+	GakHideFrame(FocusFrameSpellBar.Text)
 
 	GakHideFrame(
 		TargetFrame.TargetFrameContent.TargetFrameContentMain.HealthBarsContainer.DeadText
@@ -459,14 +460,20 @@ function GakAuditZenMode()
 
 	-- Hide player-portrait party leader icon.
 	PlayerFrame.PlayerFrameContent.PlayerFrameContentContextual:Hide()
+	FocusFrame.TargetFrameContent.TargetFrameContentContextual:Hide()
 
 	-- Hide target-portrait name and level.
 	TargetFrame.TargetFrameContent.TargetFrameContentMain.Name:Hide()
+	FocusFrame.TargetFrameContent.TargetFrameContentMain.Name:Hide()
 	GakHideFrame(
 		TargetFrame.TargetFrameContent.TargetFrameContentMain.LevelText
 	)
+	GakHideFrame(
+		FocusFrame.TargetFrameContent.TargetFrameContentMain.LevelText
+	)
 
 	TargetFrameToT.Name:Hide()
+	FocusFrameToT.Name:Hide()
 
 	-- Hide target-portrait party leader icon.
 	TargetFrame.TargetFrameContent.TargetFrameContentContextual:Hide()
