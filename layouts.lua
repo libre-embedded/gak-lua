@@ -1,11 +1,46 @@
 -- https://github.com/vkottler/gak-lua/wiki/Layouts
 -- get these in YAML?
 
+local function GakAuditLayoutContents(layouts)
+	local modified = false
+
+	-- check contents
+	for key, val in pairs(GakLayouts) do
+		local found = false
+		for idx, layout in ipairs(layouts.layouts) do
+			if layout.layoutName == key then
+				found = true
+
+				data = C_EditMode.ConvertLayoutInfoToString(layout)
+				if data == val then
+					print(key, "layout matches.")
+				else
+					layouts.layouts[idx] = C_EditMode.ConvertStringToLayoutInfo(val)
+					modified = true
+					print(key, "layout updated.")
+				end
+
+				break
+			end
+		end
+
+		if not found then
+			-- need to add a new layout
+		end
+	end
+	
+	if modified then
+		C_EditMode.SaveLayouts(layouts)
+	end
+end
+
 function GakAuditLayouts()
+	local layouts = C_EditMode.GetLayouts()
+
+	GakAuditLayoutContents(layouts)
+
 	local width, height = GetPhysicalScreenSize()
 	local expected = width .. "x" .. height
-
-	local layouts = C_EditMode.GetLayouts()
 
 	local match = false
 
@@ -42,14 +77,6 @@ function GakAuditLayouts()
 	end
 end
 
-function GakSetLayouts()
-	-- https://wowpedia.fandom.com/wiki/API_C_EditMode.SaveLayouts
-
-	-- May as well still run the audit for now.
-	GakAuditLayouts()
-end
-
 function GakLayoutManagementInit(ui)
 	GakCreateButton(ui, "Audit Layouts", 0, 0, GakAuditLayouts)
-	GakCreateButton(ui, "Set Layouts", 0, 1, GakSetLayouts):Disable()
 end
