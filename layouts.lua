@@ -6,8 +6,11 @@ local function GakAuditLayoutContents(layouts)
 
 	local layouts = C_EditMode.GetLayouts()
 
-	-- check contents
 	for key, val in pairs(GakLayouts) do
+		local updated = C_EditMode.ConvertStringToLayoutInfo(val)
+		updated.layoutName = key
+		updated.layoutType = 1  -- account
+
 		local found = false
 		for idx, layout in ipairs(layouts.layouts) do
 			if layout.layoutName == key then
@@ -17,8 +20,6 @@ local function GakAuditLayoutContents(layouts)
 				if data == val then
 					print(key, "layout matches.")
 				else
-					local updated = C_EditMode.ConvertStringToLayoutInfo(val)
-					updated.layoutName = layout.layoutName
 					updated.layoutType = layout.layoutType
 					layouts.layouts[idx] = updated
 					modified = true
@@ -30,7 +31,9 @@ local function GakAuditLayoutContents(layouts)
 		end
 
 		if not found then
-			-- need to add a new layout
+			local idx = #layouts.layouts + 1
+			layouts.layouts[idx] = updated
+			modified = true
 		end
 	end
 	
