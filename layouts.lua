@@ -18,7 +18,8 @@ local function GakAuditLayoutContents(layouts)
 					print(key, "layout matches.")
 				else
 					local updated = C_EditMode.ConvertStringToLayoutInfo(val)
-					updated.layoutName = key
+					updated.layoutName = layout.layoutName
+					updated.layoutType = layout.layoutType
 					layouts.layouts[idx] = updated
 					modified = true
 					print(key, "layout updated.")
