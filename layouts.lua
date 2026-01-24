@@ -4,6 +4,8 @@
 local function GakAuditLayoutContents(layouts)
 	local modified = false
 
+	local layouts = C_EditMode.GetLayouts()
+
 	-- check contents
 	for key, val in pairs(GakLayouts) do
 		local found = false
@@ -35,9 +37,7 @@ local function GakAuditLayoutContents(layouts)
 end
 
 function GakAuditLayouts()
-	local layouts = C_EditMode.GetLayouts()
-
-	GakAuditLayoutContents(layouts)
+	GakAuditLayoutContents()
 
 	local width, height = GetPhysicalScreenSize()
 	local expected = width .. "x" .. height
@@ -45,6 +45,7 @@ function GakAuditLayouts()
 	local match = false
 
 	-- layout 1 == modern preset, 2 == classic preset
+	local layouts = C_EditMode.GetLayouts()
 	if layouts["activeLayout"] <= 2 then
 		print("Current layout is a preset.")
 	else
