@@ -453,9 +453,12 @@ function GakAuditZenMode()
 	GakHideFrame(PlayerCastingBarFrame.Text)
 	GakHideFrame(TargetFrameSpellBar.Text)
 	GakHideFrame(FocusFrameSpellBar.Text)
-
 	GakHideFrame(
 		TargetFrame.TargetFrameContent.TargetFrameContentMain.HealthBarsContainer.DeadText
+	)
+
+	GakHideFrame(
+		PlayerFrame.PlayerFrameContent.PlayerFrameContentMain.HitIndicator.HitText
 	)
 
 	-- Hide player-portrait party leader icon.
