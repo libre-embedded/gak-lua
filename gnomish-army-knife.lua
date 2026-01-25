@@ -98,8 +98,6 @@ local function GakRuntimeInit()
 			GakSetActionBars()
 		end)
 	end
-
-	-- FramerateFrame:Show()
 end
 
 local function GakSetAll()
@@ -152,6 +150,29 @@ local function GakMain(frame)
 		ConsoleExec("reloadUI")
 	end)
 	GakCreateButton(frame, "Combat Log", 1, 6, GakToggleLoggingCombatState)
+
+	GakCreateButton(frame, "Toggle Sound", 0, 1, function()
+		local key = "Sound_EnableAllSound"
+		info = { C_CVar.GetCVarInfo(key) }
+		if tonumber(info[1]) == 0 then
+			C_CVar.SetCVar(key, 1)
+		else
+			C_CVar.SetCVar(key, 0)
+		end
+	end)
+
+	GakCreateButton(frame, "Toggle FPS", 1, 5, function()
+		if FramerateFrame:IsShown() then
+			FramerateFrame:Hide()
+		else
+			FramerateFrame:SetMovable(true)
+			FramerateFrame:EnableMouse(true)
+			FramerateFrame:RegisterForDrag("LeftButton")
+			FramerateFrame:SetScript("OnDragStart", FramerateFrame.StartMoving)
+			FramerateFrame:SetScript("OnDragStop", FramerateFrame.StopMovingOrSizing)
+			FramerateFrame:Show()
+		end
+	end)
 
 	-- Addon menu buttons.
 	GakButtonsByAddon["WowLua"] = GakCreateButton(
