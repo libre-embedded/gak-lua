@@ -102,6 +102,12 @@ function GakSetCVars()
 		toCheck[key] = val
 	end
 
+	-- Graphics values.
+	if IsOutlineModeSupported() then
+		toCheck["Outline"] = 3
+		toCheck["graphicsOutlineMode"] = 2
+	end
+
 	-- Set role-based variable values.
 	local spec_info = { GetSpecializationInfo(GetSpecialization()) }
 	local role = spec_info[5]

@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=61c7b17948e369e7bc4d56bebce2d79f
+-- hash=ee3ae78b13a5e91443918bf850878ecc
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -39,7 +39,6 @@ expectedCVars["GamePadEmulateShift"] = "PADLSHOULDER"
 expectedCVars["GamePadEnable"] = 1
 expectedCVars["GamePadOverlapMouseMs"] = 50
 expectedCVars["GamePadRunThreshold"] = 0
-expectedCVars["graphicsOutlineMode"] = 2
 expectedCVars["graphicsProjectedTextures"] = 1
 expectedCVars["graphicsSpellDensity"] = 2
 expectedCVars["graphicsViewDistance"] = 0
@@ -60,7 +59,6 @@ expectedCVars["nameplateShowSelf"] = 0
 expectedCVars["nameplateSize"] = 5
 expectedCVars["nameplateStyle"] = 4
 expectedCVars["occludedSilhouettePlayer"] = 1
-expectedCVars["Outline"] = 3
 expectedCVars["pvpFramesDisplayClassColor"] = 1
 expectedCVars["pvpFramesDisplayOnlyHealerPowerBars"] = 1
 expectedCVars["pvpFramesDisplayPowerBars"] = 1

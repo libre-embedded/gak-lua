@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=895e60e7c836c87affae2ba4b8a551b7
+    hash=69a0681ed0a998e9f5e59ab444f83f8d
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `110`
+Total: `108`
 
 Name | Value
 ---- | -----
@@ -49,7 +49,6 @@ GamePadEmulateShift | `PADLSHOULDER`
 GamePadEnable | 1
 GamePadOverlapMouseMs | 50
 GamePadRunThreshold | 0
-graphicsOutlineMode | 2
 graphicsProjectedTextures | 1
 graphicsSpellDensity | 2
 graphicsViewDistance | 0
@@ -70,7 +69,6 @@ nameplateShowSelf | 0
 nameplateSize | 5
 nameplateStyle | 4
 occludedSilhouettePlayer | 1
-Outline | 3
 pvpFramesDisplayClassColor | 1
 pvpFramesDisplayOnlyHealerPowerBars | 1
 pvpFramesDisplayPowerBars | 1
