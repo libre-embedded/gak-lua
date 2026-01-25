@@ -38,60 +38,30 @@ local function GakPrintLoggingCombatState()
 	end
 end
 
-local function GakHandleInstance()
-	local info = { GetInstanceInfo() }
-
-	-- Disable chat in pvp.
-	if info[2] == "pvp" or IsActiveBattlefieldArena() then
-		GakDisableChat()
-
-		-- Turn on combat logging.
-		-- LoggingCombat(true)
-	else
-		-- chat is useless game feature
-		-- GakEnableChat()
-
-		-- Disable combat logging.
-		-- LoggingCombat(false)
-	end
-
-	-- Arena-specific actions.
-	if IsActiveBattlefieldArena() then
-		-- Mark teammates (will only work if party leader).
-		-- should also do this on an event (teammate joining, need to
-		-- find a suitable one)
-		print("not setting raid target icons for party (broken)")
-		-- GakSetRaidTargets()
-	end
-
-	GakPrintLoggingCombatState()
-end
-
 local function GakRuntimeInit()
 	-- seems this might need to be added as a secure hook, if nameplate
 	-- settings menu is opened this will get set back to some default
 	C_NamePlate.SetNamePlateSize(80, 1)  -- height param does nothing?
 
-	if UnitAffectingCombat("player") then
-		return
-	end
-
-	-- Instance-specific actions.
-	GakHandleInstance()
+	-- Hide some elements.
+	GakAuditZenMode()
 
 	-- Set CVars.
 	GakSetCVars()
 
-	-- Audit layout.
-	-- GakSetLayouts()
-	GakAuditLayouts()
+	-- Chat not used.
+	GakDisableChat()
 
-	-- Hide some elements.
-	GakAuditZenMode()
+	if UnitAffectingCombat("player") then
+		return
+	end
 
 	-- Update loadout unless in a pvp instance.
 	local info = { GetInstanceInfo() }
 	if info[2] ~= "pvp" and not IsActiveBattlefieldArena() then
+		-- Audit layout.
+		GakAuditLayouts()
+
 		-- Set loadout (delay necessary for pet spells).
 		C_Timer.After(1.0, function()
 			GakSetGlobalMacros()
@@ -184,15 +154,16 @@ local function GakMain(frame)
 			SlashCmdList["WOWLUA"]("")
 		end
 	)
-	GakButtonsByAddon["BetterBlizzPlates"] = GakCreateButton(
-		frame,
-		"/bbp",
-		4,
-		3,
-		function()
-			SlashCmdList["BBP"]("")
-		end
-	)
+
+	-- GakButtonsByAddon["BetterBlizzPlates"] = GakCreateButton(
+	-- 	frame,
+	-- 	"/bbp",
+	-- 	4,
+	-- 	3,
+	-- 	function()
+	-- 		SlashCmdList["BBP"]("")
+	-- 	end
+	-- )
 	-- GakButtonsByAddon["BigDebuffs"] = GakCreateButton(
 	-- 	frame,
 	-- 	"/bigdebuffs",
@@ -202,15 +173,15 @@ local function GakMain(frame)
 	-- 		SlashCmdList["BigDebuffs"]("")
 	-- 	end
 	-- )
-	GakButtonsByAddon["BetterBlizzFrames"] = GakCreateButton(
-		frame,
-		"/bbf",
-		4,
-		2,
-		function()
-			SlashCmdList["BBF"]("")
-		end
-	)
+	-- GakButtonsByAddon["BetterBlizzFrames"] = GakCreateButton(
+	-- 	frame,
+	-- 	"/bbf",
+	-- 	4,
+	-- 	2,
+	-- 	function()
+	-- 		SlashCmdList["BBF"]("")
+	-- 	end
+	-- )
 	-- GakButtonsByAddon["Myslot"] = GakCreateButton(
 	-- 	frame,
 	-- 	"/myslot",
@@ -220,15 +191,15 @@ local function GakMain(frame)
 	-- 		SlashCmdList["MYSLOT"]("")
 	-- 	end
 	-- )
-	GakButtonsByAddon["Diminish"] = GakCreateButton(
-		frame,
-		"/diminish",
-		4,
-		4,
-		function()
-			SlashCmdList["DIMINISH"]("")
-		end
-	)
+	-- GakButtonsByAddon["Diminish"] = GakCreateButton(
+	-- 	frame,
+	-- 	"/diminish",
+	-- 	4,
+	-- 	4,
+	-- 	function()
+	-- 		SlashCmdList["DIMINISH"]("")
+	-- 	end
+	-- )
 
 	GakZenInit(frame)
 end
