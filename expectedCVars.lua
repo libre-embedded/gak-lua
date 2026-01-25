@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=ee3ae78b13a5e91443918bf850878ecc
+-- hash=a3b901d9ee1a59d331398c5b28920282
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -44,6 +44,7 @@ expectedCVars["graphicsSpellDensity"] = 2
 expectedCVars["graphicsViewDistance"] = 0
 expectedCVars["lootUnderMouse"] = 0
 expectedCVars["lossOfControl"] = 0
+expectedCVars["maxFPSBk"] = 30
 expectedCVars["nameplateAuraScale"] = 0.7
 expectedCVars["nameplateLargerScale"] = 1.2
 expectedCVars["nameplateMaxScale"] = 0.9
@@ -111,6 +112,9 @@ expectedCVars["UnitNameNPC"] = 0
 expectedCVars["UnitNameOwn"] = 0
 expectedCVars["UnitNamePlayerGuild"] = 0
 expectedCVars["UnitNamePlayerPVPTitle"] = 0
+expectedCVars["useMaxFPS"] = 0
+expectedCVars["useMaxFPSBk"] = 1
+expectedCVars["useTargetFPS"] = 0
 expectedCVars["WorldTextScale"] = 0
 
 GakLayouts = {}

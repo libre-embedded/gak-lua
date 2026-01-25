@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=69a0681ed0a998e9f5e59ab444f83f8d
+    hash=d17c2b1891b352eb4916c3854588c1dc
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `108`
+Total: `112`
 
 Name | Value
 ---- | -----
@@ -54,6 +54,7 @@ graphicsSpellDensity | 2
 graphicsViewDistance | 0
 lootUnderMouse | 0
 lossOfControl | 0
+maxFPSBk | 30
 nameplateAuraScale | 0.7
 nameplateLargerScale | 1.2
 nameplateMaxScale | 0.9
@@ -121,4 +122,7 @@ UnitNameNPC | 0
 UnitNameOwn | 0
 UnitNamePlayerGuild | 0
 UnitNamePlayerPVPTitle | 0
+useMaxFPS | 0
+useMaxFPSBk | 1
+useTargetFPS | 0
 WorldTextScale | 0
