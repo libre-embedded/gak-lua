@@ -32,6 +32,9 @@ local function GakAuditLayoutContents(layouts)
 
 		if not found then
 			local idx = #layouts.layouts + 1
+			if idx > 5 then
+				updated.layoutType = 2 -- character
+			end
 			layouts.layouts[idx] = updated
 			modified = true
 		end
