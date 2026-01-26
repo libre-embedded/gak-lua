@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=4920a1baebb261fb39344be00b77bdc6
+-- hash=b46ac4ea4d4a5f0ea362ff010500a17c
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -59,6 +59,7 @@ expectedCVars["nameplateShowOffscreen"] = 1
 expectedCVars["nameplateShowSelf"] = 0
 expectedCVars["nameplateSize"] = 5
 expectedCVars["nameplateStyle"] = 4
+expectedCVars["noBuffDebuffFilterOnTarget"] = 1
 expectedCVars["occludedSilhouettePlayer"] = 1
 expectedCVars["pvpFramesDisplayClassColor"] = 1
 expectedCVars["pvpFramesDisplayOnlyHealerPowerBars"] = 1

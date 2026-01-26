@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=5776b7f8066b2dacbe9f550cc7b7adba
+    hash=960e932a6f6fbfc33f2eb03124a7f938
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `114`
+Total: `115`
 
 Name | Value
 ---- | -----
@@ -69,6 +69,7 @@ nameplateShowOffscreen | 1
 nameplateShowSelf | 0
 nameplateSize | 5
 nameplateStyle | 4
+noBuffDebuffFilterOnTarget | 1
 occludedSilhouettePlayer | 1
 pvpFramesDisplayClassColor | 1
 pvpFramesDisplayOnlyHealerPowerBars | 1
