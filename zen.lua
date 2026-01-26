@@ -456,7 +456,7 @@ function GakAuditZenMode()
 	GakHideFrame(
 		TargetFrame.TargetFrameContent.TargetFrameContentMain.HealthBarsContainer.DeadText
 	)
-
+	GakHideFrame(PetHitIndicator)
 	GakHideFrame(
 		PlayerFrame.PlayerFrameContent.PlayerFrameContentMain.HitIndicator.HitText
 	)
