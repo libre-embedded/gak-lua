@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=b46ac4ea4d4a5f0ea362ff010500a17c
+-- hash=8d69a70638c07f353cd9d57b562eb600
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -67,6 +67,7 @@ expectedCVars["pvpFramesDisplayPowerBars"] = 1
 expectedCVars["pvpFramesHealthText"] = "none"
 expectedCVars["pvpOptionDisplayPets"] = 1
 expectedCVars["raidFramesDisplayClassColor"] = 1
+expectedCVars["raidFramesDisplayOnlyHealerPowerBars"] = 1
 expectedCVars["raidFramesDisplayPowerBars"] = 1
 expectedCVars["raidFramesHealthText"] = "none"
 expectedCVars["raidOptionDisplayPets"] = 1
