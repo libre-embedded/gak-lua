@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=ad21e08c7432f1a7dce6d79217c04b5b
+-- hash=4920a1baebb261fb39344be00b77bdc6
 -- =====================================
 expectedCVars = {}
 expectedCVars["advancedCombatLogging"] = 1
@@ -70,6 +70,8 @@ expectedCVars["raidFramesDisplayPowerBars"] = 1
 expectedCVars["raidFramesHealthText"] = "none"
 expectedCVars["raidOptionDisplayPets"] = 1
 expectedCVars["RAIDsettingsEnabled"] = 0
+expectedCVars["ReplaceMyPlayerPortrait"] = 1
+expectedCVars["ReplaceOtherPlayerPortraits"] = 1
 expectedCVars["rotateMinimap"] = 0
 expectedCVars["scriptErrors"] = 1
 expectedCVars["secretPvPMatchRestrictionsForced"] = 1

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=d17c2b1891b352eb4916c3854588c1dc
+    hash=5776b7f8066b2dacbe9f550cc7b7adba
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `112`
+Total: `114`
 
 Name | Value
 ---- | -----
@@ -80,6 +80,8 @@ raidFramesDisplayPowerBars | 1
 raidFramesHealthText | `none`
 raidOptionDisplayPets | 1
 RAIDsettingsEnabled | 0
+ReplaceMyPlayerPortrait | 1
+ReplaceOtherPlayerPortraits | 1
 rotateMinimap | 0
 scriptErrors | 1
 secretPvPMatchRestrictionsForced | 1
