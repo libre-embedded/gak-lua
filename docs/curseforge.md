@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=c86a93108757b56332168df3a124d735
+    hash=ba7557404b7bc65a05aeb2fe656de58b
     =====================================
 -->
 
@@ -94,7 +94,7 @@ Druid | `41`
 Evoker | `27`
 Hunter | `38`
 Mage | `28`
-Monk | `18`
+Monk | `19`
 Paladin | `24`
 Priest | `23`
 Rogue | `43`

@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=12e9a64e6e559ec6e51ea346dac0cdc0
+-- hash=c452df04bb32fff48a758f3485d48aa6
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -2801,6 +2801,19 @@ s "Paralysis"]])
 		else
 			print("(class) Couldn't bind slot L2_P2_R2:", [[
 s "Transcendence: Transfer"]])
+		end
+		C_Spell.PickupSpell("Celestial Conduit")
+		if GetCursorInfo() then
+			-- L2_T
+			PlaceAction(65)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_T'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L2_T:", [[
+s "Celestial Conduit"]])
 		end
 		C_Spell.PickupSpell("Fortifying Brew")
 		if GetCursorInfo() then
