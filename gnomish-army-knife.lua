@@ -46,15 +46,15 @@ local function GakRuntimeInit()
 	-- Hide some elements.
 	GakAuditZenMode()
 
-	-- Set CVars.
-	GakSetCVars()
-
 	-- Chat not used.
 	GakDisableChat()
 
 	if UnitAffectingCombat("player") then
 		return
 	end
+
+	-- Set CVars.
+	GakSetCVars()
 
 	-- Update loadout unless in a pvp instance.
 	local info = { GetInstanceInfo() }
