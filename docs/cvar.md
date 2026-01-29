@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=d5313be0ea22767a2947b41a9f381331
+    hash=3c7cac22630dfe93d53bc8b807013b40
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `117`
+Total: `116`
 
 Name | Value
 ---- | -----
@@ -52,7 +52,6 @@ GamePadOverlapMouseMs | 50
 GamePadRunThreshold | 0
 graphicsProjectedTextures | 1
 graphicsSpellDensity | 2
-graphicsViewDistance | 0
 lootUnderMouse | 0
 lossOfControl | 0
 maxFPSBk | 30

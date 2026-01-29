@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=229300a7024207785cc8cd0299cd89fd
+-- hash=eb2816e959bc659d5e3b6f99c02bdd10
 -- =====================================
 expectedCVars = {}
 expectedCVars["ActionButtonUseKeyHeldSpell"] = 1
@@ -42,7 +42,6 @@ expectedCVars["GamePadOverlapMouseMs"] = 50
 expectedCVars["GamePadRunThreshold"] = 0
 expectedCVars["graphicsProjectedTextures"] = 1
 expectedCVars["graphicsSpellDensity"] = 2
-expectedCVars["graphicsViewDistance"] = 0
 expectedCVars["lootUnderMouse"] = 0
 expectedCVars["lossOfControl"] = 0
 expectedCVars["maxFPSBk"] = 30
