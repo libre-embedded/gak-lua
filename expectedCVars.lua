@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=eb2816e959bc659d5e3b6f99c02bdd10
+-- hash=0a0f9eb1c101f1f9590acc6ca0ad2366
 -- =====================================
 expectedCVars = {}
 expectedCVars["ActionButtonUseKeyHeldSpell"] = 1
@@ -21,13 +21,6 @@ expectedCVars["damageMeterEnabled"] = 0
 expectedCVars["enableMultiActionBars"] = 15
 expectedCVars["enablePings"] = 0
 expectedCVars["externalDefensivesEnabled"] = 1
-expectedCVars["floatingCombatTextCombatDamage"] = 0
-expectedCVars["floatingCombatTextCombatHealing"] = 0
-expectedCVars["floatingCombatTextCombatState"] = 0
-expectedCVars["floatingCombatTextPetMeleeDamage"] = 0
-expectedCVars["floatingCombatTextPetSpellDamage"] = 0
-expectedCVars["floatingCombatTextReactives"] = 0
-expectedCVars["floatingCombatTextSpellMechanics"] = 0
 expectedCVars["GamePadCameraPitchSpeed"] = 2.0
 expectedCVars["GamePadCameraYawSpeed"] = 3.0
 expectedCVars["GamePadCursorAutoDisableSticks"] = 1
@@ -119,7 +112,6 @@ expectedCVars["UnitNamePlayerPVPTitle"] = 0
 expectedCVars["useMaxFPS"] = 0
 expectedCVars["useMaxFPSBk"] = 1
 expectedCVars["useTargetFPS"] = 0
-expectedCVars["WorldTextScale"] = 0
 
 GakLayouts = {}
 GakLayouts["1280x800"] = "2 50 0 0 0 6 0 MultiBarBottomRight 0.0 4.0 -1 ##$%%/&('%)$+$,# 0 1 0 8 2 MainActionBar 0.0 4.0 -1 ##$%%/&('%(#,# 0 2 0 6 0 MultiBarRight 0.0 4.0 -1 ##$%%/&('%(#,# 0 3 0 7 7 UIParent -357.0 2.0 -1 ##$$%/&('%(#,# 0 4 0 0 2 MultiBarBottomRight 4.0 0.0 -1 ##$%%/&('%(#,# 0 5 1 1 4 UIParent 0.0 0.0 -1 ##$$%/&('%(#,$ 0 6 1 1 4 UIParent 0.0 -50.0 -1 ##$$%/&('%(#,$ 0 7 1 1 4 UIParent 0.0 -100.0 -1 ##$$%/&('%(#,$ 0 10 0 6 0 BagsBar 0.5 3.5 -1 #$$$&#'% 0 11 0 8 2 BagsBar -0.5 3.5 -1 #$$$&#'%,# 0 12 0 1 1 UIParent 200.0 -622.0 -1 ##$$&('% 1 -1 0 1 1 UIParent 0.0 -623.0 -1 #($#%# 2 -1 0 0 2 PlayerCastingBarFrame 5.0 1.0 -1 #$$$%% 3 0 0 1 1 UIParent 67.4 -661.8 -1 $#3) 3 1 0 6 0 MinimapCluster -23.6 -17.2 -1 %$3' 3 2 0 4 4 UIParent 478.0 -261.0 -1 %$&$3# 3 3 0 0 0 UIParent 22.0 -22.0 -1 '$(#)$-Q.G/#1$3#5%627-7$ 3 4 0 0 0 UIParent 22.0 -22.0 -1 ,#-=.G/#0%1$2'5%6277 3 5 0 2 2 UIParent -1081.0 -2.0 -1 &$*#3# 3 6 0 2 2 UIParent -936.0 -166.5 -1 -#.?/#4$5$627-7$ 3 7 0 1 1 UIParent 481.5 -698.3 -1 32 4 -1 0 7 7 UIParent 60.0 322.0 -1 # 5 -1 0 7 7 UIParent 433.0 302.0 -1 # 6 0 0 0 0 UIParent 639.0 -2.0 -1 ##$#%#&.(')( 6 1 0 7 7 UIParent -250.5 162.0 -1 ##$$%#'((()(-$ 6 2 0 8 2 PlayerCastingBarFrame 1.0 5.0 -1 #$$$%$&((*)(+#,7 7 -1 0 1 1 UIParent 353.0 -2.0 -1 # 8 -1 1 6 6 UIParent 35.0 50.0 -1 #'$A%$&i 9 -1 0 1 1 UIParent 360.0 -622.0 -1 # 10 -1 0 7 7 UIParent -200.0 362.0 -1 # 11 -1 0 7 7 UIParent 513.0 422.0 -1 # 12 -1 0 8 2 MicroMenuContainer 0.0 4.0 -1 #'$#%# 13 -1 0 8 2 MainStatusTrackingBarContainer 0.0 4.0 -1 #$$#%#&# 14 -1 0 7 7 UIParent 596.5 1.5 -1 #$$#%# 15 0 0 7 7 UIParent 352.5 2.0 -1 # 15 1 0 2 8 MicroMenuContainer 0.0 -4.0 -1 # 16 -1 0 8 2 MultiBarBottomLeft 0.0 4.0 -1 #( 17 -1 1 1 1 UIParent 0.0 -100.0 -1 ## 18 -1 1 5 5 UIParent 0.0 0.0 -1 #- 19 -1 1 7 7 UIParent 0.0 0.0 -1 ## 20 0 0 7 7 UIParent 545.5 582.0 -1 ##$/%$&#'%(#)%+$,$-$ 20 1 0 7 7 UIParent 568.5 542.0 -1 ##$*%$&#'#(#)%+$,#-$ 20 2 0 6 0 PlayerCastingBarFrame -1.0 5.0 -1 #$$$%$&('#(7)#+$,#-$ 20 3 0 1 1 UIParent 182.2 -142.0 -1 #$$$%#&+'#(7)#*$+$,#-$.a 21 -1 1 7 7 UIParent -410.0 380.0 -1 ##$# 22 0 1 8 7 UIParent -457.0 336.0 -1 #$$$%#&('((#)U*$+$,$ 22 1 1 1 1 UIParent 0.0 -40.0 -1 &('()U*#+$ 22 2 1 1 1 UIParent 0.0 -90.0 -1 &('()U*#+$ 22 3 1 1 1 UIParent 0.0 -130.0 -1 &('()U*#+$ 23 -1 1 0 0 UIParent 0.0 0.0 -1 ##$#%$&-&$'7(%)U+$,$-$.(/U"

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=3c7cac22630dfe93d53bc8b807013b40
+    hash=2ffcfe1000a7d130f5f623ea1261fe27
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `116`
+Total: `108`
 
 Name | Value
 ---- | -----
@@ -31,13 +31,6 @@ damageMeterEnabled | 0
 enableMultiActionBars | 15
 enablePings | 0
 externalDefensivesEnabled | 1
-floatingCombatTextCombatDamage | 0
-floatingCombatTextCombatHealing | 0
-floatingCombatTextCombatState | 0
-floatingCombatTextPetMeleeDamage | 0
-floatingCombatTextPetSpellDamage | 0
-floatingCombatTextReactives | 0
-floatingCombatTextSpellMechanics | 0
 GamePadCameraPitchSpeed | 2.0
 GamePadCameraYawSpeed | 3.0
 GamePadCursorAutoDisableSticks | 1
@@ -129,4 +122,3 @@ UnitNamePlayerPVPTitle | 0
 useMaxFPS | 0
 useMaxFPSBk | 1
 useTargetFPS | 0
-WorldTextScale | 0
