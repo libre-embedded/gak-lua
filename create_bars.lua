@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=c452df04bb32fff48a758f3485d48aa6
+-- hash=623fc20f78c415c738c5eb04c16803b9
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -8592,7 +8592,7 @@ s "Void Metamorphosis"]])
 	end
 
 	if id == 251 then
-		C_Spell.PickupSpell("Pillar of Frost")
+		PickupMacro("pof14")
 		if GetCursorInfo() then
 			-- L1_P2_R1
 			PlaceAction(25)
@@ -8603,7 +8603,7 @@ s "Void Metamorphosis"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_P2_R1:", [[
-s "Pillar of Frost"]])
+m pof14]])
 		end
 		C_Spell.PickupSpell("Reaper's Mark")
 		if GetCursorInfo() then
@@ -8644,7 +8644,7 @@ s "Howling Blast"]])
 			print("(spec) Couldn't bind slot L1_R1_2:", [[
 s "Howling Blast"]])
 		end
-		C_Spell.PickupSpell("Empower Rune Weapon")
+		C_Spell.PickupSpell("Glacial Advance")
 		if GetCursorInfo() then
 			-- L1_S_1
 			PlaceAction(9)
@@ -8655,9 +8655,9 @@ s "Howling Blast"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_S_1:", [[
-s "Empower Rune Weapon"]])
+s "Glacial Advance"]])
 		end
-		C_Spell.PickupSpell("Empower Rune Weapon")
+		C_Spell.PickupSpell("Glacial Advance")
 		if GetCursorInfo() then
 			-- L1_S_2
 			PlaceAction(21)
@@ -8668,7 +8668,7 @@ s "Empower Rune Weapon"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_S_2:", [[
-s "Empower Rune Weapon"]])
+s "Glacial Advance"]])
 		end
 		C_Spell.PickupSpell("Frostwyrm's Fury")
 		if GetCursorInfo() then
@@ -8683,7 +8683,20 @@ s "Empower Rune Weapon"]])
 			print("(spec) Couldn't bind slot L2_S:", [[
 s "Frostwyrm's Fury"]])
 		end
-		C_Spell.PickupSpell("Glacial Advance")
+		C_Spell.PickupSpell("Breath of Sindragosa")
+		if GetCursorInfo() then
+			-- L2_X
+			PlaceAction(64)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_X'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_X:", [[
+s "Breath of Sindragosa"]])
+		end
+		C_Spell.PickupSpell("Empower Rune Weapon")
 		if GetCursorInfo() then
 			-- P2_R1
 			PlaceAction(55)
@@ -8694,9 +8707,9 @@ s "Frostwyrm's Fury"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_R1:", [[
-s "Glacial Advance"]])
+s "Empower Rune Weapon"]])
 		end
-		C_Spell.PickupSpell("Breath of Sindragosa")
+		C_Spell.PickupSpell("Remorseless Winter")
 		if GetCursorInfo() then
 			-- P2_S
 			PlaceAction(57)
@@ -8707,7 +8720,7 @@ s "Glacial Advance"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_S:", [[
-s "Breath of Sindragosa"]])
+s "Remorseless Winter"]])
 		end
 		C_Spell.PickupSpell("Obliterate")
 		if GetCursorInfo() then

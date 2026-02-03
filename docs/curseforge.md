@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=35fd727c91006ce2f4c071cf2438fc21
+    hash=736cd9d46f0ca4b7b529f0e7d3ddfedf
     =====================================
 -->
 
@@ -69,7 +69,7 @@ documentation for additional details.
 Type | Count
 -----|------
 Shared | `21`
-Deathknight | `5`
+Deathknight | `6`
 Demonhunter | `5`
 Druid | `28`
 Evoker | `16`
@@ -110,7 +110,7 @@ Preservation Evoker | `27`
 Augmentation Evoker | `22`
 Devourer Demon Hunter | `13`
 Blood Death Knight | `0`
-Frost Death Knight | `15`
+Frost Death Knight | `16`
 Unholy Death Knight | `26`
 Beast Mastery Hunter | `12`
 Marksmanship Hunter | `14`

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=823ea6aabbb8bd2451923936e5e17465
+    hash=d8186369308679c5dbf5b5a581caa60b
     =====================================
 -->
 
@@ -24,6 +24,16 @@ sams
 ```
 #showtooltip
 /cast [@player] Anti-Magic Shell
+```
+
+---
+
+pof14
+
+```
+#showtooltip Pillar of Frost
+/use 14
+/cast Pillar of Frost
 ```
 
 ---

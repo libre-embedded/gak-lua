@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=db2b07b1a570d382993cd3663802cb65
+-- hash=630fcf68ca3f0fcecdeb040c7a3782b3
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -278,6 +278,10 @@ function GakCreateCharacterMacros()
 		CreateMacro("pdc", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@pet] Death Coil]], true)
+		CreateMacro("pof14", "inv_misc_questionmark", [[
+#showtooltip Pillar of Frost
+/use 14
+/cast Pillar of Frost]], true)
 		CreateMacro("sams", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Anti-Magic Shell]], true)
@@ -290,7 +294,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("sdc", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Death Coil]], true)
-		print("Created 5", select(1, UnitClass("player")), "macros.")
+		print("Created 6", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "DEMONHUNTER" then
