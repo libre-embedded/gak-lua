@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.3
--- hash=623fc20f78c415c738c5eb04c16803b9
+-- hash=317c835f823c84e89a9a1cef405f6ec9
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -13458,6 +13458,19 @@ m tfr]])
 		else
 			print("(spec) Couldn't bind slot P2_S:", [[
 s "Mana Tea"]])
+		end
+		PickupMacro("gc")
+		if GetCursorInfo() then
+			-- P2_X
+			PlaceAction(58)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_X'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot P2_X:", [[
+m gc]])
 		end
 		PickupMacro("ssm")
 		if GetCursorInfo() then
