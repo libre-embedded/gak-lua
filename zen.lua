@@ -450,9 +450,11 @@ function GakAuditZenMode()
 	PlayerName:Hide()
 	PetName:Hide()
 	GakHideFrame(PlayerLevelText)
-	if PlayerCastingBarFrame.look ~= "UNITFRAME" then
-		PlayerCastingBarFrame:SetLook("UNITFRAME")
-	end
+
+	-- if PlayerCastingBarFrame.look ~= "UNITFRAME" then
+	-- 	PlayerCastingBarFrame:SetLook("UNITFRAME")
+	-- end
+
 	GakHideFrame(PlayerCastingBarFrame.Text)
 	GakHideFrame(TargetFrameSpellBar.Text)
 	GakHideFrame(FocusFrameSpellBar.Text)
