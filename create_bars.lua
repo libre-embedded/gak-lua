@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=317c835f823c84e89a9a1cef405f6ec9
+-- hash=6680d67b98311ffdfcfa7aafe350a573
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -13169,6 +13169,19 @@ s "Invoke Xuen, the White Tiger"]])
 		else
 			print("(spec) Couldn't bind slot P2_R1:", [[
 s "Flying Serpent Kick"]])
+		end
+		PickupMacro("t14")
+		if GetCursorInfo() then
+			-- P2_X
+			PlaceAction(58)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_X'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot P2_X:", [[
+m t14]])
 		end
 		C_Spell.PickupSpell("Tiger Palm")
 		if GetCursorInfo() then

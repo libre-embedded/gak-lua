@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=86919d25d8b1c16c42da479e4ee05c12
+    hash=d7380fe3291f2c1c983bbd7cc3efbc06
     =====================================
 -->
 
@@ -128,7 +128,7 @@ Affliction Warlock | `15`
 Demonology Warlock | `20`
 Destruction Warlock | `18`
 Brewmaster Monk | `0`
-Windwalker Monk | `22`
+Windwalker Monk | `23`
 Mistweaver Monk | `23`
 Havoc Demon Hunter | `16`
 Vengeance Demon Hunter | `0`
