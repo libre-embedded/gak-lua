@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=baae3ab8ad2fd7a5efe1c8097e0e2d20
+    hash=8b06195998ae00e38bb7171fe5d20f8d
     =====================================
 -->
 
@@ -163,15 +163,6 @@ scs
 
 ---
 
-st
-
-```
-#showtooltip
-/cast [@player] Thunderstorm
-```
-
----
-
 ses
 
 ```
@@ -195,6 +186,15 @@ sww
 ```
 #showtooltip
 /cast [@player] Water Walking
+```
+
+---
+
+lust
+
+```
+#showtooltip
+/cast Bloodlust
 ```
 
 ---

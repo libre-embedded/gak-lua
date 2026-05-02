@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=630fcf68ca3f0fcecdeb040c7a3782b3
+-- hash=825a6eaeb819a3cf3a2ef233f9963cd5
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -847,6 +847,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("eseb", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Earth Shock] Earth Shock; Elemental Blast]], true)
+		CreateMacro("lust", "inv_misc_questionmark", [[
+#showtooltip
+/cast Bloodlust]], true)
 		CreateMacro("pgp", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Purge] Purge; Greater Purge]], true)
@@ -886,9 +889,6 @@ function GakCreateCharacterMacros()
 		CreateMacro("sst", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Surging Totem]], true)
-		CreateMacro("st", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Thunderstorm]], true)
 		CreateMacro("stp", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Totemic Projection]], true)

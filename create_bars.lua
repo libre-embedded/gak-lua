@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=08ce35581872c33a3adacd2dcdfe8036
+-- hash=0910d84620108e05da0aae49a486360f
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -4335,7 +4335,7 @@ s "Hex"]])
 			print("(class) Couldn't bind slot L2_P2_R2:", [[
 s "Lightning Lasso"]])
 		end
-		C_Spell.PickupSpell("Bloodlust")
+		PickupMacro("lust")
 		if GetCursorInfo() then
 			-- L2_P2_S
 			PlaceAction(51)
@@ -4346,7 +4346,7 @@ s "Lightning Lasso"]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L2_P2_S:", [[
-s "Bloodlust"]])
+m lust]])
 		end
 		C_Spell.PickupSpell("Lightning Shield")
 		if GetCursorInfo() then
