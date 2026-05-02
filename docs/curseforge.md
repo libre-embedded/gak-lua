@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=d7380fe3291f2c1c983bbd7cc3efbc06
+    hash=a9febdb3989d182f8ed643656d25c4f1
     =====================================
 -->
 
@@ -126,7 +126,7 @@ Enhancement Shaman | `22`
 Restoration Shaman | `22`
 Affliction Warlock | `15`
 Demonology Warlock | `20`
-Destruction Warlock | `18`
+Destruction Warlock | `19`
 Brewmaster Monk | `0`
 Windwalker Monk | `23`
 Mistweaver Monk | `23`

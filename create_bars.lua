@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=6680d67b98311ffdfcfa7aafe350a573
+-- hash=08ce35581872c33a3adacd2dcdfe8036
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -12852,6 +12852,19 @@ m srof]])
 			print("(spec) Couldn't bind slot L1_R2_2:", [[
 s "Rain of Fire"]])
 		end
+		C_Spell.PickupSpell("Channel Demonfire")
+		if GetCursorInfo() then
+			-- L2_L1_X
+			PlaceAction(70)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_L1_X'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_L1_X:", [[
+s "Channel Demonfire"]])
+		end
 		C_Spell.PickupSpell("Grimoire of Sacrifice")
 		if GetCursorInfo() then
 			-- L2_P3
@@ -12878,7 +12891,7 @@ s "Grimoire of Sacrifice"]])
 			print("(spec) Couldn't bind slot L2_S:", [[
 s "Shadowburn"]])
 		end
-		C_Spell.PickupSpell("Channel Demonfire")
+		PickupMacro("t14")
 		if GetCursorInfo() then
 			-- L2_X
 			PlaceAction(64)
@@ -12889,7 +12902,7 @@ s "Shadowburn"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_X:", [[
-s "Channel Demonfire"]])
+m t14]])
 		end
 		PickupMacro("inc")
 		if GetCursorInfo() then
