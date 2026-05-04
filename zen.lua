@@ -399,7 +399,10 @@ local function GakZenPopups()
 	inInstance, instanceType = IsInInstance()
 
 	GakHideFrame(GhostFrameContentsFrameText)
+	GakHideFrame(ZoneTextString)
 	GakHideFrame(SubZoneTextString)
+	GakHideFrame(PVPInfoTextString)
+	GakHideFrame(PVPArenaTextString)
 
 	GakHideFrame(TimerTrackerTimer1GoTexture)
 	GakHideFrame(TimerTrackerTimer1GoTextureGlow)
