@@ -352,6 +352,8 @@ local function GakZenDelayed()
 			x_offset = x_offset + 140
 		elseif width == 1280 then
 			x_offset = x_offset + 265
+		elseif width == 2560 then
+			x_offset = x_offset + 210
 		end
 		BattlefieldMapFrame:SetPoint(
 			"TOPLEFT",
@@ -415,6 +417,7 @@ local function GakZenPopups()
 	if not ObjectiveTrackerFrame.isCollapsed then
 		ObjectiveTrackerFrame:ToggleCollapsed()
 	end
+	GakHideFrame(ObjectiveTrackerFrame.Header)
 
 	GakHideFrame(MainStatusTrackingBarContainer)
 
