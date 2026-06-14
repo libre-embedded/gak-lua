@@ -2,8 +2,8 @@
 ## X-LoadOn-Slash: /gak, /gnomish-army-knife
 ## Title: |cFFECEFF1gnomish-army-knife
 ## Notes: World of Warcraft polyfills and standardization.
-## Author: Vaughn Kottler
-## Version: 1.5.7
+## Author: Cosmic Insurgency
+## Version: 1.5.8
 ## IconTexture: Interface\AddOns\gnomish-army-knife\gnomish-army-knife
 
 meta.lua
