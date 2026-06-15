@@ -13,6 +13,7 @@ end
 GakHelpHarmFrame = nil
 
 -- test comment
+-- test comment 2
 
 function GakHelpHarmBarInit(_)
 	if not GakHelpHarmFrame and not GakIsSmallScreen() then
