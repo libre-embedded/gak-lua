@@ -12,6 +12,8 @@ end
 
 GakHelpHarmFrame = nil
 
+-- test comment
+
 function GakHelpHarmBarInit(_)
 	if not GakHelpHarmFrame and not GakIsSmallScreen() then
 		-- Experimenting with anchor point.
