@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=6eeae7c05c0af2a039ea9e51a524e9fc
+    hash=ab1cd6381c0e24d27166987544a70593
     =====================================
 -->
 
@@ -52,6 +52,15 @@ eb14
 #showtooltip Eye Beam
 /use 14
 /cast Eye Beam
+```
+
+---
+
+vr
+
+```
+#showtooltip Vengeful Retreat
+/castsequence reset=1 Vengeful Retreat,_
 ```
 
 ---

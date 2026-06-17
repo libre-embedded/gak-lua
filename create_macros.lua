@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=825a6eaeb819a3cf3a2ef233f9963cd5
+-- hash=874637b5788941085acbe3457cbbfcbc
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -314,7 +314,10 @@ function GakCreateCharacterMacros()
 		CreateMacro("ssos", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Sigil of Spite]], true)
-		print("Created 5", select(1, UnitClass("player")), "macros.")
+		CreateMacro("vr", "inv_misc_questionmark", [[
+#showtooltip Vengeful Retreat
+/castsequence reset=1 Vengeful Retreat,_]], true)
+		print("Created 6", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "DRUID" then

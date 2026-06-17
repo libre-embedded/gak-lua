@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=0910d84620108e05da0aae49a486360f
+-- hash=c7526f85a71dcbcd6ba42f26ca66a61d
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -785,7 +785,7 @@ s "Disrupt"]])
 			print("(class) Couldn't bind slot L2_L1_R2:", [[
 m rac1]])
 		end
-		C_Spell.PickupSpell("Vengeful Retreat")
+		PickupMacro("vr")
 		if GetCursorInfo() then
 			-- L2_P1
 			PlaceAction(38)
@@ -796,7 +796,7 @@ m rac1]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L2_P1:", [[
-s "Vengeful Retreat"]])
+m vr]])
 		end
 		C_Spell.PickupSpell(217832)
 		if GetCursorInfo() then
