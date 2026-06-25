@@ -99,6 +99,11 @@ local function GakInfo()
 	local info = { GetInstanceInfo() }
 	print("Instance info:", "name =", info[1], "type =", info[2])
 
+	local width, height = GetPhysicalScreenSize()
+	print("screen:", width, "x", height)
+
+	print("UnitRace", UnitRace("player"))
+
 	print("--------------------")
 end
 
