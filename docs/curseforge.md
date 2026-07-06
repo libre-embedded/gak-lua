@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=64bda3afc62fe923974d26fb053e843d
+    hash=db9ef9b05baf1c6e847824262a073085
     =====================================
 -->
 
@@ -91,12 +91,12 @@ Global | `20`
 Deathknight | `28`
 Demonhunter | `18`
 Druid | `41`
-Evoker | `27`
+Evoker | `28`
 Hunter | `38`
 Mage | `28`
 Monk | `19`
 Paladin | `24`
-Priest | `23`
+Priest | `24`
 Rogue | `43`
 Shaman | `36`
 Warlock | `45`
