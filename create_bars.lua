@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=7fb6b10301762ac6d916a74f1bc125af
+-- hash=1b1aab338ef63d6b06a662a64bccaf8d
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -5432,6 +5432,19 @@ s "Heroic Leap"]])
 		else
 			print("(class) Couldn't bind slot L2_X:", [[
 s "Rallying Cry"]])
+		end
+		PickupMacro("scsp")
+		if GetCursorInfo() then
+			-- P2_C
+			PlaceAction(60)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_C'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot P2_C:", [[
+m scsp]])
 		end
 		C_Spell.PickupSpell("Battle Shout")
 		if GetCursorInfo() then

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=60465a91da1cecb561be88c1581a5a5c
+    hash=3ab19dbc7e67527e9e36ac247436d487
     =====================================
 -->
 
@@ -78,6 +78,15 @@ bsbr
 ```
 #showtooltip
 /cast [known:Berserker Roar] Berserker Roar; [known:Berserker Shout] Berserker Shout; Berserker Rage
+```
+
+---
+
+scsp
+
+```
+#showtooltip
+/cast [@player] Champion's Spear
 ```
 
 ---

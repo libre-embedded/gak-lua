@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=651e944f4c974c710d4881563eb0fb47
+-- hash=c3279530b9b94584f3fa03ada1e47099
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -994,9 +994,12 @@ function GakCreateCharacterMacros()
 		CreateMacro("ivip", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Intervene] Intervene; Interpose]], true)
+		CreateMacro("scsp", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Champion's Spear]], true)
 		CreateMacro("wtst", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Wrecking Throw] Wrecking Throw; Shattering Throw]], true)
-		print("Created 8", select(1, UnitClass("player")), "macros.")
+		print("Created 9", select(1, UnitClass("player")), "macros.")
 	end
 end
