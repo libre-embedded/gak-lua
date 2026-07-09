@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=5fec09326f93b2901af9724e3d0206f6
+    hash=2ce2649e7e5302fb8fc3b3f3194015fe
     =====================================
 -->
 
@@ -111,7 +111,7 @@ Augmentation Evoker | `22`
 Devourer Demon Hunter | `13`
 Blood Death Knight | `0`
 Frost Death Knight | `16`
-Unholy Death Knight | `26`
+Unholy Death Knight | `27`
 Beast Mastery Hunter | `12`
 Marksmanship Hunter | `14`
 Survival Hunter | `19`

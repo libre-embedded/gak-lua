@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=f6b84e8c16160aded302af682a363c39
+-- hash=231d361b6a3c0881a173cefb593b01c3
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -9036,6 +9036,19 @@ C_SpellBook.PickupSpellBookItem(8, 1)]])
 		else
 			print("(spec) Couldn't bind slot L2_C:", [[
 C_SpellBook.PickupSpellBookItem(2, 1)]])
+		end
+		PickupMacro("petd")
+		if GetCursorInfo() then
+			-- L2_L
+			PlaceAction(39)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_L'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_L:", [[
+m petd]])
 		end
 		C_SpellBook.PickupSpellBookItem(11, 1)
 		if GetCursorInfo() then
