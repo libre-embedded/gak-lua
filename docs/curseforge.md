@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=ea30418ad82478a473b5e3d4876b430b
+    hash=5fec09326f93b2901af9724e3d0206f6
     =====================================
 -->
 
@@ -92,7 +92,7 @@ Deathknight | `28`
 Demonhunter | `18`
 Druid | `41`
 Evoker | `28`
-Hunter | `38`
+Hunter | `39`
 Mage | `28`
 Monk | `19`
 Paladin | `24`

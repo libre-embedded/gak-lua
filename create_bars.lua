@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=1b1aab338ef63d6b06a662a64bccaf8d
+-- hash=f6b84e8c16160aded302af682a363c39
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -1454,7 +1454,7 @@ s "Hover"]])
 			print("(class) Couldn't bind slot L1_P2_R1:", [[
 s "Tip the Scales"]])
 		end
-		C_Spell.PickupSpell("Oppressing Roar")
+		C_Spell.PickupSpell(372048)
 		if GetCursorInfo() then
 			-- L1_P2_R2
 			PlaceAction(26)
@@ -1465,7 +1465,7 @@ s "Tip the Scales"]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L1_P2_R2:", [[
-s "Oppressing Roar"]])
+s 372048]])
 		end
 		C_Spell.PickupSpell("Recuperate")
 		if GetCursorInfo() then
@@ -1807,6 +1807,19 @@ s "Time Stop"]])
 		else
 			print("(class) Couldn't bind slot L1_P1:", [[
 s "Feign Death"]])
+		end
+		C_SpellBook.PickupSpellBookItem(8, 1)
+		if GetCursorInfo() then
+			-- L1_P2_T
+			PlaceAction(29)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P2_T'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L1_P2_T:", [[
+C_SpellBook.PickupSpellBookItem(8, 1)]])
 		end
 		C_Spell.PickupSpell("Mend Pet")
 		if GetCursorInfo() then
