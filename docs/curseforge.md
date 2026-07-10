@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=2ce2649e7e5302fb8fc3b3f3194015fe
+    hash=256de3539dd442bc59e239e50108195a
     =====================================
 -->
 
@@ -125,7 +125,7 @@ Elemental Shaman | `19`
 Enhancement Shaman | `22`
 Restoration Shaman | `22`
 Affliction Warlock | `15`
-Demonology Warlock | `20`
+Demonology Warlock | `18`
 Destruction Warlock | `19`
 Brewmaster Monk | `0`
 Windwalker Monk | `23`
