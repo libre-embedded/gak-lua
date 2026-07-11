@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=033aa62bc87308693422d52b4376daf4
+-- hash=07ce05a785bdb5600e53229050b62618
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -8180,7 +8180,7 @@ s "Time Dilation"]])
 	end
 
 	if id == 1473 then
-		C_Spell.PickupSpell("Timelessness")
+		C_Spell.PickupSpell("Bronze Attunement")
 		if GetCursorInfo() then
 			-- L1_P2_C
 			PlaceAction(30)
@@ -8191,7 +8191,20 @@ s "Time Dilation"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_P2_C:", [[
-s "Timelessness"]])
+s "Bronze Attunement"]])
+		end
+		C_Spell.PickupSpell("Black Attunement")
+		if GetCursorInfo() then
+			-- L1_P2_T
+			PlaceAction(29)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P2_T'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_P2_T:", [[
+s "Black Attunement"]])
 		end
 		C_Spell.PickupSpell("Bestow Weyrnstone")
 		if GetCursorInfo() then
@@ -8284,6 +8297,19 @@ m seb]])
 			print("(spec) Couldn't bind slot L1_S_2:", [[
 s "Emerald Blossom"]])
 		end
+		C_Spell.PickupSpell("Timelessness")
+		if GetCursorInfo() then
+			-- L2_P2_C
+			PlaceAction(54)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_P2_C'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_P2_C:", [[
+s "Timelessness"]])
+		end
 		C_Spell.PickupSpell(403631)
 		if GetCursorInfo() then
 			-- L2_P2_R2
@@ -8361,6 +8387,19 @@ s "Upheaval"]])
 		else
 			print("(spec) Couldn't bind slot P2_R2:", [[
 s "Ebon Might"]])
+		end
+		C_Spell.PickupSpell("Prescience")
+		if GetCursorInfo() then
+			-- P2_S
+			PlaceAction(57)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_S'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot P2_S:", [[
+s "Prescience"]])
 		end
 		C_Spell.PickupSpell("Azure Strike")
 		if GetCursorInfo() then

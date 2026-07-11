@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=256de3539dd442bc59e239e50108195a
+    hash=ae2408c4a1dd09f0c46e72e6220dc8e3
     =====================================
 -->
 
@@ -107,7 +107,7 @@ Guardian Druid | `62`
 Restoration Druid | `48`
 Devastation Evoker | `18`
 Preservation Evoker | `27`
-Augmentation Evoker | `22`
+Augmentation Evoker | `25`
 Devourer Demon Hunter | `13`
 Blood Death Knight | `0`
 Frost Death Knight | `16`
