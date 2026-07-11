@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=91711d5aa6e2ef33377af0466ee87132
+    hash=950d2aa28de7d15dd0d2b4abf493165b
     =====================================
 -->
 
@@ -150,6 +150,15 @@ sts
 ```
 #showtooltip
 /cast [@player] Time Stop
+```
+
+---
+
+spc
+
+```
+#showtooltip
+/cast [@player] Prescience
 ```
 
 ---

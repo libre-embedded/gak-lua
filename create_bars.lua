@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=07ce05a785bdb5600e53229050b62618
+-- hash=d954540a8c13fcbee31556450d0df0d6
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -8180,6 +8180,32 @@ s "Time Dilation"]])
 	end
 
 	if id == 1473 then
+		PickupMacro("spc")
+		if GetCursorInfo() then
+			-- C_1
+			PlaceAction(6)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'C_1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot C_1:", [[
+m spc]])
+		end
+		C_Spell.PickupSpell("Prescience")
+		if GetCursorInfo() then
+			-- C_2
+			PlaceAction(18)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'C_2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot C_2:", [[
+s "Prescience"]])
+		end
 		C_Spell.PickupSpell("Bronze Attunement")
 		if GetCursorInfo() then
 			-- L1_P2_C
@@ -8387,19 +8413,6 @@ s "Upheaval"]])
 		else
 			print("(spec) Couldn't bind slot P2_R2:", [[
 s "Ebon Might"]])
-		end
-		C_Spell.PickupSpell("Prescience")
-		if GetCursorInfo() then
-			-- P2_S
-			PlaceAction(57)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'P2_S'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot P2_S:", [[
-s "Prescience"]])
 		end
 		C_Spell.PickupSpell("Azure Strike")
 		if GetCursorInfo() then
@@ -11943,19 +11956,6 @@ m sch]])
 			print("(spec) Couldn't bind slot L1_T_2:", [[
 s "Chain Heal"]])
 		end
-		C_Spell.PickupSpell("Sundering")
-		if GetCursorInfo() then
-			-- L2_P2_C
-			PlaceAction(54)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_P2_C'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot L2_P2_C:", [[
-s "Sundering"]])
-		end
 		C_Spell.PickupSpell("Feral Lunge")
 		if GetCursorInfo() then
 			-- L2_R2
@@ -11981,6 +11981,19 @@ s "Feral Lunge"]])
 		else
 			print("(spec) Couldn't bind slot L2_S:", [[
 s "Doom Winds"]])
+		end
+		C_Spell.PickupSpell("Sundering")
+		if GetCursorInfo() then
+			-- L2_X
+			PlaceAction(64)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_X'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_X:", [[
+s "Sundering"]])
 		end
 		C_Spell.PickupSpell("Lava Lash")
 		if GetCursorInfo() then

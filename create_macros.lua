@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=c3279530b9b94584f3fa03ada1e47099
+-- hash=e043923d9e5bdf3cc69ea6735fecda2c
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -455,6 +455,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("sn", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Naturalize]], true)
+		CreateMacro("spc", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Prescience]], true)
 		CreateMacro("sr", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Reversion]], true)
@@ -476,7 +479,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("tssp", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Time Spiral] Time Spiral; Spatial Paradox]], true)
-		print("Created 16", select(1, UnitClass("player")), "macros.")
+		print("Created 17", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "HUNTER" then
