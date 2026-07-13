@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=d954540a8c13fcbee31556450d0df0d6
+-- hash=ea7b8fae018cb59cb27124ffceef4bf0
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -1571,7 +1571,7 @@ m tssp]])
 			print("(class) Couldn't bind slot L2_L1_R1:", [[
 s "Quell"]])
 		end
-		C_Spell.PickupSpell("Landslide")
+		PickupMacro("cls")
 		if GetCursorInfo() then
 			-- L2_L1_R2
 			PlaceAction(68)
@@ -1582,7 +1582,7 @@ s "Quell"]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L2_L1_R2:", [[
-s "Landslide"]])
+m cls]])
 		end
 		C_Spell.PickupSpell("Rescue")
 		if GetCursorInfo() then

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=fa955b6fdaf3ebaae8bbf903c84237b2
+    hash=6a7bc94d916ec748fbba133937186795
     =====================================
 -->
 
@@ -72,7 +72,7 @@ Shared | `21`
 Deathknight | `6`
 Demonhunter | `6`
 Druid | `28`
-Evoker | `17`
+Evoker | `18`
 Hunter | `19`
 Mage | `15`
 Monk | `15`

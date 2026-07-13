@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=950d2aa28de7d15dd0d2b4abf493165b
+    hash=b84fd7dde01060c7fc183de98ae6bd3a
     =====================================
 -->
 
@@ -159,6 +159,15 @@ spc
 ```
 #showtooltip
 /cast [@player] Prescience
+```
+
+---
+
+cls
+
+```
+#showtooltip
+/cast [@cursor] Landslide
 ```
 
 ---
