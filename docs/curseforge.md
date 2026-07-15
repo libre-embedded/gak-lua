@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=fc7ddd2943c9489957907f39b103d4a2
+    hash=efccf6f35615034e58d1ad6b75e991b5
     =====================================
 -->
 
@@ -63,7 +63,7 @@ documentation for additional details.
 
 * Keybinds: `113`
 * `CVar`'s: `105`
-
+* UI Layouts (`7`): `1280x800` `1920x1080` `2560x1440` `2560x1600` `3440x1440` `3840x2160` `5120x1440`
 ### Macros
 
 Type | Count
