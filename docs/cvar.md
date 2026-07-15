@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=2ffcfe1000a7d130f5f623ea1261fe27
+    hash=a964a7d1770d1dfb5c07bb624cf05bdb
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `108`
+Total: `105`
 
 Name | Value
 ---- | -----
@@ -49,12 +49,10 @@ lootUnderMouse | 0
 lossOfControl | 0
 maxFPSBk | 30
 nameplateAuraScale | 0.7
-nameplateLargerScale | 1.2
 nameplateMaxScale | 0.9
 nameplateMinScale | 0.9
 nameplateOverlapH | 0.6
 nameplateOverlapV | 0.6
-nameplateSelfAlpha | 0.75
 nameplateShowAll | 1
 nameplateShowDebuffsOnFriendly | 1
 nameplateShowFriendlyPlayerTotems | 0
@@ -79,7 +77,6 @@ ReplaceMyPlayerPortrait | 1
 ReplaceOtherPlayerPortraits | 1
 rotateMinimap | 0
 scriptErrors | 1
-secretPvPMatchRestrictionsForced | 1
 showHonorAsExperience | 0
 showPartyPets | 1
 showPingsInChat | 0
