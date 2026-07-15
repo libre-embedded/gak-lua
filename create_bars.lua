@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=ea7b8fae018cb59cb27124ffceef4bf0
+-- hash=af033baa372c9a163eaedba3d383a5a0
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -5627,6 +5627,19 @@ function GakSetSpecializationActions()
 			print("(spec) Couldn't bind slot L1_C_B:", [[
 s "Thrash"]])
 		end
+		C_Spell.PickupSpell("Swipe")
+		if GetCursorInfo() then
+			-- L1_C_C
+			PlaceAction(84)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_C_C'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_C_C:", [[
+s "Swipe"]])
+		end
 		C_Spell.PickupSpell("Flap")
 		if GetCursorInfo() then
 			-- L1_C_M
@@ -5705,7 +5718,7 @@ s "Sunfire"]])
 			print("(spec) Couldn't bind slot L1_R1_B:", [[
 s "Swipe"]])
 		end
-		C_Spell.PickupSpell("Swipe")
+		C_Spell.PickupSpell("Rake")
 		if GetCursorInfo() then
 			-- L1_R1_C
 			PlaceAction(79)
@@ -5716,7 +5729,7 @@ s "Swipe"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_R1_C:", [[
-s "Swipe"]])
+s "Rake"]])
 		end
 		C_Spell.PickupSpell("Sunfire")
 		if GetCursorInfo() then

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=6a7bc94d916ec748fbba133937186795
+    hash=730bd2ba3b0695b72fc8094f8d180a74
     =====================================
 -->
 
@@ -101,7 +101,7 @@ Rogue | `43`
 Shaman | `36`
 Warlock | `45`
 Warrior | `33`
-Balance Druid | `51`
+Balance Druid | `52`
 Feral Druid | `52`
 Guardian Druid | `62`
 Restoration Druid | `48`
