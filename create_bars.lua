@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=af033baa372c9a163eaedba3d383a5a0
+-- hash=d6b1810c373f1d65d6ab72ec7c900db0
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -8972,7 +8972,7 @@ C_SpellBook.PickupSpellBookItem(7, 1)]])
 			print("(spec) Couldn't bind slot L1_C_2:", [[
 C_SpellBook.PickupSpellBookItem(7, 1)]])
 		end
-		C_Spell.PickupSpell("Dark Transformation")
+		C_Spell.PickupSpell(1233448)
 		if GetCursorInfo() then
 			-- L1_P2_R1
 			PlaceAction(25)
@@ -8983,7 +8983,7 @@ C_SpellBook.PickupSpellBookItem(7, 1)]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_P2_R1:", [[
-s "Dark Transformation"]])
+s 1233448]])
 		end
 		C_Spell.PickupSpell("Army of the Dead")
 		if GetCursorInfo() then
@@ -9011,7 +9011,7 @@ s "Army of the Dead"]])
 			print("(spec) Couldn't bind slot L1_P3:", [[
 C_SpellBook.PickupSpellBookItem(1, 1)]])
 		end
-		C_Spell.PickupSpell("Festering Strike")
+		C_Spell.PickupSpell(85948)
 		if GetCursorInfo() then
 			-- L1_R1_1
 			PlaceAction(7)
@@ -9022,9 +9022,9 @@ C_SpellBook.PickupSpellBookItem(1, 1)]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_R1_1:", [[
-s "Festering Strike"]])
+s 85948]])
 		end
-		C_Spell.PickupSpell("Festering Strike")
+		C_Spell.PickupSpell(85948)
 		if GetCursorInfo() then
 			-- L1_R1_2
 			PlaceAction(19)
@@ -9035,7 +9035,7 @@ s "Festering Strike"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_R1_2:", [[
-s "Festering Strike"]])
+s 85948]])
 		end
 		C_Spell.PickupSpell("Putrefy")
 		if GetCursorInfo() then
@@ -9167,7 +9167,7 @@ C_SpellBook.PickupSpellBookItem(6, 1)]])
 			print("(spec) Couldn't bind slot P2_P3:", [[
 C_SpellBook.PickupSpellBookItem(5, 1)]])
 		end
-		C_Spell.PickupSpell("Scourge Strike")
+		C_Spell.PickupSpell(55090)
 		if GetCursorInfo() then
 			-- P2_R1
 			PlaceAction(55)
@@ -9178,7 +9178,7 @@ C_SpellBook.PickupSpellBookItem(5, 1)]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_R1:", [[
-s "Scourge Strike"]])
+s 55090]])
 		end
 		C_Spell.PickupSpell("Soul Reaper")
 		if GetCursorInfo() then
@@ -9219,7 +9219,7 @@ s "Outbreak"]])
 			print("(spec) Couldn't bind slot R1_2:", [[
 s "Outbreak"]])
 		end
-		C_Spell.PickupSpell("Death Coil")
+		C_Spell.PickupSpell(47541)
 		if GetCursorInfo() then
 			-- R2_1
 			PlaceAction(2)
@@ -9230,9 +9230,9 @@ s "Outbreak"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot R2_1:", [[
-s "Death Coil"]])
+s 47541]])
 		end
-		C_Spell.PickupSpell("Death Coil")
+		C_Spell.PickupSpell(47541)
 		if GetCursorInfo() then
 			-- R2_2
 			PlaceAction(14)
@@ -9243,9 +9243,9 @@ s "Death Coil"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot R2_2:", [[
-s "Death Coil"]])
+s 47541]])
 		end
-		C_Spell.PickupSpell("Epidemic")
+		C_Spell.PickupSpell(207317)
 		if GetCursorInfo() then
 			-- S_1
 			PlaceAction(3)
@@ -9256,9 +9256,9 @@ s "Death Coil"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot S_1:", [[
-s "Epidemic"]])
+s 207317]])
 		end
-		C_Spell.PickupSpell("Epidemic")
+		C_Spell.PickupSpell(207317)
 		if GetCursorInfo() then
 			-- S_2
 			PlaceAction(15)
@@ -9269,7 +9269,7 @@ s "Epidemic"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot S_2:", [[
-s "Epidemic"]])
+s 207317]])
 		end
 	end
 
