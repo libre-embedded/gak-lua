@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=efccf6f35615034e58d1ad6b75e991b5
+    hash=7d5d56a6af67cc6846aad3b87ce2516d
     =====================================
 -->
 
@@ -99,7 +99,7 @@ Paladin | `24`
 Priest | `24`
 Rogue | `43`
 Shaman | `36`
-Warlock | `45`
+Warlock | `46`
 Warrior | `33`
 Balance Druid | `52`
 Feral Druid | `52`
@@ -126,7 +126,7 @@ Enhancement Shaman | `22`
 Restoration Shaman | `22`
 Affliction Warlock | `15`
 Demonology Warlock | `18`
-Destruction Warlock | `19`
+Destruction Warlock | `18`
 Brewmaster Monk | `0`
 Windwalker Monk | `23`
 Mistweaver Monk | `23`

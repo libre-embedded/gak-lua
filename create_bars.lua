@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=d6b1810c373f1d65d6ab72ec7c900db0
+-- hash=d62157aa0a0cb93712028c347152a3da
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -5091,6 +5091,19 @@ s "Fel Domination"]])
 		else
 			print("(class) Couldn't bind slot P2_U:", [[
 s "Create Soulwell"]])
+		end
+		PickupMacro("t14")
+		if GetCursorInfo() then
+			-- P2_X
+			PlaceAction(58)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_X'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot P2_X:", [[
+m t14]])
 		end
 		C_Spell.PickupSpell("Nether Ward")
 		if GetCursorInfo() then
@@ -12521,6 +12534,19 @@ s "Grimoire of Sacrifice"]])
 			print("(spec) Couldn't bind slot L2_S:", [[
 s "Summon Darkglare"]])
 		end
+		C_Spell.PickupSpell("Soul Swap")
+		if GetCursorInfo() then
+			-- L2_X
+			PlaceAction(64)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_X'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_X:", [[
+s "Soul Swap"]])
+		end
 		C_Spell.PickupSpell("Shadow Bolt")
 		if GetCursorInfo() then
 			-- P2_R1
@@ -12546,19 +12572,6 @@ s "Shadow Bolt"]])
 		else
 			print("(spec) Couldn't bind slot P2_S:", [[
 s "Dark Harvest"]])
-		end
-		C_Spell.PickupSpell("Soul Swap")
-		if GetCursorInfo() then
-			-- P2_X
-			PlaceAction(58)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'P2_X'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot P2_X:", [[
-s "Soul Swap"]])
 		end
 		C_Spell.PickupSpell("Corruption")
 		if GetCursorInfo() then
@@ -12995,7 +13008,7 @@ s "Grimoire of Sacrifice"]])
 			print("(spec) Couldn't bind slot L2_S:", [[
 s "Shadowburn"]])
 		end
-		PickupMacro("t14")
+		C_Spell.PickupSpell("Soul Fire")
 		if GetCursorInfo() then
 			-- L2_X
 			PlaceAction(64)
@@ -13006,7 +13019,7 @@ s "Shadowburn"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_X:", [[
-m t14]])
+s "Soul Fire"]])
 		end
 		PickupMacro("inc")
 		if GetCursorInfo() then
@@ -13033,19 +13046,6 @@ m inc]])
 		else
 			print("(spec) Couldn't bind slot P2_S:", [[
 s "Havoc"]])
-		end
-		C_Spell.PickupSpell("Soul Fire")
-		if GetCursorInfo() then
-			-- P2_X
-			PlaceAction(58)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'P2_X'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot P2_X:", [[
-s "Soul Fire"]])
 		end
 		C_Spell.PickupSpell("Immolate")
 		if GetCursorInfo() then
