@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=059a9395c375e664aeee2e61c5da9901
+    hash=9f058bdac7dedd52d2441536b7f9d570
     =====================================
 -->
 
@@ -108,6 +108,7 @@ cbr
 ```
 #showtooltip Combustion
 /cast Blood Fury
+/use 14
 /cast Combustion
 ```
 

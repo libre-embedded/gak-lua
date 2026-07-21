@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=bb3e8c56545ea63258a82b5bf3a121d1
+-- hash=e859087338044a43896e644b4e6279e7
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -555,6 +555,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("cbr", "inv_misc_questionmark", [[
 #showtooltip Combustion
 /cast Blood Fury
+/use 14
 /cast Combustion]], true)
 		CreateMacro("forb", "inv_misc_questionmark", [[
 #showtooltip Frozen Orb
