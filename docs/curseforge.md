@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=7d5d56a6af67cc6846aad3b87ce2516d
+    hash=33abb9ec846f5d77399d5ab63e2686ca
     =====================================
 -->
 
@@ -119,7 +119,7 @@ Discipline Priest | `22`
 Holy Priest | `21`
 Shadow Priest | `22`
 Assassination Rogue | `23`
-Outlaw Rogue | `22`
+Outlaw Rogue | `23`
 Subtlety Rogue | `21`
 Elemental Shaman | `19`
 Enhancement Shaman | `22`

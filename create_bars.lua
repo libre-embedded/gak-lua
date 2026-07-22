@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=d62157aa0a0cb93712028c347152a3da
+-- hash=14f4e4de816e7737d2ad707b9de7cb83
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -11128,6 +11128,19 @@ s "Roll the Bones"]])
 			print("(spec) Couldn't bind slot L2_C:", [[
 m ksbf]])
 		end
+		C_Spell.PickupSpell("Blade Rush")
+		if GetCursorInfo() then
+			-- L2_L1_P1
+			PlaceAction(44)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_L1_P1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_L1_P1:", [[
+s "Blade Rush"]])
+		end
 		C_Spell.PickupSpell("Between the Eyes")
 		if GetCursorInfo() then
 			-- L2_R1
@@ -11193,7 +11206,7 @@ s "Preparation"]])
 			print("(spec) Couldn't bind slot P2_S:", [[
 s "Adrenaline Rush"]])
 		end
-		C_Spell.PickupSpell("Blade Rush")
+		PickupMacro("t14")
 		if GetCursorInfo() then
 			-- P2_X
 			PlaceAction(58)
@@ -11204,7 +11217,7 @@ s "Adrenaline Rush"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_X:", [[
-s "Blade Rush"]])
+m t14]])
 		end
 		C_Spell.PickupSpell("Sinister Strike")
 		if GetCursorInfo() then
