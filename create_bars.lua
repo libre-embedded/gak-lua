@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=14f4e4de816e7737d2ad707b9de7cb83
+-- hash=d6761bd9c821d2441d222fe3fe628d75
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -5627,6 +5627,32 @@ function GakSetSpecializationActions()
 	local spec_bind_count = 0
 
 	if id == 102 then
+		PickupMacro("flap")
+		if GetCursorInfo() then
+			-- L1_C_1
+			PlaceAction(12)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_C_1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_C_1:", [[
+m flap]])
+		end
+		PickupMacro("flap")
+		if GetCursorInfo() then
+			-- L1_C_2
+			PlaceAction(24)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_C_2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_C_2:", [[
+m flap]])
+		end
 		C_Spell.PickupSpell("Thrash")
 		if GetCursorInfo() then
 			-- L1_C_B
@@ -5821,6 +5847,32 @@ s "Starfire"]])
 		else
 			print("(spec) Couldn't bind slot L1_R2_M:", [[
 s "Starfire"]])
+		end
+		C_Spell.PickupSpell(1233346)
+		if GetCursorInfo() then
+			-- L1_S_1
+			PlaceAction(9)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_S_1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_S_1:", [[
+s 1233346]])
+		end
+		C_Spell.PickupSpell(1233346)
+		if GetCursorInfo() then
+			-- L1_S_2
+			PlaceAction(21)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_S_2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_S_2:", [[
+s 1233346]])
 		end
 		C_Spell.PickupSpell("Rip")
 		if GetCursorInfo() then
@@ -6211,6 +6263,32 @@ s "Wrath"]])
 		else
 			print("(spec) Couldn't bind slot R2_M:", [[
 s "Wrath"]])
+		end
+		C_Spell.PickupSpell("Wild Mushroom")
+		if GetCursorInfo() then
+			-- S_1
+			PlaceAction(3)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'S_1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot S_1:", [[
+s "Wild Mushroom"]])
+		end
+		C_Spell.PickupSpell("Wild Mushroom")
+		if GetCursorInfo() then
+			-- S_2
+			PlaceAction(15)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'S_2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot S_2:", [[
+s "Wild Mushroom"]])
 		end
 		C_Spell.PickupSpell("Maim")
 		if GetCursorInfo() then
