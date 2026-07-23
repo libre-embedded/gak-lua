@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=410d22399f24fbc4acf2a343c4cace41
+-- hash=05e2cfa70259581cbe90a6d1197470bc
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -45,7 +45,7 @@ function GakCreateGlobalMacros()
 	CreateMacro("mana", "inv_drink_milk_01", [[
 /cleartarget
 /use Conjured Mana Bun
-/use Quicksilver Sipper]])
+/use Springrunner Sparkling]])
 	CreateMacro("pdave", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Dark Ascension] Dark Ascension; Void Eruption]])

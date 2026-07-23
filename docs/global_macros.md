@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=8707c841ebab9e113c33676cdd06fdb3
+    hash=6003d0f5915602f5ff2ab5333b1d8532
     =====================================
 -->
 
@@ -91,7 +91,7 @@ mana
 ```
 /cleartarget
 /use Conjured Mana Bun
-/use Quicksilver Sipper
+/use Springrunner Sparkling
 ```
 
 ---
