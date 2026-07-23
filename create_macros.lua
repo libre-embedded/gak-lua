@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=05e2cfa70259581cbe90a6d1197470bc
+-- hash=9a7bfa4be003dc2c44fc1b20ee32809e
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -543,6 +543,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("tdr", "inv_misc_questionmark", [[
 #showtooltip Takedown
 /cast Blood Fury
+/use 14
 /cast Takedown]], true)
 		CreateMacro("ttsb", "inv_misc_questionmark", [[
 #showtooltip

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=98eee2617204aec3565b3c38382d4f58
+    hash=f2cf6421e69f31afae4e69e5550161f4
     =====================================
 -->
 
@@ -169,6 +169,7 @@ tdr
 ```
 #showtooltip Takedown
 /cast Blood Fury
+/use 14
 /cast Takedown
 ```
 
