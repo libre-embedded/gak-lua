@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=e859087338044a43896e644b4e6279e7
+-- hash=410d22399f24fbc4acf2a343c4cace41
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -341,6 +341,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("bvoke", "inv_misc_questionmark", [[
 #showtooltip Convoke the Spirits
 /cast Berserking
+/use 14
 /cast Convoke the Spirits]], true)
 		CreateMacro("cat", "inv_misc_questionmark", [[
 #showtooltip Cat Form
@@ -350,7 +351,7 @@ function GakCreateCharacterMacros()
 /cancelform]], true)
 		CreateMacro("dfnwe", "inv_misc_questionmark", [[
 #showtooltip
-/cast [known:Force of Nature] Force of Nature; Warrior of Elune]], true)
+/cast [@cursor] Force of Nature]], true)
 		CreateMacro("dirmb", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar]], true)
@@ -400,7 +401,7 @@ function GakCreateCharacterMacros()
 #showtooltip
 /cast [@player] Remove Corruption]], true)
 		CreateMacro("srg", "inv_misc_questionmark", [[
-#showtoolip
+#showtooltip
 /cast [@player] Regrowth]], true)
 		CreateMacro("srj", "inv_misc_questionmark", [[
 #showtooltip
@@ -867,7 +868,8 @@ function GakCreateCharacterMacros()
 #showtooltip
 /cast [known:Earth Shock] Earth Shock; Elemental Blast]], true)
 		CreateMacro("lust", "inv_misc_questionmark", [[
-#showtooltip
+#showtooltip Bloodlust
+/use 14
 /cast Bloodlust]], true)
 		CreateMacro("pgp", "inv_misc_questionmark", [[
 #showtooltip

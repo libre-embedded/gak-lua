@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=d6761bd9c821d2441d222fe3fe628d75
+-- hash=3a01fc9e34e9f9007a74a997a4386509
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -5705,7 +5705,7 @@ s "Flap"]])
 			print("(spec) Couldn't bind slot L1_P2_R1:", [[
 m dnmf]])
 		end
-		C_Spell.PickupSpell("Convoke the Spirits")
+		PickupMacro("bvoke")
 		if GetCursorInfo() then
 			-- L1_P2_R2
 			PlaceAction(26)
@@ -5716,7 +5716,7 @@ m dnmf]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_P2_R2:", [[
-s "Convoke the Spirits"]])
+m bvoke]])
 		end
 		C_Spell.PickupSpell("Sunfire")
 		if GetCursorInfo() then
@@ -11969,7 +11969,7 @@ m scs]])
 			print("(spec) Couldn't bind slot C_2:", [[
 s "Cleanse Spirit"]])
 		end
-		C_Spell.PickupSpell("Feral Spirit")
+		C_Spell.PickupSpell("Sundering")
 		if GetCursorInfo() then
 			-- L1_P2_R1
 			PlaceAction(25)
@@ -11980,7 +11980,7 @@ s "Cleanse Spirit"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_P2_R1:", [[
-s "Feral Spirit"]])
+s "Sundering"]])
 		end
 		C_Spell.PickupSpell("Windfury Weapon")
 		if GetCursorInfo() then
@@ -12021,7 +12021,7 @@ s "Flame Shock"]])
 			print("(spec) Couldn't bind slot L1_R1_2:", [[
 s "Flame Shock"]])
 		end
-		PickupMacro("sst")
+		PickupMacro("shs")
 		if GetCursorInfo() then
 			-- L1_R2_1
 			PlaceAction(8)
@@ -12032,9 +12032,9 @@ s "Flame Shock"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_R2_1:", [[
-m sst]])
+m shs]])
 		end
-		C_Spell.PickupSpell("Surging Totem")
+		C_Spell.PickupSpell("Healing Surge")
 		if GetCursorInfo() then
 			-- L1_R2_2
 			PlaceAction(20)
@@ -12045,7 +12045,7 @@ m sst]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_R2_2:", [[
-s "Surging Totem"]])
+s "Healing Surge"]])
 		end
 		PickupMacro("sch")
 		if GetCursorInfo() then
@@ -12099,7 +12099,7 @@ s "Feral Lunge"]])
 			print("(spec) Couldn't bind slot L2_S:", [[
 s "Doom Winds"]])
 		end
-		C_Spell.PickupSpell("Sundering")
+		PickupMacro("shs")
 		if GetCursorInfo() then
 			-- L2_X
 			PlaceAction(64)
@@ -12110,7 +12110,7 @@ s "Doom Winds"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_X:", [[
-s "Sundering"]])
+m shs]])
 		end
 		C_Spell.PickupSpell("Lava Lash")
 		if GetCursorInfo() then
@@ -12203,7 +12203,7 @@ s "Crash Lightning"]])
 			print("(spec) Couldn't bind slot S_2:", [[
 s "Crash Lightning"]])
 		end
-		PickupMacro("shs")
+		PickupMacro("sst")
 		if GetCursorInfo() then
 			-- T_1
 			PlaceAction(5)
@@ -12214,9 +12214,9 @@ s "Crash Lightning"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot T_1:", [[
-m shs]])
+m sst]])
 		end
-		C_Spell.PickupSpell("Healing Surge")
+		C_Spell.PickupSpell("Surging Totem")
 		if GetCursorInfo() then
 			-- T_2
 			PlaceAction(17)
@@ -12227,7 +12227,7 @@ m shs]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot T_2:", [[
-s "Healing Surge"]])
+s "Surging Totem"]])
 		end
 	end
 

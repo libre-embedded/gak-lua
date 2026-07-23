@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=8b06195998ae00e38bb7171fe5d20f8d
+    hash=50ee2e4adcafd109c5f44f917a8dd4bc
     =====================================
 -->
 
@@ -193,7 +193,8 @@ sww
 lust
 
 ```
-#showtooltip
+#showtooltip Bloodlust
+/use 14
 /cast Bloodlust
 ```
 

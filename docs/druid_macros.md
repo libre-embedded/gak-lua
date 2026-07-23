@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=552f6c6dd794eef370165feff67f2cd0
+    hash=435485ac87a65ebc0f6947108c22e56b
     =====================================
 -->
 
@@ -137,7 +137,7 @@ ssm
 srg
 
 ```
-#showtoolip
+#showtooltip
 /cast [@player] Regrowth
 ```
 
@@ -221,6 +221,7 @@ bvoke
 ```
 #showtooltip Convoke the Spirits
 /cast Berserking
+/use 14
 /cast Convoke the Spirits
 ```
 
@@ -269,7 +270,7 @@ dfnwe
 
 ```
 #showtooltip
-/cast [known:Force of Nature] Force of Nature; Warrior of Elune
+/cast [@cursor] Force of Nature
 ```
 
 ---
