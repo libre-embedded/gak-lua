@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=fb6ff8c38e692221c5239b08b2834c31
+-- hash=57f1c14864192199eb854b87f30670e1
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -15146,6 +15146,19 @@ s "Avenging Wrath"]])
 		else
 			print("(spec) Couldn't bind slot P2_R1:", [[
 m wa14]])
+		end
+		PickupMacro("swog")
+		if GetCursorInfo() then
+			-- P2_S
+			PlaceAction(57)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_S'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot P2_S:", [[
+m swog]])
 		end
 		C_Spell.PickupSpell(184575)
 		if GetCursorInfo() then

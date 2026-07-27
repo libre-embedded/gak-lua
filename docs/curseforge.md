@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=43ca5f206f8a7168d3efe8c7aca37cf0
+    hash=781105f46292d565edf960ce50ab4243
     =====================================
 -->
 
@@ -137,7 +137,7 @@ Fire Mage | `14`
 Frost Mage | `17`
 Holy Paladin | `29`
 Protection Paladin | `0`
-Retribution Paladin | `21`
+Retribution Paladin | `22`
 Arms Warrior | `18`
 Fury Warrior | `14`
 Protection Warrior | `0`
