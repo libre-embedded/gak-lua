@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=5a6b0b2557feadebab2327fef02fbbfc
+-- hash=fb6ff8c38e692221c5239b08b2834c31
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -9787,6 +9787,32 @@ m tdr]])
 			print("(spec) Couldn't bind slot L1_P2_R2:", [[
 s "Hatchet Toss"]])
 		end
+		C_SpellBook.PickupSpellBookItem(10, 1)
+		if GetCursorInfo() then
+			-- L1_P2_T
+			PlaceAction(29)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P2_T'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_P2_T:", [[
+C_SpellBook.PickupSpellBookItem(10, 1)]])
+		end
+		C_SpellBook.PickupSpellBookItem(1, 1)
+		if GetCursorInfo() then
+			-- L1_P3
+			PlaceAction(31)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P3'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_P3:", [[
+C_SpellBook.PickupSpellBookItem(1, 1)]])
+		end
 		C_Spell.PickupSpell("Wildfire Bomb")
 		if GetCursorInfo() then
 			-- L1_R1_1
@@ -9813,6 +9839,19 @@ s "Wildfire Bomb"]])
 			print("(spec) Couldn't bind slot L1_R1_2:", [[
 s "Wildfire Bomb"]])
 		end
+		C_SpellBook.PickupSpellBookItem(2, 1)
+		if GetCursorInfo() then
+			-- L2_C
+			PlaceAction(66)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_C'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_C:", [[
+C_SpellBook.PickupSpellBookItem(2, 1)]])
+		end
 		C_Spell.PickupSpell("Muzzle")
 		if GetCursorInfo() then
 			-- L2_L1_R1
@@ -9825,6 +9864,19 @@ s "Wildfire Bomb"]])
 		else
 			print("(spec) Couldn't bind slot L2_L1_R1:", [[
 s "Muzzle"]])
+		end
+		C_SpellBook.PickupSpellBookItem(12, 1)
+		if GetCursorInfo() then
+			-- L2_P3
+			PlaceAction(37)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_P3'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_P3:", [[
+C_SpellBook.PickupSpellBookItem(12, 1)]])
 		end
 		C_Spell.PickupSpell("Harpoon")
 		if GetCursorInfo() then
@@ -9851,6 +9903,32 @@ s "Harpoon"]])
 		else
 			print("(spec) Couldn't bind slot L2_S:", [[
 s "Aspect of the Eagle"]])
+		end
+		C_SpellBook.PickupSpellBookItem(8, 1)
+		if GetCursorInfo() then
+			-- P2_C
+			PlaceAction(60)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_C'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot P2_C:", [[
+C_SpellBook.PickupSpellBookItem(8, 1)]])
+		end
+		C_SpellBook.PickupSpellBookItem(6, 1)
+		if GetCursorInfo() then
+			-- P2_P3
+			PlaceAction(43)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_P3'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot P2_P3:", [[
+C_SpellBook.PickupSpellBookItem(6, 1)]])
 		end
 		C_Spell.PickupSpell("Boomstick")
 		if GetCursorInfo() then

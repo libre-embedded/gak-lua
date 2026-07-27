@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=2aef6d890697a88bc89158a808a6bfec
+    hash=43ca5f206f8a7168d3efe8c7aca37cf0
     =====================================
 -->
 
@@ -114,7 +114,7 @@ Frost Death Knight | `16`
 Unholy Death Knight | `27`
 Beast Mastery Hunter | `12`
 Marksmanship Hunter | `14`
-Survival Hunter | `19`
+Survival Hunter | `25`
 Discipline Priest | `22`
 Holy Priest | `21`
 Shadow Priest | `22`
