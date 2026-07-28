@@ -251,7 +251,11 @@ end
 --   * SPELLS_CHANGED
 --   * PLAYER_LEVEL_UP
 --   * ACTIVE_PLAYER_SPECIALIZATION_CHANGED
-GakEventHandlers["PLAYER_SPECIALIZATION_CHANGED"] = GakRuntimeInit
+GakEventHandlers["PLAYER_SPECIALIZATION_CHANGED"] = function(_, unitTarget)
+	if unitTarget == "player" then
+		GakRuntimeInit()
+	end
+end
 GakEventHandlers["PLAYER_LEVEL_UP"] = GakRuntimeInit
 
 -- other options: FIRST_FRAME_RENDERED, PLAYER_ENTERING_WORLD, VARIABLES_LOADED
