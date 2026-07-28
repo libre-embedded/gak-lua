@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=781105f46292d565edf960ce50ab4243
+    hash=3056da92bfe1b664c9a70c788dfd4526
     =====================================
 -->
 
@@ -94,13 +94,13 @@ Druid | `41`
 Evoker | `28`
 Hunter | `39`
 Mage | `28`
-Monk | `19`
+Monk | `18`
 Paladin | `24`
 Priest | `24`
 Rogue | `43`
 Shaman | `36`
 Warlock | `46`
-Warrior | `33`
+Warrior | `35`
 Balance Druid | `58`
 Feral Druid | `52`
 Guardian Druid | `62`
@@ -128,7 +128,7 @@ Affliction Warlock | `15`
 Demonology Warlock | `18`
 Destruction Warlock | `18`
 Brewmaster Monk | `0`
-Windwalker Monk | `23`
+Windwalker Monk | `31`
 Mistweaver Monk | `23`
 Havoc Demon Hunter | `16`
 Vengeance Demon Hunter | `0`
@@ -138,7 +138,7 @@ Frost Mage | `17`
 Holy Paladin | `29`
 Protection Paladin | `0`
 Retribution Paladin | `22`
-Arms Warrior | `18`
+Arms Warrior | `17`
 Fury Warrior | `14`
 Protection Warrior | `0`
 

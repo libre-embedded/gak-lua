@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=57f1c14864192199eb854b87f30670e1
+-- hash=480e78c7b6d4f70693c3279ea040dd91
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -2737,32 +2737,6 @@ s "Zen Pilgrimage"]])
 			print("(class) Couldn't bind slot L1_P2_X:", [[
 s "Provoke"]])
 		end
-		PickupMacro("srop")
-		if GetCursorInfo() then
-			-- L1_S_1
-			PlaceAction(9)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L1_S_1'")
-				ClearCursor()
-			end
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot L1_S_1:", [[
-m srop]])
-		end
-		PickupMacro("rop")
-		if GetCursorInfo() then
-			-- L1_S_2
-			PlaceAction(21)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L1_S_2'")
-				ClearCursor()
-			end
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot L1_S_2:", [[
-m rop]])
-		end
 		C_Spell.PickupSpell("Touch of Death")
 		if GetCursorInfo() then
 			-- L2_L1_P1
@@ -2788,6 +2762,19 @@ s "Touch of Death"]])
 		else
 			print("(class) Couldn't bind slot L2_L1_R1:", [[
 s "Spear Hand Strike"]])
+		end
+		PickupMacro("rop")
+		if GetCursorInfo() then
+			-- L2_L1_R2
+			PlaceAction(68)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_L1_R2'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L2_L1_R2:", [[
+m rop]])
 		end
 		C_Spell.PickupSpell("Leg Sweep")
 		if GetCursorInfo() then
@@ -2828,19 +2815,6 @@ s "Paralysis"]])
 			print("(class) Couldn't bind slot L2_P2_R2:", [[
 s "Transcendence: Transfer"]])
 		end
-		C_Spell.PickupSpell("Celestial Conduit")
-		if GetCursorInfo() then
-			-- L2_T
-			PlaceAction(65)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_T'")
-				ClearCursor()
-			end
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot L2_T:", [[
-s "Celestial Conduit"]])
-		end
 		C_Spell.PickupSpell("Fortifying Brew")
 		if GetCursorInfo() then
 			-- L2_X
@@ -2879,6 +2853,19 @@ s "Transcendence"]])
 		else
 			print("(class) Couldn't bind slot P2_R2:", [[
 s "Disable"]])
+		end
+		PickupMacro("srop")
+		if GetCursorInfo() then
+			-- P2_S
+			PlaceAction(57)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_S'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot P2_S:", [[
+m srop]])
 		end
 		C_Spell.PickupSpell("Resuscitate")
 		if GetCursorInfo() then
@@ -3591,7 +3578,7 @@ s "Slice and Dice"]])
 			print("(class) Couldn't bind slot C_C:", [[
 s "Slice and Dice"]])
 		end
-		C_Spell.PickupSpell("Tricks of the Trade")
+		C_Spell.PickupSpell("Dismantle")
 		if GetCursorInfo() then
 			-- L1_C_1
 			PlaceAction(12)
@@ -3602,9 +3589,9 @@ s "Slice and Dice"]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L1_C_1:", [[
-s "Tricks of the Trade"]])
+s "Dismantle"]])
 		end
-		C_Spell.PickupSpell("Tricks of the Trade")
+		C_Spell.PickupSpell("Dismantle")
 		if GetCursorInfo() then
 			-- L1_C_2
 			PlaceAction(24)
@@ -3615,9 +3602,9 @@ s "Tricks of the Trade"]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L1_C_2:", [[
-s "Tricks of the Trade"]])
+s "Dismantle"]])
 		end
-		C_Spell.PickupSpell("Tricks of the Trade")
+		C_Spell.PickupSpell("Dismantle")
 		if GetCursorInfo() then
 			-- L1_C_C
 			PlaceAction(84)
@@ -3628,7 +3615,7 @@ s "Tricks of the Trade"]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L1_C_C:", [[
-s "Tricks of the Trade"]])
+s "Dismantle"]])
 		end
 		C_Spell.PickupSpell("Sprint")
 		if GetCursorInfo() then
@@ -3708,7 +3695,7 @@ s "Instant Poison"]])
 			print("(class) Couldn't bind slot L1_P2_X:", [[
 s "Death from Above"]])
 		end
-		C_Spell.PickupSpell("Dismantle")
+		C_Spell.PickupSpell("Tricks of the Trade")
 		if GetCursorInfo() then
 			-- L1_P3
 			PlaceAction(31)
@@ -3719,7 +3706,7 @@ s "Death from Above"]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot L1_P3:", [[
-s "Dismantle"]])
+s "Tricks of the Trade"]])
 		end
 		C_Spell.PickupSpell(1725)
 		if GetCursorInfo() then
@@ -5212,6 +5199,32 @@ s "Rend"]])
 			print("(class) Couldn't bind slot C_2:", [[
 s "Rend"]])
 		end
+		C_Spell.PickupSpell("Disarm")
+		if GetCursorInfo() then
+			-- L1_C_1
+			PlaceAction(12)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_C_1'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L1_C_1:", [[
+s "Disarm"]])
+		end
+		C_Spell.PickupSpell("Disarm")
+		if GetCursorInfo() then
+			-- L1_C_2
+			PlaceAction(24)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_C_2'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L1_C_2:", [[
+s "Disarm"]])
+		end
 		C_Spell.PickupSpell("Charge")
 		if GetCursorInfo() then
 			-- L1_P1
@@ -5263,19 +5276,6 @@ s "Shield Slam"]])
 		else
 			print("(class) Couldn't bind slot L1_P2_X:", [[
 s "Shield Block"]])
-		end
-		C_Spell.PickupSpell("Heroic Throw")
-		if GetCursorInfo() then
-			-- L1_P3
-			PlaceAction(31)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L1_P3'")
-				ClearCursor()
-			end
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot L1_P3:", [[
-s "Heroic Throw"]])
 		end
 		C_Spell.PickupSpell(163201)
 		if GetCursorInfo() then
@@ -5354,6 +5354,19 @@ m bsbr]])
 		else
 			print("(class) Couldn't bind slot L1_T_2:", [[
 m bsbr]])
+		end
+		C_Spell.PickupSpell("Heroic Throw")
+		if GetCursorInfo() then
+			-- L2_C
+			PlaceAction(66)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_C'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L2_C:", [[
+s "Heroic Throw"]])
 		end
 		C_Spell.PickupSpell("Pummel")
 		if GetCursorInfo() then
@@ -5524,7 +5537,7 @@ s "Hamstring"]])
 			print("(class) Couldn't bind slot P2_T:", [[
 m rac1]])
 		end
-		C_Spell.PickupSpell("Disarm")
+		PickupMacro("t14")
 		if GetCursorInfo() then
 			-- P2_X
 			PlaceAction(58)
@@ -5535,7 +5548,7 @@ m rac1]])
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot P2_X:", [[
-s "Disarm"]])
+m t14]])
 		end
 		C_Spell.PickupSpell("Whirlwind")
 		if GetCursorInfo() then
@@ -13274,6 +13287,32 @@ s "Chaos Bolt"]])
 	end
 
 	if id == 269 then
+		C_Spell.PickupSpell("Grapple Weapon")
+		if GetCursorInfo() then
+			-- L1_C_1
+			PlaceAction(12)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_C_1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_C_1:", [[
+s "Grapple Weapon"]])
+		end
+		C_Spell.PickupSpell("Grapple Weapon")
+		if GetCursorInfo() then
+			-- L1_C_2
+			PlaceAction(24)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_C_2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_C_2:", [[
+s "Grapple Weapon"]])
+		end
 		C_Spell.PickupSpell("Zenith")
 		if GetCursorInfo() then
 			-- L1_P2_R1
@@ -13286,6 +13325,19 @@ s "Chaos Bolt"]])
 		else
 			print("(spec) Couldn't bind slot L1_P2_R1:", [[
 s "Zenith"]])
+		end
+		C_SpellBook.PickupSpellBookItem(1, 1)
+		if GetCursorInfo() then
+			-- L1_P3
+			PlaceAction(31)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P3'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_P3:", [[
+C_SpellBook.PickupSpellBookItem(1, 1)]])
 		end
 		PickupMacro("fofr")
 		if GetCursorInfo() then
@@ -13339,6 +13391,32 @@ s "Blackout Kick"]])
 			print("(spec) Couldn't bind slot L1_R2_2:", [[
 s "Blackout Kick"]])
 		end
+		C_Spell.PickupSpell("Spinning Crane Kick")
+		if GetCursorInfo() then
+			-- L1_S_1
+			PlaceAction(9)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_S_1'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_S_1:", [[
+s "Spinning Crane Kick"]])
+		end
+		C_Spell.PickupSpell("Spinning Crane Kick")
+		if GetCursorInfo() then
+			-- L1_S_2
+			PlaceAction(21)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_S_2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_S_2:", [[
+s "Spinning Crane Kick"]])
+		end
 		PickupMacro("ssm")
 		if GetCursorInfo() then
 			-- L1_T_1
@@ -13391,20 +13469,33 @@ s "Touch of Karma"]])
 			print("(spec) Couldn't bind slot L1_X_2:", [[
 s "Touch of Karma"]])
 		end
-		C_Spell.PickupSpell("Grapple Weapon")
+		C_SpellBook.PickupSpellBookItem(2, 1)
 		if GetCursorInfo() then
-			-- L2_L1_R2
-			PlaceAction(68)
+			-- L2_C
+			PlaceAction(66)
 			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_L1_R2'")
+				print("wrote over existing action in slot 'L2_C'")
 				ClearCursor()
 			end
 			spec_bind_count = spec_bind_count + 1
 		else
-			print("(spec) Couldn't bind slot L2_L1_R2:", [[
-s "Grapple Weapon"]])
+			print("(spec) Couldn't bind slot L2_C:", [[
+C_SpellBook.PickupSpellBookItem(2, 1)]])
 		end
-		PickupMacro("swwdp")
+		C_SpellBook.PickupSpellBookItem(6, 1)
+		if GetCursorInfo() then
+			-- L2_P3
+			PlaceAction(37)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_P3'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_P3:", [[
+C_SpellBook.PickupSpellBookItem(6, 1)]])
+		end
+		PickupMacro("sv")
 		if GetCursorInfo() then
 			-- L2_R1
 			PlaceAction(61)
@@ -13415,9 +13506,9 @@ s "Grapple Weapon"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_R1:", [[
-m swwdp]])
+m sv]])
 		end
-		C_Spell.PickupSpell("Spinning Crane Kick")
+		PickupMacro("swwdp")
 		if GetCursorInfo() then
 			-- L2_R2
 			PlaceAction(62)
@@ -13428,9 +13519,9 @@ m swwdp]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_R2:", [[
-s "Spinning Crane Kick"]])
+m swwdp]])
 		end
-		C_Spell.PickupSpell("Invoke Xuen, the White Tiger")
+		C_Spell.PickupSpell(123904)
 		if GetCursorInfo() then
 			-- L2_S
 			PlaceAction(63)
@@ -13441,7 +13532,33 @@ s "Spinning Crane Kick"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_S:", [[
-s "Invoke Xuen, the White Tiger"]])
+s 123904]])
+		end
+		C_SpellBook.PickupSpellBookItem(4, 1)
+		if GetCursorInfo() then
+			-- P2_C
+			PlaceAction(60)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_C'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot P2_C:", [[
+C_SpellBook.PickupSpellBookItem(4, 1)]])
+		end
+		C_SpellBook.PickupSpellBookItem(3, 1)
+		if GetCursorInfo() then
+			-- P2_P3
+			PlaceAction(43)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_P3'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot P2_P3:", [[
+C_SpellBook.PickupSpellBookItem(3, 1)]])
 		end
 		C_Spell.PickupSpell("Flying Serpent Kick")
 		if GetCursorInfo() then
@@ -15293,32 +15410,6 @@ s 19750]])
 	end
 
 	if id == 71 then
-		C_Spell.PickupSpell("Sweeping Strikes")
-		if GetCursorInfo() then
-			-- L1_C_1
-			PlaceAction(12)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L1_C_1'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot L1_C_1:", [[
-s "Sweeping Strikes"]])
-		end
-		C_Spell.PickupSpell("Sweeping Strikes")
-		if GetCursorInfo() then
-			-- L1_C_2
-			PlaceAction(24)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L1_C_2'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot L1_C_2:", [[
-s "Sweeping Strikes"]])
-		end
 		C_Spell.PickupSpell("Colossus Smash")
 		if GetCursorInfo() then
 			-- L1_P2_R1
@@ -15344,6 +15435,19 @@ s "Colossus Smash"]])
 		else
 			print("(spec) Couldn't bind slot L1_P2_R2:", [[
 s "Demolish"]])
+		end
+		C_Spell.PickupSpell("Sweeping Strikes")
+		if GetCursorInfo() then
+			-- L1_P3
+			PlaceAction(31)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L1_P3'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L1_P3:", [[
+s "Sweeping Strikes"]])
 		end
 		C_Spell.PickupSpell("Slam")
 		if GetCursorInfo() then
@@ -15399,15 +15503,15 @@ s "Ignore Pain"]])
 		end
 		C_Spell.PickupSpell("Duel")
 		if GetCursorInfo() then
-			-- L2_C
-			PlaceAction(66)
+			-- L2_L1_C
+			PlaceAction(72)
 			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_C'")
+				print("wrote over existing action in slot 'L2_L1_C'")
 				ClearCursor()
 			end
 			spec_bind_count = spec_bind_count + 1
 		else
-			print("(spec) Couldn't bind slot L2_C:", [[
+			print("(spec) Couldn't bind slot L2_L1_C:", [[
 s "Duel"]])
 		end
 		PickupMacro("dsa")
