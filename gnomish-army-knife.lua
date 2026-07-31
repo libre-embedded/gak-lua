@@ -7,8 +7,7 @@ DAMAGE_TEXT_FONT = UNIT_NAME_FONT
 -- not sure what this affects
 -- STANDARD_TEXT_FONT = UNIT_NAME_FONT
 
--- Not currently using combat log.
-LoggingCombat(false)
+LoggingCombat(true)
 
 -- Create UI menu.
 local gak_ui =
