@@ -73,6 +73,11 @@ function GakZenArenaFrames()
 	GakHideFrame(CompactArenaFrameMember3.CastingBarFrame.Text)
 	GakHideFrame(CompactArenaFrameMember4.CastingBarFrame.Text)
 	GakHideFrame(CompactArenaFrameMember5.CastingBarFrame.Text)
+	GakHideFrame(CompactArenaFrameMember1StatusText)
+	GakHideFrame(CompactArenaFrameMember2StatusText)
+	GakHideFrame(CompactArenaFrameMember3StatusText)
+	GakHideFrame(CompactArenaFrameMember4StatusText)
+	GakHideFrame(CompactArenaFrameMember5StatusText)
 end
 
 function GakZenPartyFrames()
@@ -506,6 +511,7 @@ function GakAuditZenMode()
 	)
 
 	TargetFrameToT.Name:Hide()
+	GakHideFrame(TargetFrameToT.HealthBar.DeadText)
 	FocusFrameToT.Name:Hide()
 
 	-- Hide target-portrait party leader icon.
