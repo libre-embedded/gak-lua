@@ -63,6 +63,11 @@ function GakZenArenaFrames()
 	GakHideFrame(CompactArenaFramePet3Name)
 	GakHideFrame(CompactArenaFramePet4Name)
 	GakHideFrame(CompactArenaFramePet5Name)
+	GakHideFrame(CompactArenaFrame.StealthedUnitFrame1.NameText)
+	GakHideFrame(CompactArenaFrame.StealthedUnitFrame2.NameText)
+	GakHideFrame(CompactArenaFrame.StealthedUnitFrame3.NameText)
+	GakHideFrame(CompactArenaFrame.StealthedUnitFrame4.NameText)
+	GakHideFrame(CompactArenaFrame.StealthedUnitFrame5.NameText)
 end
 
 function GakZenPartyFrames()
