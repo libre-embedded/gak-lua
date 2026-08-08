@@ -56,6 +56,13 @@ function GakZenArenaFrames()
 	GakHideFrame(CompactArenaFrameMember1Name)
 	GakHideFrame(CompactArenaFrameMember2Name)
 	GakHideFrame(CompactArenaFrameMember3Name)
+	GakHideFrame(CompactArenaFrameMember4Name)
+	GakHideFrame(CompactArenaFrameMember5Name)
+	GakHideFrame(CompactArenaFramePet1Name)
+	GakHideFrame(CompactArenaFramePet2Name)
+	GakHideFrame(CompactArenaFramePet3Name)
+	GakHideFrame(CompactArenaFramePet4Name)
+	GakHideFrame(CompactArenaFramePet5Name)
 end
 
 function GakZenPartyFrames()
