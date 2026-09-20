@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=4799fa007e8e94f77da80421a856ec94
+-- hash=5adf6afc0660cba96ca3dd1659e9f54c
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -10693,7 +10693,7 @@ m spws]])
 			print("(spec) Couldn't bind slot L1_R2_2:", [[
 s "Power Word: Shield"]])
 		end
-		C_Spell.PickupSpell("Voidform")
+		C_Spell.PickupSpell(228260)
 		if GetCursorInfo() then
 			-- L1_X_1
 			PlaceAction(10)
@@ -10704,9 +10704,9 @@ s "Power Word: Shield"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_X_1:", [[
-s "Voidform"]])
+s 228260]])
 		end
-		C_Spell.PickupSpell("Voidform")
+		C_Spell.PickupSpell(228260)
 		if GetCursorInfo() then
 			-- L1_X_2
 			PlaceAction(22)
@@ -10717,7 +10717,7 @@ s "Voidform"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_X_2:", [[
-s "Voidform"]])
+s 228260]])
 		end
 		C_Spell.PickupSpell("Silence")
 		if GetCursorInfo() then
