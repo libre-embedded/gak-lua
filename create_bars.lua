@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=5adf6afc0660cba96ca3dd1659e9f54c
+-- hash=9a2122f4147a3bb251d0696e19585411
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -11440,7 +11440,7 @@ s "Sinister Strike"]])
 			print("(spec) Couldn't bind slot R1_2:", [[
 s "Sinister Strike"]])
 		end
-		C_Spell.PickupSpell("Sinister Strike")
+		C_Spell.PickupSpell("Ambush")
 		if GetCursorInfo() then
 			-- R1_C
 			PlaceAction(73)
@@ -11451,7 +11451,7 @@ s "Sinister Strike"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot R1_C:", [[
-s "Sinister Strike"]])
+s "Ambush"]])
 		end
 		C_Spell.PickupSpell("Dispatch")
 		if GetCursorInfo() then
