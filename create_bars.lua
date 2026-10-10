@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=9a2122f4147a3bb251d0696e19585411
+-- hash=498110759879f77fb8f80c75ba978f25
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -7849,7 +7849,7 @@ m slf]])
 			print("(spec) Couldn't bind slot P2_R1:", [[
 s 359073]])
 		end
-		C_Spell.PickupSpell("Dragonrage")
+		C_Spell.PickupSpell(375087)
 		if GetCursorInfo() then
 			-- P2_R2
 			PlaceAction(56)
@@ -7860,7 +7860,7 @@ s 359073]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_R2:", [[
-s "Dragonrage"]])
+s 375087]])
 		end
 		C_Spell.PickupSpell("Azure Strike")
 		if GetCursorInfo() then
@@ -10021,7 +10021,7 @@ s "Kill Command"]])
 			print("(spec) Couldn't bind slot R1_2:", [[
 s "Kill Command"]])
 		end
-		C_Spell.PickupSpell("Raptor Strike")
+		C_Spell.PickupSpell(186270)
 		if GetCursorInfo() then
 			-- R2_1
 			PlaceAction(2)
@@ -10032,9 +10032,9 @@ s "Kill Command"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot R2_1:", [[
-s "Raptor Strike"]])
+s 186270]])
 		end
-		C_Spell.PickupSpell("Raptor Strike")
+		C_Spell.PickupSpell(186270)
 		if GetCursorInfo() then
 			-- R2_2
 			PlaceAction(14)
@@ -10045,7 +10045,7 @@ s "Raptor Strike"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot R2_2:", [[
-s "Raptor Strike"]])
+s 186270]])
 		end
 		PickupMacro("sfp")
 		if GetCursorInfo() then
