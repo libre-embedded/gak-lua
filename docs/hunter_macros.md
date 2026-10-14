@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=f2cf6421e69f31afae4e69e5550161f4
+    hash=45315979f3cc2ed137020f784985f1ad
     =====================================
 -->
 
@@ -164,13 +164,13 @@ ks
 
 ---
 
-tdr
+bsr
 
 ```
-#showtooltip Takedown
+#showtooltip Boomstick
 /cast Blood Fury
 /use 14
-/cast Takedown
+/cast Boomstick
 ```
 
 ---

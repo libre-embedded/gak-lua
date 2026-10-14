@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=498110759879f77fb8f80c75ba978f25
+-- hash=71f2d4a8c58591b56e09e4aa7d2e3605
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -9800,7 +9800,7 @@ s "Sticky Tar Bomb"]])
 			print("(spec) Couldn't bind slot L1_C_2:", [[
 s "Sticky Tar Bomb"]])
 		end
-		PickupMacro("tdr")
+		C_Spell.PickupSpell(1250646)
 		if GetCursorInfo() then
 			-- L1_P2_R1
 			PlaceAction(25)
@@ -9811,7 +9811,7 @@ s "Sticky Tar Bomb"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_P2_R1:", [[
-m tdr]])
+s 1250646]])
 		end
 		C_Spell.PickupSpell("Hatchet Toss")
 		if GetCursorInfo() then
@@ -9969,7 +9969,7 @@ C_SpellBook.PickupSpellBookItem(8, 1)]])
 			print("(spec) Couldn't bind slot P2_P3:", [[
 C_SpellBook.PickupSpellBookItem(6, 1)]])
 		end
-		C_Spell.PickupSpell("Boomstick")
+		PickupMacro("bsr")
 		if GetCursorInfo() then
 			-- P2_R1
 			PlaceAction(55)
@@ -9980,7 +9980,7 @@ C_SpellBook.PickupSpellBookItem(6, 1)]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_R1:", [[
-s "Boomstick"]])
+m bsr]])
 		end
 		C_Spell.PickupSpell("Tracker's Net")
 		if GetCursorInfo() then

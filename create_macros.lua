@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=2b59ec693ffde9b13e259ff96728a608
+-- hash=486de30d3ca7c9a324b9a5a83a003bd1
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -496,6 +496,11 @@ function GakCreateCharacterMacros()
 #showtooltip Bestial Wrath
 /cast Blood Fury
 /cast Bestial Wrath]], true)
+		CreateMacro("bsr", "inv_misc_questionmark", [[
+#showtooltip Boomstick
+/cast Blood Fury
+/use 14
+/cast Boomstick]], true)
 		CreateMacro("bssc", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Bursting Shot] Bursting Shot; Scatter Shot]], true)
@@ -542,11 +547,6 @@ function GakCreateCharacterMacros()
 		CreateMacro("sv", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Volley]], true)
-		CreateMacro("tdr", "inv_misc_questionmark", [[
-#showtooltip Takedown
-/cast Blood Fury
-/use 14
-/cast Takedown]], true)
 		CreateMacro("ttsb", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Tar Trap] Tar Trap; Scare Beast]], true)
