@@ -96,5 +96,10 @@ end)
 
 -- Remove text on all nameplate auras.
 hooksecurefunc(NamePlateAuraItemMixin, "SetAura", function(aura)
-	aura.Cooldown:SetHideCountdownNumbers(true);
+	aura.Cooldown:SetHideCountdownNumbers(true)
+end)
+
+-- Remove text on arena DR tracker icons.
+hooksecurefunc(SpellDiminishStatusTrayItemMixin, "OnLoad", function(trayItem)
+	trayItem.Cooldown:SetHideCountdownNumbers(true)
 end)

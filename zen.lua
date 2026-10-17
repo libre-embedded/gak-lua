@@ -78,6 +78,20 @@ function GakZenArenaFrames()
 	GakHideFrame(CompactArenaFrameMember3StatusText)
 	GakHideFrame(CompactArenaFrameMember4StatusText)
 	GakHideFrame(CompactArenaFrameMember5StatusText)
+
+	-- Remove CC debuff text.
+	CompactArenaFrameMember1.DebuffFrame.Cooldown:SetHideCountdownNumbers(true)
+	CompactArenaFrameMember2.DebuffFrame.Cooldown:SetHideCountdownNumbers(true)
+	CompactArenaFrameMember3.DebuffFrame.Cooldown:SetHideCountdownNumbers(true)
+	CompactArenaFrameMember4.DebuffFrame.Cooldown:SetHideCountdownNumbers(true)
+	CompactArenaFrameMember5.DebuffFrame.Cooldown:SetHideCountdownNumbers(true)
+
+	-- Remove trinket cooldown text.
+	CompactArenaFrameMember1.CcRemoverFrame.Cooldown:SetHideCountdownNumbers(true)
+	CompactArenaFrameMember2.CcRemoverFrame.Cooldown:SetHideCountdownNumbers(true)
+	CompactArenaFrameMember3.CcRemoverFrame.Cooldown:SetHideCountdownNumbers(true)
+	CompactArenaFrameMember4.CcRemoverFrame.Cooldown:SetHideCountdownNumbers(true)
+	CompactArenaFrameMember5.CcRemoverFrame.Cooldown:SetHideCountdownNumbers(true)
 end
 
 function GakZenPartyFrames()
