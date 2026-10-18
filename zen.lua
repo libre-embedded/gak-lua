@@ -546,6 +546,15 @@ function GakAuditZenMode()
 
 	GakHideFrame(UIErrorsFrame)
 
+	-- Loss of control frame.
+	if LossOfControlFrame then
+		GakHideFrame(LossOfControlFrame.TimeLeft.SecondsText)
+		GakHideFrame(LossOfControlFrame.AbilityName)
+		GakHideFrame(LossOfControlFrame.RedLineBottom)
+		GakHideFrame(LossOfControlFrame.RedLineTop)
+		GakHideFrame(LossOfControlFrame.blackBg)
+	end
+
 	-- Scoreboard and match results name removal.
 	if PVPMatchResults then
 		GakHideFrame(PVPMatchResults.overlay.decorator)
