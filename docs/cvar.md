@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=0b2ba7db222803ea7aab03afef73fe95
+    hash=530e37a0707cba1197d5914efddb3f92
     =====================================
 -->
 
@@ -47,7 +47,7 @@ GamePadRunThreshold | 0
 graphicsProjectedTextures | 1
 graphicsSpellDensity | 2
 lootUnderMouse | 0
-lossOfControl | 0
+lossOfControl | 1
 maxFPSBk | 30
 nameplateAuraScale | 0.7
 nameplateMaxScale | 0.9
