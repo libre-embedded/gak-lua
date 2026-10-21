@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=f136150d0f5b294f85aaac8126370cd6
+    hash=43241d5166016377ed15a71e8608c43a
     =====================================
 -->
 
@@ -80,7 +80,7 @@ Paladin | `21`
 Priest | `28`
 Rogue | `11`
 Shaman | `22`
-Warlock | `16`
+Warlock | `17`
 Warrior | `9`
 
 ### Action Bars
@@ -99,7 +99,7 @@ Paladin | `24`
 Priest | `24`
 Rogue | `43`
 Shaman | `36`
-Warlock | `46`
+Warlock | `47`
 Warrior | `35`
 Balance Druid | `58`
 Feral Druid | `52`
@@ -126,7 +126,7 @@ Enhancement Shaman | `22`
 Restoration Shaman | `22`
 Affliction Warlock | `15`
 Demonology Warlock | `18`
-Destruction Warlock | `19`
+Destruction Warlock | `20`
 Brewmaster Monk | `0`
 Windwalker Monk | `31`
 Mistweaver Monk | `23`

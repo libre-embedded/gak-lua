@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=71f2d4a8c58591b56e09e4aa7d2e3605
+-- hash=537ee79f784abcefdd37894d25b48bbd
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -4884,6 +4884,19 @@ s 119898]])
 			print("(class) Couldn't bind slot L2_L1_R2:", [[
 s "Curse of Tongues"]])
 		end
+		C_Spell.PickupSpell("Soul Rip")
+		if GetCursorInfo() then
+			-- L2_L1_T
+			PlaceAction(71)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_L1_T'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L2_L1_T:", [[
+s "Soul Rip"]])
+		end
 		C_Spell.PickupSpell("Demonic Circle: Teleport")
 		if GetCursorInfo() then
 			-- L2_P1
@@ -5014,18 +5027,18 @@ PickupPetSpell(19505)]])
 			print("(class) Couldn't bind slot L2_R2:", [[
 s "Demonic Gateway"]])
 		end
-		C_Spell.PickupSpell("Soul Rip")
+		C_Spell.PickupSpell("Bonds of Fel")
 		if GetCursorInfo() then
-			-- L2_T
-			PlaceAction(65)
+			-- L2_X
+			PlaceAction(64)
 			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_T'")
+				print("wrote over existing action in slot 'L2_X'")
 				ClearCursor()
 			end
 			class_bind_count = class_bind_count + 1
 		else
-			print("(class) Couldn't bind slot L2_T:", [[
-s "Soul Rip"]])
+			print("(class) Couldn't bind slot L2_X:", [[
+s "Bonds of Fel"]])
 		end
 		C_SpellBook.PickupSpellBookItem(6, 1)
 		if GetCursorInfo() then
@@ -13203,6 +13216,19 @@ s 80240]])
 			print("(spec) Couldn't bind slot L2_L1_X:", [[
 s "Channel Demonfire"]])
 		end
+		PickupMacro("sbof")
+		if GetCursorInfo() then
+			-- L2_P2_X
+			PlaceAction(52)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_P2_X'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_P2_X:", [[
+m sbof]])
+		end
 		C_Spell.PickupSpell("Grimoire of Sacrifice")
 		if GetCursorInfo() then
 			-- L2_P3
@@ -13231,15 +13257,15 @@ s "Shadowburn"]])
 		end
 		C_Spell.PickupSpell("Soul Fire")
 		if GetCursorInfo() then
-			-- L2_X
-			PlaceAction(64)
+			-- L2_T
+			PlaceAction(65)
 			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_X'")
+				print("wrote over existing action in slot 'L2_T'")
 				ClearCursor()
 			end
 			spec_bind_count = spec_bind_count + 1
 		else
-			print("(spec) Couldn't bind slot L2_X:", [[
+			print("(spec) Couldn't bind slot L2_T:", [[
 s "Soul Fire"]])
 		end
 		PickupMacro("inc")

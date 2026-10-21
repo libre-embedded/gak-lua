@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=a9528438a25da9e2ed4f9cdb70ec5550
+    hash=0b8e6dd8ea5fe8b0b4b4342e1c7592fe
     =====================================
 -->
 
@@ -115,6 +115,15 @@ ssi
 ```
 #showtooltip
 /cast [@player] Summon Infernal
+```
+
+---
+
+sbof
+
+```
+#showtooltip
+/cast [@player] Bonds of Fel
 ```
 
 ---
