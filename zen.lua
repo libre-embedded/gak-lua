@@ -549,11 +549,18 @@ function GakAuditZenMode()
 	-- Loss of control frame.
 	if LossOfControlFrame then
 		GakHideFrame(LossOfControlFrame.TimeLeft.SecondsText)
-		GakHideFrame(LossOfControlFrame.AbilityName)
 		GakHideFrame(LossOfControlFrame.RedLineBottom)
 		GakHideFrame(LossOfControlFrame.RedLineTop)
 		GakHideFrame(LossOfControlFrame.blackBg)
+
+		-- can remove when spell icon exists
+		-- GakHideFrame(LossOfControlFrame.AbilityName)
 	end
+	-- https://warcraft.wiki.gg/wiki/Event:UNIT_SPELLCAST_INTERRUPTED
+	-- could use a "last spell interrupted on" stateful updated by ^
+	-- need to look up its icon + attach to left of loss of control icon
+	-- needs basis for hide/show, "show" on self interrupted, "hide" when
+	-- loss of control icon hides
 
 	-- Scoreboard and match results name removal.
 	if PVPMatchResults then
